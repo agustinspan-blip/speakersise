@@ -1,0 +1,52 @@
+{
+  "id": "wharfedale-denton-1s",
+  "brand": "Wharfedale",
+  "series": "Denton",
+  "model": "Denton 1S",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 330,
+    "widthMm": 236,
+    "depthMm": 254,
+    "weightKg": 6.8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "silk soft dome",
+      "notes": "Mounted at the acoustic centre of the coaxial mid-bass"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "enhanced polypropylene cone",
+      "notes": "Coaxial driver — tweeter sits in its centre"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 50,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4.5,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-denton-1s-hero.webp",
+    "front": "/speakers/wharfedale-denton-1s-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/products/denton-1s",
+  "description": {
+    "en": "Modern reinterpretation of the Denton built around a coaxial driver — a 25 mm silk-dome tweeter mounted at the acoustic centre of a 165 mm enhanced-polypropylene mid-bass. 11.5 L rear-ported cabinet with a rear Brilliance EQ switch to adapt the treble to free-standing, shelf or wall placement; 2.6 kHz crossover.",
+    "es": "Reinterpretación moderna del Denton construida en torno a un driver coaxial — un tweeter de domo de seda de 25 mm montado en el centro acústico de un mid-bass de 165 mm en polipropileno mejorado. Gabinete con puerto trasero de 11,5 L con un switch Brilliance EQ que adapta los agudos a colocación libre, sobre estante o en pared; crossover a 2,6 kHz."
+  }
+}
