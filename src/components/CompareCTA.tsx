@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Dictionary, Locale } from "@/lib/i18n";
 
@@ -14,6 +17,14 @@ import type { Dictionary, Locale } from "@/lib/i18n";
  * Layout: fixed bottom-right on desktop (floats over content with a soft
  * shadow); full-width bottom bar on mobile so the touch targets are easy
  * to reach. Both viewports respect the iOS safe-area inset.
+ *
+ * Footer awareness: when the page footer (BrandStrip's `<footer>` element)
+ * scrolls into view, this widget fades out so the floating pills don't
+ * overlap the footer's utility row (Catalog · Compare · Brands · Contact
+ * · Support). The fade is opacity-only — the element stays in the DOM so
+ * its layout doesn't shift. Implemented via IntersectionObserver against
+ * the first `<footer>` on the page; falls back to "always visible" if no
+ * footer is present (e.g. /compare4 layout edge cases).
  *
  * Note about overlap: pages that show this should reserve ~80 px of bottom
  * padding on `<main>` for mobile so the floater doesn't cover the last
@@ -32,6 +43,30 @@ export function CompareCTA({
   /** Speaker id to pre-select as the first slot on the targets. */
   prefillId?: string;
 }) {
+  // True when the page footer is intersecting the viewport. Drives a
+  // CSS opacity fade so the floating pills don't visually collide with
+  // the footer's utility row. SSR renders with the floater visible
+  // (footerVisible = false) — hydration kicks in the observer after.
+  const [footerVisible, setFooterVisible] = useState(false);
+
+  useEffect(() => {
+    const footer = document.querySelector("footer");
+    if (!footer || typeof IntersectionObserver === "undefined") return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry) setFooterVisible(entry.isIntersecting);
+      },
+      // Trigger the fade a few pixels before the footer's true top edge
+      // crosses into view so the handoff feels intentional rather than a
+      // last-second snap.
+      { rootMargin: "0px 0px -40px 0px", threshold: 0 }
+    );
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
+
   const pillBg =
     "bg-amber-600 hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400";
   const pillCls = `inline-flex items-center justify-center gap-2 h-11 px-4 rounded-full ${pillBg} text-white text-sm font-medium shadow-lg shadow-amber-900/20 transition-colors whitespace-nowrap`;
@@ -73,6 +108,15 @@ export function CompareCTA({
   return (
     <div
       aria-label={t.nav.compareCta}
+      // Hide from accessibility tree while faded out so screen readers
+      // don't announce a button the user can't see — the same row of
+      // links lives inside the footer anyway.
+      aria-hidden={footerVisible ? true : undefined}
+      style={{
+        opacity: footerVisible ? 0 : 1,
+        pointerEvents: footerVisible ? "none" : "auto",
+        transition: "opacity 200ms ease-out",
+      }}
       className={[
         // Positioning: full-width bar on phones, floating on >= sm.
         "fixed z-30 left-0 right-0 bottom-0 px-4 pb-3 pt-2",
