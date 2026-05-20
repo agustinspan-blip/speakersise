@@ -1,0 +1,57 @@
+{
+  "id": "klipsch-heresy-iv",
+  "brand": "Klipsch",
+  "series": "Heritage",
+  "generation": "IV",
+  "model": "Heresy IV",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 630,
+    "widthMm": 407,
+    "depthMm": 337,
+    "weightKg": 20.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "K-107-TI titanium compression diaphragm"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 44,
+      "quantity": 1,
+      "material": "K-702 polyimide compression diaphragm",
+      "notes": "1.75\" (44.5 mm) on K-704 Tractrix horn"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 305,
+      "quantity": 1,
+      "material": "K-28-E fiber-composite cone",
+      "notes": "12\" woofer in rear-ported cabinet"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 48,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 4,
+  "sensitivityDb": 99,
+  "impedanceOhm": 8,
+  "powerHandlingW": {
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/klipsch-heresy-iv-hero.webp",
+    "front": "/speakers/klipsch-heresy-iv-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/heresy-iv-floorstanding-speaker",
+  "description": {
+    "en": "Compact three-way horn-loaded Heritage floorstander first introduced in 1957, hand-built in Hope, Arkansas. K-107-TI titanium tweeter, K-702 polyimide midrange on a K-704 Tractrix horn and a 305 mm K-28-E fiber-composite woofer; gen IV adds a rear Tractrix port for extended low end at 99 dB sensitivity.",
+    "es": "Floorstander Heritage compacto de tres vías horn-loaded, presentado originalmente en 1957 y construido a mano en Hope, Arkansas. Tweeter K-107-TI de titanio, midrange K-702 en polyimide sobre horn Tractrix K-704 y un woofer K-28-E de 305 mm en fibra-compuesta; la gen IV suma un puerto trasero Tractrix para extender los graves manteniendo 99 dB de sensibilidad."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "sonus-faber-amati-supreme",
+  "brand": "Sonus Faber",
+  "series": "Homage",
+  "model": "Amati Supreme",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1176,
+    "widthMm": 411,
+    "depthMm": 512,
+    "weightKg": 62
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 20,
+      "quantity": 1,
+      "material": "silk soft dome"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 38,
+      "quantity": 1,
+      "material": "silk soft dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Dual-drive motor; sealed cork sub-enclosure"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 220,
+      "quantity": 2,
+      "material": "paper cone",
+      "notes": "Dual-drive motor; vented 'Stealth Ultraflex' box"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 28,
+    "max": 40000
+  },
+  "sensitivityDb": 91,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 600
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-amati-supreme-hero.webp",
+    "front": "/speakers/sonus-faber-amati-supreme-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/amati-supreme/tech-specs",
+  "description": {
+    "en": "Flagship floorstander of the Homage Collection — a 4.5-way system named after Andrea Amati, the Cremonese luthier. A 20 mm silk super-tweeter sits above a 38 mm silk tweeter, a 165 mm paper midrange in its sealed cork sub-enclosure, and twin 220 mm paper woofers in the 'Stealth Ultraflex' vented box. Lute-shaped cabinet with matte aluminium accents.",
+    "es": "Floorstander insignia de la Homage Collection — sistema de 4.5 vías que lleva el nombre de Andrea Amati, el luthier cremonés. Un super-tweeter de seda de 20 mm se ubica sobre un tweeter de seda de 38 mm, un midrange de papel de 165 mm en su sub-cámara sellada de corcho, y dos woofers de papel de 220 mm en la caja vented 'Stealth Ultraflex'. Gabinete con forma de laúd con detalles de aluminio mate."
+  }
+}

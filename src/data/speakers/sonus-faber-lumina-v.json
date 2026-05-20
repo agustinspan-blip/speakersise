@@ -1,0 +1,55 @@
+{
+  "id": "sonus-faber-lumina-v",
+  "brand": "Sonus Faber",
+  "series": "Lumina",
+  "model": "Lumina V",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1049,
+    "widthMm": 281,
+    "depthMm": 373,
+    "weightKg": 22.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "DAD soft dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "paper cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "sandwich cone",
+      "notes": "Composite sandwich-diaphragm bass driver"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 24000
+  },
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-lumina-v-hero.webp",
+    "front": "/speakers/sonus-faber-lumina-v-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/lumina-v/tech-specs",
+  "description": {
+    "en": "Three-way floorstander of the Lumina line — 29 mm DAD soft-dome tweeter, 150 mm paper midrange and twin 165 mm sandwich-cone woofers in a squared multilayer-wood cabinet with hand-applied leather accents. Front-vented design with decoupled iron spikes.",
+    "es": "Floorstander de tres vías de la línea Lumina — tweeter DAD de domo blando de 29 mm, midrange de papel de 150 mm y dos woofers de 165 mm en cono sandwich, en un gabinete cuadrado multicapa de madera con detalles de cuero aplicados a mano. Diseño con puerto frontal y spikes de hierro desacoplados."
+  }
+}

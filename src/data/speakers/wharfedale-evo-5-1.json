@@ -1,0 +1,51 @@
+{
+  "id": "wharfedale-evo-5-1",
+  "brand": "Wharfedale",
+  "model": "EVO 5.1",
+  "series": "EVO",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 340,
+    "widthMm": 208,
+    "depthMm": 325,
+    "weightKg": 8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 70,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "35 × 70 mm Air Motion Transformer"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 56,
+    "max": 24000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.4,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-evo-5-1-hero.png",
+    "front": "/speakers/wharfedale-evo-5-1-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/evo5-series/products/evo-5-1",
+  "description": {
+    "en": "The compact bookshelf of Wharfedale's EVO 5 line — a two-way standmount pairing a 5″ woven-Kevlar mid-bass with the 35 × 70 mm AMT tweeter. The Silentweave damping and ResoFrame chassis target a clean, fatigue-free balance in nearfield and small-room setups.",
+    "es": "El bookshelf compacto de la línea EVO 5 de Wharfedale — un standmount de dos vías que combina un mid-bass de 5″ con cono de Kevlar tejido y el tweeter AMT de 35 × 70 mm. El amortiguamiento Silentweave y el chasis ResoFrame buscan un balance limpio y sin fatiga para campo cercano y salas chicas."
+  }
+}

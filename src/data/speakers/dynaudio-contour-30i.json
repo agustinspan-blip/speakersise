@@ -1,0 +1,54 @@
+{
+  "id": "dynaudio-contour-30i",
+  "brand": "Dynaudio",
+  "model": "Contour 30i",
+  "series": "Contour",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1169,
+    "widthMm": 300,
+    "depthMm": 403,
+    "weightKg": 31.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Esotar 2i soft dome with Hexis"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "MSP cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 32,
+    "max": 23000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-contour-30i-hero.webp",
+    "front": "/speakers/dynaudio-contour-30i-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/contour-i/contour-30i",
+  "description": {
+    "en": "A 2½-way Contour i floorstander combining the 28 mm Esotar 2i tweeter with two 18 cm MSP cones — one mid-bass, one dedicated woofer. 2nd-order crossover and rear bass-reflex tuning reach down to 32 Hz; voiced for medium-to-large rooms.",
+    "es": "Un floorstander Contour i de 2½ vías que combina el tweeter Esotar 2i de 28 mm con dos conos MSP de 18 cm — uno mid-bass, uno woofer dedicado. Crossover de segundo orden y bass-reflex trasero llegan hasta 32 Hz; afinado para salas medianas y grandes."
+  }
+}

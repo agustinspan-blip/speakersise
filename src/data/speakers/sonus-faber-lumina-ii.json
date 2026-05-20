@@ -1,0 +1,49 @@
+{
+  "id": "sonus-faber-lumina-ii",
+  "brand": "Sonus Faber",
+  "series": "Lumina",
+  "model": "Lumina II",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 304,
+    "widthMm": 179,
+    "depthMm": 263,
+    "weightKg": 5.8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "DAD soft dome",
+      "notes": "Ferrite-magnet DAD high-definition tweeter"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "paper cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 55,
+    "max": 24000
+  },
+  "sensitivityDb": 86,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-lumina-ii-hero.webp",
+    "front": "/speakers/sonus-faber-lumina-ii-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/lumina-ii",
+  "description": {
+    "en": "Entry-tier two-way standmount of the Lumina line — 29 mm DAD soft-dome tweeter paired with a 150 mm paper midwoofer in a squared multilayer-wood cabinet with hand-applied leather accents. Front-vented; 1.8 kHz crossover.",
+    "es": "Bookshelf de dos vías de la línea Lumina, puerta de entrada — tweeter DAD de domo blando de 29 mm junto a un midwoofer de 150 mm en cono de papel, en un gabinete cuadrado multicapa de madera con detalles de cuero aplicados a mano. Puerto frontal; crossover a 1,8 kHz."
+  }
+}

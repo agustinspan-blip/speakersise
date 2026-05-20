@@ -1,0 +1,61 @@
+{
+  "id": "monitor-audio-platinum-200-3g",
+  "brand": "Monitor Audio",
+  "model": "Platinum 200",
+  "generation": "3G",
+  "series": "Platinum",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1042,
+    "widthMm": 369,
+    "depthMm": 455,
+    "weightKg": 35.8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "MPD III planar ribbon"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "RDT III C-CAM"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 152,
+      "quantity": 2,
+      "material": "RDT III C-CAM"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 38,
+  "frequencyResponseHz": {
+    "min": 23,
+    "max": 60000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 600
+  },
+  "recommendedAmpW": {
+    "min": 150,
+    "max": 600
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-platinum-200-3g-hero.jpg",
+    "front": "/speakers/monitor-audio-platinum-200-3g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/product-ranges/platinum-series-3g/platinum-200-3g/",
+  "description": {
+    "en": "A 3-way Platinum 3G floorstander pairing the MPD III planar-ribbon tweeter with a dedicated 4″ RDT III midrange and twin 6″ RDT III woofers. Crossover at 825 Hz / 3 kHz, rear-ported and tuned to 38 Hz; sculpted, hand-finished cabinet voiced for refined full-range response.",
+    "es": "Un floorstander Platinum 3G de tres vías que combina el tweeter de cinta plana MPD III con un midrange RDT III dedicado de 4″ y dos woofers RDT III de 6″. Crossover a 825 Hz / 3 kHz, bass-reflex trasero sintonizado a 38 Hz; gabinete esculpido y terminado a mano para una respuesta refinada de banda completa."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "sonus-faber-lumina-i",
+  "brand": "Sonus Faber",
+  "series": "Lumina",
+  "model": "Lumina I",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 280,
+    "widthMm": 148,
+    "depthMm": 213,
+    "weightKg": 4.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "DAD soft dome",
+      "notes": "Ferrite-magnet DAD high-definition tweeter"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 120,
+      "quantity": 1,
+      "material": "paper cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 65,
+    "max": 24000
+  },
+  "sensitivityDb": 84,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-lumina-i-hero.webp",
+    "front": "/speakers/sonus-faber-lumina-i-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/lumina-i/tech-specs",
+  "description": {
+    "en": "Compact two-way standmount of the Lumina line — 29 mm DAD soft-dome tweeter paired with a 120 mm paper midwoofer in a squared multilayer-wood cabinet with hand-applied leather accents. Front-vented; visco-elastic driver decoupling and a 2 kHz crossover.",
+    "es": "Bookshelf compacto de dos vías de la línea Lumina — tweeter DAD de domo blando de 29 mm junto a un midwoofer de 120 mm en cono de papel, en un gabinete cuadrado multicapa de madera con detalles de cuero aplicados a mano. Puerto frontal; desacople visco-elástico de drivers y crossover a 2 kHz."
+  }
+}

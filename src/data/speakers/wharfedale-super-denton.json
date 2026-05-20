@@ -1,0 +1,57 @@
+{
+  "id": "wharfedale-super-denton",
+  "brand": "Wharfedale",
+  "model": "Super Denton",
+  "series": "Heritage",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "year": 2024,
+  "dimensions": {
+    "heightMm": 360,
+    "widthMm": 246,
+    "depthMm": 295,
+    "weightKg": 9.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 50,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 52,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 6,
+  "impedanceMinOhm": 3.4,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 120
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-super-denton-hero.png",
+    "front": "/speakers/wharfedale-super-denton-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/products/super-denton",
+  "description": {
+    "en": "A genuine three-way compact standmount within Wharfedale's Heritage line, packing tweeter, dome midrange and 6.5\" woven-Kevlar woofer into one of the smallest 14.7-litre cabinets on the market. Bass extension reaches 40 Hz despite the modest footprint, with the hand-veneered cabinet keeping the classic Denton silhouette.",
+    "es": "Un standmount compacto de tres vías genuino dentro de la línea Heritage de Wharfedale, que mete tweeter, mediano de domo y woofer de 6.5\" con cono de Kevlar tejido en uno de los gabinetes más chicos del mercado (14.7 litros). El bajo extiende hasta 40 Hz pese al tamaño reducido, manteniendo la silueta clásica del Denton con chapado de madera hecho a mano."
+  }
+}

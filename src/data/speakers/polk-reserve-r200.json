@@ -1,0 +1,51 @@
+{
+  "id": "polk-reserve-r200",
+  "brand": "Polk",
+  "series": "Reserve",
+  "model": "Reserve R200",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 359,
+    "widthMm": 194,
+    "depthMm": 354,
+    "weightKg": 8.7
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Pinnacle ring radiator"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Turbine cone",
+      "notes": "6.5\" foam-core turbine geometry"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 51,
+    "max": 38000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 86,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.8,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/polk-reserve-r200-hero.webp",
+    "front": "/speakers/polk-reserve-r200-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en/product/home-speakers/bookshelf/reserve-r200/300029.html",
+  "description": {
+    "en": "Two-way standmount of the Reserve line — 1\" Pinnacle ring-radiator tweeter paired with a 6.5\" Turbine-cone mid-bass in a rear-X-Port cabinet. Named 'Bookshelf Loudspeaker of the Year' by The Absolute Sound; cross-braced cabinet designed in Baltimore.",
+    "es": "Bookshelf de dos vías de la línea Reserve — tweeter Pinnacle de anillo radiante de 1\" junto a un mid-bass Turbine Cone de 6,5\" en gabinete con X-Port trasero. Nombrado 'Bookshelf del Año' por The Absolute Sound; gabinete con refuerzo cruzado diseñado en Baltimore."
+  }
+}

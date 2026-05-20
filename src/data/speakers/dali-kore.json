@@ -1,0 +1,70 @@
+{
+  "id": "dali-kore",
+  "brand": "Dali",
+  "model": "Kore",
+  "series": "Kore",
+  "type": "floorstander",
+  "powerType": "passive",
+  "year": 2022,
+  "dimensions": {
+    "heightMm": 1675,
+    "widthMm": 514,
+    "depthMm": 593,
+    "weightKg": 148
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 55,
+      "quantity": 1,
+      "material": "planar ribbon",
+      "notes": "10 × 55 mm planar ribbon — part of the EVO-K Hybrid Tweeter module"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 35,
+      "quantity": 1,
+      "material": "soft dome",
+      "notes": "Part of the EVO-K Hybrid Tweeter module"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 178,
+      "quantity": 1,
+      "material": "paper + wood-fibre cone, Balanced Drive SMC"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 292,
+      "quantity": 2,
+      "material": "Balanced Drive SMC Gen-2 with dual voice-coil",
+      "notes": "11½″ woofers"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 26,
+    "max": 34000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "min": 50,
+    "max": 1500
+  },
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 1500
+  },
+  "priceUsd": 60000,
+  "images": {
+    "hero": "/speakers/dali-kore-hero.png",
+    "front": "/speakers/dali-kore-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/kore/dali-kore/",
+  "description": {
+    "en": "Dali's flagship floorstander, the Kore is a five-driver, four-way reference design built around the EVO-K Hybrid Tweeter — a 35 mm soft dome paired with a 55 mm planar ribbon — flanked by an SMC-loaded midrange and twin 11½″ Balanced Drive woofers. Cabinet, crossover and drivers were developed from the ground up over six years to set a new benchmark for the brand.",
+    "es": "El tope de gama de Dali. Es un diseño floorstander de cuatro vías y cinco transductores construido alrededor del EVO-K Hybrid Tweeter — un domo suave de 35 mm acompañado de una cinta plana de 55 mm — junto a un midrange con tecnología SMC y dos woofers Balanced Drive de 11½″. Gabinete, crossover y parlantes fueron desarrollados desde cero durante seis años para fijar un nuevo nivel de referencia para la marca."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "bowers-wilkins-801-d4",
+  "brand": "Bowers & Wilkins",
+  "series": "800",
+  "generation": "D4",
+  "model": "801 D4",
+  "type": "floorstander",
+  "powerType": "passive",
+  "year": 2021,
+  "dimensions": {
+    "heightMm": 1221,
+    "widthMm": 419,
+    "depthMm": 600,
+    "weightKg": 100.6
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "diamond dome",
+      "notes": "Solid Body Tweeter-on-Top; vapour-deposited diamond"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "Continuum cone with FST surround",
+      "notes": "Biomimetic Suspension, Turbine Head"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 250,
+      "quantity": 2,
+      "material": "Aerofoil cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 15,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 90,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.0,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 1000
+  },
+  "images": {
+    "hero": "/speakers/bowers-wilkins-801-d4-hero.png",
+    "front": "/speakers/bowers-wilkins-801-d4-front.png"
+  },
+  "sourceUrl": "https://www.bowerswilkins.com/en-us/product/loudspeakers/801-d4/150237.html",
+  "description": {
+    "en": "Flagship of the 800 Series Diamond. Three-way reverse-wrap floorstander with the Solid Body Tweeter-on-Top diamond dome, a 6\" Continuum-cone FST midrange in a stand-alone Turbine head, and twin 10\" Aerofoil-cone woofers in the Matrix-braced cabinet. Reference monitor at Abbey Road Studios.",
+    "es": "Tope de gama de la 800 Series Diamond. Floorstander de tres vías con cabinet de envolvente curva (reverse-wrap), el Solid Body Tweeter-on-Top con domo de diamante, midrange de 6\" con cono Continuum FST montado en una cabeza Turbine independiente, y dos woofers de 10\" con cono Aerofoil dentro del gabinete reforzado por Matrix. Referencia de monitoreo en Abbey Road Studios."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "sonus-faber-sonetto-v-g2",
+  "brand": "Sonus Faber",
+  "series": "Sonetto",
+  "generation": "G2",
+  "model": "Sonetto V G2",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1088,
+    "widthMm": 309,
+    "depthMm": 415,
+    "weightKg": 33.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "DAD Arrow Point soft dome",
+      "notes": "Extended-frequency DAD with copper shorting ring"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Camelia paper cone",
+      "notes": "Sealed cork sub-enclosure; copper shorting ring"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "paper cone",
+      "notes": "Aluminium demodulation ring"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 35,
+    "max": 40000
+  },
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 320
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-sonetto-v-g2-hero.webp",
+    "front": "/speakers/sonus-faber-sonetto-v-g2-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/sonetto-v/tech-specs",
+  "description": {
+    "en": "Three-way floorstander of the Sonetto G2 line — DAD Arrow Point tweeter, Camelia midrange in a sealed cork chamber and twin 165 mm paper-cone woofers in a down-firing vented box. Lute-shaped cabinet sized for medium-to-large rooms.",
+    "es": "Floorstander de tres vías de la línea Sonetto G2 — tweeter DAD Arrow Point, midrange Camelia en cámara sellada de corcho y dos woofers de 165 mm en cono de papel con caja vented de tiro inferior. Gabinete con forma de laúd, pensado para salas medianas a grandes."
+  }
+}

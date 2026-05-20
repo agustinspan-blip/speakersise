@@ -1,0 +1,62 @@
+{
+  "id": "sonus-faber-aida",
+  "brand": "Sonus Faber",
+  "series": "Reference",
+  "model": "Aida",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1725,
+    "widthMm": 470,
+    "depthMm": 780,
+    "weightKg": 165
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "H28 XTR soft dome with DAD"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "M18 paper cone",
+      "notes": "Neodymium magnet"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 220,
+      "quantity": 2,
+      "material": "W22 paper cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 320,
+      "quantity": 1,
+      "material": "SW32 paper cone",
+      "notes": "Dedicated sub-bass driver"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 18,
+    "max": 35000
+  },
+  "sensitivityDb": 92,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 100,
+    "max": 1000
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-aida-hero.webp",
+    "front": "/speakers/sonus-faber-aida-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/aida/tech-specs",
+  "description": {
+    "en": "Reference Collection 3⅔-way flagship — H28 DAD tweeter, M18 midrange, twin W22 woofers and a 320 mm SW32 sub-bass in a double-curvature lute-shaped cabinet. Adds proprietary Sound Field Shaper drivers (29 mm rear tweeter + two 80 mm rear midranges) and Zero Vibration Transmission technology for an enveloping soundstage.",
+    "es": "Insignia 3⅔ vías de la Reference Collection — tweeter H28 DAD, midrange M18, dos woofers W22 y un sub-bass SW32 de 320 mm en gabinete con forma de laúd y doble curvatura. Suma drivers Sound Field Shaper propietarios (tweeter trasero de 29 mm + dos midranges traseros de 80 mm) y tecnología Zero Vibration Transmission para una escena envolvente."
+  }
+}

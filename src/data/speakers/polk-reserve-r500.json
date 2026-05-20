@@ -1,0 +1,51 @@
+{
+  "id": "polk-reserve-r500",
+  "brand": "Polk",
+  "series": "Reserve",
+  "model": "Reserve R500",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1045,
+    "widthMm": 253,
+    "depthMm": 349,
+    "weightKg": 17.7
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Pinnacle ring radiator"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 133,
+      "quantity": 2,
+      "material": "Turbine cone",
+      "notes": "5.25\" foam-core turbine; 2.5-way configuration"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 49,
+    "max": 36000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.9,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/polk-reserve-r500-hero.webp",
+    "front": "/speakers/polk-reserve-r500-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en/product/home-speakers/floor-standing/reserve-r500/300033.html",
+  "description": {
+    "en": "Compact 2.5-way Reserve floorstander — 1\" Pinnacle ring-radiator tweeter over twin 5.25\" Turbine-cone woofers in a rear-X-Port cabinet with cross-bracing. 2.5 kHz crossover, 87 dB sensitivity and Hi-Res Audio certification — the entry-point to the Reserve floorstander line.",
+    "es": "Floorstander Reserve compacto de 2.5 vías — tweeter Pinnacle de anillo radiante de 1\" sobre dos woofers Turbine Cone de 5,25\" en gabinete con X-Port trasero y refuerzo cruzado. Crossover a 2,5 kHz, 87 dB de sensibilidad y certificación Hi-Res Audio — la puerta de entrada a los floorstanders de la línea Reserve."
+  }
+}

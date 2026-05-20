@@ -1,0 +1,49 @@
+{
+  "id": "dali-epicon-2",
+  "brand": "Dali",
+  "model": "Epicon 2",
+  "series": "Epicon",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 386,
+    "widthMm": 214,
+    "depthMm": 366,
+    "weightKg": 10.3
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "wood-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 47,
+    "max": 30000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/dali-epicon-2-hero.png",
+    "front": "/speakers/dali-epicon-2-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/epicon/epicon-2",
+  "description": {
+    "en": "A two-way bookshelf in Dali's Epicon line: a 28 mm soft-dome tweeter combined with a 6½″ wood-fibre woofer using SMC magnet technology to lower distortion. The deeply curved, multi-layer cabinet is finished in real-wood veneer and tuned with a rear bass-reflex port for a refined, room-friendly presentation.",
+    "es": "Un bookshelf de dos vías de la línea Epicon: tweeter de domo suave de 28 mm más un woofer de 6½″ con membrana de fibra de madera y tecnología SMC para reducir distorsión. El gabinete curvo de múltiples capas con enchape de madera real y puerto bass-reflex trasero ofrece una presentación refinada y amigable con la habitación."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "monitor-audio-silver-500-7g",
+  "brand": "Monitor Audio",
+  "model": "Silver 500",
+  "generation": "7G",
+  "series": "Silver",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1095,
+    "widthMm": 319,
+    "depthMm": 389,
+    "weightKg": 22.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "C-CAM Gold Dome with UD Waveguide II"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 76,
+      "quantity": 1,
+      "material": "C-CAM RST II"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 203,
+      "quantity": 2,
+      "material": "C-CAM RST II"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 36,
+  "frequencyResponseHz": {
+    "min": 27,
+    "max": 35000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 90.5,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4.1,
+  "powerHandlingW": {
+    "max": 250
+  },
+  "recommendedAmpW": {
+    "min": 80,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-silver-500-7g-hero.jpg",
+    "front": "/speakers/monitor-audio-silver-500-7g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/product-ranges/silver-series-7g/silver-500-7g/",
+  "description": {
+    "en": "Top of the Silver 7G line — a 3-way floorstander with the 25 mm C-CAM Gold Dome tweeter, a dedicated 3″ RST II midrange, and twin 8″ RST II woofers. Dual HiVe II ports tuned to 36 Hz; 90.5 dB sensitivity makes it an easy match for most amplifiers.",
+    "es": "El tope de la línea Silver 7G — un floorstander de tres vías con tweeter C-CAM de domo dorado de 25 mm, un midrange RST II dedicado de 3″ y dos woofers RST II de 8″. Doble puerto HiVe II sintonizado a 36 Hz; 90,5 dB de sensibilidad lo hacen pareja fácil para la mayoría de los amplificadores."
+  }
+}

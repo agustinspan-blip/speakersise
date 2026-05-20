@@ -1,0 +1,60 @@
+{
+  "id": "kef-blade-one-meta",
+  "brand": "KEF",
+  "series": "Blade",
+  "generation": "Meta",
+  "model": "Blade One Meta",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1590,
+    "widthMm": 321,
+    "depthMm": 540,
+    "weightKg": 57.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 125,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q array — tweeter sits in the acoustic centre, forming the Single Apparent Source"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 225,
+      "quantity": 4,
+      "material": "aluminium cone",
+      "notes": "Side-firing force-cancelling pairs — two opposing drivers per side"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 35,
+    "max": 35000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 2.8,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 400
+  },
+  "images": {
+    "hero": "/speakers/kef-blade-one-meta-hero.webp",
+    "front": "/speakers/kef-blade-one-meta-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/blade",
+  "description": {
+    "en": "KEF's Single Apparent Source flagship — the curved, slim Blade One Meta places its 12th-gen Uni-Q array (25 mm MAT tweeter + 125 mm aluminium midrange) acoustically at the same point as four side-firing 225 mm woofers arranged in force-cancelling pairs. Hand-built in Maidstone, UK.",
+    "es": "El insignia Single Apparent Source de KEF — el Blade One Meta, de bafle curvo y delgado, ubica su array Uni-Q de 12ª generación (tweeter MAT de 25 mm + midrange de aluminio de 125 mm) acústicamente en el mismo punto que cuatro woofers laterales de 225 mm dispuestos en pares de cancelación de fuerza. Construido a mano en Maidstone, Reino Unido."
+  }
+}

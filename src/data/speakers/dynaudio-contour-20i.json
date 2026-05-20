@@ -1,0 +1,48 @@
+{
+  "id": "dynaudio-contour-20i",
+  "brand": "Dynaudio",
+  "model": "Contour 20i",
+  "series": "Contour",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 440,
+    "widthMm": 215,
+    "depthMm": 396,
+    "weightKg": 14
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Esotar 2i soft dome with Hexis"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 39,
+    "max": 23000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 86,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "max": 180
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-contour-20i-hero.png",
+    "front": "/speakers/dynaudio-contour-20i-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/contour-i/contour-20i",
+  "description": {
+    "en": "A 2-way Contour i stand-mount built around the 28 mm Esotar 2i tweeter and a 18 cm MSP mid-bass driver, crossed at 2.2 kHz with 2nd-order slopes. Black aluminium baffle and rear bass-reflex tuning extend low-end reach to 39 Hz.",
+    "es": "Un stand-mount Contour i de dos vías construido alrededor del tweeter Esotar 2i de 28 mm y un mid-bass MSP de 18 cm, acoplados a 2,2 kHz con pendientes de segundo orden. Bafle de aluminio negro y puerto bass-reflex trasero llevan la respuesta grave a 39 Hz."
+  }
+}

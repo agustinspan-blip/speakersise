@@ -1,0 +1,50 @@
+{
+  "id": "klipsch-rf-7-iii",
+  "brand": "Klipsch",
+  "series": "Reference",
+  "generation": "III",
+  "model": "RF-7 III",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1245,
+    "widthMm": 362,
+    "depthMm": 454,
+    "weightKg": 44.1
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 44,
+      "quantity": 1,
+      "material": "titanium compression diaphragm",
+      "notes": "1.75\" / 4.45 cm diaphragm in 90°×90° Tractrix horn"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 254,
+      "quantity": 2,
+      "material": "Cerametallic cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 32,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 100,
+  "impedanceOhm": 8,
+  "powerHandlingW": {
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/klipsch-rf-7-iii-hero.webp",
+    "front": "/speakers/klipsch-rf-7-iii-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/rf-7-iii-floorstanding-speaker",
+  "description": {
+    "en": "Flagship of the Reference line, hand-assembled in Hope, Arkansas — a 2-way horn-loaded floorstander with a 1.75-inch titanium-diaphragm compression driver in a square 90°×90° Tractrix horn, paired with twin 10-inch Cerametallic woofers. Dual rear-firing Tractrix ports, 100 dB sensitivity and 1000 W peak handling.",
+    "es": "Insignia de la línea Reference, ensamblado a mano en Hope, Arkansas — floorstander de dos vías con horn-loading: driver de compresión con diafragma de titanio de 1,75\" en un horn Tractrix cuadrado de 90°×90°, junto a dos woofers Cerametallic de 10\". Doble puerto trasero Tractrix, 100 dB de sensibilidad y 1000 W de pico."
+  }
+}

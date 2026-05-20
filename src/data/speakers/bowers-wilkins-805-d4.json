@@ -1,0 +1,54 @@
+{
+  "id": "bowers-wilkins-805-d4",
+  "brand": "Bowers & Wilkins",
+  "series": "800",
+  "generation": "D4",
+  "model": "805 D4",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "year": 2021,
+  "dimensions": {
+    "heightMm": 440,
+    "widthMm": 228,
+    "depthMm": 373,
+    "weightKg": 15.55
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "diamond dome",
+      "notes": "Solid Body Tweeter-on-Top; vapour-deposited diamond"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Continuum cone",
+      "notes": "Bass/midrange driver"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4.6,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 120
+  },
+  "images": {
+    "hero": "/speakers/bowers-wilkins-805-d4-hero.png",
+    "front": "/speakers/bowers-wilkins-805-d4-front.png"
+  },
+  "sourceUrl": "https://www.bowerswilkins.com/en-us/product/loudspeakers/805-d4/150241.html",
+  "description": {
+    "en": "Stand-mount bookshelf of the 800 Diamond range. Two-way design with the Solid Body Tweeter-on-Top diamond dome and a single 6.5\" Continuum-cone bass/midrange driver in a compact Matrix-braced cabinet. Pair with the optional matching FS-805 D4 stand.",
+    "es": "Standmount bookshelf de la 800 Diamond. Diseño de dos vías con el Solid Body Tweeter-on-Top de domo de diamante y un único driver de 6.5\" con cono Continuum para bajos/medios, dentro de un gabinete compacto reforzado por Matrix. Combina con el stand opcional FS-805 D4."
+  }
+}

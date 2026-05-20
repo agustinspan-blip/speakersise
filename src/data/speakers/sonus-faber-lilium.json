@@ -1,0 +1,63 @@
+{
+  "id": "sonus-faber-lilium",
+  "brand": "Sonus Faber",
+  "series": "Reference",
+  "model": "Lilium",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1600,
+    "widthMm": 511,
+    "depthMm": 705,
+    "weightKg": 103
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "H28 XTR soft dome with DAD",
+      "notes": "High-power neodymium, extended range"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "M18 paper cone",
+      "notes": "Neodymium magnet"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 3,
+      "material": "W18 paper cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 260,
+      "quantity": 1,
+      "material": "SW26 paper cone",
+      "notes": "Dedicated sub-bass driver"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 20,
+    "max": 35000
+  },
+  "sensitivityDb": 92,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 100,
+    "max": 800
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-lilium-hero.webp",
+    "front": "/speakers/sonus-faber-lilium-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/lilium/tech-specs",
+  "description": {
+    "en": "Reference Collection 3.5-way floorstander — H28 DAD tweeter, M18 paper midrange and three W18 woofers complemented by a dedicated 260 mm SW26 sub-bass driver, all in a double-curvature lute-shaped cabinet. 100–800 W of amplification headroom and 20 Hz – 35 kHz range.",
+    "es": "Floorstander 3.5 vías de la Reference Collection — tweeter H28 DAD, midrange de papel M18 y tres woofers W18 acompañados por un sub-bass dedicado SW26 de 260 mm, todo en un gabinete con forma de laúd y doble curvatura. Margen de amplificación 100–800 W y rango 20 Hz – 35 kHz."
+  }
+}

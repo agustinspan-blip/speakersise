@@ -1,0 +1,49 @@
+{
+  "id": "dali-oberon-5",
+  "brand": "Dali",
+  "model": "Oberon 5",
+  "series": "Oberon",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 832,
+    "widthMm": 202,
+    "depthMm": 277,
+    "weightKg": 10.8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "soft textile dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 133,
+      "quantity": 2,
+      "material": "wood-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 39,
+    "max": 26000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 6,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/dali-oberon-5-hero.webp",
+    "front": "/speakers/dali-oberon-5-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/oberon/oberon-5",
+  "description": {
+    "en": "A slim two-way floorstander built around dual 5¼″ wood-fibre woofers and the brand's 29 mm soft-dome tweeter. The narrow front baffle and rear-firing port make it easy to place close to walls without overpowering the room.",
+    "es": "Un floorstander de dos vías y perfil delgado construido alrededor de dos woofers de 5¼″ con membrana de fibra de madera y el tweeter de domo suave de 29 mm de la marca. El frente angosto y el puerto trasero permiten ubicarlo cerca de las paredes sin saturar la habitación."
+  }
+}

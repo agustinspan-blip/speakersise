@@ -1,0 +1,58 @@
+{
+  "id": "wharfedale-aura-2",
+  "brand": "Wharfedale",
+  "model": "Aura 2",
+  "series": "Aura",
+  "year": 2023,
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 560,
+    "widthMm": 278,
+    "depthMm": 402,
+    "weightKg": 20.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 90,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "27 × 90 mm Air Motion Transformer"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "woven black glass-fibre matrix cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "woven black glass-fibre matrix cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 6,
+  "impedanceMinOhm": 3.5,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-aura-2-hero.png",
+    "front": "/speakers/wharfedale-aura-2-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/aura-series/products/aura-2",
+  "description": {
+    "en": "The Aura 2 is a three-way bookshelf adding a dedicated 4″ glass-fibre midrange between the AMT tweeter and the 6½″ woofer. Wharfedale's Slot Loaded Profiled Port (SLPP) at the base extends bass to 42 Hz while keeping the cabinet visually clean — a near-floorstander class of standmount in size and in scale.",
+    "es": "El Aura 2 es un bookshelf de tres vías que suma un mediano dedicado de 4″ con cono de fibra de vidrio entre el AMT y el woofer de 6½″. El SLPP (Slot Loaded Profiled Port) en la base extiende los graves hasta 42 Hz manteniendo el gabinete limpio — un standmount con porte y escala cercanos a un floorstander."
+  }
+}

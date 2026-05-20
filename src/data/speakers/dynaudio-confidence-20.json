@@ -1,0 +1,50 @@
+{
+  "id": "dynaudio-confidence-20",
+  "brand": "Dynaudio",
+  "model": "Confidence 20",
+  "series": "Confidence",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "year": 2019,
+  "dimensions": {
+    "heightMm": 520,
+    "widthMm": 233,
+    "depthMm": 414,
+    "weightKg": 27
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Esotar 3 soft dome with DDC Lens"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "NeoTec MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 6,
+  "impedanceMinOhm": 5,
+  "powerHandlingW": {
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-confidence-20-hero.png",
+    "front": "/speakers/dynaudio-confidence-20-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/confidence/confidence-20",
+  "description": {
+    "en": "The smallest model in Dynaudio's Confidence series — a 2-way bookshelf built around the Esotar3 soft-dome tweeter and an 18 cm NeoTec MSP mid-bass driver. The Compex composite baffle, DDC Lens waveguide and down-firing port deliver wide directivity control and surprisingly extended low-end for a stand-mount.",
+    "es": "El más chico de la serie Confidence de Dynaudio — un bookshelf de dos vías construido alrededor del tweeter de domo suave Esotar3 y un mid-bass NeoTec MSP de 18 cm. El bafle compuesto Compex, la guía de ondas DDC Lens y el puerto bass-reflex hacia abajo logran un control de directividad amplio y una extensión grave sorprendente para un stand-mount."
+  }
+}

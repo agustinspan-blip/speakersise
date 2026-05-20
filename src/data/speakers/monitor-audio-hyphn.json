@@ -1,0 +1,63 @@
+{
+  "id": "monitor-audio-hyphn",
+  "brand": "Monitor Audio",
+  "model": "Hyphn",
+  "series": "Hyphn",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1392,
+    "widthMm": 501,
+    "depthMm": 520,
+    "weightKg": 106.9
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "MPD III — Micro Pleated Diaphragm",
+      "notes": "Folded ribbon-style tweeter with pleated diaphragm"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 50,
+      "quantity": 6,
+      "material": "RDT III — Rigid Diaphragm Technology"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 200,
+      "quantity": 4,
+      "material": "RDT III, force-cancelled",
+      "notes": "8\" force-cancelled drivers facing inward into the central acoustic chamber"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "portTuningHz": 25,
+  "frequencyResponseHz": {
+    "min": 18,
+    "max": 60000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 86,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.5,
+  "powerHandlingW": {
+    "max": 800
+  },
+  "recommendedAmpW": {
+    "min": 200,
+    "max": 1600
+  },
+  "priceUsd": 49500,
+  "images": {
+    "hero": "/speakers/monitor-audio-hyphn-hero.jpg",
+    "front": "/speakers/monitor-audio-hyphn-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/hyphn/hyphn/",
+  "description": {
+    "en": "Monitor Audio's no-compromise statement loudspeaker. The Hyphn places the brand's new M-Array — a cluster of five small midrange drivers around a central MPD III ribbon tweeter — between two enormous twin-pillar bass towers, each loaded with high-excursion RDT III woofers. A fully bespoke crossover and CNC-machined cabinet make it Monitor Audio's most ambitious project to date.",
+    "es": "El parlante de declaración sin concesiones de Monitor Audio. El Hyphn coloca el nuevo M-Array de la marca — un grupo de cinco midranges pequeños rodeando un tweeter de cinta MPD III central — entre dos enormes torres gemelas de graves cargadas con woofers RDT III de alta excursión. Un crossover totalmente a medida y gabinete fresado por CNC lo convierten en el proyecto más ambicioso de Monitor Audio hasta la fecha."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "wharfedale-elysian-1",
+  "brand": "Wharfedale",
+  "model": "Elysian 1",
+  "series": "Elysian",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 490,
+    "widthMm": 258,
+    "depthMm": 315,
+    "weightKg": 15
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 90,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "27 × 90 mm Air Motion Transformer"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "coated glass-fibre matrix cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 49,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.8,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 175
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-elysian-1-hero.png",
+    "front": "/speakers/wharfedale-elysian-1-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/elysian-series/products/elysian-1",
+  "description": {
+    "en": "The standmount entry to Wharfedale's flagship Elysian line. A two-way bookshelf pairing the 27 × 90 mm AMT high-frequency transducer with a 7″ coated glass-fibre matrix mid-bass, in a hand-finished piano-lacquer cabinet using the SLPP downward port for tight, articulate bass extension.",
+    "es": "El standmount de entrada a la línea insignia Elysian de Wharfedale. Un bookshelf de dos vías que combina el AMT de 27 × 90 mm con un mid-bass de 7″ con cono de fibra de vidrio recubierta, en un gabinete con terminación piano-lacquer hecha a mano y puerto SLPP de descarga inferior para graves articulados y precisos."
+  }
+}

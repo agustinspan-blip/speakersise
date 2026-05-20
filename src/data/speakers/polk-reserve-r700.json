@@ -1,0 +1,58 @@
+{
+  "id": "polk-reserve-r700",
+  "brand": "Polk",
+  "series": "Reserve",
+  "model": "Reserve R700",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1144,
+    "widthMm": 328,
+    "depthMm": 428,
+    "weightKg": 35.9
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Pinnacle ring radiator"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Turbine cone",
+      "notes": "6.5\" in a sealed mid-range chamber"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 203,
+      "quantity": 2,
+      "material": "polypropylene cone",
+      "notes": "8\" woofers in vented Power Port 2.0 section"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 38000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.6,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/polk-reserve-r700-hero.webp",
+    "front": "/speakers/polk-reserve-r700-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en/product/home-speakers/floor-standing/reserve-r700/300035.html",
+  "description": {
+    "en": "Flagship of the Reserve floorstander line — 1\" Pinnacle ring-radiator tweeter, sealed 6.5\" Turbine-cone midrange and twin 8\" polypropylene woofers in a floor-firing Power Port 2.0 vented system. 88 dB sensitivity, 38 Hz extension and 300 W continuous handling.",
+    "es": "Tope de gama entre los floorstanders de la línea Reserve — tweeter Pinnacle de anillo radiante de 1\", midrange Turbine Cone de 6,5\" en cámara sellada y dos woofers de polipropileno de 8\" en un sistema vented Power Port 2.0 de tiro inferior. 88 dB de sensibilidad, extensión hasta 38 Hz y 300 W continuos."
+  }
+}

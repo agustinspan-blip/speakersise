@@ -1,0 +1,55 @@
+{
+  "id": "canton-vento-81",
+  "brand": "Canton",
+  "series": "Vento",
+  "model": "Vento 81",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1030,
+    "widthMm": 280,
+    "depthMm": 340,
+    "weightKg": 29
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Black Ceramic dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 154,
+      "quantity": 1,
+      "material": "ATB cone",
+      "notes": "Aluminium Titan Black composite"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 154,
+      "quantity": 2,
+      "material": "ATB cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 20,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 140
+  },
+  "images": {
+    "hero": "/speakers/canton-vento-81-hero.webp",
+    "front": "/speakers/canton-vento-81-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/tower-speaker/products/type/passive-loudspeakers/vento-81/04580",
+  "description": {
+    "en": "3-way Vento floorstander — 25 mm Black-Ceramic tweeter, 154 mm ATB midrange and twin 154 mm ATB woofers in a down-firing bass-reflex cabinet. Crossover points: 170 Hz / 3 kHz.",
+    "es": "Floorstander Vento de 3 vías — tweeter Black Ceramic de 25 mm, midrange ATB de 154 mm y dos woofers ATB de 154 mm en gabinete con reflex inferior. Crossovers a 170 Hz / 3 kHz."
+  }
+}

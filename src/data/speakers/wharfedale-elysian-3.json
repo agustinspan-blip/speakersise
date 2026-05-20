@@ -1,0 +1,58 @@
+{
+  "id": "wharfedale-elysian-3",
+  "brand": "Wharfedale",
+  "model": "Elysian 3",
+  "series": "Elysian",
+  "year": 2023,
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1050,
+    "widthMm": 357,
+    "depthMm": 315,
+    "weightKg": 28.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 90,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "27 × 90 mm Air Motion Transformer"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "coated glass-fibre matrix cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 2,
+      "material": "coated glass-fibre matrix cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 44,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 2.3,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-elysian-3-hero.png",
+    "front": "/speakers/wharfedale-elysian-3-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/elysian-series/products/elysian-3",
+  "description": {
+    "en": "A slim three-way floorstander with dual 7″ glass-fibre woofers, a 6″ midrange and the AMT tweeter shared with the rest of the Elysian line. The narrow cabinet and downward SLPP keep imaging precise while reaching 44 Hz — the entry into Wharfedale's flagship floor-standing range.",
+    "es": "Un floorstander angosto de tres vías con dos woofers de 7″ con cono de fibra de vidrio, un mediano de 6″ y el mismo AMT que comparte toda la línea Elysian. El gabinete estrecho y el SLPP de descarga inferior mantienen la imagen estéreo precisa llegando hasta los 44 Hz — la puerta de entrada al rango insignia de pie de Wharfedale."
+  }
+}

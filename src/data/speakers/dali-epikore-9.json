@@ -1,0 +1,65 @@
+{
+  "id": "dali-epikore-9",
+  "brand": "Dali",
+  "model": "Epikore 9",
+  "series": "Epikore",
+  "type": "floorstander",
+  "powerType": "passive",
+  "year": 2023,
+  "dimensions": {
+    "heightMm": 1310,
+    "widthMm": 439,
+    "depthMm": 554,
+    "weightKg": 64
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 55,
+      "quantity": 1,
+      "material": "planar magnetostatic",
+      "notes": "10 × 55 mm planar ribbon — part of the EVO-K Hybrid Tweeter module"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 35,
+      "quantity": 1,
+      "material": "soft woven-fabric dome",
+      "notes": "Part of the EVO-K Hybrid Tweeter module"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Clarity Cone paper and wood-fibre, SMC Gen-2 motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 200,
+      "quantity": 2,
+      "material": "Clarity Cone paper and wood-fibre, SMC Gen-2 motor"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 27,
+  "frequencyResponseHz": {
+    "min": 29,
+    "max": 34000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 500
+  },
+  "images": {
+    "hero": "/speakers/dali-epikore-9-hero.png",
+    "front": "/speakers/dali-epikore-9-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/epikore/epikore-9/",
+  "description": {
+    "en": "A 4-way floorstander shrunk down from the Epikore 11, swapping the four-woofer array for a 2 × 8″ Clarity-Cone bass section while keeping the same 6½″ midrange and EVO-K Hybrid Tweeter module. Curved cabinet with rear continuous-flare port tuned to 27 Hz, 112 dB max SPL and a 40–500 W amp window for medium-to-large listening rooms.",
+    "es": "Un floorstander de 4 vías derivado del Epikore 11, que reemplaza la sección de cuatro woofers por un par de 8″ Clarity Cone manteniendo el mismo midrange de 6½″ y el módulo EVO-K Hybrid Tweeter. Gabinete curvado con puerto continuous-flare trasero sintonizado a 27 Hz, 112 dB SPL máx. y un rango de amp de 40–500 W para salas medianas a grandes."
+  }
+}

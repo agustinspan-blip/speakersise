@@ -1,0 +1,59 @@
+{
+  "id": "kef-q-concerto-meta",
+  "brand": "KEF",
+  "series": "Q",
+  "generation": "Meta",
+  "model": "Q Concerto Meta",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 415,
+    "widthMm": 210,
+    "depthMm": 315,
+    "weightKg": 9.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 19,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q array — coaxial with the tweeter"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "hybrid aluminium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 48,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 85,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 180
+  },
+  "images": {
+    "hero": "/speakers/kef-q-concerto-meta-hero.webp",
+    "front": "/speakers/kef-q-concerto-meta-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/q-concerto-meta",
+  "description": {
+    "en": "Modern revival of KEF's 1969 Concerto and the first three-way bookshelf of the Q Meta line. Combines the 12th-gen Uni-Q array (19 mm MAT tweeter + 100 mm aluminium midrange) with a dedicated 165 mm hybrid-aluminium woofer in a rear-ported cabinet.",
+    "es": "Revival moderna del Concerto original de KEF (1969) y primer bookshelf de tres vías de la línea Q Meta. Combina el array Uni-Q de 12ª generación (tweeter de 19 mm con MAT + midrange de aluminio de 100 mm) con un woofer dedicado de 165 mm en cono híbrido de aluminio, en un gabinete con puerto trasero."
+  }
+}

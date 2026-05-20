@@ -1,0 +1,54 @@
+{
+  "id": "canton-townus-90",
+  "brand": "Canton",
+  "series": "Townus",
+  "model": "Townus 90",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1050,
+    "widthMm": 253,
+    "depthMm": 360,
+    "weightKg": 24
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "ceramic dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 174,
+      "quantity": 1,
+      "material": "titanium cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 174,
+      "quantity": 2,
+      "material": "titanium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 20,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/canton-townus-90-hero.webp",
+    "front": "/speakers/canton-townus-90-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/passive-loudspeakers/townus-90/04227",
+  "description": {
+    "en": "3-way Townus floorstander — 25 mm ceramic tweeter, 174 mm titanium midrange and twin 174 mm titanium woofers in a down-firing bass-reflex cabinet. Crossover points: 170 Hz / 3.2 kHz; 300 W music load capacity.",
+    "es": "Floorstander Townus de 3 vías — tweeter cerámico de 25 mm, midrange de titanio de 174 mm y dos woofers de titanio de 174 mm en gabinete con reflex inferior. Crossovers a 170 Hz / 3,2 kHz; capacidad de pico 300 W."
+  }
+}

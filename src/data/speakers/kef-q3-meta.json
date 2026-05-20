@@ -1,0 +1,53 @@
+{
+  "id": "kef-q3-meta",
+  "brand": "KEF",
+  "series": "Q",
+  "generation": "Meta",
+  "model": "Q3 Meta",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 357,
+    "widthMm": 210,
+    "depthMm": 305,
+    "weightKg": 8.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q array — tweeter sits in the acoustic centre"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 49,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/kef-q3-meta-hero.webp",
+    "front": "/speakers/kef-q3-meta-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/q3-meta",
+  "description": {
+    "en": "Two-way mid-size bookshelf in the Q Meta line — 25 mm MAT-treated tweeter coaxial with a 165 mm aluminium mid-bass in a rear-ported cabinet. The largest two-way of the Q Meta family before stepping up to the three-way Q Concerto Meta.",
+    "es": "Bookshelf de dos vías de tamaño medio de la línea Q Meta — tweeter de 25 mm tratado con MAT coaxial al mid-bass de aluminio de 165 mm, en un gabinete con puerto trasero. El dos vías más grande de la familia Q Meta antes de saltar al tres vías Q Concerto Meta."
+  }
+}

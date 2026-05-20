@@ -1,0 +1,57 @@
+{
+  "id": "wharfedale-evo-5-4",
+  "brand": "Wharfedale",
+  "model": "EVO 5.4",
+  "series": "EVO",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1028,
+    "widthMm": 331,
+    "depthMm": 390,
+    "weightKg": 31.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 70,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "35 × 70 mm Air Motion Transformer"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 50,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "woven Kevlar cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 24000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 90,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4.3,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-evo-5-4-hero.png",
+    "front": "/speakers/wharfedale-evo-5-4-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/evo5-series/products/evo-5-4",
+  "description": {
+    "en": "The flagship floorstander of the EVO 5 range — a three-way with twin 6.5″ Kevlar woofers, a 2″ soft-dome midrange and the AMT tweeter, reaching 42 Hz at 90 dB sensitivity. The Slot Loaded Profiled Port and PROS-style cabinet bracing target controlled bass and dynamic ease in larger rooms.",
+    "es": "El floorstander insignia del rango EVO 5 — un tres vías con dos woofers de 6.5″ con cono de Kevlar, un mediano de 2″ con domo suave y el tweeter AMT, llegando a 42 Hz con 90 dB de sensibilidad. El Slot Loaded Profiled Port y los refuerzos al estilo PROS apuntan a un grave controlado y dinámica suelta en salas grandes."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "sonus-faber-sonetto-ii-g2",
+  "brand": "Sonus Faber",
+  "series": "Sonetto",
+  "generation": "G2",
+  "model": "Sonetto II G2",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 414,
+    "widthMm": 221,
+    "depthMm": 355,
+    "weightKg": 10.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "DAD Arrow Point soft dome",
+      "notes": "Extended-frequency DAD with copper shorting ring"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Aluminium demodulation ring — front-vented box"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 40000
+  },
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-sonetto-ii-g2-hero.webp",
+    "front": "/speakers/sonus-faber-sonetto-ii-g2-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/sonetto-ii/tech-specs",
+  "description": {
+    "en": "Two-way standmount of the Sonetto G2 line — DAD Arrow Point tweeter paired with a 165 mm paper-cone midwoofer in a front-vented lute-shaped cabinet (wood + leather + concrete). 3.1 kHz crossover.",
+    "es": "Bookshelf de dos vías de la línea Sonetto G2 — tweeter DAD Arrow Point junto a un midwoofer de 165 mm en cono de papel, en un gabinete con forma de laúd con puerto frontal (madera + cuero + concreto). Crossover a 3,1 kHz."
+  }
+}

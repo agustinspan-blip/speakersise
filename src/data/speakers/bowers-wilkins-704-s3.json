@@ -1,0 +1,58 @@
+{
+  "id": "bowers-wilkins-704-s3",
+  "brand": "Bowers & Wilkins",
+  "series": "700",
+  "generation": "S3",
+  "model": "704 S3",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 964,
+    "widthMm": 251,
+    "depthMm": 321,
+    "weightKg": 20.53
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Carbon Dome",
+      "notes": "Decoupled Carbon Dome in Solid Body Tweeter-on-Top"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "Continuum cone FST"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 130,
+      "quantity": 2,
+      "material": "Aerofoil bass cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 48,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.1,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/bowers-wilkins-704-s3-hero.webp",
+    "front": "/speakers/bowers-wilkins-704-s3-front.png"
+  },
+  "sourceUrl": "https://www.bowerswilkins.com/en/product/loudspeakers/704-s3/FP43079P.html",
+  "description": {
+    "en": "Compact three-way floorstander with the Solid Body Tweeter-on-Top, a Continuum-cone FST midrange and dual 130 mm Aerofoil bass drivers. The slim, rear-ported cabinet suits smaller listening rooms without sacrificing the 700 S3 family's tonal balance.",
+    "es": "Floorstander compacto de tres vías con Solid Body Tweeter-on-Top, midrange Continuum FST y dos woofers Aerofoil de 130 mm. Su gabinete esbelto con puerto trasero se adapta a salas chicas sin perder el balance tonal de la línea 700 S3."
+  }
+}

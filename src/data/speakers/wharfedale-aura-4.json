@@ -1,0 +1,57 @@
+{
+  "id": "wharfedale-aura-4",
+  "brand": "Wharfedale",
+  "model": "Aura 4",
+  "series": "Aura",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1107,
+    "widthMm": 369,
+    "depthMm": 402,
+    "weightKg": 24.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 90,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "27 × 90 mm Air Motion Transformer"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "woven black glass-fibre matrix cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 150,
+      "quantity": 2,
+      "material": "woven black glass-fibre matrix cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 37,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.1,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-aura-4-hero.png",
+    "front": "/speakers/wharfedale-aura-4-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/aura-series/products/aura-4",
+  "description": {
+    "en": "The flagship of the Aura line: a three-way floorstander pairing the 27 × 90 mm AMT and a 4″ glass-fibre midrange with two 6½″ woofers, reaching down to 37 Hz. A 4 Ω nominal load and 89 dB sensitivity invite higher-power amplification to drive larger rooms with full dynamic authority.",
+    "es": "El tope de gama de la serie Aura: un floorstander de tres vías que combina el AMT de 27 × 90 mm y un mediano de 4″ con dos woofers de 6½″, bajando hasta 37 Hz. Carga nominal de 4 Ω y 89 dB de sensibilidad invitan a amplificación de mayor potencia para empujar salas grandes con plena autoridad dinámica."
+  }
+}

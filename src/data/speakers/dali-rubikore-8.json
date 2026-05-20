@@ -1,0 +1,63 @@
+{
+  "id": "dali-rubikore-8",
+  "brand": "Dali",
+  "model": "Rubikore 8",
+  "series": "Rubikore",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1100,
+    "widthMm": 302,
+    "depthMm": 444,
+    "weightKg": 30
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 45,
+      "quantity": 1,
+      "material": "planar magnetostatic",
+      "notes": "17 × 45 mm planar ribbon — part of the Dali Hybrid Tweeter module"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "low-loss soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Clarity Cone paper and wood-fibre, SMC motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "Clarity Cone paper and wood-fibre, SMC motor"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 33,
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 34000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 90.5,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/dali-rubikore-8-hero.png",
+    "front": "/speakers/dali-rubikore-8-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/rubikore/rubikore-8/",
+  "description": {
+    "en": "The pinnacle of the Rubikore range — a 2½+½-way floorstander with Dali's Hybrid Tweeter module (29 mm soft dome plus 17 × 45 mm planar ribbon) feeding three 6½″ Clarity Cone drivers with SMC motors. Bi-wire/bi-amp terminals, bass-reflex tuned to 33 Hz, 112 dB max SPL and a 40–250 W amp window for full-range duty in medium-to-large rooms.",
+    "es": "El tope de la línea Rubikore — un floorstander de 2½+½ vías con el módulo Hybrid Tweeter de Dali (domo suave de 29 mm más cinta plana de 17 × 45 mm) alimentando tres drivers Clarity Cone de 6½″ con motor SMC. Terminales bi-wire/bi-amp, bass-reflex sintonizado a 33 Hz, 112 dB SPL máx. y un rango de amp de 40–250 W para uso full-range en salas medianas a grandes."
+  }
+}

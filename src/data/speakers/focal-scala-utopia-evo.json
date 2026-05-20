@@ -1,0 +1,59 @@
+{
+  "id": "focal-scala-utopia-evo",
+  "brand": "Focal",
+  "series": "Utopia",
+  "generation": "Evo",
+  "model": "Scala Utopia Evo",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1247,
+    "widthMm": 392,
+    "depthMm": 393,
+    "weightKg": 85
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IAL2 (Infinite Acoustic Loading) tweeter"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "W sandwich cone",
+      "notes": "Power Flower with NIC motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 270,
+      "quantity": 1,
+      "material": "W sandwich cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 27,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 92,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 500
+  },
+  "images": {
+    "hero": "/speakers/focal-scala-utopia-evo-hero.webp",
+    "front": "/speakers/focal-scala-utopia-evo-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/scala-utopia-evo",
+  "description": {
+    "en": "Compact three-way Utopia floorstander — IAL2 beryllium tweeter, Power-Flower W-cone midrange and a single 270 mm W-cone woofer in a multi-compartment Focus Time cabinet. Bi-amplifiable for fine sonic tuning. Note: spec width (670 mm) is the stabilising plinth; the silhouette renders the cabinet width.",
+    "es": "Floorstander Utopia compacto de tres vías — tweeter IAL2 en berilio, midrange Power Flower con cono W y un único woofer de 270 mm en cono W dentro de un gabinete multi-compartimento Focus Time. Bi-amplificable para afinar el carácter sonoro. Nota: el ancho oficial (670 mm) corresponde al plinto estabilizador; la silueta muestra el ancho del cabinet."
+  }
+}

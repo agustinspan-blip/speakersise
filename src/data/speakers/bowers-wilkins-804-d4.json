@@ -1,0 +1,60 @@
+{
+  "id": "bowers-wilkins-804-d4",
+  "brand": "Bowers & Wilkins",
+  "series": "800",
+  "generation": "D4",
+  "model": "804 D4",
+  "type": "floorstander",
+  "powerType": "passive",
+  "year": 2021,
+  "dimensions": {
+    "heightMm": 1071,
+    "widthMm": 288,
+    "depthMm": 391,
+    "weightKg": 36.85
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "diamond dome",
+      "notes": "Solid Body Tweeter-on-Top; vapour-deposited diamond"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "Continuum cone with FST surround",
+      "notes": "Biomimetic Suspension, Turbine Head"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "Aerofoil cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 24,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.0,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/bowers-wilkins-804-d4-hero.webp",
+    "front": "/speakers/bowers-wilkins-804-d4-front.png"
+  },
+  "sourceUrl": "https://www.bowerswilkins.com/en-us/product/loudspeakers/804-d4/150240.html",
+  "description": {
+    "en": "Entry floorstander of the 800 Diamond range. Same Solid Body Tweeter-on-Top and 5\" Continuum-cone FST midrange (this time integrated into the Matrix cabinet rather than a separate Turbine head), with twin 6.5\" Aerofoil-cone bass drivers. Slimmer footprint targeted at smaller rooms.",
+    "es": "Floorstander de entrada de la 800 Diamond. Mismo Solid Body Tweeter-on-Top y midrange de 5\" con cono Continuum FST (integrado al gabinete Matrix en este caso, sin cabeza Turbine separada), con dos woofers de 6.5\" con cono Aerofoil. Footprint más esbelto pensado para salas más chicas."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "sonus-faber-electa-amator-iii",
+  "brand": "Sonus Faber",
+  "series": "Heritage",
+  "generation": "III",
+  "model": "Electa Amator III",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 375,
+    "widthMm": 226,
+    "depthMm": 360,
+    "weightKg": 12.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "H28 soft dome with DAD",
+      "notes": "DAD (Damped Apex Dome) — high-power neodymium cup motor"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "MW18 paper cone",
+      "notes": "Natural-fibre membrane in the Sonus Faber Heritage tradition"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 40,
+    "max": 35000
+  },
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 35,
+    "max": 125
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-electa-amator-iii-hero.webp",
+    "front": "/speakers/sonus-faber-electa-amator-iii-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/electa-amator-iii/tech-specs",
+  "description": {
+    "en": "Two-way standmount of the Heritage Amator family — a smaller sibling to the Maxima Amator with the same H28 DAD tweeter and 180 mm MW18 natural-fibre mid-bass, built in solid walnut with Port Saint Laurent marble accents. Optional dedicated stand brings the speaker to 1095 mm total.",
+    "es": "Bookshelf de dos vías de la familia Heritage Amator — hermano menor del Maxima Amator con el mismo tweeter H28 DAD y un mid-bass MW18 de 180 mm en fibras naturales, construido en nogal macizo con detalles en mármol Port Saint Laurent. El stand dedicado opcional lleva el conjunto a 1095 mm de altura total."
+  }
+}

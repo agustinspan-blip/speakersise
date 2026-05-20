@@ -1,0 +1,66 @@
+{
+  "id": "dynaudio-consequence-ue",
+  "brand": "Dynaudio",
+  "model": "Consequence Ultimate Edition",
+  "series": "Consequence",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1330,
+    "widthMm": 430,
+    "depthMm": 660,
+    "weightKg": 114
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 21,
+      "quantity": 1,
+      "material": "Esotar 2 soft dome"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Esotar 2 soft dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 52,
+      "quantity": 1,
+      "material": "Esotar 2 dome midrange"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 170,
+      "quantity": 1,
+      "material": "Esotar MSP cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 300,
+      "quantity": 2,
+      "material": "Esotar 2 MSP5 cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 17,
+    "max": 30000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 85,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "max": 400
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-consequence-ue-hero.jpg",
+    "front": "/speakers/dynaudio-consequence-ue-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/consequence/consequence-ultimate-edition",
+  "description": {
+    "en": "Dynaudio's statement loudspeaker. The Consequence Ultimate Edition is a 5-way floorstander built around the brand's Esotar2 transducer family — 21 mm super-tweeter, 28 mm tweeter, 52 mm dome midrange, 17 cm Esotar MSP mid-bass and twin 30 cm Esotar2 MSP5 woofers — with crossover frequencies at 350/1350/3000/13500 Hz. Cabinet hand-finished in solid hardwood with brass spikes. Discontinued.",
+    "es": "El parlante de declaración de Dynaudio. El Consequence Ultimate Edition es un floorstander de cinco vías construido alrededor de la familia Esotar2 — super-tweeter de 21 mm, tweeter de 28 mm, midrange de domo de 52 mm, mid-bass Esotar MSP de 17 cm y dos woofers Esotar2 MSP5 de 30 cm — con cortes a 350/1350/3000/13500 Hz. Gabinete terminado a mano en madera maciza con spikes de bronce. Discontinuado."
+  }
+}

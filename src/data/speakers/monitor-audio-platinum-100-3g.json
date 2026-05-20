@@ -1,0 +1,57 @@
+{
+  "id": "monitor-audio-platinum-100-3g",
+  "brand": "Monitor Audio",
+  "model": "Platinum 100",
+  "generation": "3G",
+  "series": "Platinum",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 398,
+    "widthMm": 225,
+    "depthMm": 325.6,
+    "weightKg": 15.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "MPD III planar ribbon",
+      "notes": "micro-pleated diaphragm transducer (ribbon-style, size N/A)"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 152,
+      "quantity": 1,
+      "material": "RDT III C-CAM"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 44,
+  "frequencyResponseHz": {
+    "min": 28,
+    "max": 60000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 85,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 150
+  },
+  "recommendedAmpW": {
+    "min": 75,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-platinum-100-3g-hero.jpg",
+    "front": "/speakers/monitor-audio-platinum-100-3g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/platinum-series-3g/platinum-100-3g/",
+  "priceUsd": 7599,
+  "description": {
+    "en": "A flagship-level stand-mount in the Platinum 3G line. The MPD III ribbon tweeter and an 8″ RDT III mid-bass cone are mounted in a sculpted, hand-finished cabinet built for vanishingly low coloration. One of the most resolving bookshelves Monitor Audio has ever made.",
+    "es": "Un stand-mount de nivel flagship dentro de la línea Platinum 3G. El tweeter de cinta MPD III y un cono mid-bass RDT III de 8″ van montados en un gabinete esculpido y terminado a mano construido para una coloración casi nula. Uno de los bookshelves más resolutivos que Monitor Audio haya hecho."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "focal-maestro-utopia-evo",
+  "brand": "Focal",
+  "series": "Utopia",
+  "generation": "Evo",
+  "model": "Maestro Utopia Evo",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1470,
+    "widthMm": 447,
+    "depthMm": 455,
+    "weightKg": 116
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IAL2 (Infinite Acoustic Loading) tweeter"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "W sandwich cone",
+      "notes": "Power Flower with NIC motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 270,
+      "quantity": 2,
+      "material": "W sandwich cone",
+      "notes": "Magnetic Damping System on the lower woofer"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 25,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 93,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.1,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 600
+  },
+  "images": {
+    "hero": "/speakers/focal-maestro-utopia-evo-hero.webp",
+    "front": "/speakers/focal-maestro-utopia-evo-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/maestro-utopia-evo",
+  "description": {
+    "en": "Three-way Utopia floorstander mating the IAL2 beryllium tweeter and a Power-Flower W-cone midrange with twin 270 mm W-cone woofers. Bi-amp-ready, with the Focus Time cabinet articulation that keeps every driver time-aligned to the listening seat. Note: the spec width (770 mm) includes a wide stabilising plinth — the rendered silhouette shows the cabinet itself.",
+    "es": "Floorstander Utopia de tres vías que combina el tweeter IAL2 en berilio y un midrange Power Flower con cono W junto a dos woofers de 270 mm en cono W. Listo para bi-amplificación, con la articulación Focus Time del gabinete alineando cada driver al punto de escucha. Nota: el ancho oficial (770 mm) incluye el plinto estabilizador; la silueta renderizada muestra sólo el cabinet."
+  }
+}

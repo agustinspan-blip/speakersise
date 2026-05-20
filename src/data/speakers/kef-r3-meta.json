@@ -1,0 +1,59 @@
+{
+  "id": "kef-r3-meta",
+  "brand": "KEF",
+  "series": "R",
+  "generation": "Meta",
+  "model": "R3 Meta",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 422,
+    "widthMm": 200,
+    "depthMm": 336,
+    "weightKg": 12.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 125,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q array — tweeter sits in the acoustic centre"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "hybrid aluminium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 58,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 180
+  },
+  "images": {
+    "hero": "/speakers/kef-r3-meta-hero.webp",
+    "front": "/speakers/kef-r3-meta-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/r3-meta",
+  "description": {
+    "en": "Three-way standmount built around the 12th-gen Uni-Q array — 25 mm MAT-treated tweeter sitting in a 125 mm aluminium midrange — paired with a dedicated 165 mm hybrid-aluminium woofer in a rear-ported cabinet. The R3 Meta brings R-series driver technology down to a bookshelf footprint.",
+    "es": "Bookshelf de tres vías construido en torno al array Uni-Q de 12ª generación — tweeter de 25 mm tratado con MAT centrado en un midrange de aluminio de 125 mm — junto a un woofer dedicado de 165 mm en cono híbrido de aluminio, con puerto trasero. El R3 Meta lleva la tecnología de la línea R al formato de un estante."
+  }
+}

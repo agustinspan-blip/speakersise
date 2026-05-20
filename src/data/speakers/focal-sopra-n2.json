@@ -1,0 +1,58 @@
+{
+  "id": "focal-sopra-n2",
+  "brand": "Focal",
+  "series": "Sopra",
+  "model": "Sopra N°2",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1190,
+    "widthMm": 333,
+    "depthMm": 540,
+    "weightKg": 55
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IHL (Infinite Horn Loading) — Sopra-line tweeter"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "W sandwich cone",
+      "notes": "TMD suspension + NIC motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 2,
+      "material": "W sandwich cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 34,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 91,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.1,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/focal-sopra-n2-hero.webp",
+    "front": "/speakers/focal-sopra-n2-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/sopra-n2",
+  "description": {
+    "en": "Mid-sized three-way floorstander of the Sopra line — 27 mm IHL pure-beryllium tweeter and 165 mm W-cone midrange (TMD + NIC) paired with twin 180 mm W-cone woofers. Handcrafted in France in a front-ported cabinet sized for rooms of 30–70 m².",
+    "es": "Floorstander de tres vías de tamaño medio de la línea Sopra — tweeter IHL de 27 mm en berilio puro y midrange de 165 mm en cono W (TMD + NIC) junto a dos woofers de 180 mm en cono W. Construido a mano en Francia en un gabinete con puerto frontal pensado para salas de 30–70 m²."
+  }
+}

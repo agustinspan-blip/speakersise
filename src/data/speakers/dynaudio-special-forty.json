@@ -1,0 +1,48 @@
+{
+  "id": "dynaudio-special-forty",
+  "brand": "Dynaudio",
+  "model": "Special Forty",
+  "series": "Editions",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 360,
+    "widthMm": 198,
+    "depthMm": 322,
+    "weightKg": 8.1
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Esotar Forty soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 170,
+      "quantity": 1,
+      "material": "MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 41,
+    "max": 23000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 86,
+  "impedanceOhm": 6,
+  "powerHandlingW": {
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-special-forty-hero.png",
+    "front": "/speakers/dynaudio-special-forty-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/special-forty",
+  "description": {
+    "en": "A 40th-anniversary stand-mount commemorative model. The Special Forty pairs the Esotar Forty 28 mm soft-dome tweeter — derived from the Esotar2 lineage — with a 17 cm MSP mid-bass driver, crossed at 2 kHz with a 1st-order topology and a rear bass-reflex port. Hand-built in Skanderborg.",
+    "es": "Un stand-mount conmemorativo del 40 aniversario. El Special Forty combina el tweeter de domo suave Esotar Forty de 28 mm — derivado del linaje Esotar2 — con un mid-bass MSP de 17 cm, acoplados a 2 kHz con topología de primer orden y puerto bass-reflex trasero. Construido a mano en Skanderborg."
+  }
+}

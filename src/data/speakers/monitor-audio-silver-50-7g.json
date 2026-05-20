@@ -1,0 +1,55 @@
+{
+  "id": "monitor-audio-silver-50-7g",
+  "brand": "Monitor Audio",
+  "model": "Silver 50",
+  "generation": "7G",
+  "series": "Silver",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 282,
+    "widthMm": 165,
+    "depthMm": 272,
+    "weightKg": 5.6
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "C-CAM Gold Dome with UD Waveguide II"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "C-CAM RST II"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 58,
+  "frequencyResponseHz": {
+    "min": 47,
+    "max": 35000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 86,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.9,
+  "powerHandlingW": {
+    "max": 100
+  },
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-silver-50-7g-hero.jpg",
+    "front": "/speakers/monitor-audio-silver-50-7g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/product-ranges/silver-series-7g/silver-50-7g/",
+  "description": {
+    "en": "The smallest Silver 7G — a 2-way stand-mount with the 25 mm C-CAM Gold Dome tweeter (UD Waveguide II) and a 5¼″ RST II mid-bass cone, crossed at 2.6 kHz. Rear HiVe II port tuned to 58 Hz makes it forgiving close to walls.",
+    "es": "El más chico de la línea Silver 7G — un stand-mount de dos vías con tweeter C-CAM de domo dorado de 25 mm (UD Waveguide II) y un cono mid-bass RST II de 5¼″, acoplados a 2,6 kHz. El puerto trasero HiVe II sintonizado a 58 Hz lo hace amigable cerca de paredes."
+  }
+}

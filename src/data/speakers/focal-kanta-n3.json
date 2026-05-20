@@ -1,0 +1,59 @@
+{
+  "id": "focal-kanta-n3",
+  "brand": "Focal",
+  "series": "Kanta",
+  "model": "Kanta N°3",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1280,
+    "widthMm": 381,
+    "depthMm": 520,
+    "weightKg": 46
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IAL3 tweeter — Kanta-line generation"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "flax cone",
+      "notes": "TMD suspension + NIC motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 210,
+      "quantity": 2,
+      "material": "flax cone",
+      "notes": "NIC motor"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 33,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 91,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.0,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 400
+  },
+  "images": {
+    "hero": "/speakers/focal-kanta-n3-hero.webp",
+    "front": "/speakers/focal-kanta-n3-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/kanta-n3",
+  "description": {
+    "en": "Flagship of the Kanta line — three-way floorstander pairing the IAL3 beryllium tweeter and a 165 mm flax midrange (TMD + NIC) with twin 210 mm flax woofers in a front-ported cabinet. High-density-polymer baffle and moulded wood rear shell, with the Kanta line's bold colour palette.",
+    "es": "Tope de gama de la línea Kanta — floorstander de tres vías que combina el tweeter IAL3 en berilio y un midrange de 165 mm en cono de lino (TMD + NIC) con dos woofers de 210 mm también en lino, en un gabinete con puerto frontal. Bafle de polímero de alta densidad y cuerpo moldeado en madera, con la paleta de colores llamativa característica de la línea Kanta."
+  }
+}

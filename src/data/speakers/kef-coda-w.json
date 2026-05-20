@@ -1,0 +1,62 @@
+{
+  "id": "kef-coda-w",
+  "brand": "KEF",
+  "series": "Coda",
+  "model": "Coda W",
+  "type": "bookshelf",
+  "powerType": "active",
+  "dimensions": {
+    "heightMm": 285,
+    "widthMm": 168,
+    "depthMm": 268,
+    "weightKg": 5.65
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "magnesium-aluminium alloy cone"
+    }
+  ],
+  "frequencyResponseHz": {
+    "min": 41,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "active": {
+    "amplification": [
+      { "driverRole": "tweeter", "powerW": 30, "amplifierClass": "D" },
+      { "driverRole": "mid-bass", "powerW": 70, "amplifierClass": "D" }
+    ],
+    "totalAmpPowerW": 200,
+    "maxSplDb": 102,
+    "wiredInputs": [
+      "hdmi-arc",
+      "optical",
+      "usb-audio",
+      "rca-analog",
+      "rca-phono"
+    ],
+    "wirelessProtocols": ["bluetooth"],
+    "outputs": ["rca-sub"],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": false
+  },
+  "images": {
+    "hero": "/speakers/kef-coda-w-hero.webp",
+    "front": "/speakers/kef-coda-w-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/coda-w",
+  "description": {
+    "en": "Stand-mount active pair pitched at the turntable-first listener — Bluetooth 5.4 (aptX Lossless) is the only wireless input, complemented by HDMI ARC, optical, USB-C and a built-in MM phono pre. 12th-gen Uni-Q driver in a compact cabinet; the two speakers link over a wired USB-C connection.",
+    "es": "Bookshelf activo orientado al usuario centrado en el plato — Bluetooth 5.4 (aptX Lossless) es la única entrada inalámbrica, acompañada por HDMI ARC, óptica, USB-C y un pre de phono MM integrado. Driver Uni-Q de 12ª generación en un gabinete compacto; los dos parlantes se vinculan entre sí por USB-C cableado."
+  }
+}

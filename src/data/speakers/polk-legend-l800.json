@@ -1,0 +1,59 @@
+{
+  "id": "polk-legend-l800",
+  "brand": "Polk",
+  "series": "Legend",
+  "model": "Legend L800",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1235,
+    "widthMm": 461,
+    "depthMm": 441,
+    "weightKg": 53.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 2,
+      "material": "Pinnacle ring radiator",
+      "notes": "Main + SDA-PRO outboard tweeter for stereo-dimensional imaging"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 133,
+      "quantity": 2,
+      "material": "Turbine cone",
+      "notes": "Main + SDA-PRO outboard midrange; 5.25\" each"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 254,
+      "quantity": 2,
+      "material": "polypropylene cone",
+      "notes": "10\" mid/woofer; Power Port vented section"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 32,
+    "max": 38000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 2.8,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/polk-legend-l800-hero.webp",
+    "front": "/speakers/polk-legend-l800-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en-us/product/archive/legend-l800-left/125058.html",
+  "description": {
+    "en": "Reference flagship of the Legend line, using SDA-PRO (Stereo Dimensional Array) topology — main tweeter + Turbine midrange pair on the front baffle plus an outboard pair on the outer edge that cancels interaural acoustic crosstalk for three-dimensional imaging. Twin 10\" polypropylene woofers in a Power-Port-vented section; sold as a handed L/R pair.",
+    "es": "Insignia tope de gama de la línea Legend, con topología SDA-PRO (Stereo Dimensional Array) — par principal de tweeter + midrange Turbine al frente más un par exterior que cancela el crosstalk acústico interaural para una imagen tridimensional. Dos woofers de polipropileno de 10\" en sección Power Port vented; se vende como par L/R handed."
+  }
+}

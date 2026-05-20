@@ -1,0 +1,56 @@
+{
+  "id": "dali-epicon-6",
+  "brand": "Dali",
+  "model": "Epicon 6",
+  "series": "Epicon",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1025,
+    "widthMm": 232,
+    "depthMm": 441,
+    "weightKg": 30
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 55,
+      "quantity": 1,
+      "material": "ribbon",
+      "notes": "10 × 55 mm planar ribbon"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "soft textile dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "wood-fibre cone (SMC)"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 35,
+    "max": 30000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 5,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/dali-epicon-6-hero.png",
+    "front": "/speakers/dali-epicon-6-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/epicon/epicon-6",
+  "description": {
+    "en": "A three-way floorstander in the Epicon range, pairing the brand's 28 mm soft-dome / 17×45 mm ribbon hybrid tweeter module with two 6½″ wood-fibre woofers. Together with a sculpted, heavily braced cabinet they target wide dispersion, low distortion and effortless dynamics in medium-to-large rooms.",
+    "es": "Floorstander de tres vías de la línea Epicon. Combina el módulo híbrido de Dali — domo suave de 28 mm más cinta de 17×45 mm — con dos woofers de 6½″ con membrana de fibra de madera. El gabinete esculpido y fuertemente reforzado busca dispersión amplia, baja distorsión y dinámica sin esfuerzo en salas medianas y grandes."
+  }
+}

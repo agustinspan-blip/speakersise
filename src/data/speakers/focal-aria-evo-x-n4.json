@@ -1,0 +1,58 @@
+{
+  "id": "focal-aria-evo-x-n4",
+  "brand": "Focal",
+  "series": "Aria",
+  "generation": "Evo X",
+  "model": "Aria Evo X N°4",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1150,
+    "widthMm": 369,
+    "depthMm": 371,
+    "weightKg": 35
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "TAM aluminium-magnesium inverted dome",
+      "notes": "TAM with M-profile — Evo X-generation tweeter"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "flax cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 210,
+      "quantity": 2,
+      "material": "flax cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 37,
+    "max": 30000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 92.5,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 2.5,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 350
+  },
+  "images": {
+    "hero": "/speakers/focal-aria-evo-x-n4-hero.webp",
+    "front": "/speakers/focal-aria-evo-x-n4-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/aria-evo-x-n4",
+  "description": {
+    "en": "Flagship of the Aria Evo X line — three-way floorstander combining the 25 mm TAM Al/Mg tweeter and 165 mm flax midrange with twin 210 mm (8\") flax bass drivers in a front-ported MDF cabinet on an aluminium-alloy base.",
+    "es": "Tope de gama de la línea Aria Evo X — floorstander de tres vías que combina el tweeter TAM Al/Mg de 25 mm y el midrange de 165 mm en cono de lino con dos woofers de 210 mm (8\") también en lino, en un gabinete MDF con puerto frontal sobre base de aleación de aluminio."
+  }
+}

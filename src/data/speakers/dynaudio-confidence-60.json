@@ -1,0 +1,56 @@
+{
+  "id": "dynaudio-confidence-60",
+  "brand": "Dynaudio",
+  "model": "Confidence 60",
+  "series": "Confidence",
+  "type": "floorstander",
+  "powerType": "passive",
+  "year": 2019,
+  "dimensions": {
+    "heightMm": 1679,
+    "widthMm": 432,
+    "depthMm": 517,
+    "weightKg": 66.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Esotar 3 soft dome with DDC Lens"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 2,
+      "material": "MSP with Horizon Surround"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 230,
+      "quantity": 2,
+      "material": "NeoTec MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 29,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.7,
+  "powerHandlingW": {
+    "max": 600
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-confidence-60-hero.png",
+    "front": "/speakers/dynaudio-confidence-60-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/confidence/confidence-60",
+  "description": {
+    "en": "Flagship of the Confidence series — a full 3-way floorstander pairing the Esotar3 tweeter and twin 15 cm MSP midranges with two 23 cm NeoTec MSP woofers. The Compex composite baffle and DDC Lens waveguide preserve directivity even at the cabinet's larger scale, targeting effortless dynamics in serious listening rooms.",
+    "es": "El tope de la serie Confidence — un floorstander completo de tres vías que combina el tweeter Esotar3 y dos midranges MSP de 15 cm con dos woofers NeoTec MSP de 23 cm. El bafle compuesto Compex y la guía DDC Lens preservan la directividad incluso a la escala mayor del gabinete, apuntando a una dinámica sin esfuerzo en salas serias."
+  }
+}

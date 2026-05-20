@@ -1,0 +1,65 @@
+{
+  "id": "dali-epikore-11",
+  "brand": "Dali",
+  "model": "Epikore 11",
+  "series": "Epikore",
+  "type": "floorstander",
+  "powerType": "passive",
+  "year": 2023,
+  "dimensions": {
+    "heightMm": 1602,
+    "widthMm": 433,
+    "depthMm": 554,
+    "weightKg": 72
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 55,
+      "quantity": 1,
+      "material": "planar magnetostatic",
+      "notes": "10 × 55 mm planar ribbon — part of the EVO-K Hybrid Tweeter module"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 35,
+      "quantity": 1,
+      "material": "soft woven-fabric dome",
+      "notes": "Part of the EVO-K Hybrid Tweeter module"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Clarity Cone paper and wood-fibre, SMC Gen-2 motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 200,
+      "quantity": 4,
+      "material": "Clarity Cone paper and wood-fibre, SMC Gen-2 motor"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 24,
+  "frequencyResponseHz": {
+    "min": 29,
+    "max": 34000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 1000
+  },
+  "images": {
+    "hero": "/speakers/dali-epikore-11-hero.png",
+    "front": "/speakers/dali-epikore-11-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/epikore/epikore-11/",
+  "description": {
+    "en": "The largest Epikore — a 4½-way floorstander built around four 8″ Clarity-Cone woofers, a 6½″ midrange and the EVO-K Hybrid Tweeter module (35 mm soft dome plus 10 × 55 mm planar ribbon) inherited from the flagship Kore. Curved cabinet with rear bass-reflex tuned to 24 Hz, 116 dB max SPL and a 40–1000 W amp window.",
+    "es": "El más grande de la línea Epikore — un floorstander de 4½ vías construido alrededor de cuatro woofers Clarity Cone de 8″, un midrange de 6½″ y el módulo EVO-K Hybrid Tweeter (domo suave de 35 mm más cinta plana de 10 × 55 mm) heredado del Kore tope de gama. Gabinete curvado con bass-reflex trasero sintonizado a 24 Hz, 116 dB SPL máx. y un rango de amp de 40–1000 W."
+  }
+}

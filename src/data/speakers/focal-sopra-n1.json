@@ -1,0 +1,52 @@
+{
+  "id": "focal-sopra-n1",
+  "brand": "Focal",
+  "series": "Sopra",
+  "model": "Sopra N°1",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 425,
+    "widthMm": 252,
+    "depthMm": 396,
+    "weightKg": 16
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IHL (Infinite Horn Loading) — Sopra-line tweeter"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "W sandwich cone",
+      "notes": "TMD suspension + NIC motor"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 45,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.9,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/focal-sopra-n1-hero.webp",
+    "front": "/speakers/focal-sopra-n1-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/sopra-n1",
+  "description": {
+    "en": "Two-way standmount of the Sopra line, packing the 27 mm IHL pure-beryllium tweeter and a 165 mm W-cone mid-bass with TMD suspension and NIC motor into a compact front-ported cabinet. Aimed at rooms under 25 m² where a slim, high-sensitivity standmount earns its keep.",
+    "es": "Bookshelf de dos vías de la línea Sopra que reúne el tweeter IHL de 27 mm en berilio puro y un mid-bass de 165 mm en cono W con suspensión TMD y motor NIC en un gabinete compacto con puerto frontal. Pensado para salas de menos de 25 m² donde un bookshelf de alta sensibilidad rinde mejor."
+  }
+}

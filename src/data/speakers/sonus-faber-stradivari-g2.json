@@ -1,0 +1,58 @@
+{
+  "id": "sonus-faber-stradivari-g2",
+  "brand": "Sonus Faber",
+  "series": "Homage",
+  "generation": "G2",
+  "model": "Stradivari G2",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1374,
+    "widthMm": 707,
+    "depthMm": 428,
+    "weightKg": 81.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "H28 XTR soft dome with DAD",
+      "notes": "High-power neodymium, extended range"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Neodymium magnet system; sealed Intono sub-enclosure"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 260,
+      "quantity": 2,
+      "material": "paper cone",
+      "notes": "Dual-drive motor; vented 'Stealth Ultraflex' box"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 25,
+    "max": 35000
+  },
+  "sensitivityDb": 92,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 100,
+    "max": 600
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-stradivari-g2-hero.webp",
+    "front": "/speakers/sonus-faber-stradivari-g2-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/stradivari/tech-specs",
+  "description": {
+    "en": "Second-generation Stradivari — the wide-baffle Homage flagship in a 707 mm-wide elliptical cabinet, pairing the H28 DAD tweeter and a 150 mm paper midrange (sealed Intono) with twin 260 mm dual-drive paper woofers in the 'Stealth Ultraflex' vented system. 92 dB sensitivity and 25 Hz – 35 kHz reach.",
+    "es": "Segunda generación del Stradivari — el flagship Homage de bafle ancho en un gabinete elíptico de 707 mm de ancho, que combina el tweeter H28 DAD y un midrange de papel de 150 mm (Intono sellado) con dos woofers de papel de 260 mm de doble motor en el sistema vented 'Stealth Ultraflex'. Sensibilidad de 92 dB y alcance de 25 Hz a 35 kHz."
+  }
+}

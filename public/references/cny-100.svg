@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Stylised "¥100" reference card for the Chinese renminbi 100-yuan note.
+  Modern PRC banknote photographs are not available under a free licence on
+  Wikimedia Commons, so this placeholder uses the distinctive red palette and
+  layout of the real note without copying any protected artwork.
+  Real note dimensions: 155 × 77 mm. Rotated 90° (vertical) to match the
+  other banknote images on the comparison page.
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 770 1550"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <defs>
+    <linearGradient id="cny-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c1322f" />
+      <stop offset="100%" stop-color="#9a2422" />
+    </linearGradient>
+  </defs>
+  <!-- card body -->
+  <rect width="770" height="1550" rx="18" fill="url(#cny-bg)" />
+  <!-- ornate border -->
+  <rect x="18" y="18" width="734" height="1514" rx="10" fill="none"
+        stroke="#f0c97a" stroke-width="3" />
+  <rect x="42" y="42" width="686" height="1466" rx="6" fill="none"
+        stroke="#f0c97a" stroke-width="1" opacity="0.6" />
+  <!-- All banknote-style content is laid out as if horizontal (1550 wide ×
+       770 tall) and rotated 90° clockwise into the vertical viewBox. -->
+  <g transform="translate(770 0) rotate(90)">
+    <!-- watermark portrait area -->
+    <ellipse cx="380" cy="430" rx="170" ry="220" fill="#7a1c1a" opacity="0.4" />
+    <!-- bank name (Chinese) -->
+    <text x="775" y="120" font-family="serif" font-size="60" font-weight="700"
+          text-anchor="middle" fill="#f7e6c1" letter-spacing="14">
+      中国人民银行
+    </text>
+    <!-- denomination — large numerals corners -->
+    <text x="120" y="220" font-family="serif" font-size="160" font-weight="700"
+          fill="#f0c97a">100</text>
+    <text x="1430" y="700" font-family="serif" font-size="160" font-weight="700"
+          text-anchor="end" fill="#f0c97a">100</text>
+    <!-- denomination word -->
+    <text x="775" y="540" font-family="serif" font-size="74" font-weight="600"
+          text-anchor="middle" fill="#f7e6c1" letter-spacing="20">
+      壹佰圆
+    </text>
+    <!-- "¥ 100" with currency mark -->
+    <text x="1100" y="280" font-family="sans-serif" font-size="120"
+          font-weight="700" fill="#f7e6c1">
+      ¥100
+    </text>
+    <!-- small print: People's Bank of China -->
+    <text x="775" y="700" font-family="sans-serif" font-size="34"
+          text-anchor="middle" fill="#f0c97a" opacity="0.85">
+      THE PEOPLE&#39;S BANK OF CHINA
+    </text>
+  </g>
+</svg>

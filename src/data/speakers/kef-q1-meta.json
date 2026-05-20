@@ -1,0 +1,53 @@
+{
+  "id": "kef-q1-meta",
+  "brand": "KEF",
+  "series": "Q",
+  "generation": "Meta",
+  "model": "Q1 Meta",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 302,
+    "widthMm": 180,
+    "depthMm": 277,
+    "weightKg": 6.1
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q array — tweeter sits in the acoustic centre"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 51,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 86,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 10,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/kef-q1-meta-hero.webp",
+    "front": "/speakers/kef-q1-meta-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/q1-meta",
+  "description": {
+    "en": "Entry-level two-way bookshelf in the Q Meta line, built around the 12th-gen Uni-Q array — a 25 mm MAT-treated aluminium dome sitting in the acoustic centre of a 130 mm aluminium mid-bass. Rear-ported cabinet suited to compact rooms and desktop setups.",
+    "es": "Bookshelf de entrada de dos vías de la línea Q Meta, construido en torno al array Uni-Q de 12ª generación — un domo de aluminio tratado con MAT de 25 mm ubicado en el centro acústico de un mid-bass de aluminio de 130 mm. Gabinete con puerto trasero, ideal para salas chicas y setups de escritorio."
+  }
+}

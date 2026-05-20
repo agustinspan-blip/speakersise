@@ -1,0 +1,52 @@
+{
+  "id": "polk-legend-l200",
+  "brand": "Polk",
+  "series": "Legend",
+  "model": "Legend L200",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 398,
+    "widthMm": 214,
+    "depthMm": 338,
+    "weightKg": 9.98
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Pinnacle ring radiator"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Turbine cone",
+      "notes": "6.5\" foam-core turbine geometry"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 50000
+  },
+  "sensitivityDb": 85.5,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.6,
+  "recommendedAmpW": {
+    "max": 80
+  },
+  "powerHandlingW": {
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/polk-legend-l200-hero.webp",
+    "front": "/speakers/polk-legend-l200-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en-us/product/archive/archive-bookshelf-speakers/legend-l200/125055.html",
+  "description": {
+    "en": "Flagship Legend bookshelf — 1\" Pinnacle ring-radiator tweeter and a 6.5\" Turbine-cone mid-bass in a Power-Port-vented cabinet. Hi-Res Audio certified, with deeper bass extension than the L100 and 200 W peak handling.",
+    "es": "Bookshelf tope de gama de la línea Legend — tweeter Pinnacle de anillo radiante de 1\" y un mid-bass Turbine Cone de 6,5\" en un gabinete con Power Port. Certificado Hi-Res Audio, con extensión de graves más profunda que el L100 y 200 W de pico."
+  }
+}

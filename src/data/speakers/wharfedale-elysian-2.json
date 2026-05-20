@@ -1,0 +1,57 @@
+{
+  "id": "wharfedale-elysian-2",
+  "brand": "Wharfedale",
+  "model": "Elysian 2",
+  "series": "Elysian",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 700,
+    "widthMm": 303,
+    "depthMm": 462,
+    "weightKg": 30.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 90,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "27 × 90 mm Air Motion Transformer"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "coated glass-fibre matrix cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 220,
+      "quantity": 1,
+      "material": "coated glass-fibre matrix cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 35,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.6,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-elysian-2-hero.png",
+    "front": "/speakers/wharfedale-elysian-2-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/elysian-series/products/elysian-2",
+  "description": {
+    "en": "A three-way standmount of significant scale, with a dedicated 6″ midrange between the AMT tweeter and an 8.5″ woofer. The PROS-built cabinet, hand-polished piano-lacquer finish and SLPP port reach down to 35 Hz — closer to a floorstander than to a typical bookshelf in both presence and bass extension.",
+    "es": "Un standmount de tres vías de gran escala, con mediano dedicado de 6″ entre el AMT y un woofer de 8.5″. El gabinete PROS, la terminación piano-lacquer pulida a mano y el puerto SLPP llegan hasta 35 Hz — más cerca de un floorstander que de un bookshelf típico, tanto en presencia como en extensión grave."
+  }
+}

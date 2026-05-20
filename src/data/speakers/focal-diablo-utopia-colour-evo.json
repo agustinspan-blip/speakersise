@@ -1,0 +1,53 @@
+{
+  "id": "focal-diablo-utopia-colour-evo",
+  "brand": "Focal",
+  "series": "Utopia",
+  "generation": "Colour Evo",
+  "model": "Diablo Utopia Colour Evo",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 431,
+    "widthMm": 229,
+    "depthMm": 427,
+    "weightKg": 39
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IAL2 (Infinite Acoustic Loading) tweeter"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "W sandwich cone",
+      "notes": "Power Flower LDC (Low Dynamic Compression) driver"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 44,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4.0,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/focal-diablo-utopia-colour-evo-hero.webp",
+    "front": "/speakers/focal-diablo-utopia-colour-evo-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/diablo-utopia-colour-evo",
+  "description": {
+    "en": "Two-way standmount entry-point to the Utopia line — Power-Flower W-cone mid-bass paired with the IAL2 27 mm beryllium tweeter in a compact front-ported cabinet. The Colour Evo trim adds automotive-grade lacquer finishes alongside the classic wood veneers.",
+    "es": "Bookshelf de dos vías, puerta de entrada a la línea Utopia — mid-bass Power Flower con cono W junto al tweeter IAL2 de berilio de 27 mm en un gabinete compacto con puerto frontal. La terminación Colour Evo suma lacas de grado automotor además de los chapados clásicos en madera."
+  }
+}

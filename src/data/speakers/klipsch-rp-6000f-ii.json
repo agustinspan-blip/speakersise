@@ -1,0 +1,51 @@
+{
+  "id": "klipsch-rp-6000f-ii",
+  "brand": "Klipsch",
+  "series": "Reference Premiere",
+  "generation": "II",
+  "model": "RP-6000F II",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1006,
+    "widthMm": 241,
+    "depthMm": 446,
+    "weightKg": 22.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "titanium LTS dome",
+      "notes": "Vented; Hybrid Cross-Section Expanded Tractrix horn"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "Cerametallic cone",
+      "notes": "Faraday rings"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 96,
+  "impedanceOhm": 8,
+  "powerHandlingW": {
+    "max": 125
+  },
+  "images": {
+    "hero": "/speakers/klipsch-rp-6000f-ii-hero.webp",
+    "front": "/speakers/klipsch-rp-6000f-ii-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/rp-6000f-ii-floorstanding-speaker",
+  "description": {
+    "en": "Mid-sized two-way floorstander of the Reference Premiere II line — 1\" titanium LTS tweeter in a Hybrid Cross-Section Tractrix horn paired with twin 6.5\" Cerametallic woofers with Faraday rings. Dual rear Tractrix ports, 96 dB sensitivity and 500 W peak handling.",
+    "es": "Floorstander de dos vías de tamaño medio de la línea Reference Premiere II — tweeter LTS de titanio de 1\" en horn Tractrix Hybrid Cross-Section junto a dos woofers Cerametallic de 6,5\" con anillos Faraday. Doble puerto trasero Tractrix, 96 dB de sensibilidad y 500 W de pico."
+  }
+}

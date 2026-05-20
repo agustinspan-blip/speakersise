@@ -1,0 +1,55 @@
+{
+  "id": "canton-vento-101",
+  "brand": "Canton",
+  "series": "Vento",
+  "model": "Vento 101",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1155,
+    "widthMm": 329,
+    "depthMm": 420,
+    "weightKg": 39
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Black Ceramic dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 174,
+      "quantity": 1,
+      "material": "ATB cone",
+      "notes": "Aluminium Titan Black composite"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 220,
+      "quantity": 2,
+      "material": "ATB cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 20,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 280
+  },
+  "images": {
+    "hero": "/speakers/canton-vento-101-hero.webp",
+    "front": "/speakers/canton-vento-101-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/tower-speaker/products/type/passive-loudspeakers/vento-101/04575",
+  "description": {
+    "en": "Flagship 3-way Vento floorstander — 25 mm Black-Ceramic tweeter, 174 mm ATB midrange and twin 220 mm ATB woofers in a down-firing bass-reflex cabinet. Bi-wire/bi-amp terminals; crossover points 170 Hz / 3.2 kHz and 500 W music load capacity.",
+    "es": "Floorstander Vento tope de gama de 3 vías — tweeter Black Ceramic de 25 mm, midrange ATB de 174 mm y dos woofers ATB de 220 mm en gabinete con reflex inferior. Terminales bi-wire/bi-amp; crossovers a 170 Hz / 3,2 kHz y capacidad de pico 500 W."
+  }
+}

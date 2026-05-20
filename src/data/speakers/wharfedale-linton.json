@@ -1,0 +1,58 @@
+{
+  "id": "wharfedale-linton",
+  "brand": "Wharfedale",
+  "model": "Linton",
+  "generation": "85th Anniversary",
+  "series": "Heritage",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "year": 2023,
+  "dimensions": {
+    "heightMm": 565,
+    "widthMm": 300,
+    "depthMm": 360,
+    "weightKg": 18.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 135,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 200,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 40,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 90,
+  "impedanceOhm": 6,
+  "impedanceMinOhm": 3.5,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-linton-hero.png",
+    "front": "/speakers/wharfedale-linton-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/products/linton",
+  "description": {
+    "en": "An anniversary recreation of the iconic 1965 Linton, now a three-way standmount with an 8\" woven-Kevlar woofer, 5\" Kevlar midrange and 1\" soft-dome tweeter. The hand-veneered cabinet and optional matching stands preserve the vintage silhouette while modern crossover and driver work push the bass down to 35 Hz.",
+    "es": "Una reedición aniversario del icónico Linton de 1965, ahora un standmount de tres vías con woofer de 8\" en Kevlar tejido, mediano de 5\" en Kevlar y tweeter de 1\" con domo suave. El gabinete chapado a mano y los stands opcionales mantienen la silueta vintage, mientras que el crossover y los nuevos drivers bajan la respuesta hasta 35 Hz."
+  }
+}

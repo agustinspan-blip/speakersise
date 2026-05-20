@@ -1,0 +1,49 @@
+{
+  "id": "polk-legend-l100",
+  "brand": "Polk",
+  "series": "Legend",
+  "model": "Legend L100",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 347,
+    "widthMm": 186,
+    "depthMm": 287,
+    "weightKg": 7.67
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Pinnacle ring radiator"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "Turbine cone",
+      "notes": "5.25\" foam-core turbine geometry"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 43,
+    "max": 50000
+  },
+  "sensitivityDb": 85.5,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3,
+  "recommendedAmpW": {
+    "max": 70
+  },
+  "images": {
+    "hero": "/speakers/polk-legend-l100-hero.webp",
+    "front": "/speakers/polk-legend-l100-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en-us/product/archive/archive-bookshelf-speakers/legend-l100/125054.html",
+  "description": {
+    "en": "Compact two-way Legend bookshelf — 1\" Pinnacle ring-radiator tweeter and a 5.25\" Turbine-cone mid-bass in a Power-Port-vented cabinet. Hi-Res Audio certified to 50 kHz; the smallest of the Legend line.",
+    "es": "Bookshelf compacto de dos vías de la línea Legend — tweeter Pinnacle de anillo radiante de 1\" y un mid-bass Turbine Cone de 5,25\" en un gabinete con Power Port. Certificado Hi-Res Audio hasta 50 kHz; el más chico de la línea Legend."
+  }
+}

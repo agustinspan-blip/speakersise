@@ -1,0 +1,59 @@
+{
+  "id": "kef-r7-meta",
+  "brand": "KEF",
+  "series": "R",
+  "generation": "Meta",
+  "model": "R7 Meta",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1109,
+    "widthMm": 311,
+    "depthMm": 384,
+    "weightKg": 29.3
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 125,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q array — tweeter sits in the acoustic centre"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "hybrid aluminium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 48,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/kef-r7-meta-hero.webp",
+    "front": "/speakers/kef-r7-meta-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/r7-meta",
+  "description": {
+    "en": "Mid-sized three-way floorstander pairing the 12th-gen Uni-Q array — 25 mm MAT-treated tweeter coaxial with a 125 mm aluminium midrange — with twin 165 mm hybrid-aluminium woofers in a rear-ported cabinet. Sits between the R5 and the flagship R11 Meta in the R Meta line.",
+    "es": "Floorstander de tres vías de tamaño medio que combina el array Uni-Q de 12ª generación — tweeter de 25 mm tratado con MAT coaxial al midrange de aluminio de 125 mm — con dos woofers de 165 mm en cono híbrido de aluminio, en un gabinete con puerto trasero. Ubicado entre el R5 y el R11 Meta tope de la línea."
+  }
+}

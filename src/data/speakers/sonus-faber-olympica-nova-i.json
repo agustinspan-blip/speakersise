@@ -1,0 +1,50 @@
+{
+  "id": "sonus-faber-olympica-nova-i",
+  "brand": "Sonus Faber",
+  "series": "Olympica Nova",
+  "model": "Olympica Nova I",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 355,
+    "widthMm": 194,
+    "depthMm": 395,
+    "weightKg": 10.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "H28 XTR3 soft dome",
+      "notes": "Neodymium magnet"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "MW15 paper cone",
+      "notes": "CCAW voice coil; XTR2-04 motor"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 45,
+    "max": 35000
+  },
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 35,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-olympica-nova-i-hero.webp",
+    "front": "/speakers/sonus-faber-olympica-nova-i-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/olympica-nova-i/tech-specs",
+  "description": {
+    "en": "Two-way standmount of the Olympica Nova line — H28 XTR3 silk-dome tweeter and a 150 mm MW15 paper midwoofer with CCAW voice coil, in a lute-shaped cabinet using the proprietary 'Stealth Ultraflex' para-aperiodic vented system. 2.5 kHz crossover; optional matching stand brings the speaker to 1078 mm total.",
+    "es": "Bookshelf de dos vías de la línea Olympica Nova — tweeter de domo de seda H28 XTR3 y un midwoofer MW15 de 150 mm en cono de papel con bobina CCAW, en un gabinete con forma de laúd que usa el sistema propietario 'Stealth Ultraflex' para-aperiódico. Crossover a 2,5 kHz; el stand opcional lleva el conjunto a 1078 mm de altura total."
+  }
+}

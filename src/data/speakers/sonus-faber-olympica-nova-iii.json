@@ -1,0 +1,56 @@
+{
+  "id": "sonus-faber-olympica-nova-iii",
+  "brand": "Sonus Faber",
+  "series": "Olympica Nova",
+  "model": "Olympica Nova III",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1104,
+    "widthMm": 363,
+    "depthMm": 459,
+    "weightKg": 35
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "H28 XTR3 soft dome with DAD",
+      "notes": "Neodymium motor"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "MW15 paper cone",
+      "notes": "CCAW voice coil"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 2,
+      "material": "W18 paper cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 35,
+    "max": 35000
+  },
+  "sensitivityDb": 90,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-olympica-nova-iii-hero.webp",
+    "front": "/speakers/sonus-faber-olympica-nova-iii-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/olympica-nova-iii/tech-specs",
+  "description": {
+    "en": "Three-way floorstander of the Olympica Nova line — H28 XTR3 silk-dome tweeter with DAD, 150 mm MW15 paper midrange and twin 180 mm W18 paper woofers in a lute-shaped cabinet with the 'Stealth Ultraflex' para-aperiodic vented system.",
+    "es": "Floorstander de tres vías de la línea Olympica Nova — tweeter de domo de seda H28 XTR3 con DAD, midrange MW15 de papel de 150 mm y dos woofers W18 de papel de 180 mm, en un gabinete con forma de laúd con el sistema 'Stealth Ultraflex' para-aperiódico."
+  }
+}

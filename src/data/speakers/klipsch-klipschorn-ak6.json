@@ -1,0 +1,57 @@
+{
+  "id": "klipsch-klipschorn-ak6",
+  "brand": "Klipsch",
+  "series": "Heritage",
+  "generation": "AK6",
+  "model": "Klipschorn AK6",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1346,
+    "widthMm": 794,
+    "depthMm": 718,
+    "weightKg": 100
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "K-771-T polyimide compression diaphragm",
+      "notes": "Mated to a 90×40 Tractrix horn"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 51,
+      "quantity": 1,
+      "material": "K-55-X phenolic compression diaphragm",
+      "notes": "2-inch (5.08 cm) compression driver"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 381,
+      "quantity": 1,
+      "material": "K-33-E fiber-composite cone",
+      "notes": "15-inch woofer in a tri-hedral exponential folded horn — corner-loaded"
+    }
+  ],
+  "frequencyResponseHz": {
+    "min": 33,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 4,
+  "sensitivityDb": 105,
+  "impedanceOhm": 8,
+  "powerHandlingW": {
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/klipsch-klipschorn-ak6-hero.webp",
+    "front": "/speakers/klipsch-klipschorn-ak6-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/klipschorn-ak6",
+  "description": {
+    "en": "Continuously produced since 1946, the Klipschorn is Klipsch's iconic fully horn-loaded three-way floorstander designed to be corner-loaded — the room corners become part of the bass horn. The AK6 adds a fully enclosed cabinet (Birch plywood + MDF) at 105 dB sensitivity and 121 dB peak SPL.",
+    "es": "Producido sin interrupciones desde 1946, el Klipschorn es el icónico floorstander de tres vías totalmente horn-loaded de Klipsch diseñado para apoyarse en las esquinas — las paredes de la sala forman parte del horn de graves. El AK6 incorpora un gabinete totalmente cerrado (abedul + MDF) con 105 dB de sensibilidad y 121 dB de SPL pico."
+  }
+}

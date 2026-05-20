@@ -1,0 +1,51 @@
+{
+  "id": "klipsch-rp-500m-ii",
+  "brand": "Klipsch",
+  "series": "Reference Premiere",
+  "generation": "II",
+  "model": "RP-500M II",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 344,
+    "widthMm": 171,
+    "depthMm": 270,
+    "weightKg": 5.95
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "titanium LTS dome",
+      "notes": "Vented; Hybrid Cross-Section Expanded Tractrix horn"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "Cerametallic cone",
+      "notes": "Faraday ring; 5.25\" driver"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 50,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 92,
+  "impedanceOhm": 8,
+  "powerHandlingW": {
+    "max": 75
+  },
+  "images": {
+    "hero": "/speakers/klipsch-rp-500m-ii-hero.webp",
+    "front": "/speakers/klipsch-rp-500m-ii-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/rp-500m-ii-bookshelf-speakers",
+  "description": {
+    "en": "Compact two-way standmount of the Reference Premiere II line — 1\" titanium LTS tweeter in a Hybrid Cross-Section Tractrix horn paired with a 5.25\" Cerametallic woofer with Faraday ring. Internally-braced MDF cabinet with rear-firing Tractrix port; 92 dB sensitivity and 300 W peak handling.",
+    "es": "Bookshelf compacto de dos vías de la línea Reference Premiere II — tweeter LTS de titanio de 1\" en horn Tractrix Hybrid Cross-Section junto a un woofer Cerametallic de 5,25\" con anillo Faraday. Gabinete MDF reforzado con puerto trasero Tractrix; 92 dB de sensibilidad y 300 W de pico."
+  }
+}

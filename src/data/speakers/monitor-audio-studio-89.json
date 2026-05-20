@@ -1,0 +1,54 @@
+{
+  "id": "monitor-audio-studio-89",
+  "brand": "Monitor Audio",
+  "model": "Studio 89",
+  "series": "Studio",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 340,
+    "widthMm": 157,
+    "depthMm": 361,
+    "weightKg": 7.6
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "MPD III planar ribbon"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 108,
+      "quantity": 2,
+      "material": "RDT III C-CAM"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 58,
+  "frequencyResponseHz": {
+    "min": 48,
+    "max": 60000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 86,
+  "impedanceOhm": 6,
+  "impedanceMinOhm": 4.2,
+  "powerHandlingW": {
+    "max": 300
+  },
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-studio-89-hero.jpg",
+    "front": "/speakers/monitor-audio-studio-89-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/product-ranges/studio-89/studio-89/",
+  "description": {
+    "en": "A compact two-way bookshelf in MTM (mid-tweeter-mid) array — Monitor Audio's MPD III planar-ribbon tweeter flanked by two 4¼″ RDT III C-CAM drivers. Rear-ported and tuned to 58 Hz; crossover at 2.4 kHz. Builds on the brand's classic Studio lineage.",
+    "es": "Un bookshelf compacto de dos vías en arreglo MTM — el tweeter de cinta plana MPD III de Monitor Audio flanqueado por dos transductores RDT III C-CAM de 4¼″. Bass-reflex trasero sintonizado a 58 Hz; crossover a 2,4 kHz. Continúa el linaje clásico Studio de la marca."
+  }
+}

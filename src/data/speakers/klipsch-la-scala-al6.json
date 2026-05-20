@@ -1,0 +1,58 @@
+{
+  "id": "klipsch-la-scala-al6",
+  "brand": "Klipsch",
+  "series": "Heritage",
+  "generation": "AL6",
+  "model": "La Scala AL6",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 994,
+    "widthMm": 625,
+    "depthMm": 647,
+    "weightKg": 93
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "K-771 compression diaphragm",
+      "notes": "Extended phase plug on a K-792 horn"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 51,
+      "quantity": 1,
+      "material": "K-933-HP compression diaphragm",
+      "notes": "2-inch driver on a K-406M Tractrix horn"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 305,
+      "quantity": 1,
+      "material": "K-28 fiber-composite cone",
+      "notes": "12-inch woofer in a horn-loaded vented system"
+    }
+  ],
+  "frequencyResponseHz": {
+    "min": 40,
+    "max": 19000
+  },
+  "frequencyResponseToleranceDb": 4,
+  "sensitivityDb": 103,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.2,
+  "powerHandlingW": {
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/klipsch-la-scala-al6-hero.webp",
+    "front": "/speakers/klipsch-la-scala-al6-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/la-scala-al6-floorstanding-speaker",
+  "description": {
+    "en": "Latest evolution of the La Scala, with upgraded HF and MF compression drivers (K-771 on K-792 horn, K-933-HP on K-406M Tractrix horn) over a horn-loaded 12-inch K-28 woofer. Optional active DSP crossover; 103 dB sensitivity in a fully horn-loaded self-contained cabinet.",
+    "es": "Última evolución del La Scala, con drivers de compresión HF y MF actualizados (K-771 sobre horn K-792, K-933-HP sobre horn Tractrix K-406M) sobre un woofer K-28 de 12\" horn-loaded. Crossover DSP activo opcional; 103 dB de sensibilidad en un gabinete totalmente horn-loaded y autosuficiente."
+  }
+}

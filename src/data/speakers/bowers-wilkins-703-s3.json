@@ -1,0 +1,58 @@
+{
+  "id": "bowers-wilkins-703-s3",
+  "brand": "Bowers & Wilkins",
+  "series": "700",
+  "generation": "S3",
+  "model": "703 S3",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1117,
+    "widthMm": 290,
+    "depthMm": 372,
+    "weightKg": 28.81
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Carbon Dome",
+      "notes": "Decoupled Carbon Dome in Solid Body Tweeter-on-Top"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "Continuum cone FST"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "Aerofoil bass cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 46,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 90,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.1,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/bowers-wilkins-703-s3-hero.webp",
+    "front": "/speakers/bowers-wilkins-703-s3-front.png"
+  },
+  "sourceUrl": "https://www.bowerswilkins.com/en/product/loudspeakers/703-s3/FP43060P.html",
+  "description": {
+    "en": "Three-way floorstander combining a Solid Body Tweeter-on-Top with a Continuum-cone FST midrange and dual Aerofoil bass drivers. Rear-ported cabinet with Biomimetic Suspension delivers transparent imaging and authoritative low end in medium-to-large rooms.",
+    "es": "Floorstander de tres vías que combina el Solid Body Tweeter-on-Top con un midrange Continuum FST y dos woofers Aerofoil. El gabinete con puerto trasero y suspensión Biomimetic ofrece imagen transparente y graves contundentes en salas medianas a grandes."
+  }
+}

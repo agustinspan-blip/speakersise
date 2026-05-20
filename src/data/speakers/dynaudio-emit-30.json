@@ -1,0 +1,54 @@
+{
+  "id": "dynaudio-emit-30",
+  "brand": "Dynaudio",
+  "model": "Emit 30",
+  "series": "Emit",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 947,
+    "widthMm": 268,
+    "depthMm": 335,
+    "weightKg": 15.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Cerotar soft dome with Hexis"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 140,
+      "quantity": 1,
+      "material": "MSP cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 140,
+      "quantity": 1,
+      "material": "MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 45,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "max": 180
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-emit-30-hero.webp",
+    "front": "/speakers/dynaudio-emit-30-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/emit/emit-30",
+  "description": {
+    "en": "A compact 2½-way Emit floorstander pairing the 28 mm Cerotar tweeter with two 14 cm MSP cones — one mid-bass and one dedicated woofer. Rear double-flared port and 88 dB sensitivity make it an easy match for medium-sized rooms.",
+    "es": "Un floorstander Emit compacto de 2½ vías que combina el tweeter Cerotar de 28 mm con dos conos MSP de 14 cm — uno mid-bass y uno woofer dedicado. Puerto trasero doble cónico y 88 dB de sensibilidad — pareja fácil para salas medianas."
+  }
+}

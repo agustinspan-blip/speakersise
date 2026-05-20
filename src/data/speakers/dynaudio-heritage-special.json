@@ -1,0 +1,48 @@
+{
+  "id": "dynaudio-heritage-special",
+  "brand": "Dynaudio",
+  "model": "Heritage Special",
+  "series": "Heritage",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 385,
+    "widthMm": 208,
+    "depthMm": 337,
+    "weightKg": 11
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Esotar 3 soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 23000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 85,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-heritage-special-hero.jpg",
+    "front": "/speakers/dynaudio-heritage-special-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/heritage-collection/heritage-special",
+  "description": {
+    "en": "A two-way stand-mount built around the 28 mm Esotar 3 soft-dome tweeter and an 18 cm MSP mid-bass driver, paired through a 1st-order crossover at 2.2 kHz. Hand-finished walnut cabinet with the Heritage line's signature gold-stripe wordmark — Dynaudio's nod to its own classic Special models, made by hand in Skanderborg.",
+    "es": "Un stand-mount de dos vías construido alrededor del tweeter de domo suave Esotar 3 de 28 mm y un mid-bass MSP de 18 cm, acoplados por un crossover de primer orden a 2,2 kHz. Gabinete de nogal terminado a mano con el wordmark dorado característico de la línea Heritage — el homenaje de Dynaudio a sus propios Special clásicos, hecho a mano en Skanderborg."
+  }
+}

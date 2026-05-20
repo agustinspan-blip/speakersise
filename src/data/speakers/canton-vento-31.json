@@ -1,0 +1,49 @@
+{
+  "id": "canton-vento-31",
+  "brand": "Canton",
+  "series": "Vento",
+  "model": "Vento 31",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 400,
+    "widthMm": 206,
+    "depthMm": 350,
+    "weightKg": 10
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Black Ceramic dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 174,
+      "quantity": 1,
+      "material": "ATB cone",
+      "notes": "Aluminium Titan Black composite"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 27,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 80
+  },
+  "images": {
+    "hero": "/speakers/canton-vento-31-hero.webp",
+    "front": "/speakers/canton-vento-31-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/compact-speaker/vento-31/04587",
+  "description": {
+    "en": "Larger 2-way Vento bookshelf — 25 mm Black-Ceramic tweeter and a 174 mm ATB composite mid-bass in a rear-ported cabinet with 3 kHz crossover. 150 W music load capacity.",
+    "es": "Bookshelf Vento más grande de 2 vías — tweeter Black Ceramic de 25 mm y un mid-bass ATB compuesto de 174 mm en gabinete con puerto trasero y crossover a 3 kHz. Capacidad de pico 150 W."
+  }
+}

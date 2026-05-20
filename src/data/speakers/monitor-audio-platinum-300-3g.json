@@ -1,0 +1,63 @@
+{
+  "id": "monitor-audio-platinum-300-3g",
+  "brand": "Monitor Audio",
+  "model": "Platinum 300",
+  "generation": "3G",
+  "series": "Platinum",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1131.1,
+    "widthMm": 429.8,
+    "depthMm": 525,
+    "weightKg": 53.6
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "MPD III planar ribbon",
+      "notes": "micro-pleated diaphragm transducer (ribbon-style, size N/A)"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "RDT III C-CAM"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 203,
+      "quantity": 2,
+      "material": "RDT III C-CAM"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 32,
+  "frequencyResponseHz": {
+    "min": 17,
+    "max": 60000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 400
+  },
+  "recommendedAmpW": {
+    "min": 200,
+    "max": 800
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-platinum-300-3g-hero.jpg",
+    "front": "/speakers/monitor-audio-platinum-300-3g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/platinum-series-3g/platinum-300-3g/",
+  "priceUsd": 19999,
+  "description": {
+    "en": "A three-way Platinum 3G floorstander pairing the MPD III ribbon tweeter with a 4″ RDT III midrange and two 8″ RDT III woofers. The hand-finished, multi-layer cabinet and refined crossover deliver effortless scale and resolution in serious listening rooms.",
+    "es": "Un floorstander Platinum 3G de tres vías que combina el tweeter de cinta MPD III con un midrange RDT III de 4″ y dos woofers RDT III de 8″. El gabinete multicapa terminado a mano y el crossover refinado entregan escala y resolución sin esfuerzo en salas de escucha serias."
+  }
+}

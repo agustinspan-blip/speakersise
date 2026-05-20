@@ -1,0 +1,66 @@
+{
+  "id": "dutch-dutch-8c",
+  "brand": "Dutch & Dutch",
+  "model": "8c",
+  "type": "bookshelf",
+  "powerType": "active",
+  "year": 2017,
+  "dimensions": {
+    "heightMm": 485,
+    "widthMm": 270,
+    "depthMm": 380,
+    "weightKg": 26
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "aluminium-magnesium alloy dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 200,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Front-firing, acoustically-cardioid loaded"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 200,
+      "quantity": 2,
+      "material": "aluminium cone",
+      "notes": "Side-firing pair, sealed enclosure, DSP-corrected for room"
+    }
+  ],
+  "enclosure": "sealed",
+  "frequencyResponseHz": {
+    "min": 30,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 1,
+  "active": {
+    "amplification": [
+      { "driverRole": "tweeter", "powerW": 250, "amplifierClass": "D" },
+      { "driverRole": "midrange", "powerW": 250, "amplifierClass": "D" },
+      { "driverRole": "woofer", "powerW": 500, "amplifierClass": "D" }
+    ],
+    "totalAmpPowerW": 1000,
+    "maxSplDb": 106,
+    "maxSampleRateKhz": 192,
+    "maxBitDepth": 24,
+    "wiredInputs": ["xlr-analog", "aes-ebu", "ethernet"],
+    "wirelessProtocols": ["roon-ready"],
+    "outputs": ["xlr-sub"],
+    "roomCorrection": ["custom-dsp"]
+  },
+  "images": {
+    "hero": "/speakers/dutch-dutch-8c-hero.png",
+    "front": "/speakers/dutch-dutch-8c-front.png"
+  },
+  "sourceUrl": "https://dutchdutch.com/products/8c",
+  "description": {
+    "en": "Three-way active studio/HiFi monitor with sealed-LF and acoustic-cardioid MF radiation. Three Class-D amplifier stages (500/250/250 W) feed the side-firing woofer pair, the front 8″ midrange and the 1″ alloy-dome tweeter under linear-phase Linkwitz–Riley crossovers at 100 Hz and 1.25 kHz. Balanced XLR or AES3 inputs plus Ethernet for Roon and remote DSP/room correction; 106 dB continuous SPL @ 1 m in half-space.",
+    "es": "Monitor activo de tres vías para estudio o HiFi, con bajo en caja sellada y mediano de radiación cardioide acústica. Tres etapas Class D (500/250/250 W) alimentan el par de woofers laterales, el mediano de 8″ frontal y el tweeter de 1″ con domo de aleación, con crossovers Linkwitz–Riley de fase lineal a 100 Hz y 1,25 kHz. Entradas XLR balanceada y AES3 más Ethernet para Roon y control DSP/corrección de sala; 106 dB SPL continuo @ 1 m en media-espacio."
+  }
+}

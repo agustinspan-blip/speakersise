@@ -1,0 +1,49 @@
+{
+  "id": "dali-oberon-3",
+  "brand": "Dali",
+  "model": "Oberon 3",
+  "series": "Oberon",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 350,
+    "widthMm": 201,
+    "depthMm": 310,
+    "weightKg": 6.32
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "soft textile dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 178,
+      "quantity": 1,
+      "material": "wood-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 47,
+    "max": 26000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 6,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/dali-oberon-3-hero.png",
+    "front": "/speakers/dali-oberon-3-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/oberon/oberon-3",
+  "description": {
+    "en": "Step up from the Oberon 1: a slightly larger two-way bookshelf with a 7″ wood-fibre woofer for more bass extension and effortless midrange in real-world rooms. Same 29 mm soft-dome tweeter and the same easy-to-drive Dali signature.",
+    "es": "Un escalón sobre el Oberon 1: un bookshelf de dos vías algo más grande con un woofer de 7″ con membrana de fibra de madera, que aporta más extensión de graves y un medio sin esfuerzo en salas reales. Mismo tweeter de domo suave de 29 mm y la misma firma fácil de manejar de Dali."
+  }
+}

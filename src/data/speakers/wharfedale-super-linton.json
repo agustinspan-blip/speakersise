@@ -1,0 +1,57 @@
+{
+  "id": "wharfedale-super-linton",
+  "brand": "Wharfedale",
+  "model": "Super Linton",
+  "series": "Heritage",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "year": 2024,
+  "dimensions": {
+    "heightMm": 605,
+    "widthMm": 300,
+    "depthMm": 350,
+    "weightKg": 19.8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 135,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 200,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 39,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 90,
+  "impedanceOhm": 6,
+  "impedanceMinOhm": 3.9,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-super-linton-hero.png",
+    "front": "/speakers/wharfedale-super-linton-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/products/super-linton",
+  "description": {
+    "en": "A scaled-up Linton with redesigned drivers and crossover inside a larger hand-veneered cabinet, available in walnut, black oak or mahogany. The bigger enclosure and reworked motors push bass extension down to 32 Hz while keeping the classic Heritage proportions and 90 dB sensitivity.",
+    "es": "Un Linton agrandado, con drivers y crossover rediseñados dentro de un gabinete chapado a mano más grande, en walnut, black oak o mahogany. La caja mayor y los motores reformados llevan el grave hasta 32 Hz manteniendo las proporciones clásicas de la línea Heritage y los 90 dB de sensibilidad."
+  }
+}

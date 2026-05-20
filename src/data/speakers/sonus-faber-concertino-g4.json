@@ -1,0 +1,51 @@
+{
+  "id": "sonus-faber-concertino-g4",
+  "brand": "Sonus Faber",
+  "series": "Heritage",
+  "generation": "G4",
+  "model": "Concertino G4",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 314,
+    "widthMm": 212,
+    "depthMm": 297,
+    "weightKg": 6.6
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "DAD Arrow Point soft dome",
+      "notes": "Damped Apex Dome — Sonus Faber's signature tweeter"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 134,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Ferrite-magnet motor; vented cork enclosure"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 60,
+    "max": 25000
+  },
+  "sensitivityDb": 85,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-concertino-g4-hero.webp",
+    "front": "/speakers/sonus-faber-concertino-g4-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/concertino/tech-specs",
+  "description": {
+    "en": "Compact two-way bookshelf of the Heritage Collection, fourth-generation revival of the original Concertino. DAD Arrow Point tweeter and a 134 mm paper midwoofer inside a vented cork-lined cabinet; 1.7 kHz crossover.",
+    "es": "Bookshelf compacto de dos vías de la Heritage Collection, cuarta generación del Concertino original. Tweeter DAD Arrow Point y un midwoofer de 134 mm en cono de papel dentro de un gabinete con caja vented y revestimiento en corcho; crossover a 1,7 kHz."
+  }
+}

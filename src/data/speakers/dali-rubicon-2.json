@@ -1,0 +1,49 @@
+{
+  "id": "dali-rubicon-2",
+  "brand": "Dali",
+  "model": "Rubicon 2",
+  "series": "Rubicon",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 353,
+    "widthMm": 195,
+    "depthMm": 335,
+    "weightKg": 8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "wood-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 50,
+    "max": 26000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/dali-rubicon-2-hero.png",
+    "front": "/speakers/dali-rubicon-2-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/discontinued/rubicon/rubicon-2/",
+  "description": {
+    "en": "A two-way Rubicon-series bookshelf that brings Dali's 29 mm/17×45 mm hybrid tweeter module down from the flagship lines and pairs it with a 6½″ wood-fibre woofer. The result is a wide, airy soundstage and treble extension well past audibility, in a relatively compact cabinet.",
+    "es": "Un bookshelf de la serie Rubicon, dos vías, que toma el módulo híbrido de Dali — domo de 29 mm más cinta de 17×45 mm — de las líneas tope y lo combina con un woofer de 6½″ con membrana de fibra de madera. Resulta en una escena amplia y abierta y una extensión de agudos muy por encima del límite audible, en un gabinete relativamente compacto."
+  }
+}

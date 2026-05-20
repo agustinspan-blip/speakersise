@@ -1,0 +1,56 @@
+{
+  "id": "monitor-audio-bronze-300-7g",
+  "brand": "Monitor Audio",
+  "model": "Bronze 300",
+  "generation": "7G",
+  "series": "Bronze",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1005,
+    "widthMm": 269,
+    "depthMm": 392,
+    "weightKg": 15.6
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "C-CAM Gold Dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 152,
+      "quantity": 2,
+      "material": "C-CAM"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 38,
+  "frequencyResponseHz": {
+    "min": 34,
+    "max": 30000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 88,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4.4,
+  "powerHandlingW": {
+    "max": 150
+  },
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-bronze-300-7g-hero.jpg",
+    "front": "/speakers/monitor-audio-bronze-300-7g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/bronze-series-7g/bronze-300-7g/",
+  "priceUsd": 1699,
+  "description": {
+    "en": "A 2½-way floorstander in the 7G Bronze range. Three drivers — a 25 mm C-CAM tweeter and two 6″ C-CAM mid-bass drivers — sit in a slim, rigid cabinet voiced for clean dynamics and full-range presentation in medium-sized rooms.",
+    "es": "Un floorstander de 2½ vías de la séptima generación de la línea Bronze. Tres transductores — tweeter C-CAM de 25 mm y dos mid-bass C-CAM de 6″ — en un gabinete delgado y rígido afinado para dinámica limpia y respuesta de banda completa en salas medianas."
+  }
+}

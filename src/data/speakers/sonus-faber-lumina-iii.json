@@ -1,0 +1,54 @@
+{
+  "id": "sonus-faber-lumina-iii",
+  "brand": "Sonus Faber",
+  "series": "Lumina",
+  "model": "Lumina III",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 989,
+    "widthMm": 230,
+    "depthMm": 277,
+    "weightKg": 15.9
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "DAD soft dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "paper cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 150,
+      "quantity": 2,
+      "material": "paper cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 40,
+    "max": 24000
+  },
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-lumina-iii-hero.webp",
+    "front": "/speakers/sonus-faber-lumina-iii-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/lumina-iii/tech-specs",
+  "description": {
+    "en": "Slim three-way floorstander of the Lumina line — 29 mm DAD soft-dome tweeter and three 150 mm paper drivers (one midrange + two woofers) in a squared cabinet with leather accents, front-vented and decoupled by iron spikes. Para-cross crossover topology for balanced amplitude and phase response.",
+    "es": "Floorstander esbelto de tres vías de la línea Lumina — tweeter DAD de domo blando de 29 mm y tres drivers de papel de 150 mm (un midrange + dos woofers) en un gabinete cuadrado con detalles de cuero, puerto frontal y spikes de hierro desacoplados. Crossover con topología para-cross para respuesta balanceada en amplitud y fase."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "monitor-audio-gold-100-6g",
+  "brand": "Monitor Audio",
+  "model": "Gold 100",
+  "generation": "6G",
+  "series": "Gold",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 447.7,
+    "widthMm": 230,
+    "depthMm": 357.3,
+    "weightKg": 14
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "MPD III planar ribbon",
+      "notes": "micro-pleated diaphragm transducer (ribbon-style, size N/A)"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 76,
+      "quantity": 1,
+      "material": "HDT C-CAM"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 203,
+      "quantity": 1,
+      "material": "HDT C-CAM"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 38,
+  "frequencyResponseHz": {
+    "min": 32,
+    "max": 60000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 86.5,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.9,
+  "powerHandlingW": {
+    "max": 250
+  },
+  "recommendedAmpW": {
+    "min": 130,
+    "max": 500
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-gold-100-6g-hero.jpg",
+    "front": "/speakers/monitor-audio-gold-100-6g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/gold-series-6g/gold-100-6g/",
+  "priceUsd": 4599,
+  "description": {
+    "en": "A high-end stand-mount in the Gold 6G family. The MPD III ribbon tweeter and 6½″ RDT III mid-bass cone share a curved, heavily-braced cabinet for a refined, low-coloration delivery — a clear step up from Silver in resolution and treble air.",
+    "es": "Un stand-mount de alta gama dentro de la familia Gold 6G. El tweeter de cinta MPD III y el cono mid-bass RDT III de 6½″ comparten un gabinete curvo y fuertemente reforzado, para una entrega refinada y de baja coloración — un salto claro respecto a Silver en resolución y aire en los agudos."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "dynaudio-contour-legacy",
+  "brand": "Dynaudio",
+  "model": "Contour Legacy",
+  "series": "Heritage",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 995,
+    "widthMm": 208,
+    "depthMm": 352,
+    "weightKg": 32.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Esotar 3 soft dome"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 2,
+      "material": "MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 29000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 90,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-contour-legacy-hero.jpg",
+    "front": "/speakers/dynaudio-contour-legacy-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/heritage-collection/contour-legacy",
+  "description": {
+    "en": "A 2½-way floorstander combining the 28 mm Esotar 3 soft-dome tweeter with twin 18 cm MSP woofers in a slim walnut cabinet. The 1st/2nd-order crossover at 3.4 kHz and rear bass-reflex tuning extend low end down to 42 Hz — an intentional homage to the late, great Contour 1.8, hand-finished in Denmark.",
+    "es": "Un floorstander de 2½ vías que combina el tweeter de domo suave Esotar 3 de 28 mm con dos woofers MSP de 18 cm en un gabinete delgado de nogal. El crossover de primer/segundo orden a 3,4 kHz y el bass-reflex trasero llevan los graves hasta 42 Hz — un homenaje deliberado al gran Contour 1.8 de antaño, terminado a mano en Dinamarca."
+  }
+}

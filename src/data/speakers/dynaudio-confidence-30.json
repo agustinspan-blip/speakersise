@@ -1,0 +1,56 @@
+{
+  "id": "dynaudio-confidence-30",
+  "brand": "Dynaudio",
+  "model": "Confidence 30",
+  "series": "Confidence",
+  "type": "floorstander",
+  "powerType": "passive",
+  "year": 2019,
+  "dimensions": {
+    "heightMm": 1382,
+    "widthMm": 364,
+    "depthMm": 424,
+    "weightKg": 44.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Esotar 3 soft dome with DDC Lens"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "MSP with Horizon Surround"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 2,
+      "material": "NeoTec MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 2.8,
+  "powerHandlingW": {
+    "max": 350
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-confidence-30-hero.webp",
+    "front": "/speakers/dynaudio-confidence-30-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/confidence/confidence-30",
+  "description": {
+    "en": "A slim 3-way floorstander in the Confidence line. The Esotar3 tweeter and a dedicated 15 cm MSP midrange share the upper register while two 18 cm NeoTec MSP woofers handle the bass. DDC 2 directivity control and the Compex composite baffle keep distortion low and stage placement precise.",
+    "es": "Floorstander delgado de tres vías de la línea Confidence. El tweeter Esotar3 y un midrange MSP de 15 cm dedicado se reparten la zona alta mientras que dos woofers NeoTec MSP de 18 cm se encargan del grave. El control de directividad DDC 2 y el bafle compuesto Compex mantienen la distorsión baja y la imagen estéreo precisa."
+  }
+}

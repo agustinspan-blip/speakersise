@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Truescale brand mark — concentric driver with amber dome.
+  Adapts ring colour to the system colour scheme so the same file works
+  as favicon on both light and dark surfaces.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .ink { stroke: #1c1917; }
+    @media (prefers-color-scheme: dark) {
+      .ink { stroke: #f5f5f4; }
+    }
+  </style>
+  <!-- Outer basket ring -->
+  <circle class="ink" cx="50" cy="50" r="48" fill="none" stroke-width="2"/>
+  <!-- Cone outer edge -->
+  <circle class="ink" cx="50" cy="50" r="32" fill="none" stroke-width="1.5"/>
+  <!-- Voice-coil dome (amber) -->
+  <circle cx="50" cy="50" r="14" fill="#d97706"/>
+  <!-- Brand initials -->
+  <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, sans-serif" font-weight="700"
+        font-size="9" fill="white" letter-spacing="1">TSA</text>
+</svg>

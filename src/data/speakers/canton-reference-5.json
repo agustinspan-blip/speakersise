@@ -1,0 +1,55 @@
+{
+  "id": "canton-reference-5",
+  "brand": "Canton",
+  "series": "Reference",
+  "model": "Reference 5",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1020,
+    "widthMm": 287,
+    "depthMm": 460,
+    "weightKg": 36
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "aluminium-oxide ceramic dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 174,
+      "quantity": 1,
+      "material": "Black Ceramic Tungsten cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 174,
+      "quantity": 2,
+      "material": "Black Ceramic Tungsten cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 21,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/canton-reference-5-hero.webp",
+    "front": "/speakers/canton-reference-5-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/tower-speaker/products/series/reference-2023-archiv/reference-5/04403",
+  "description": {
+    "en": "Compact 3-way Reference (2023) tower — 25 mm aluminium-oxide ceramic tweeter, 174 mm BCT midrange and twin 174 mm BCT woofers in a down-firing bass-reflex cabinet. Crossover points: 170 Hz / 3 kHz; 370 W music load capacity.",
+    "es": "Torre Reference 2023 compacta de 3 vías — tweeter cerámico de óxido de aluminio de 25 mm, midrange BCT de 174 mm y dos woofers BCT de 174 mm en gabinete con reflex inferior. Crossovers a 170 Hz / 3 kHz; capacidad de pico 370 W."
+  }
+}

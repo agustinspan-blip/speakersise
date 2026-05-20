@@ -1,0 +1,81 @@
+{
+  "id": "focal-diva-mezza-utopia",
+  "brand": "Focal",
+  "series": "Diva",
+  "model": "Diva Mezza Utopia",
+  "type": "floorstander",
+  "powerType": "active",
+  "dimensions": {
+    "heightMm": 1270,
+    "widthMm": 444,
+    "depthMm": 620,
+    "weightKg": 90
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IAL2 M-profile tweeter"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "W sandwich cone",
+      "notes": "TMD suspension + NIC motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 205,
+      "quantity": 4,
+      "material": "W sandwich cone",
+      "notes": "Side-firing push-push configuration — two opposing 8\" drivers per side"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 25,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "active": {
+    "amplification": [
+      { "driverRole": "tweeter", "powerW": 90, "amplifierClass": "AB" },
+      { "driverRole": "midrange", "powerW": 130, "amplifierClass": "AB" },
+      { "driverRole": "woofer", "powerW": 280, "amplifierClass": "AB" }
+    ],
+    "totalAmpPowerW": 1000,
+    "maxSampleRateKhz": 384,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "hdmi-earc",
+      "optical",
+      "rca-analog",
+      "usb-audio",
+      "ethernet"
+    ],
+    "wirelessProtocols": [
+      "airplay-2",
+      "google-cast",
+      "bluetooth",
+      "spotify-connect",
+      "tidal-connect",
+      "qobuz-connect",
+      "wifi"
+    ],
+    "roomCorrection": ["custom-dsp"],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": true
+  },
+  "images": {
+    "hero": "/speakers/focal-diva-mezza-utopia-hero.webp",
+    "front": "/speakers/focal-diva-mezza-utopia-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/diva-mezza-utopia",
+  "description": {
+    "en": "Larger sibling of the Diva Utopia — Focal & Naim's flagship wireless active floorstander, scaling the woofers up to four side-firing 205 mm (8\") W-cone drivers in push-push pairs. 1000 W of class-AB multi-amp power per speaker, ADAPT room correction, full streaming and Ultra-Wideband wireless link between primary and secondary cabinets.",
+    "es": "Hermano mayor del Diva Utopia — el floorstander activo wireless tope de gama de Focal & Naim, con woofers escalados a cuatro de 205 mm (8\") laterales en cono W en pares push-push. 1000 W class-AB multi-amplificados por parlante, corrección de sala ADAPT, streaming completo y enlace wireless Ultra-Wideband entre el primary y el secondary."
+  }
+}

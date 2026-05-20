@@ -1,0 +1,58 @@
+{
+  "id": "sonus-faber-serafino-g2",
+  "brand": "Sonus Faber",
+  "series": "Homage",
+  "generation": "G2",
+  "model": "Serafino G2",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1091,
+    "widthMm": 394,
+    "depthMm": 485,
+    "weightKg": 52
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "high-power neodymium soft dome",
+      "notes": "Extended range — Homage G2 tweeter (no DAD branding)"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Neodymium magnet system; sealed sub-enclosure with Intono"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 2,
+      "material": "paper cone",
+      "notes": "Vented 'Stealth Ultraflex' box"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 30,
+    "max": 35000
+  },
+  "sensitivityDb": 90,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-serafino-g2-hero.webp",
+    "front": "/speakers/sonus-faber-serafino-g2-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/serafino/tech-specs",
+  "description": {
+    "en": "Second-generation Serafino — three-and-a-half-way Homage floorstander with the high-power neodymium soft-dome tweeter, a 150 mm paper midrange in a sealed Intono sub-enclosure and twin 180 mm paper woofers in the 'Stealth Ultraflex' vented system. Lute-shaped cabinet in high-gloss lacquered wood, black leather and aluminium.",
+    "es": "Segunda generación del Serafino — floorstander Homage de tres y media vías con tweeter de domo blando neodimio de alta potencia, midrange de papel de 150 mm en sub-cámara sellada Intono y dos woofers de papel de 180 mm en el sistema vented 'Stealth Ultraflex'. Gabinete con forma de laúd en madera lacada de alto brillo, cuero negro y aluminio."
+  }
+}

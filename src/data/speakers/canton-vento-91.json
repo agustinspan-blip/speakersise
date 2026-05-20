@@ -1,0 +1,55 @@
+{
+  "id": "canton-vento-91",
+  "brand": "Canton",
+  "series": "Vento",
+  "model": "Vento 91",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1105,
+    "widthMm": 308,
+    "depthMm": 380,
+    "weightKg": 32
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "ceramic dome",
+      "notes": "Square waveguide design"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 174,
+      "quantity": 1,
+      "material": "titanium-graphite cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 174,
+      "quantity": 2,
+      "material": "titanium-graphite cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 20,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 180
+  },
+  "images": {
+    "hero": "/speakers/canton-vento-91-hero.webp",
+    "front": "/speakers/canton-vento-91-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/tower-speaker/products/series/vento/vento-91/04694",
+  "description": {
+    "en": "3-way Vento floorstander with the line's signature square tweeter waveguide — 25 mm ceramic tweeter, 174 mm titanium-graphite midrange and twin 174 mm titanium-graphite woofers in a down-firing bass-reflex cabinet. Crossover points: 170 Hz / 3 kHz; 340 W music load capacity.",
+    "es": "Floorstander Vento de 3 vías con el característico waveguide cuadrado de la línea — tweeter cerámico de 25 mm, midrange de titanio-grafito de 174 mm y dos woofers de titanio-grafito de 174 mm en gabinete con reflex inferior. Crossovers a 170 Hz / 3 kHz; capacidad de pico 340 W."
+  }
+}

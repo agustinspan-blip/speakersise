@@ -1,0 +1,51 @@
+{
+  "id": "klipsch-rp-8000f-ii",
+  "brand": "Klipsch",
+  "series": "Reference Premiere",
+  "generation": "II",
+  "model": "RP-8000F II",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1095,
+    "widthMm": 281,
+    "depthMm": 463,
+    "weightKg": 27.8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "titanium LTS dome",
+      "notes": "Vented; Hybrid Cross-Section Expanded Tractrix horn"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 203,
+      "quantity": 2,
+      "material": "Cerametallic cone",
+      "notes": "Faraday rings"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 35,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 98,
+  "impedanceOhm": 8,
+  "powerHandlingW": {
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/klipsch-rp-8000f-ii-hero.webp",
+    "front": "/speakers/klipsch-rp-8000f-ii-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/rp-8000f-ii-floorstanding-speaker",
+  "description": {
+    "en": "Flagship of the Reference Premiere II floorstander line — 1\" titanium LTS tweeter in a Hybrid Cross-Section Tractrix horn paired with twin 8\" Cerametallic woofers with Faraday rings, in an internally-braced MDF cabinet with dual rear Tractrix ports. 98 dB sensitivity and 600 W peak.",
+    "es": "Insignia entre los floorstanders de la línea Reference Premiere II — tweeter LTS de titanio de 1\" en horn Tractrix Hybrid Cross-Section junto a dos woofers Cerametallic de 8\" con anillos Faraday, en un gabinete MDF reforzado con doble puerto trasero Tractrix. 98 dB de sensibilidad y 600 W de pico."
+  }
+}

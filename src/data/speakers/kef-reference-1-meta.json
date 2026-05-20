@@ -1,0 +1,59 @@
+{
+  "id": "kef-reference-1-meta",
+  "brand": "KEF",
+  "series": "Reference",
+  "generation": "Meta",
+  "model": "Reference 1 Meta",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 440,
+    "widthMm": 205,
+    "depthMm": 422,
+    "weightKg": 18.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 125,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q array — tweeter sits in the acoustic centre"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "aluminium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 45,
+    "max": 35000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 85,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/kef-reference-1-meta-hero.webp",
+    "front": "/speakers/kef-reference-1-meta-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/reference-1-bookshelf-speaker",
+  "description": {
+    "en": "Three-way standmount of KEF's Reference Meta line, hand-built in Maidstone (UK). Combines the 12th-gen Uni-Q array — 25 mm MAT-treated tweeter coaxial with a 125 mm aluminium midrange — with a 165 mm all-aluminium woofer in a switchable-port cabinet, with each pair calibrated within 0.5 dB to the lab reference.",
+    "es": "Bookshelf de tres vías de la línea Reference Meta de KEF, construido a mano en Maidstone (Reino Unido). Combina el array Uni-Q de 12ª generación — tweeter de 25 mm tratado con MAT coaxial al midrange de aluminio de 125 mm — con un woofer de 165 mm en aluminio puro, en un gabinete con puerto conmutable; cada par calibrado a 0,5 dB del estándar de laboratorio."
+  }
+}

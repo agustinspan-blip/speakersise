@@ -1,0 +1,57 @@
+{
+  "id": "wharfedale-evo-5-2",
+  "brand": "Wharfedale",
+  "model": "EVO 5.2",
+  "series": "EVO",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 497,
+    "widthMm": 247,
+    "depthMm": 390,
+    "weightKg": 15
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 70,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "35 × 70 mm Air Motion Transformer"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 50,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 44,
+    "max": 24000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 120
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-evo-5-2-hero.png",
+    "front": "/speakers/wharfedale-evo-5-2-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/evo5-series/products/evo-5-2",
+  "description": {
+    "en": "The larger standmount of the EVO 5 range — a three-way bookshelf that adds a 2″ soft-dome midrange between the AMT tweeter and a 6.5″ woven-Kevlar woofer. The expanded cabinet pushes bass extension down to 44 Hz, blurring the line with a small floorstander.",
+    "es": "El standmount más grande del rango EVO 5 — un bookshelf de tres vías que suma un mediano de 2″ con domo suave entre el tweeter AMT y un woofer de 6.5″ con cono de Kevlar tejido. El gabinete ampliado lleva la extensión grave hasta 44 Hz, acercándose al territorio de un floorstander chico."
+  }
+}

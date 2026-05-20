@@ -1,0 +1,51 @@
+{
+  "id": "sonus-faber-guarneri-g5",
+  "brand": "Sonus Faber",
+  "series": "Homage",
+  "generation": "G5",
+  "model": "Guarneri G5",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 377,
+    "widthMm": 230,
+    "depthMm": 375,
+    "weightKg": 16
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Extended Range soft dome",
+      "notes": "High-power neodymium motor"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Neodymium magnet system; new fifth-generation low-resonance midwoofer"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 40,
+    "max": 35000
+  },
+  "sensitivityDb": 86,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 125
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-guarneri-g5-hero.webp",
+    "front": "/speakers/sonus-faber-guarneri-g5-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/guarneri",
+  "description": {
+    "en": "Fifth-generation Guarneri — flagship two-way standmount of the Homage Collection, named after the Cremonese luthiers. Extended-range soft-dome tweeter and a new low-resonance 150 mm midwoofer in a violin-curve cabinet of high-gloss lacquered wood, leather, aluminium and carbon-fibre stand. 'Stealth Ultraflex' vented loading.",
+    "es": "Quinta generación del Guarneri — bookshelf insignia de dos vías de la Homage Collection, nombrado por el luthier cremonés. Tweeter de domo blando Extended Range y nuevo midwoofer de baja resonancia de 150 mm en un gabinete con curvas de violín en madera lacada de alto brillo, cuero, aluminio y stand de fibra de carbono. Carga vented 'Stealth Ultraflex'."
+  }
+}

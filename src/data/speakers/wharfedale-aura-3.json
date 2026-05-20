@@ -1,0 +1,57 @@
+{
+  "id": "wharfedale-aura-3",
+  "brand": "Wharfedale",
+  "model": "Aura 3",
+  "series": "Aura",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1037,
+    "widthMm": 338,
+    "depthMm": 352,
+    "weightKg": 23.0
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 90,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "27 × 90 mm Air Motion Transformer"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "woven black glass-fibre matrix cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 130,
+      "quantity": 2,
+      "material": "woven black glass-fibre matrix cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 39,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 6,
+  "impedanceMinOhm": 3.1,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-aura-3-hero.png",
+    "front": "/speakers/wharfedale-aura-3-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/aura-series/products/aura-3",
+  "description": {
+    "en": "A slim three-way floorstander built around dual 5″ glass-fibre woofers, a 4″ midrange and the AMT tweeter shared with the rest of the Aura range. The cabinet's narrow front baffle and downward Slot Loaded Profiled Port keep imaging precise while reaching down to 39 Hz, suiting medium rooms where space is at a premium.",
+    "es": "Un floorstander angosto de tres vías construido alrededor de dos woofers de 5″ con cono de fibra de vidrio, un mediano de 4″ y el mismo AMT que comparte toda la serie Aura. La cara frontal estrecha y el SLPP de descarga inferior mantienen la imagen estéreo precisa llegando hasta los 39 Hz — pensado para salas medianas donde el espacio escasea."
+  }
+}

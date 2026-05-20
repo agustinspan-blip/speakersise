@@ -1,0 +1,52 @@
+{
+  "id": "bowers-wilkins-707-s3-prestige",
+  "brand": "Bowers & Wilkins",
+  "series": "700",
+  "generation": "S3",
+  "model": "707 S3",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 300,
+    "widthMm": 165,
+    "depthMm": 247,
+    "weightKg": 6.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Carbon Dome",
+      "notes": "Decoupled Carbon Dome with optimised grille mesh"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "Continuum cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 50,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 84,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4.0,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/bowers-wilkins-707-s3-prestige-hero.webp",
+    "front": "/speakers/bowers-wilkins-707-s3-prestige-front.png"
+  },
+  "sourceUrl": "https://www.bowerswilkins.com/en/product/loudspeakers/707-prestige-edition/FP46493P.html",
+  "description": {
+    "en": "Limited Santos Gloss edition of the 700 S3 compact stand-mount, inheriting the 705 S3 Signature's optimised tweeter grille and premium binding posts. A 130 mm Continuum cone and Decoupled Carbon Dome tweeter make it the smallest two-way in the 700 S3 family.",
+    "es": "Edición limitada en Santos Gloss del bookshelf compacto de la 700 S3 que hereda la grilla optimizada del tweeter y los terminales premium del 705 S3 Signature. Un cono Continuum de 130 mm y el tweeter Carbon Dome desacoplado lo convierten en el dos vías más chico de la familia 700 S3."
+  }
+}

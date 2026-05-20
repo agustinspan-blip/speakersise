@@ -1,0 +1,50 @@
+{
+  "id": "sonus-faber-maxima-amator",
+  "brand": "Sonus Faber",
+  "series": "Heritage",
+  "model": "Maxima Amator",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1120,
+    "widthMm": 304,
+    "depthMm": 350,
+    "weightKg": 38
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "H28 soft dome with DAD",
+      "notes": "DAD (Damped Apex Dome) — high-power neodymium cup motor"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "MW18 paper cone",
+      "notes": "Natural-fibre membrane in the Sonus Faber Heritage tradition"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 35,
+    "max": 35000
+  },
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 125
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-maxima-amator-hero.webp",
+    "front": "/speakers/sonus-faber-maxima-amator-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/maxima-amator/tech-specs",
+  "description": {
+    "en": "Two-way floorstander of the Heritage Amator family — solid walnut cabinet with Port Saint Laurent marble plinth and brass details, pairing the H28 soft-dome tweeter (DAD) with a 180 mm MW18 natural-fibre mid-bass. Hand-built in Vicenza on iron spikes that decouple the cabinet from the floor.",
+    "es": "Floorstander de dos vías de la familia Heritage Amator — gabinete en nogal macizo con plinto en mármol Port Saint Laurent y detalles en bronce, que combina el tweeter H28 de domo blando (DAD) con un mid-bass MW18 de 180 mm en fibras naturales. Construido a mano en Vicenza sobre spikes de hierro que desacoplan el cabinet del piso."
+  }
+}

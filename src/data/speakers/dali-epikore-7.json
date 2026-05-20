@@ -1,0 +1,59 @@
+{
+  "id": "dali-epikore-7",
+  "brand": "Dali",
+  "model": "Epikore 7",
+  "series": "Epikore",
+  "type": "floorstander",
+  "powerType": "passive",
+  "year": 2023,
+  "dimensions": {
+    "heightMm": 1120,
+    "widthMm": 387,
+    "depthMm": 420,
+    "weightKg": 40.5
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 55,
+      "quantity": 1,
+      "material": "planar magnetostatic",
+      "notes": "10 × 55 mm planar ribbon — part of the EVO-K Hybrid Tweeter module"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 35,
+      "quantity": 1,
+      "material": "soft woven-fabric dome",
+      "notes": "Part of the EVO-K Hybrid Tweeter module"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 178,
+      "quantity": 2,
+      "material": "Clarity Cone paper and wood-fibre, SMC Gen-2 motor"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 33,
+  "frequencyResponseHz": {
+    "min": 35,
+    "max": 34000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 6,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 400
+  },
+  "images": {
+    "hero": "/speakers/dali-epikore-7-hero.png",
+    "front": "/speakers/dali-epikore-7-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/epikore/epikore-7/",
+  "description": {
+    "en": "Compact 3½-way floorstander pairing two 7″ Clarity-Cone bass/midrange drivers with the EVO-K Hybrid Tweeter module. The reduced cabinet keeps the curved silhouette and rear continuous-flare port tuning (33 Hz) for medium-sized rooms; 110 dB max SPL with a 40–400 W amp range.",
+    "es": "Un floorstander compacto de 3½ vías que combina dos drivers Clarity Cone de 7″ con el módulo EVO-K Hybrid Tweeter. El gabinete más chico mantiene la silueta curva y el puerto continuous-flare trasero sintonizado a 33 Hz para salas medianas; 110 dB SPL máx. con un rango de amp de 40–400 W."
+  }
+}

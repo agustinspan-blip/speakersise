@@ -1,0 +1,55 @@
+{
+  "id": "monitor-audio-gold-50-6g",
+  "brand": "Monitor Audio",
+  "model": "Gold 50",
+  "generation": "6G",
+  "series": "Gold",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 320,
+    "widthMm": 185,
+    "depthMm": 303,
+    "weightKg": 8.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "MPD III planar ribbon"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 152,
+      "quantity": 1,
+      "material": "HDT C-CAM"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 50,
+  "frequencyResponseHz": {
+    "min": 44,
+    "max": 60000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 85,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 300
+  },
+  "recommendedAmpW": {
+    "min": 130,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-gold-50-6g-hero.jpg",
+    "front": "/speakers/monitor-audio-gold-50-6g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/product-ranges/gold-series-6g/gold-50-6g/",
+  "description": {
+    "en": "A 2-way Gold 6G bookshelf with the MPD III planar-ribbon tweeter and a 6″ HDT C-CAM mid-bass driver, crossed at 2.5 kHz. Rear HiVe II port tuned to 50 Hz; refined cabinet finishing places it firmly above the Silver line in resolution and treble extension.",
+    "es": "Un bookshelf Gold 6G de dos vías con el tweeter de cinta plana MPD III y un mid-bass HDT C-CAM de 6″, acoplados a 2,5 kHz. Puerto trasero HiVe II sintonizado a 50 Hz; terminación de gabinete refinada que lo ubica claramente por encima de la línea Silver en resolución y extensión de agudos."
+  }
+}

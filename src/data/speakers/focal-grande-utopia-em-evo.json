@@ -1,0 +1,60 @@
+{
+  "id": "focal-grande-utopia-em-evo",
+  "brand": "Focal",
+  "series": "Utopia",
+  "generation": "EM Evo",
+  "model": "Grande Utopia EM Evo",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 2012,
+    "widthMm": 677,
+    "depthMm": 880,
+    "weightKg": 265
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IAL2 (Infinite Acoustic Loading) tweeter"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "W sandwich cone",
+      "notes": "Power Flower magnet with TMD suspension"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 400,
+      "quantity": 1,
+      "material": "W sandwich cone",
+      "notes": "Electromagnetic (EM) motor — coil flux modulated electronically"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 18,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 94,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.0,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 1500
+  },
+  "images": {
+    "hero": "/speakers/focal-grande-utopia-em-evo-hero.webp",
+    "front": "/speakers/focal-grande-utopia-em-evo-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/grande-utopia-em-evo",
+  "description": {
+    "en": "Focal's two-metre flagship — a multi-way Utopia column built around a 400 mm electromagnetic-motor woofer, twin 165 mm Power Flower midranges and the IAL2 27 mm pure-beryllium inverted dome. The articulated Focus Time cabinet aligns each driver to the listening seat; 50–1500 W of amp headroom keeps it fed.",
+    "es": "El insignia de dos metros de Focal — una columna Utopia multi-vías construida en torno a un woofer de 400 mm con motor electromagnético, dos midranges Power Flower de 165 mm y el tweeter IAL2 de domo invertido en berilio puro de 27 mm. El gabinete articulado Focus Time alinea cada driver al punto de escucha; 50–1500 W de margen de amplificación."
+  }
+}

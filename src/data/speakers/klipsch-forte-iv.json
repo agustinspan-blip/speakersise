@@ -1,0 +1,58 @@
+{
+  "id": "klipsch-forte-iv",
+  "brand": "Klipsch",
+  "series": "Heritage",
+  "generation": "IV",
+  "model": "Forte IV",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 908,
+    "widthMm": 419,
+    "depthMm": 330,
+    "weightKg": 32.7
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "K-100-TI titanium compression diaphragm",
+      "notes": "On K-79T horn"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 44,
+      "quantity": 1,
+      "material": "K-702 polyimide compression diaphragm",
+      "notes": "1.75\" (44.5 mm) on K-703 H horn"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 305,
+      "quantity": 1,
+      "material": "K-281 fiber-composite cone",
+      "notes": "12\" woofer assisted by a rear-firing 381 mm (K-15) passive radiator"
+    }
+  ],
+  "enclosure": "passive-radiator",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 99,
+  "impedanceOhm": 8,
+  "powerHandlingW": {
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/klipsch-forte-iv-hero.webp",
+    "front": "/speakers/klipsch-forte-iv-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/forte-iv-floorstanding-speaker",
+  "description": {
+    "en": "Heritage three-way horn-loaded floorstander handcrafted in Hope, Arkansas — K-100-TI titanium tweeter on a K-79T horn, K-702 polyimide compression midrange on a K-703 H horn and a 305 mm K-281 fiber-composite woofer assisted by a rear-firing 15-inch K-15 passive radiator. 99 dB sensitivity and 400 W peak handling.",
+    "es": "Floorstander Heritage de tres vías horn-loaded construido a mano en Hope, Arkansas — tweeter K-100-TI de titanio sobre horn K-79T, midrange de compresión K-702 en polyimide sobre horn K-703 H y un woofer de 305 mm K-281 en fibra-compuesta asistido por un radiador pasivo trasero K-15 de 15\". 99 dB de sensibilidad y 400 W de pico."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "focal-aria-evo-x-n1",
+  "brand": "Focal",
+  "series": "Aria",
+  "generation": "Evo X",
+  "model": "Aria Evo X N°1",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 390,
+    "widthMm": 224,
+    "depthMm": 225,
+    "weightKg": 8.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "TAM aluminium-magnesium inverted dome",
+      "notes": "TAM (Tweeter Aluminium-Magnesium) with M-profile — new Evo X generation, entry-level to Focal's beryllium-tweeter ladder"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "flax cone",
+      "notes": "TMD suspension"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 55,
+    "max": 30000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89.5,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4.6,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 120
+  },
+  "images": {
+    "hero": "/speakers/focal-aria-evo-x-n1-hero.webp",
+    "front": "/speakers/focal-aria-evo-x-n1-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/aria-evo-x-n1",
+  "description": {
+    "en": "Compact two-way bookshelf — Focal's entry into the Aria Evo X line, pairing the new 25 mm TAM Al/Mg inverted-dome tweeter with a 165 mm flax mid-bass in a front-ported cabinet with non-parallel walls. Note: spec width (280 mm) reflects the cabinet bumper edges; rendered silhouette uses the front-on aspect.",
+    "es": "Bookshelf compacto de dos vías — la puerta de entrada a la línea Aria Evo X, que combina el nuevo tweeter TAM de 25 mm en domo invertido Al/Mg con un mid-bass de 165 mm en cono de lino, en un gabinete con puerto frontal y paredes no paralelas. Nota: el ancho oficial (280 mm) incluye los bordes del cabinet; la silueta usa el aspect del frontal puro."
+  }
+}

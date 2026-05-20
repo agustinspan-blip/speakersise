@@ -1,0 +1,58 @@
+{
+  "id": "canton-reference-alpha-1",
+  "brand": "Canton",
+  "series": "Reference Alpha",
+  "model": "Reference Alpha 1",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1640,
+    "widthMm": 422,
+    "depthMm": 720,
+    "weightKg": 145
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "DLC diamond-coated dome",
+      "notes": "Diamond-Like Carbon coating"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 174,
+      "quantity": 1,
+      "material": "Black Ceramic Tungsten cone",
+      "notes": "Wave Surround 3.0"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 219,
+      "quantity": 4,
+      "material": "Black Ceramic Tungsten cone",
+      "notes": "Double-cone with Wave Surround 3.0"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 18,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 500
+  },
+  "images": {
+    "hero": "/speakers/canton-reference-alpha-1-hero.webp",
+    "front": "/speakers/canton-reference-alpha-1-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/tower-speaker/products/series/reference/products/type/passive-loudspeakers/reference-alpha-1/04500",
+  "description": {
+    "en": "Flagship of the Reference Alpha line — a 3-way down-firing bass-reflex tower with a 25 mm DLC diamond-coated tweeter, a 174 mm Black Ceramic Tungsten midrange and four 219 mm double-cone BCT woofers in an acoustically optimised curved cabinet with Mundorf crossovers. Crossover points: 160 Hz / 3.1 kHz; 950 W music load capacity.",
+    "es": "Insignia de la línea Reference Alpha — torre de 3 vías con puerto reflex inferior, tweeter DLC de 25 mm con recubrimiento diamantado, midrange Black Ceramic Tungsten de 174 mm y cuatro woofers BCT de doble cono de 219 mm, en gabinete curvo optimizado acústicamente con crossovers Mundorf. Crossovers a 160 Hz / 3,1 kHz; capacidad de pico 950 W."
+  }
+}

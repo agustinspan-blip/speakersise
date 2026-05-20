@@ -1,0 +1,48 @@
+{
+  "id": "dynaudio-emit-20",
+  "brand": "Dynaudio",
+  "model": "Emit 20",
+  "series": "Emit",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 370,
+    "widthMm": 205,
+    "depthMm": 325,
+    "weightKg": 10.3
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Cerotar soft dome with Hexis"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "MSP cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 53,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 86,
+  "impedanceOhm": 6,
+  "powerHandlingW": {
+    "max": 160
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-emit-20-hero.jpg",
+    "front": "/speakers/dynaudio-emit-20-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/emit/emit-20",
+  "description": {
+    "en": "A larger 2-way Emit stand-mount built around the 28 mm Cerotar tweeter and a 18 cm MSP mid-bass driver. The bigger cone reaches lower (53 Hz) than the Emit 10 while keeping the same easy load on real-world amplifiers.",
+    "es": "Un stand-mount Emit de dos vías más grande construido alrededor del tweeter Cerotar de 28 mm y un mid-bass MSP de 18 cm. El cono mayor llega más abajo (53 Hz) que el Emit 10 manteniendo la misma carga fácil para amplificadores reales."
+  }
+}

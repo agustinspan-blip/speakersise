@@ -1,0 +1,58 @@
+{
+  "id": "wharfedale-dovedale",
+  "brand": "Wharfedale",
+  "model": "Dovedale",
+  "generation": "90th Anniversary",
+  "series": "Heritage",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "year": 2024,
+  "dimensions": {
+    "heightMm": 660,
+    "widthMm": 370,
+    "depthMm": 447,
+    "weightKg": 26.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 135,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 250,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 36,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 6,
+  "impedanceMinOhm": 3.6,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-dovedale-hero.png",
+    "front": "/speakers/wharfedale-dovedale-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/products/dovedale",
+  "description": {
+    "en": "Wharfedale's 90th-anniversary three-way standmount, a rare modern continuation of the original Dovedale silhouette built around a 10\" woven-Kevlar woofer, 5\" Kevlar midrange and 1\" soft-dome tweeter. UK-built with hand-veneered walnut, it pairs traditional cabinet craft with modern motor and crossover work for a 36 Hz reach and 112 dB peak SPL.",
+    "es": "El standmount de tres vías del 90º aniversario de Wharfedale: una rara continuación moderna del Dovedale original, con woofer de 10\" en Kevlar tejido, mediano de 5\" en Kevlar y tweeter de 1\" con domo suave. Construido en el Reino Unido con chapas de walnut hechas a mano, combina la carpintería tradicional con motores y crossovers actualizados para llegar a 36 Hz y 112 dB de SPL pico."
+  }
+}

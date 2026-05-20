@@ -1,0 +1,49 @@
+{
+  "id": "canton-vento-21",
+  "brand": "Canton",
+  "series": "Vento",
+  "model": "Vento 21",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 300,
+    "widthMm": 151,
+    "depthMm": 270,
+    "weightKg": 6.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Black Ceramic dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 154,
+      "quantity": 1,
+      "material": "ATB cone",
+      "notes": "Aluminium Titan Black composite"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 32,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 60
+  },
+  "images": {
+    "hero": "/speakers/canton-vento-21-hero.webp",
+    "front": "/speakers/canton-vento-21-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/compact-speaker/products/type/passive-loudspeakers/vento-21/04588",
+  "description": {
+    "en": "Compact 2-way Vento bookshelf — 25 mm Black-Ceramic tweeter paired with a 154 mm ATB (Aluminium-Titan-Black) composite mid-bass in a rear-ported cabinet. 3 kHz crossover. Note: spec width (195 mm) includes the cabinet bumper; the rendered silhouette is the narrower main panel.",
+    "es": "Bookshelf compacto Vento de 2 vías — tweeter Black Ceramic de 25 mm junto a un mid-bass ATB (Aluminium-Titan-Black) compuesto de 154 mm en gabinete con puerto trasero. Crossover a 3 kHz. Nota: el ancho spec (195 mm) incluye un bumper del cabinet; la silueta renderizada corresponde al panel principal más angosto."
+  }
+}

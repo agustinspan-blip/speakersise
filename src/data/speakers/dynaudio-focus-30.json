@@ -1,0 +1,78 @@
+{
+  "id": "dynaudio-focus-30",
+  "brand": "Dynaudio",
+  "series": "Focus",
+  "model": "Focus 30",
+  "type": "floorstander",
+  "powerType": "active",
+  "dimensions": {
+    "heightMm": 947,
+    "widthMm": 275,
+    "depthMm": 342,
+    "weightKg": 16.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "Cerotar soft dome",
+      "notes": "Hexis back chamber"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 140,
+      "quantity": 1,
+      "material": "MSP cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 140,
+      "quantity": 1,
+      "material": "MSP cone"
+    }
+  ],
+  "enclosure": "sealed",
+  "frequencyResponseHz": {
+    "min": 30,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "active": {
+    "amplification": [
+      { "driverRole": "tweeter", "powerW": 110, "amplifierClass": "D" },
+      { "driverRole": "midrange", "powerW": 280, "amplifierClass": "D" },
+      { "driverRole": "woofer", "powerW": 280, "amplifierClass": "D" }
+    ],
+    "totalAmpPowerW": 1340,
+    "maxSampleRateKhz": 192,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "rca-analog",
+      "optical",
+      "coax"
+    ],
+    "wirelessProtocols": [
+      "airplay-2",
+      "google-cast",
+      "bluetooth",
+      "spotify-connect",
+      "tidal-connect",
+      "roon-ready",
+      "wifi",
+      "wisa"
+    ],
+    "roomCorrection": ["custom-dsp", "dirac-live-limited"],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": true
+  },
+  "images": {
+    "hero": "/speakers/dynaudio-focus-30-hero.webp",
+    "front": "/speakers/dynaudio-focus-30-front.png"
+  },
+  "sourceUrl": "https://dynaudio.com/home-audio/focus/focus-30",
+  "description": {
+    "en": "Compact sealed-box active floorstander — 28 mm Cerotar tweeter with twin 140 mm MSP drivers (midrange + woofer), bi-amped at 110 + 280 + 280 W class-D per speaker. Studio-grade Pascal amplification and full streaming with WiSA wireless inter-speaker link.",
+    "es": "Floorstander activo compacto con caja sellada — tweeter Cerotar de 28 mm con dos drivers MSP de 140 mm (midrange + woofer), tri-amplificados a 110 + 280 + 280 W class-D por parlante. Amplificación Pascal de nivel studio y streaming completo con enlace WiSA inalámbrico entre parlantes."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sonus-faber-suprema",
+  "brand": "Sonus Faber",
+  "series": "Reference",
+  "model": "Suprema",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1905,
+    "widthMm": 672,
+    "depthMm": 880,
+    "weightKg": 110
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 20,
+      "quantity": 2,
+      "material": "silk soft dome"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 38,
+      "quantity": 2,
+      "material": "silk soft dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Dual-driver midrange"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 203,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Lower-midrange driver"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 203,
+      "quantity": 4,
+      "material": "paper cone"
+    }
+  ],
+  "enclosure": "sealed",
+  "frequencyResponseHz": {
+    "min": 45,
+    "max": 40000
+  },
+  "sensitivityDb": 91,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 100,
+    "max": 700
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-suprema-hero.webp",
+    "front": "/speakers/sonus-faber-suprema-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/suprema/tech-specs",
+  "description": {
+    "en": "Top-of-the-line Suprema — a 4.5-way sealed Reference flagship with twin 20 mm and 38 mm silk-dome tweeters, dual-driver 165 mm midrange, 203 mm lower-midrange and four 203 mm woofers in a double-curvature lute-shaped main column. Two rear-firing tweeters and a back midrange add the ambient field; the system pairs with two separate 380 mm carbon-fibre sandwich subwoofer cabinets (500–2000 W) for full-range performance below 45 Hz.",
+    "es": "Tope de gama Suprema — flagship Reference de 4.5 vías sellado con dos tweeters de seda de 20 mm y 38 mm, midrange de 165 mm de doble driver, lower-midrange de 203 mm y cuatro woofers de 203 mm en una columna principal con forma de laúd y doble curvatura. Dos tweeters traseros y un midrange trasero suman el campo ambiente; el sistema se complementa con dos gabinetes separados de subwoofers de 380 mm en cono sandwich de fibra de carbono (500–2000 W) para el rendimiento full-range por debajo de 45 Hz."
+  }
+}

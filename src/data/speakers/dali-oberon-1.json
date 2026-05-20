@@ -1,0 +1,49 @@
+{
+  "id": "dali-oberon-1",
+  "brand": "Dali",
+  "model": "Oberon 1",
+  "series": "Oberon",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 275,
+    "widthMm": 164,
+    "depthMm": 228,
+    "weightKg": 4.18
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "soft textile dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "wood-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 51,
+    "max": 26000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 86,
+  "impedanceOhm": 6,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/dali-oberon-1-hero.png",
+    "front": "/speakers/dali-oberon-1-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/oberon/oberon-1",
+  "description": {
+    "en": "The smallest model in the Oberon family. A compact two-way bookshelf with a 29 mm soft-dome tweeter and a 5¼″ wood-fibre woofer, designed to deliver Dali's open, easygoing sound character at an entry-level price.",
+    "es": "El más chico de la familia Oberon. Un bookshelf compacto de dos vías con tweeter de domo suave de 29 mm y woofer de 5¼″ con membrana de fibra de madera, pensado para llevar el sonido abierto y suelto característico de Dali a un precio de entrada."
+  }
+}

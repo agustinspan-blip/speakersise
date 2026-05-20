@@ -1,0 +1,59 @@
+{
+  "id": "kef-reference-5-meta",
+  "brand": "KEF",
+  "series": "Reference",
+  "generation": "Meta",
+  "model": "Reference 5 Meta",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1402,
+    "widthMm": 323,
+    "depthMm": 467,
+    "weightKg": 60.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 125,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q array — tweeter sits in the acoustic centre"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 4,
+      "material": "aluminium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 40,
+    "max": 35000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 400
+  },
+  "images": {
+    "hero": "/speakers/kef-reference-5-meta-hero.webp",
+    "front": "/speakers/kef-reference-5-meta-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/reference-5-floorstanding-speaker",
+  "description": {
+    "en": "Flagship of KEF's Reference Meta line — a three-way floorstander pairing the 12th-gen Uni-Q array (25 mm MAT tweeter coaxial with a 125 mm aluminium midrange) with four 165 mm all-aluminium woofers in a switchable-port cabinet. Hand-built in Maidstone (UK) and matched within 0.5 dB to the laboratory reference.",
+    "es": "Tope de gama de la línea Reference Meta de KEF — floorstander de tres vías que combina el array Uni-Q de 12ª generación (tweeter de 25 mm con MAT coaxial al midrange de aluminio de 125 mm) con cuatro woofers de 165 mm en aluminio puro, en un gabinete con puerto conmutable. Construido a mano en Maidstone (Reino Unido) y emparejado a 0,5 dB de la referencia de laboratorio."
+  }
+}

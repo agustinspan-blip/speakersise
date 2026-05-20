@@ -1,0 +1,50 @@
+{
+  "id": "wharfedale-denton-80",
+  "brand": "Wharfedale",
+  "series": "Denton",
+  "model": "Denton 80",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 320,
+    "widthMm": 198,
+    "depthMm": 305,
+    "weightKg": 7.9
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "soft dome",
+      "notes": "Woven textile soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 125,
+      "quantity": 1,
+      "material": "woven Kevlar cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 44,
+    "max": 24000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 86,
+  "impedanceOhm": 6,
+  "recommendedAmpW": {
+    "min": 20,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-denton-80-hero.webp",
+    "front": "/speakers/wharfedale-denton-80-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/products/denton-80",
+  "description": {
+    "en": "Compact two-way bookshelf released to mark Wharfedale's 80th anniversary, reviving the warm, rich character of the original Denton. Hand-veneered mahogany or walnut cabinet with inset baffle and tungsten cloth grille houses a 125 mm woven-Kevlar mid-bass and 25 mm soft-dome tweeter; crossover at 2.3 kHz.",
+    "es": "Bookshelf compacto de dos vías lanzado por los 80 años de Wharfedale, que revive el carácter cálido y pleno del Denton original. Gabinete chapado a mano en caoba o nogal con bafle empotrado y grilla de tela tungsten que aloja un mid-bass de 125 mm con cono Kevlar tejido y un tweeter de domo blando de 25 mm; crossover a 2,3 kHz."
+  }
+}

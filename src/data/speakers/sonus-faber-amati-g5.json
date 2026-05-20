@@ -1,0 +1,58 @@
+{
+  "id": "sonus-faber-amati-g5",
+  "brand": "Sonus Faber",
+  "series": "Homage",
+  "generation": "G5",
+  "model": "Amati G5",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1176,
+    "widthMm": 408,
+    "depthMm": 512,
+    "weightKg": 61
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "high-power neodymium soft dome",
+      "notes": "Extended range — Homage G5 tweeter"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Neodymium magnet system; sealed Intono sub-enclosure"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 220,
+      "quantity": 2,
+      "material": "paper cone",
+      "notes": "Dual-drive motor; vented 'Stealth Ultraflex' box"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 28,
+    "max": 35000
+  },
+  "sensitivityDb": 91,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 450
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-amati-g5-hero.webp",
+    "front": "/speakers/sonus-faber-amati-g5-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/amati/tech-specs",
+  "description": {
+    "en": "Fifth-generation Amati — Homage three-and-a-half-way floorstander pairing the high-power neodymium tweeter and a 150 mm paper midrange (sealed Intono) with twin 220 mm dual-drive paper woofers in the 'Stealth Ultraflex' vented system. Distinct from the limited 4.5-way 'Amati Supreme' that shares the same cabinet dimensions.",
+    "es": "Quinta generación del Amati — floorstander Homage de tres y media vías que combina el tweeter de domo blando neodimio de alta potencia y un midrange de papel de 150 mm (Intono sellado) con dos woofers de papel de 220 mm de doble motor en el sistema vented 'Stealth Ultraflex'. Distinto del 'Amati Supreme' limitado de 4.5 vías que comparte las dimensiones del gabinete."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "dali-rubikore-6",
+  "brand": "Dali",
+  "model": "Rubikore 6",
+  "series": "Rubikore",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 990,
+    "widthMm": 297,
+    "depthMm": 380,
+    "weightKg": 23
+  },
+  "drivers": [
+    {
+      "role": "super-tweeter",
+      "sizeMm": 45,
+      "quantity": 1,
+      "material": "planar magnetostatic",
+      "notes": "17 × 45 mm planar ribbon — part of the Dali Hybrid Tweeter module"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "low-loss soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Clarity Cone paper and wood-fibre, SMC motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Clarity Cone paper and wood-fibre, SMC motor"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 34,
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 34000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88.5,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/dali-rubikore-6-hero.png",
+    "front": "/speakers/dali-rubikore-6-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/rubikore/rubikore-6/",
+  "description": {
+    "en": "A 2½-way floorstander with Dali's Hybrid Tweeter module (29 mm soft dome plus 17 × 45 mm planar ribbon) above two 6½″ Clarity Cone drivers running SMC motors. Bi-wire/bi-amp terminals, bass-reflex tuned to 34 Hz, 110 dB max SPL and a 40–200 W amp window for medium listening rooms.",
+    "es": "Un floorstander de 2½ vías con el módulo Hybrid Tweeter de Dali (domo suave de 29 mm más cinta plana de 17 × 45 mm) sobre dos drivers Clarity Cone de 6½″ con motor SMC. Terminales bi-wire/bi-amp, bass-reflex sintonizado a 34 Hz, 110 dB SPL máx. y un rango de amp de 40–200 W para salas medianas."
+  }
+}

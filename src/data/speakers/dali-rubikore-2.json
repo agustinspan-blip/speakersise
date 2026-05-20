@@ -1,0 +1,50 @@
+{
+  "id": "dali-rubikore-2",
+  "brand": "Dali",
+  "model": "Rubikore 2",
+  "series": "Rubikore",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 350,
+    "widthMm": 195,
+    "depthMm": 335,
+    "weightKg": 9.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 29,
+      "quantity": 1,
+      "material": "low-loss soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Clarity Cone paper and wood-fibre, SMC motor"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 44,
+  "frequencyResponseHz": {
+    "min": 50,
+    "max": 26000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/dali-rubikore-2-hero.png",
+    "front": "/speakers/dali-rubikore-2-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/rubikore/rubikore-2/",
+  "description": {
+    "en": "The standmount of the Rubikore range — a 2-way bookshelf pairing a 29 mm low-loss soft-dome tweeter with a 6½″ Clarity Cone bass/midrange driver running an SMC motor. Bi-wire/bi-amp terminals, bass-reflex tuned to 44 Hz and a 40–150 W amp window for nearfield or smaller listening rooms.",
+    "es": "El standmount de la línea Rubikore — un bookshelf de dos vías que combina un tweeter de domo suave low-loss de 29 mm con un mid-bass de 6½″ Clarity Cone con motor SMC. Terminales bi-wire/bi-amp, bass-reflex sintonizado a 44 Hz y un rango de amp de 40–150 W para escucha cercana o salas chicas."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "klipsch-klipschorn-ak7",
+  "brand": "Klipsch",
+  "series": "Heritage",
+  "generation": "AK7",
+  "model": "Klipschorn AK7",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1352,
+    "widthMm": 801,
+    "depthMm": 715,
+    "weightKg": 118
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "K-771 compression diaphragm",
+      "notes": "Extended phase plug on a K-792 horn"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 51,
+      "quantity": 1,
+      "material": "K-933-HP compression diaphragm",
+      "notes": "2-inch driver on a K-406 horn"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 381,
+      "quantity": 1,
+      "material": "K-33-E fiber-composite cone",
+      "notes": "15-inch woofer in a folded horn — corner-loaded"
+    }
+  ],
+  "frequencyResponseHz": {
+    "min": 34,
+    "max": 19000
+  },
+  "frequencyResponseToleranceDb": 4,
+  "sensitivityDb": 103,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/klipsch-klipschorn-ak7-hero.webp",
+    "front": "/speakers/klipsch-klipschorn-ak7-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/klipschorn-ak7",
+  "description": {
+    "en": "Latest evolution of the corner-loaded Klipschorn, in production since 1946 — the AK7 upgrades the HF and MF compression drivers (K-771 on K-792 horn, K-933-HP on K-406 horn) over a K-33-E 15-inch folded-horn woofer. 103 dB sensitivity and 300 W continuous power handling; optional active DSP crossover.",
+    "es": "Última evolución del Klipschorn corner-loaded, en producción continua desde 1946 — el AK7 mejora los drivers de compresión HF y MF (K-771 sobre horn K-792, K-933-HP sobre horn K-406) sobre un woofer K-33-E de 15\" en horn plegado. 103 dB de sensibilidad y 300 W continuos; crossover DSP activo opcional."
+  }
+}

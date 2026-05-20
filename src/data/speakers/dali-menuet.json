@@ -1,0 +1,52 @@
+{
+  "id": "dali-menuet",
+  "brand": "Dali",
+  "model": "Menuet",
+  "series": "Menuet",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 250,
+    "widthMm": 150,
+    "depthMm": 230,
+    "weightKg": 4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 114,
+      "quantity": 1,
+      "material": "wood-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 59,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 86,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "max": 100
+  },
+  "recommendedAmpW": {
+    "min": 20,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/dali-menuet-hero.png",
+    "front": "/speakers/dali-menuet-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/menuet/dali-menuet/",
+  "description": {
+    "en": "A compact 2-way stand-mount that scales above its size — 28 mm soft-dome tweeter and a 4½″ wood-fibre mid-bass cone, crossed at 3 kHz, in a 250 × 150 × 230 mm rear-ported cabinet. Standard finishes: gloss black, gloss white, lacquer.",
+    "es": "Un stand-mount compacto de dos vías que suena más grande de lo que parece — tweeter de domo suave de 28 mm y cono mid-bass de fibra de madera de 4½″, acoplados a 3 kHz, en un gabinete de 250 × 150 × 230 mm con puerto trasero. Acabados estándar: negro gloss, blanco gloss y laqueado."
+  }
+}

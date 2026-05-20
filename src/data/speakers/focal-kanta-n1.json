@@ -1,0 +1,52 @@
+{
+  "id": "focal-kanta-n1",
+  "brand": "Focal",
+  "series": "Kanta",
+  "model": "Kanta N°1",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 422,
+    "widthMm": 236,
+    "depthMm": 391,
+    "weightKg": 14
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IAL3 tweeter — Kanta-line generation, distinct from Utopia's IAL2 and Sopra's IHL"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "flax cone",
+      "notes": "TMD suspension"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 46,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.9,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/focal-kanta-n1-hero.webp",
+    "front": "/speakers/focal-kanta-n1-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/kanta-n1",
+  "description": {
+    "en": "Two-way standmount of the Kanta line — Focal's 27 mm IAL3 pure-beryllium tweeter paired with a 165 mm flax-cone mid-bass with TMD suspension in a compact front-ported cabinet. Famous for bold finish options (Carrara White, Solar Yellow, Gauloise Blue) with a high-density polymer baffle.",
+    "es": "Bookshelf de dos vías de la línea Kanta — el tweeter IAL3 de 27 mm en berilio puro de Focal junto a un mid-bass de 165 mm en cono de lino con suspensión TMD, en un gabinete compacto con puerto frontal. Reconocido por sus terminaciones llamativas (Carrara White, Solar Yellow, Gauloise Blue) con bafle en polímero de alta densidad."
+  }
+}

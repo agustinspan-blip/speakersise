@@ -1,0 +1,51 @@
+{
+  "id": "wharfedale-aura-1",
+  "brand": "Wharfedale",
+  "model": "Aura 1",
+  "series": "Aura",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 386,
+    "widthMm": 234,
+    "depthMm": 352,
+    "weightKg": 12.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 90,
+      "quantity": 1,
+      "material": "AMT",
+      "notes": "27 × 90 mm Air Motion Transformer"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "woven black glass-fibre matrix cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 48,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 86,
+  "impedanceOhm": 6,
+  "impedanceMinOhm": 4.1,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/wharfedale-aura-1-hero.png",
+    "front": "/speakers/wharfedale-aura-1-front.png"
+  },
+  "sourceUrl": "https://www.wharfedale.co.uk/collections/aura-series/products/aura-1",
+  "description": {
+    "en": "The most compact model in Wharfedale's Aura series — a two-way bookshelf pairing a 27 × 90 mm AMT high-frequency transducer with a 5″ woven glass-fibre matrix mid-bass. The downward-firing port and dense plinth target tight, articulate bass in a footprint suited to nearfield and small-room listening.",
+    "es": "El modelo más compacto de la serie Aura de Wharfedale: un bookshelf de dos vías que combina un transductor AMT de 27 × 90 mm con un mid-bass de 5″ con membrana de fibra de vidrio tejida. El puerto de descarga inferior y el plinto rígido buscan graves articulados y precisos en un formato pensado para campo cercano y salas chicas."
+  }
+}

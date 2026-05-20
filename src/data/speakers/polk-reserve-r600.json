@@ -1,0 +1,50 @@
+{
+  "id": "polk-reserve-r600",
+  "brand": "Polk",
+  "series": "Reserve",
+  "model": "Reserve R600",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1064,
+    "widthMm": 280,
+    "depthMm": 382,
+    "weightKg": 21.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Pinnacle ring radiator"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "Turbine cone",
+      "notes": "6.5\" foam-core; 2.5-way configuration with single 2.7 kHz crossover"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 43,
+    "max": 38000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87.5,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/polk-reserve-r600-hero.webp",
+    "front": "/speakers/polk-reserve-r600-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en/product/home-speakers/floor-standing/reserve-r600/300034.html",
+  "description": {
+    "en": "2.5-way Reserve floorstander — 1\" Pinnacle ring-radiator tweeter over twin 6.5\" Turbine-cone woofers with a single 2.7 kHz crossover. Floor-firing Power Port with X-Port technology delivers down-tuned bass extension to 43 Hz at 87.5 dB sensitivity.",
+    "es": "Floorstander Reserve de 2.5 vías — tweeter Pinnacle de anillo radiante de 1\" sobre dos woofers Turbine Cone de 6,5\" con un único crossover a 2,7 kHz. Power Port de tiro inferior con tecnología X-Port que extiende los graves a 43 Hz, con 87,5 dB de sensibilidad."
+  }
+}

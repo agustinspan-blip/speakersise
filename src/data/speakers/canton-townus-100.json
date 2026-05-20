@@ -1,0 +1,54 @@
+{
+  "id": "canton-townus-100",
+  "brand": "Canton",
+  "series": "Townus",
+  "model": "Townus 100",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1100,
+    "widthMm": 265,
+    "depthMm": 370,
+    "weightKg": 27
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "ceramic dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 174,
+      "quantity": 1,
+      "material": "titanium cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 192,
+      "quantity": 2,
+      "material": "titanium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 20,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 180
+  },
+  "images": {
+    "hero": "/speakers/canton-townus-100-hero.webp",
+    "front": "/speakers/canton-townus-100-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/tower-speaker/products/series/townus/products/type/passive-loudspeakers/townus-100/04458",
+  "description": {
+    "en": "Flagship 3-way Townus floorstander — 25 mm ceramic tweeter, 174 mm titanium midrange and twin 192 mm titanium woofers in a down-firing bass-reflex cabinet. 340 W music load capacity.",
+    "es": "Floorstander Townus tope de gama de 3 vías — tweeter cerámico de 25 mm, midrange de titanio de 174 mm y dos woofers de titanio de 192 mm en gabinete con reflex inferior. Capacidad de pico 340 W."
+  }
+}

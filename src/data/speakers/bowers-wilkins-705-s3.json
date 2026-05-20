@@ -1,0 +1,52 @@
+{
+  "id": "bowers-wilkins-705-s3",
+  "brand": "Bowers & Wilkins",
+  "series": "700",
+  "generation": "S3",
+  "model": "705 S3",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 413,
+    "widthMm": 192,
+    "depthMm": 337,
+    "weightKg": 9.58
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Carbon Dome",
+      "notes": "Decoupled Carbon Dome in Solid Body Tweeter-on-Top"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Continuum cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 50,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.7,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 120
+  },
+  "images": {
+    "hero": "/speakers/bowers-wilkins-705-s3-hero.webp",
+    "front": "/speakers/bowers-wilkins-705-s3-front.png"
+  },
+  "sourceUrl": "https://www.bowerswilkins.com/en/product/loudspeakers/705-s3/FP43087P.html",
+  "description": {
+    "en": "Flagship stand-mount of the 700 S3 line, the only two-way to retain the Solid Body Tweeter-on-Top from the 800 Diamond family. A single 165 mm Continuum-cone driver pairs with a Decoupled Carbon Dome tweeter; a front-firing Flowport keeps placement near walls forgiving.",
+    "es": "Bookshelf insignia de la línea 700 S3, el único de dos vías que conserva el Solid Body Tweeter-on-Top heredado de la 800 Diamond. Un driver Continuum de 165 mm trabaja junto al tweeter Carbon Dome desacoplado, con un Flowport frontal que permite ubicarlo cerca de la pared."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "monitor-audio-silver-100-7g",
+  "brand": "Monitor Audio",
+  "model": "Silver 100",
+  "generation": "7G",
+  "series": "Silver",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 375,
+    "widthMm": 230,
+    "depthMm": 332,
+    "weightKg": 9.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "C-CAM Gold Dome",
+      "notes": "UD Waveguide II"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 203,
+      "quantity": 1,
+      "material": "C-CAM RST II"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 42,
+  "frequencyResponseHz": {
+    "min": 35,
+    "max": 35000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 87.5,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4.9,
+  "powerHandlingW": {
+    "max": 120
+  },
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 120
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-silver-100-7g-hero.jpg",
+    "front": "/speakers/monitor-audio-silver-100-7g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/silver-series-7g/silver-100-7g/",
+  "priceUsd": 1649,
+  "description": {
+    "en": "A two-way bookshelf in Silver 7G dress. Pairs Monitor Audio's evolved 25 mm C-CAM gold-dome tweeter with a 6½″ RST II mid-bass cone in a braced cabinet tuned by an HiVe II rear port. The Silver line's sweet spot for stand-mount listening.",
+    "es": "Un bookshelf de dos vías en formato Silver de séptima generación. Combina el tweeter C-CAM de domo dorado de 25 mm de Monitor Audio con un cono mid-bass RST II de 6½″, en un gabinete reforzado con puerto trasero HiVe II. El punto dulce de la línea Silver para escucha sobre soporte."
+  }
+}

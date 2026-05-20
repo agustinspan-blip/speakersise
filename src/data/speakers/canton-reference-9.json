@@ -1,0 +1,50 @@
+{
+  "id": "canton-reference-9",
+  "brand": "Canton",
+  "series": "Reference",
+  "model": "Reference 9",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 460,
+    "widthMm": 244,
+    "depthMm": 390,
+    "weightKg": 18
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "aluminium-oxide ceramic dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 174,
+      "quantity": 1,
+      "material": "Black Ceramic Tungsten cone",
+      "notes": "Wave Surround"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 25,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 125
+  },
+  "images": {
+    "hero": "/speakers/canton-reference-9-hero.webp",
+    "front": "/speakers/canton-reference-9-front.png"
+  },
+  "sourceUrl": "https://www.canton.de/en/products/type/compact-speaker/products/series/reference-2023-archiv/products/type/passive-loudspeakers/reference-9/04410",
+  "description": {
+    "en": "Compact 2-way Reference (2023) standmount — 25 mm aluminium-oxide ceramic tweeter paired with a 174 mm BCT mid-bass in a down-firing bass-reflex cabinet with stand. WBT-Nextgen connectors with adjustable treble control; 220 W music load capacity.",
+    "es": "Bookshelf Reference 2023 compacto de 2 vías — tweeter cerámico de óxido de aluminio de 25 mm junto a un mid-bass BCT de 174 mm en gabinete con reflex inferior y zócalo dedicado. Terminales WBT-Nextgen con control de agudos ajustable; capacidad de pico 220 W."
+  }
+}

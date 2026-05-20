@@ -1,0 +1,70 @@
+{
+  "id": "sonus-faber-duetto",
+  "brand": "Sonus Faber",
+  "series": "Wireless",
+  "model": "Duetto",
+  "type": "bookshelf",
+  "powerType": "active",
+  "dimensions": {
+    "heightMm": 342,
+    "widthMm": 197,
+    "depthMm": 272,
+    "weightKg": 7.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "silk soft dome",
+      "notes": "Ferrite magnet with copper cap"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 134,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Neodymium magnet with copper cap and aluminium ring"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 37,
+    "max": 30000
+  },
+  "active": {
+    "amplification": [
+      { "driverRole": "tweeter", "powerW": 100, "amplifierClass": "AB" },
+      { "driverRole": "mid-bass", "powerW": 250, "amplifierClass": "D" }
+    ],
+    "totalAmpPowerW": 700,
+    "maxSplDb": 105,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "rca-analog",
+      "rca-phono",
+      "optical",
+      "hdmi-earc"
+    ],
+    "wirelessProtocols": [
+      "airplay-2",
+      "google-cast",
+      "spotify-connect",
+      "tidal-connect",
+      "roon-ready",
+      "bluetooth",
+      "wifi"
+    ],
+    "outputs": ["rca-sub"],
+    "pairedSecondary": true
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-duetto-hero.webp",
+    "front": "/speakers/sonus-faber-duetto-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/duetto/tech-specs",
+  "description": {
+    "en": "Active wireless two-way standmount in a curved lute-shaped cabinet — 28 mm silk-dome tweeter with copper cap paired with a 134 mm paper midwoofer, bi-amped at 100 W class-AB + 250 W class-D per speaker. ESS SABRE 32-bit DAC and full streaming (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, aptX HD Bluetooth) with HDMI eARC and built-in MM phono pre.",
+    "es": "Bookshelf activo wireless de dos vías en un gabinete curvo con forma de laúd — tweeter de domo de seda de 28 mm con copper cap junto a un midwoofer de 134 mm en cono de papel, bi-amplificados a 100 W class-AB + 250 W class-D por parlante. DAC ESS SABRE 32-bit y streaming completo (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, Bluetooth aptX HD) con HDMI eARC y pre de phono MM integrado."
+  }
+}

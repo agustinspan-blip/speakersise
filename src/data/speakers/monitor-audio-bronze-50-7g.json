@@ -1,0 +1,57 @@
+{
+  "id": "monitor-audio-bronze-50-7g",
+  "brand": "Monitor Audio",
+  "model": "Bronze 50",
+  "generation": "7G",
+  "series": "Bronze",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 335,
+    "widthMm": 185,
+    "depthMm": 328,
+    "weightKg": 6.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "C-CAM Gold Dome",
+      "notes": "UD waveguide"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 152,
+      "quantity": 1,
+      "material": "C-CAM"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 47,
+  "frequencyResponseHz": {
+    "min": 41,
+    "max": 30000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 86,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4,
+  "powerHandlingW": {
+    "max": 100
+  },
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/monitor-audio-bronze-50-7g-hero.jpg",
+    "front": "/speakers/monitor-audio-bronze-50-7g-front.png"
+  },
+  "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/bronze-series-7g/bronze-50-7g/",
+  "priceUsd": 849,
+  "description": {
+    "en": "The 7G refresh of Monitor Audio's entry bookshelf. A 25 mm gold-dome C-CAM tweeter and 5″ C-CAM mid-bass driver share an updated cabinet with a rear HiVe II port, aiming to deliver the brand's detailed, lively sound at the most accessible price point in the Bronze range.",
+    "es": "La séptima generación del bookshelf de entrada de Monitor Audio. Un tweeter de domo dorado C-CAM de 25 mm y un mid-bass C-CAM de 5″ comparten un gabinete renovado con puerto HiVe II trasero. Busca trasladar el sonido detallado y vivaz de la marca al punto de precio más accesible de la línea Bronze."
+  }
+}

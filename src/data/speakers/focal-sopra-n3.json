@@ -1,0 +1,59 @@
+{
+  "id": "focal-sopra-n3",
+  "brand": "Focal",
+  "series": "Sopra",
+  "model": "Sopra N°3",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1264,
+    "widthMm": 355,
+    "depthMm": 595,
+    "weightKg": 70
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IHL (Infinite Horn Loading) — Sopra-line tweeter, distinct from the Utopia's IAL2"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "W sandwich cone",
+      "notes": "TMD suspension + NIC motor"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 210,
+      "quantity": 2,
+      "material": "W sandwich cone",
+      "notes": "NIC motor"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 33,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 91.5,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.1,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 400
+  },
+  "images": {
+    "hero": "/speakers/focal-sopra-n3-hero.webp",
+    "front": "/speakers/focal-sopra-n3-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/sopra-n3",
+  "description": {
+    "en": "Largest member of Focal's Sopra line — a three-way floorstander pairing the 27 mm IHL pure-beryllium tweeter and a 165 mm W-cone midrange with twin 210 mm W-cone woofers. Brings Utopia-derived driver technology (NIC, TMD) into a more compact, front-ported cabinet aimed at rooms up to 70 m².",
+    "es": "El miembro más grande de la línea Sopra — floorstander de tres vías que combina el tweeter IHL de 27 mm en berilio puro y un midrange de 165 mm en cono W con dos woofers de 210 mm en cono W. Lleva la tecnología de drivers heredada del Utopia (NIC, TMD) a un gabinete más compacto con puerto frontal, pensado para salas de hasta 70 m²."
+  }
+}

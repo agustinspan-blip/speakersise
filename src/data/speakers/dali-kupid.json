@@ -1,0 +1,53 @@
+{
+  "id": "dali-kupid",
+  "brand": "Dali",
+  "model": "Kupid",
+  "series": "Kupid",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 245,
+    "widthMm": 150,
+    "depthMm": 198,
+    "weightKg": 2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 26,
+      "quantity": 1,
+      "material": "soft woven fabric dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 108,
+      "quantity": 1,
+      "material": "paper and wood-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "portTuningHz": 53,
+  "frequencyResponseHz": {
+    "min": 63,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 83,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "max": 120
+  },
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 120
+  },
+  "images": {
+    "hero": "/speakers/dali-kupid-hero.png",
+    "front": "/speakers/dali-kupid-front.png"
+  },
+  "sourceUrl": "https://www.dali-speakers.com/en/products/kupid/",
+  "description": {
+    "en": "An ultra-compact 2-way bookshelf / wall-mount speaker with a 26 mm soft-woven-fabric dome tweeter and a 4¼″ paper-and-wood-fibre mid-bass cone, crossed at 2.1 kHz. Rear bass-reflex tuned at 53 Hz; 245 × 150 × 198 mm cabinet at 2 kg. Ships with wall brackets, rubber feet and front grilles for shelf or wall placement.",
+    "es": "Un parlante ultra-compacto de dos vías para estantería o pared, con tweeter de domo de tela suave de 26 mm y un cono mid-bass de papel y fibra de madera de 4¼″, acoplados a 2,1 kHz. Bass-reflex trasero sintonizado a 53 Hz; gabinete de 245 × 150 × 198 mm y 2 kg. Incluye soportes de pared, pies de goma y rejillas frontales para colocación sobre estante o pared."
+  }
+}

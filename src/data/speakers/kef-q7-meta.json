@@ -1,0 +1,59 @@
+{
+  "id": "kef-q7-meta",
+  "brand": "KEF",
+  "series": "Q",
+  "generation": "Meta",
+  "model": "Q7 Meta",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1001,
+    "widthMm": 317,
+    "depthMm": 315,
+    "weightKg": 18.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 19,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q array — coaxial with the tweeter"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "hybrid aluminium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 46,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/kef-q7-meta-hero.webp",
+    "front": "/speakers/kef-q7-meta-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/q7-meta",
+  "description": {
+    "en": "Slim three-way floorstander in the Q Meta line — 12th-gen Uni-Q array (19 mm MAT tweeter + 100 mm aluminium midrange) paired with twin 165 mm hybrid-aluminium woofers in a rear-ported cabinet. The mid-tier floorstander between the bookshelves and the flagship Q11 Meta.",
+    "es": "Floorstander de tres vías de bafle delgado en la línea Q Meta — array Uni-Q de 12ª generación (tweeter de 19 mm con MAT + midrange de aluminio de 100 mm) junto a dos woofers de 165 mm en cono híbrido de aluminio, en gabinete con puerto trasero. Floorstander intermedio entre los bookshelves y el tope Q11 Meta."
+  }
+}

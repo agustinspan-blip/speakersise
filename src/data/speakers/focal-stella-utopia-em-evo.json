@@ -1,0 +1,60 @@
+{
+  "id": "focal-stella-utopia-em-evo",
+  "brand": "Focal",
+  "series": "Utopia",
+  "generation": "EM Evo",
+  "model": "Stella Utopia EM Evo",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1558,
+    "widthMm": 538,
+    "depthMm": 830,
+    "weightKg": 170
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 27,
+      "quantity": 1,
+      "material": "pure beryllium inverted dome",
+      "notes": "IAL2 (Infinite Acoustic Loading) tweeter"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "W sandwich cone",
+      "notes": "Power Flower magnet"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 330,
+      "quantity": 1,
+      "material": "W sandwich cone",
+      "notes": "Electromagnetic (EM) motor"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 22,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 94,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 2.8,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 1000
+  },
+  "images": {
+    "hero": "/speakers/focal-stella-utopia-em-evo-hero.webp",
+    "front": "/speakers/focal-stella-utopia-em-evo-front.png"
+  },
+  "sourceUrl": "https://www.focal.com/products/stella-utopia-evo",
+  "description": {
+    "en": "Smaller technological twin of the Grande Utopia EM Evo — a three-way Utopia column with the same IAL2 beryllium tweeter and Power Flower W-cone midranges, paired with a 330 mm electromagnetic-motor woofer. 243 OPC+ filter combinations let you fine-tune the voicing to the room.",
+    "es": "Hermana técnica menor del Grande Utopia EM Evo — columna Utopia de tres vías con el mismo tweeter IAL2 en berilio y los midranges Power Flower con cono W, sumando un woofer de 330 mm con motor electromagnético. Las 243 combinaciones del filtro OPC+ permiten ajustar el carácter sonoro a la sala."
+  }
+}

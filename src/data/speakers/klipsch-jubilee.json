@@ -1,0 +1,51 @@
+{
+  "id": "klipsch-jubilee",
+  "brand": "Klipsch",
+  "series": "Heritage",
+  "model": "Jubilee",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1765,
+    "widthMm": 1286,
+    "depthMm": 762,
+    "weightKg": 185
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "K-693 titanium compression diaphragm",
+      "notes": "9-inch voice coil; mounted on a fully horn-loaded HF section"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 305,
+      "quantity": 2,
+      "material": "K-283 fiber-composite cone",
+      "notes": "Dual 12\" woofers in a horn-loaded LF cabinet"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 18,
+    "max": 20000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 107,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.2,
+  "powerHandlingW": {
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/klipsch-jubilee-hero.webp",
+    "front": "/speakers/klipsch-jubilee-front.png"
+  },
+  "sourceUrl": "https://www.klipsch.com/products/klipsch-jubilee-floorstanding-speaker",
+  "description": {
+    "en": "The final project from founder Paul W. Klipsch — a two-piece fully horn-loaded Heritage flagship with a 1-inch K-693 titanium HF driver mated to a phase plug and twin 12-inch K-283 woofers in a horn-loaded LF cabinet. Requires an external active DSP crossover (340 Hz); 107 dB sensitivity and 125 dB max SPL.",
+    "es": "El último proyecto del fundador Paul W. Klipsch — flagship Heritage de dos piezas, totalmente horn-loaded, con driver HF K-693 de titanio de 1\" acoplado a un phase plug y dos woofers K-283 de 12\" en una caja LF horn-loaded. Requiere un crossover DSP activo externo (340 Hz); 107 dB de sensibilidad y 125 dB de SPL máximo."
+  }
+}

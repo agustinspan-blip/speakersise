@@ -1,0 +1,51 @@
+{
+  "id": "sonus-faber-sonetto-i-g2",
+  "brand": "Sonus Faber",
+  "series": "Sonetto",
+  "generation": "G2",
+  "model": "Sonetto I G2",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 377,
+    "widthMm": 203,
+    "depthMm": 304,
+    "weightKg": 8.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 28,
+      "quantity": 1,
+      "material": "DAD Arrow Point soft dome",
+      "notes": "Extended-frequency DAD"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 127,
+      "quantity": 1,
+      "material": "paper cone",
+      "notes": "Aluminium demodulation ring"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 52,
+    "max": 40000
+  },
+  "sensitivityDb": 86,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/sonus-faber-sonetto-i-g2-hero.webp",
+    "front": "/speakers/sonus-faber-sonetto-i-g2-front.png"
+  },
+  "sourceUrl": "https://www.sonusfaber.com/en/products/sonetto-i/tech-specs",
+  "description": {
+    "en": "Compact two-way standmount — the smallest of the Sonetto G2 line. DAD Arrow Point tweeter paired with a 127 mm paper midwoofer (aluminium demodulation ring) in a front-vented lute-shaped cabinet (wood + leather + concrete).",
+    "es": "Bookshelf compacto de dos vías — el más chico de la línea Sonetto G2. Tweeter DAD Arrow Point junto a un midwoofer de 127 mm en cono de papel (anillo de demodulación de aluminio), en un gabinete con forma de laúd con puerto frontal (madera + cuero + concreto)."
+  }
+}

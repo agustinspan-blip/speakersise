@@ -1,0 +1,73 @@
+{
+  "id": "kef-lsx-2",
+  "brand": "KEF",
+  "series": "LSX",
+  "generation": "II",
+  "model": "LSX II",
+  "type": "bookshelf",
+  "powerType": "active",
+  "dimensions": {
+    "heightMm": 240,
+    "widthMm": 155,
+    "depthMm": 180,
+    "weightKg": 3.6
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 19,
+      "quantity": 1,
+      "material": "aluminium dome",
+      "notes": "Uni-Q array — coaxial with the mid-bass"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 115,
+      "quantity": 1,
+      "material": "magnesium-aluminium alloy cone"
+    }
+  ],
+  "frequencyResponseHz": {
+    "min": 54,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "active": {
+    "amplification": [
+      { "driverRole": "tweeter", "powerW": 30, "amplifierClass": "D" },
+      { "driverRole": "mid-bass", "powerW": 70, "amplifierClass": "D" }
+    ],
+    "totalAmpPowerW": 200,
+    "maxSplDb": 102,
+    "maxSampleRateKhz": 384,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "hdmi-arc",
+      "optical",
+      "usb-audio",
+      "rca-analog",
+      "ethernet"
+    ],
+    "wirelessProtocols": [
+      "airplay-2",
+      "google-cast",
+      "bluetooth",
+      "roon-ready",
+      "spotify-connect",
+      "tidal-connect",
+      "wifi"
+    ],
+    "outputs": ["rca-sub"],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": true
+  },
+  "images": {
+    "hero": "/speakers/kef-lsx-2-hero.webp",
+    "front": "/speakers/kef-lsx-2-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/lsx-2",
+  "description": {
+    "en": "Compact active bookshelf pair built around the Uni-Q coaxial driver array and a Music Integrity Engine DSP. 100 W per cabinet plus full network streaming (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, Bluetooth 5.0) make it a desk-friendly all-in-one — speakers connect to each other either over the supplied cable or wirelessly via KEF's W2 link.",
+    "es": "Bookshelf activo compacto construido alrededor del array coaxial Uni-Q y el DSP Music Integrity Engine. 100 W por gabinete y streaming completo (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, Bluetooth 5.0) lo convierten en un all-in-one ideal para escritorio — los parlantes se conectan entre sí por cable o inalámbricamente vía el sistema W2 de KEF."
+  }
+}

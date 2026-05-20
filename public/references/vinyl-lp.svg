@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 302 302" role="img" aria-label="12-inch vinyl LP (302 mm)">
+  <defs>
+    <radialGradient id="vinylBody" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="60%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+  </defs>
+  <!-- record body -->
+  <circle cx="151" cy="151" r="150.5" fill="url(#vinylBody)" stroke="#000" stroke-width="0.5"/>
+  <!-- groove rings, drawn as light strokes -->
+  <g fill="none" stroke="#3a3a3a" stroke-width="0.4" opacity="0.55">
+    <circle cx="151" cy="151" r="148"/>
+    <circle cx="151" cy="151" r="142"/>
+    <circle cx="151" cy="151" r="135"/>
+    <circle cx="151" cy="151" r="128"/>
+    <circle cx="151" cy="151" r="120"/>
+    <circle cx="151" cy="151" r="112"/>
+    <circle cx="151" cy="151" r="104"/>
+    <circle cx="151" cy="151" r="96"/>
+    <circle cx="151" cy="151" r="88"/>
+    <circle cx="151" cy="151" r="80"/>
+    <circle cx="151" cy="151" r="72"/>
+    <circle cx="151" cy="151" r="64"/>
+  </g>
+  <!-- center label -->
+  <circle cx="151" cy="151" r="51" fill="#b22222" stroke="#7a1717" stroke-width="0.6"/>
+  <circle cx="151" cy="151" r="51" fill="none" stroke="#000" stroke-width="0.3" opacity="0.4"/>
+  <!-- label inner ring -->
+  <circle cx="151" cy="151" r="42" fill="none" stroke="#7a1717" stroke-width="0.4" opacity="0.6"/>
+  <!-- spindle hole -->
+  <circle cx="151" cy="151" r="3.6" fill="#0a0a0a" stroke="#000" stroke-width="0.3"/>
+</svg>

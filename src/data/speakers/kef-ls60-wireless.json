@@ -1,0 +1,82 @@
+{
+  "id": "kef-ls60-wireless",
+  "brand": "KEF",
+  "series": "LS60",
+  "model": "LS60 Wireless",
+  "type": "floorstander",
+  "powerType": "active",
+  "dimensions": {
+    "heightMm": 1090,
+    "widthMm": 213,
+    "depthMm": 394,
+    "weightKg": 31.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 19,
+      "quantity": 1,
+      "material": "MAT aluminium dome",
+      "notes": "12th-gen Uni-Q with Metamaterial Absorption Technology"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "Uni-Q midrange — coaxial with the tweeter"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 135,
+      "quantity": 4,
+      "material": "aluminium Uni-Core cone",
+      "notes": "Force-cancelling pairs — two opposing drivers per side"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 31,
+    "max": 24000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "active": {
+    "amplification": [
+      { "driverRole": "tweeter", "powerW": 100, "amplifierClass": "AB" },
+      { "driverRole": "midrange", "powerW": 100, "amplifierClass": "D" },
+      { "driverRole": "woofer", "powerW": 500, "amplifierClass": "D" }
+    ],
+    "totalAmpPowerW": 1400,
+    "maxSplDb": 111,
+    "maxSampleRateKhz": 384,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "hdmi-earc",
+      "optical",
+      "coax",
+      "rca-analog",
+      "usb-audio",
+      "ethernet"
+    ],
+    "wirelessProtocols": [
+      "airplay-2",
+      "google-cast",
+      "roon-ready",
+      "bluetooth",
+      "spotify-connect",
+      "tidal-connect",
+      "wifi"
+    ],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": true
+  },
+  "images": {
+    "hero": "/speakers/kef-ls60-wireless-hero.webp",
+    "front": "/speakers/kef-ls60-wireless-front.png"
+  },
+  "sourceUrl": "https://international.kef.com/products/ls60-wireless",
+  "description": {
+    "en": "Slim active floorstander built around the 12th-gen Uni-Q tweeter/midrange and four side-firing 135 mm Uni-Core woofers in force-cancelling pairs. Per-cabinet 700 W of bi-amplification plus full network streaming — AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect — make it a complete two-piece hi-fi system that only needs power and ethernet/Wi-Fi.",
+    "es": "Floorstander activo de bafle delgado construido alrededor del tweeter/midrange Uni-Q de 12ª generación y cuatro woofers laterales Uni-Core de 135 mm en pares de cancelación de fuerza. Cada gabinete entrega 700 W bi-amplificados y suma streaming completo — AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect — convirtiéndolo en un sistema HiFi completo de dos piezas que sólo necesita corriente y red."
+  }
+}
