@@ -239,7 +239,10 @@
     "none": "None"
   },
   "detail": {
-    "compareWith": "Compare with…"
+    "compareWith": "Compare with…",
+    "sideView": "Side view",
+    "backView": "Back view",
+    "topView": "Top view"
   },
   "share": {
     "copyLink": "Share link",

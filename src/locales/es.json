@@ -239,7 +239,10 @@
     "none": "Ninguna"
   },
   "detail": {
-    "compareWith": "Comparar con…"
+    "compareWith": "Comparar con…",
+    "sideView": "Vista lateral",
+    "backView": "Vista trasera",
+    "topView": "Vista superior"
   },
   "share": {
     "copyLink": "Compartir link",

@@ -72,6 +72,22 @@ export default async function SpeakerDetailPage({ params }: Props) {
   const brands = Array.from(new Set(allSpeakers.map((s) => s.brand))).sort();
   const front = speaker.images.front;
   const hero = speaker.images.hero;
+  const side = speaker.images.side;
+  const top = speaker.images.top;
+  const back = speaker.images.back;
+  // Supplementary views — rendered in a vertical stack below the front
+  // shot. Each entry uses the localized label as its alt text and the
+  // same wrapper treatment as `front`. Speakers without these slots
+  // filled simply skip the corresponding row. Eventually this is the
+  // seed for a thumbnail gallery (Phase 2); keep the data shape
+  // forward-compatible for that refactor.
+  const supplementaryViews = (
+    [
+      [side, t.detail.sideView],
+      [back, t.detail.backView],
+      [top, t.detail.topView],
+    ] as const
+  ).filter((p): p is readonly [string, string] => Boolean(p[0]));
   const typeLabel =
     speaker.type === "bookshelf"
       ? t.catalog.bookshelf
@@ -115,6 +131,21 @@ export default async function SpeakerDetailPage({ params }: Props) {
                 />
               </div>
             )}
+            {supplementaryViews.map(([src, label]) => (
+              <div
+                key={src}
+                className="relative rounded-lg border border-stone-200 dark:border-stone-800 bg-white overflow-hidden"
+                style={{ height: "300px" }}
+              >
+                <Image
+                  src={src}
+                  alt={`${speaker.brand} ${speaker.model} — ${label}`}
+                  fill
+                  className="object-contain p-6"
+                  sizes="380px"
+                />
+              </div>
+            ))}
             {brandLogo && (
               <Link
                 href={`/${locale}?brand=${encodeURIComponent(speaker.brand)}`}

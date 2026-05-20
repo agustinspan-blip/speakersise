@@ -45,18 +45,33 @@ con una sola fila:
 
 ### 2. Imágenes
 
-Una o dos imágenes por parlante, en la misma carpeta:
+Una a varias imágenes por parlante, en la misma carpeta. Solo `-front`
+es esencial — el resto son opcionales y se renderizan en la página
+de detalle cuando están presentes.
 
-- `<marca>-<modelo>-front.png` (o `.jpg`) — vista frontal pura, fondo blanco
-  o transparente, parlante derecho, **sin stand si es bookshelf**
-  (el comparador TrueScale necesita esta imagen para escala real).
-- `<marca>-<modelo>-hero.png` (o `.jpg`) — opcional. Vista 3/4 / perspectiva
-  para la página de detalle. Si no la pasás, uso el front.
+**Esencial**
+- `<marca>-<modelo>-front.png` (o `.jpg`) — vista frontal pura, fondo
+  blanco o transparente, parlante derecho, **sin stand si es bookshelf**.
+  El comparador TrueScale usa esta imagen para escala real.
+
+**Opcionales** (todas se muestran en la página de detalle cuando existen)
+- `<marca>-<modelo>-hero.png` (o `.jpg`) — vista 3/4 o de perspectiva
+  para la cabecera del detalle y los cards del catálogo. Si no la pasás,
+  uso el front como fallback.
+- `<marca>-<modelo>-side.png` — vista de perfil (cabinet visto desde el
+  costado). Útil para parlantes con formas esculpidas: Sonus Faber estilo
+  laúd, KEF Muon, cualquier cabinet con curvas no obvias desde el frente.
+- `<marca>-<modelo>-back.png` — parte trasera con terminales y puertos.
+  Útil para parlantes activos (donde están los inputs) y para mostrar
+  el tipo de cabinet (bass-reflex trasero, sellado, etc.).
+- `<marca>-<modelo>-top.png` — vista superior. Casi nunca necesaria,
+  reservada para parlantes con tapa peculiar (Sonus Faber, B&W Nautilus).
 
 Yo me encargo de:
 - Recortar márgenes, hacer fondos transparentes si tienen blanco sólido
-- Convertir formatos a PNG cuando hace falta
-- Mover los archivos a `public/speakers/<id>-front.png` y `<id>-hero.png`
+- Convertir formatos a PNG/WebP cuando hace falta
+- Mover los archivos a `public/speakers/<id>-<slot>.<ext>`
+- Setear los paths correctos en el JSON del parlante
 
 ## Workflow típico
 

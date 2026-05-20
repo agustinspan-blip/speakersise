@@ -115,10 +115,26 @@ export interface ActiveSpec {
   maxPowerConsumptionW?: number;
 }
 
+/**
+ * Image slots per speaker. Only `front` is treated as effectively required
+ * by the rest of the site:
+ *   - `front` is the technical reference shot the `/compare` page renders
+ *     at true scale (transparent or white background, cabinet upright,
+ *     no stand). Without it the comparator falls back to the hero, which
+ *     is visually misleading.
+ *   - `hero` is the 3/4 marketing shot used in catalog cards and the
+ *     speaker detail page; nice-to-have but not load-bearing.
+ *   - `side`, `top`, `back` are optional supplementary views shown on the
+ *     speaker detail page when present. Useful for sculpted cabinets
+ *     (Sonus Faber lute, KEF Muon) where a profile reveals what the front
+ *     can't. Sparse coverage is fine — the detail page renders each only
+ *     when its slot is filled.
+ */
 export interface SpeakerImages {
   front?: string;
   side?: string;
   top?: string;
+  back?: string;
   hero?: string;
 }
 
