@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getAllSpeakers } from "@/lib/speakers";
@@ -10,9 +11,9 @@ import {
 import { pageMetadata } from "@/lib/metadata";
 import { SiteHeader } from "@/components/SiteHeader";
 import { BrandStrip } from "@/components/BrandStrip";
-import { CompareCTA } from "@/components/CompareCTA";
 import {
   DONATION_TIERS,
+  KOFI_HANDLE,
   KOFI_URL,
   ROADMAP,
   kofiAmountUrl,
@@ -211,7 +212,48 @@ export default async function SupportPage({ params }: Props) {
 
       <BrandStrip brands={brands} locale={locale} t={t} />
 
-      <CompareCTA locale={locale} t={t} />
+      {/*
+        Ko-fi official floating-chat widget. Replaces CompareCTA on this
+        page because:
+          1. visitors landing on /support are in donate mindset, not
+             compare mindset — surface the donate affordance, not yet
+             another comparator entry point;
+          2. the widget renders an in-page donation modal (no full-page
+             redirect to ko-fi.com) so the user never loses context;
+          3. Ko-fi's standard URL params don't actually pre-fill amounts
+             on the public page, so the tier cards above can only suggest
+             — the modal is where actual donations happen.
+
+        The widget script reads `KOFI_HANDLE` so the same Ko-fi profile
+        the tier links target is wired here too. `strategy="lazyOnload"`
+        defers the script until after the page is fully painted so it
+        doesn't affect Core Web Vitals.
+      */}
+      {KOFI_HANDLE && (
+        <>
+          <Script
+            src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
+            strategy="lazyOnload"
+          />
+          <Script id="kofi-overlay-init" strategy="lazyOnload">
+            {`
+              (function () {
+                function init() {
+                  if (typeof kofiWidgetOverlay === 'undefined') return;
+                  kofiWidgetOverlay.draw(${JSON.stringify(KOFI_HANDLE)}, {
+                    'type': 'floating-chat',
+                    'floating-chat.donateButton.text': ${JSON.stringify(t.support.kofiButton)},
+                    'floating-chat.donateButton.background-color': '#d97706',
+                    'floating-chat.donateButton.text-color': '#fff'
+                  });
+                }
+                if (document.readyState === 'complete') init();
+                else window.addEventListener('load', init);
+              })();
+            `}
+          </Script>
+        </>
+      )}
     </div>
   );
 }
