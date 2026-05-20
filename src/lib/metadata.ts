@@ -14,6 +14,21 @@ const OG_LOCALE: Record<Locale, string> = {
   es: "es_AR",
 };
 
+/**
+ * Site-wide fallback OG card. Used whenever a page doesn't pass an
+ * explicit `ogImage` — covers the home, brands, contact, support and
+ * compare4 surfaces so every share unfurls with a branded preview
+ * instead of the platform's "no image found" empty state.
+ *
+ * Asset lives at `/public/og-default.png` (1200×630, ~90 KB).
+ */
+const DEFAULT_OG_IMAGE = {
+  url: "/og-default.png",
+  width: 1200,
+  height: 630,
+  alt: "TrueScale — compare HiFi speakers at true scale",
+} as const;
+
 export function pageMetadata({
   locale,
   path,
@@ -56,6 +71,18 @@ export function pageMetadata({
     .filter((l) => l !== locale)
     .map((l) => OG_LOCALE[l]);
 
+  // Pick the OG asset to use: the caller's explicit `ogImage` when set
+  // (speaker detail uses the speaker's hero photo), otherwise the
+  // site-wide default card so no share unfurls without an image.
+  const effectiveOg = ogImage
+    ? {
+        url: ogImage.url,
+        width: ogImage.width,
+        height: ogImage.height,
+        alt: ogImage.alt ?? title,
+      }
+    : { ...DEFAULT_OG_IMAGE, alt: DEFAULT_OG_IMAGE.alt };
+
   return {
     title,
     description,
@@ -70,25 +97,26 @@ export function pageMetadata({
       url: canonical,
       locale: OG_LOCALE[locale],
       alternateLocale,
-      // Only emit width/height when the caller explicitly knows them.
-      // Falsely defaulting to 1200×630 for arbitrary speaker photos
-      // misleads crawlers; omitting lets them infer from the image itself.
-      images: ogImage
-        ? [
-            {
-              url: ogImage.url,
-              ...(ogImage.width !== undefined ? { width: ogImage.width } : {}),
-              ...(ogImage.height !== undefined ? { height: ogImage.height } : {}),
-              alt: ogImage.alt ?? title,
-            },
-          ]
-        : undefined,
+      images: [
+        {
+          url: effectiveOg.url,
+          ...(effectiveOg.width !== undefined
+            ? { width: effectiveOg.width }
+            : {}),
+          ...(effectiveOg.height !== undefined
+            ? { height: effectiveOg.height }
+            : {}),
+          alt: effectiveOg.alt,
+        },
+      ],
     },
     twitter: {
-      card: ogImage ? "summary_large_image" : "summary",
+      // We always have an image now (either caller-provided or default),
+      // so the larger Twitter card layout is always the right shape.
+      card: "summary_large_image",
       title,
       description,
-      images: ogImage ? [ogImage.url] : undefined,
+      images: [effectiveOg.url],
     },
   };
 }
