@@ -22,7 +22,17 @@ import { SITE_URL } from "@/lib/site";
 
 const COLOR_A = "#2563eb";
 const COLOR_B = "#ea580c";
+/**
+ * Comparator render height on desktop. Drives all pixel-space math —
+ * the cabinet SVGs, the ruler, the side-by-side gaps. On mobile we
+ * down-scale the whole rendered block with a CSS transform (see the
+ * `[--cmp-scale]` variable wired below) so the comparator fits in a
+ * portrait viewport without horizontal scroll, while keeping the
+ * SSR-friendly fixed-pixel math intact.
+ */
 const DISPLAY_HEIGHT_PX = 560;
+/** CSS-variable name carrying the responsive scale factor. */
+const SCALE_VAR = "--cmp-scale";
 const OVERLAY_B_OPACITY = 0.45;
 const SIDE_BY_SIDE_GAP_PX = 40;
 const RULER_WIDTH_PX = 54;
@@ -566,12 +576,28 @@ function FrontOverlay({
         </h2>
         <Legend a={a} b={b} />
       </div>
-      <div className="rounded-lg border border-stone-200 dark:border-stone-800 bg-white p-6 overflow-x-auto">
+      <div className="rounded-lg border border-stone-200 dark:border-stone-800 bg-white p-3 sm:p-6 overflow-x-auto">
+        {/*
+          Responsive scaler: on mobile (<sm) the entire fixed-pixel
+          comparator is visually scaled to ~60% via CSS transform, with
+          the wrapper's calc-based width/height shrinking the reserved
+          layout box to match. On sm+ the variable resolves to 1 and the
+          transform/calcs collapse to no-ops. Keeps the SSR math intact
+          while making the block fit on a 360-414 px portrait viewport.
+        */}
         <div
-          className="relative mx-auto flex items-end"
+          className="mx-auto [--cmp-scale:0.62] sm:[--cmp-scale:1]"
+          style={{
+            width: `calc(${totalWidthPx}px * var(${SCALE_VAR}))`,
+            height: `calc(${DISPLAY_HEIGHT_PX}px * var(${SCALE_VAR}))`,
+          }}
+        >
+        <div
+          className="relative flex items-end origin-top-left"
           style={{
             height: `${DISPLAY_HEIGHT_PX}px`,
             width: `${totalWidthPx}px`,
+            transform: `scale(var(${SCALE_VAR}))`,
           }}
         >
           <Ruler maxHeightMm={maxHeightMm} scale={scale} />
@@ -632,6 +658,7 @@ function FrontOverlay({
             ))}
           </div>
         </div>
+        </div>
         <p className="mt-4 text-xs text-stone-500 text-center">
           {t.compare.swapHint} · {t.compare.referenceHeight} {maxHeightMm} mm (
           {(maxHeightMm / 10).toFixed(1)} cm) · 1 mm = {scale.toFixed(2)} px
@@ -684,12 +711,22 @@ function FrontSideBySide({
         </h2>
         <Legend a={a} b={b} />
       </div>
-      <div className="rounded-lg border border-stone-200 dark:border-stone-800 bg-white p-6 overflow-x-auto">
+      <div className="rounded-lg border border-stone-200 dark:border-stone-800 bg-white p-3 sm:p-6 overflow-x-auto">
+        {/* Same responsive scaler as the Overlay view — see the comment
+            block in the Overlay branch for the rationale. */}
         <div
-          className="relative mx-auto flex items-end"
+          className="mx-auto [--cmp-scale:0.62] sm:[--cmp-scale:1]"
+          style={{
+            width: `calc(${totalWidthPx}px * var(${SCALE_VAR}))`,
+            height: `calc(${DISPLAY_HEIGHT_PX}px * var(${SCALE_VAR}))`,
+          }}
+        >
+        <div
+          className="relative flex items-end origin-top-left"
           style={{
             height: `${DISPLAY_HEIGHT_PX}px`,
             width: `${totalWidthPx}px`,
+            transform: `scale(var(${SCALE_VAR}))`,
           }}
         >
           <Ruler maxHeightMm={maxHeightMm} scale={scale} />
@@ -727,6 +764,7 @@ function FrontSideBySide({
               className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-stone-300 dark:bg-stone-700"
             />
           </div>
+        </div>
         </div>
         <p className="mt-4 text-xs text-stone-500 text-center">
           {t.compare.swapHint} · {t.compare.referenceHeight} {maxHeightMm} mm (
