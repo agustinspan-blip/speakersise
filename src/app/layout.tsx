@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { headers } from "next/headers";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { defaultLocale, isLocale } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -41,7 +43,16 @@ export default async function RootLayout({
       lang={lang}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        {/* Privacy-friendly first-party analytics from Vercel. Both
+            packages read the project token from VERCEL_* env vars at
+            runtime (no manual id to plug in), inject zero cookies, and
+            stream events only in production builds — local dev is a
+            no-op so the dashboards aren't polluted with test traffic. */}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
