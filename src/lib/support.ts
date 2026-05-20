@@ -9,7 +9,7 @@
  * Until then the buttons link to the public Ko-fi homepage so nothing 404s.
  */
 
-export const KOFI_HANDLE = ""; // e.g. "agustin-hifisise"
+export const KOFI_HANDLE = "truescaleaudio";
 
 export const KOFI_URL = KOFI_HANDLE
   ? `https://ko-fi.com/${KOFI_HANDLE}`
@@ -67,9 +67,8 @@ export type RoadmapStatus = "next" | "soon" | "later";
 
 /** Translation keys under `t.support.roadmapItems.*`. */
 export type RoadmapTitleKey =
-  | "klipsch"
-  | "soonBrandsA"
-  | "soonBrandsB"
+  | "atc"
+  | "magicoParadigm"
   | "speakerWhereToBuy"
   | "trueHiFi";
 
@@ -79,9 +78,8 @@ export interface RoadmapItem {
 }
 
 export const ROADMAP: RoadmapItem[] = [
-  { titleKey: "klipsch", status: "next" },
-  { titleKey: "soonBrandsA", status: "soon" },
-  { titleKey: "soonBrandsB", status: "soon" },
+  { titleKey: "atc", status: "next" },
+  { titleKey: "magicoParadigm", status: "soon" },
   { titleKey: "speakerWhereToBuy", status: "later" },
   { titleKey: "trueHiFi", status: "later" },
 ];

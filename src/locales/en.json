@@ -284,9 +284,8 @@
       "later": "Later"
     },
     "roadmapItems": {
-      "klipsch": "Klipsch",
-      "soonBrandsA": "Focal · Polk · ATC",
-      "soonBrandsB": "Magico · Paradigm",
+      "atc": "ATC",
+      "magicoParadigm": "Magico · Paradigm",
       "speakerWhereToBuy": "«Where to buy» section on each speaker.",
       "trueHiFi": "«TrueHiFi» section to share your own setup with the TrueScale community"
     },
