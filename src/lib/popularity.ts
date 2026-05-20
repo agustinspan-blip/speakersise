@@ -14,21 +14,28 @@
 import { getSpeakerById } from "@/lib/speakers";
 import type { Speaker, SpeakerType } from "@/lib/types";
 
-/** Top-5 ids per speaker type, ordered #1 → #5. Edit by hand. */
+/**
+ * Top-5 ids per speaker type, ordered #1 → #5. Edit by hand.
+ *
+ * Curation principles for the launch list (10 unique brands across the 10
+ * slots): showcase the breadth of the catalog rather than weight by one
+ * label, and mix entry/mid-tier with flagships so the strip reads as
+ * "popular HiFi" rather than "expensive HiFi only".
+ */
 export const POPULAR_BY_TYPE: Record<SpeakerType, string[]> = {
   bookshelf: [
+    "kef-ls50-meta",
+    "wharfedale-linton",
+    "klipsch-rp-600m-ii",
     "dali-menuet",
-    "monitor-audio-bronze-50-7g",
     "dynaudio-special-forty",
-    "dali-oberon-1",
-    "monitor-audio-silver-100-7g",
   ],
   floorstander: [
-    "dali-oberon-7",
-    "monitor-audio-silver-300-7g",
-    "dynaudio-confidence-30",
-    "dali-rubicon-6",
+    "bowers-wilkins-802-d4",
+    "focal-sopra-n3",
+    "sonus-faber-olympica-nova-iii",
     "monitor-audio-gold-300-6g",
+    "polk-legend-l800",
   ],
 };
 
