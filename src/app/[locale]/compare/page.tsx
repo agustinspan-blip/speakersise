@@ -364,12 +364,29 @@ export default async function ComparePage({ params, searchParams }: Props) {
             options={speakers}
             selected={b?.id}
           />
-          <button
-            type="submit"
-            className="h-10 px-5 rounded-full bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400 transition-colors text-sm font-medium mt-6 sm:mt-[26px]"
-          >
-            {t.compare.compareButton}
-          </button>
+          {/*
+            The two SpeakerPicker columns are fieldsets with a `legend`
+            above their first select, so visually their dropdowns sit
+            ~20 px below the cell top. Wrap the submit in a div with an
+            invisible spacer that mirrors the legend's height + bottom
+            margin — that way the button aligns with the brand select
+            automatically, no magic mt-[Npx] to drift if the legend's
+            text-size or spacing changes.
+          */}
+          <div>
+            <span
+              aria-hidden
+              className="block text-xs font-medium mb-1 invisible select-none"
+            >
+              &nbsp;
+            </span>
+            <button
+              type="submit"
+              className="h-10 px-5 rounded-full bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400 transition-colors text-sm font-medium w-full sm:w-auto"
+            >
+              {t.compare.compareButton}
+            </button>
+          </div>
         </form>
 
         {unknownIds.length > 0 && (
