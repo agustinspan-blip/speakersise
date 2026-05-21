@@ -1,15 +1,23 @@
 /**
- * Truescale brand mark — concentric speaker-driver glyph with the "TSA"
- * initials inside the dome cap.
+ * TrueScale brand mark — eight-point sunburst in the site's amber.
  *
- * Geometry (viewBox 100×100):
- *   - r=48  → outer basket / flange ring (uses currentColor)
- *   - r=32  → cone outer edge          (uses currentColor)
- *   - r=14  → voice-coil dome cap      (amber accent, holds TSA letters)
+ * The mark is a static SVG served from `/public/icons/tsa-mark.svg`
+ * (1.3 KB, vectorised from the original PNG lockup with potrace so it
+ * stays crisp at any size). Colour is baked into the file as #d97706
+ * (amber-600), matching the rest of the site's accent palette — works
+ * over both the dark `bg-stone-900` header and lighter content surfaces
+ * without needing per-theme variants.
  *
- * The basket + cone rings inherit `currentColor` so the mark adapts to its
- * surrounding text colour automatically — light text on dark headers,
- * dark text on cream content.
+ * The natural aspect ratio of the asset is 324:442 (portrait, vertical
+ * axis is longer than horizontal — the north/south points extend
+ * further than east/west). We size by height and let width follow
+ * `w-auto` so the proportions stay correct at every render size.
+ *
+ * For the unusual case where someone needs a raster fallback (e.g.
+ * email signature, a place where SVG is not supported), there are PNG
+ * twins at the same path stem:
+ *   - `/public/icons/tsa-mark.png`    — 200×273, ~11 KB
+ *   - `/public/icons/tsa-mark-sm.png` — 100×136, ~3.3 KB
  */
 export function LogoMark({
   size = "md",
@@ -18,51 +26,22 @@ export function LogoMark({
   size?: "sm" | "md" | "lg";
   className?: string;
 }) {
-  const px = size === "sm" ? 24 : size === "lg" ? 56 : 36;
+  // Render height per slot. Width follows automatically from the SVG's
+  // intrinsic 324:442 ratio when paired with `w-auto`.
+  const heightPx = size === "sm" ? 26 : size === "lg" ? 56 : 36;
 
   return (
-    <svg
-      viewBox="0 0 100 100"
-      width={px}
-      height={px}
-      xmlns="http://www.w3.org/2000/svg"
-      className={`shrink-0 ${className}`}
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/icons/tsa-mark.svg"
+      alt=""
       aria-hidden
-    >
-      {/* Outer basket ring */}
-      <circle
-        cx="50"
-        cy="50"
-        r="48"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-      />
-      {/* Cone outer edge */}
-      <circle
-        cx="50"
-        cy="50"
-        r="32"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      />
-      {/* Voice-coil dome cap — amber */}
-      <circle cx="50" cy="50" r="14" fill="#d97706" />
-      {/* Brand initials */}
-      <text
-        x="50"
-        y="50"
-        textAnchor="middle"
-        dominantBaseline="central"
-        fontFamily="ui-sans-serif, system-ui, sans-serif"
-        fontWeight="700"
-        fontSize="9"
-        fill="white"
-        letterSpacing="1"
-      >
-        TSA
-      </text>
-    </svg>
+      height={heightPx}
+      // Width attribute is calibrated to the asset's 324/442 aspect ratio
+      // so the layout reserves the right amount of horizontal space before
+      // the SVG paints — avoids a tiny CLS jump on first render.
+      width={Math.round((heightPx * 324) / 442)}
+      className={`shrink-0 ${className}`}
+    />
   );
 }
