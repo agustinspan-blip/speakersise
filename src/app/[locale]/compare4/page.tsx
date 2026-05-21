@@ -340,7 +340,10 @@ function SpecsTable({
         {t.specs.title}
       </h2>
       <div className="rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 overflow-x-auto">
-        <table className="w-full text-sm">
+        {/* `table-fixed` so the speaker columns share equal width
+            (default `auto` layout makes them wider/narrower based on
+            content length). */}
+        <table className="w-full text-sm table-fixed">
           <thead>
             <tr className="bg-stone-50 dark:bg-stone-900/50 text-xs uppercase tracking-wide text-stone-500">
               {/* Mobile-tuned widths — see /compare for rationale. */}

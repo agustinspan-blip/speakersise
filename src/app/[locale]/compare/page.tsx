@@ -1195,7 +1195,13 @@ function SpecsComparison({
         {t.specs.title}
       </h2>
       <div className="rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 overflow-hidden">
-        <table className="w-full text-sm">
+        {/*
+          `table-fixed` makes the browser use the first row's column
+          widths verbatim and split any remaining width equally between
+          unsized columns — so the two data columns (A and B) end up
+          identical instead of wider/narrower based on cell content.
+        */}
+        <table className="w-full text-sm table-fixed">
           <thead>
             <tr className="bg-stone-50 dark:bg-stone-900/50 text-xs uppercase tracking-wide text-stone-500">
               {/*
