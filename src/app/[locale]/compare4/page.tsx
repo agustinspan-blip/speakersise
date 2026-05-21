@@ -8,6 +8,7 @@ import { NavCTAs } from "@/components/NavCTAs";
 import { SpeakerPicker } from "@/components/SpeakerPicker";
 import { BrandStrip } from "@/components/BrandStrip";
 import { CompareCTA } from "@/components/CompareCTA";
+import { ShuffleButton } from "@/components/ShuffleButton";
 import {
   getDictionary,
   isLocale,
@@ -73,6 +74,12 @@ export default async function Compare4Page({ params, searchParams }: Props) {
 
   const brands = Array.from(new Set(speakers.map((s) => s.brand))).sort();
 
+  // Bucketed catalog for the ShuffleButton — see /compare for rationale.
+  const idsByType = {
+    bookshelf: speakers.filter((s) => s.type === "bookshelf").map((s) => s.id),
+    floorstander: speakers.filter((s) => s.type === "floorstander").map((s) => s.id),
+  };
+
   return (
     <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col pb-24 sm:pb-0">
       <SiteHeader locale={locale} t={t} />
@@ -109,13 +116,20 @@ export default async function Compare4Page({ params, searchParams }: Props) {
               selected={sp[key]}
             />
           ))}
-          <div className="lg:col-span-4 flex items-center gap-3">
+          <div className="lg:col-span-4 flex items-center gap-3 flex-wrap">
             <button
               type="submit"
               className="h-10 px-5 rounded-full bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400 transition-colors text-sm font-medium"
             >
               {t.compare.compareButton}
             </button>
+            <ShuffleButton
+              locale={locale}
+              t={t}
+              target="compare4"
+              count={4}
+              idsByType={idsByType}
+            />
             {filled.length > 0 && (
               <Link
                 href={`/${locale}/compare4`}

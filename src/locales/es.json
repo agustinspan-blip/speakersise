@@ -160,6 +160,8 @@
     "pickBrand": "— elegí marca —",
     "pickType": "— elegí tipo —",
     "compareButton": "Comparar",
+    "shuffle": "Aleatorio",
+    "shuffleTitle": "Elegir una comparación al azar (mismo tipo de parlante)",
     "pickTwo": "Elegí dos parlantes arriba para empezar a comparar.",
     "unknownIds": "ID de parlante desconocido:",
     "unknownIdsHint": "La selección de arriba se mantuvo. Elegí un modelo válido y apretá Comparar.",

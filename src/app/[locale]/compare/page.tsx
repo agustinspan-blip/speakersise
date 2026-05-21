@@ -5,6 +5,7 @@ import type { Speaker } from "@/lib/types";
 import { ShareButton } from "@/components/ShareButton";
 import { SiteHeader } from "@/components/SiteHeader";
 import { CompareCTA } from "@/components/CompareCTA";
+import { ShuffleButton } from "@/components/ShuffleButton";
 import { NavCTAs } from "@/components/NavCTAs";
 import { SpeakerPicker } from "@/components/SpeakerPicker";
 import { ReferenceSelect } from "@/components/ReferenceSelect";
@@ -331,6 +332,14 @@ export default async function ComparePage({ params, searchParams }: Props) {
 
   const brands = Array.from(new Set(speakers.map((s) => s.brand))).sort();
 
+  // ShuffleButton needs the catalog bucketed by type so it can pick a
+  // same-type random pair on the client without re-parsing all speakers.
+  // Compute once on the server, pass down as a small JSON payload.
+  const idsByType = {
+    bookshelf: speakers.filter((s) => s.type === "bookshelf").map((s) => s.id),
+    floorstander: speakers.filter((s) => s.type === "floorstander").map((s) => s.id),
+  };
+
   return (
     <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col pb-24 sm:pb-0">
       <SiteHeader locale={locale} t={t} />
@@ -367,9 +376,9 @@ export default async function ComparePage({ params, searchParams }: Props) {
           {/*
             The two SpeakerPicker columns are fieldsets with a `legend`
             above their first select, so visually their dropdowns sit
-            ~20 px below the cell top. Wrap the submit in a div with an
-            invisible spacer that mirrors the legend's height + bottom
-            margin — that way the button aligns with the brand select
+            ~20 px below the cell top. Wrap the action row in a div with
+            an invisible spacer that mirrors the legend's height + bottom
+            margin — that way the buttons align with the brand select
             automatically, no magic mt-[Npx] to drift if the legend's
             text-size or spacing changes.
           */}
@@ -380,12 +389,22 @@ export default async function ComparePage({ params, searchParams }: Props) {
             >
               &nbsp;
             </span>
-            <button
-              type="submit"
-              className="h-10 px-5 rounded-full bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400 transition-colors text-sm font-medium w-full sm:w-auto"
-            >
-              {t.compare.compareButton}
-            </button>
+            <div className="flex items-center gap-2 flex-wrap">
+              <button
+                type="submit"
+                className="h-10 px-5 rounded-full bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400 transition-colors text-sm font-medium w-full sm:w-auto"
+              >
+                {t.compare.compareButton}
+              </button>
+              <ShuffleButton
+                locale={locale}
+                t={t}
+                target="compare"
+                count={2}
+                idsByType={idsByType}
+                className="w-full sm:w-auto"
+              />
+            </div>
           </div>
         </form>
 

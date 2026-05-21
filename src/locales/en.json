@@ -160,6 +160,8 @@
     "pickBrand": "— pick a brand —",
     "pickType": "— pick a type —",
     "compareButton": "Compare",
+    "shuffle": "Shuffle",
+    "shuffleTitle": "Pick a random comparison (same speaker type)",
     "pickTwo": "Pick two speakers above to start comparing.",
     "unknownIds": "Unknown speaker id(s):",
     "unknownIdsHint": "The selection above was kept. Pick a valid model and press Compare.",
