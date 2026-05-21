@@ -343,11 +343,12 @@ function SpecsTable({
         <table className="w-full text-sm">
           <thead>
             <tr className="bg-stone-50 dark:bg-stone-900/50 text-xs uppercase tracking-wide text-stone-500">
-              <th className="px-4 py-2 text-left font-medium w-40"></th>
+              {/* Mobile-tuned widths — see /compare for rationale. */}
+              <th className="px-2 sm:px-4 py-2 text-left font-medium w-24 sm:w-40"></th>
               {speakers.map((s, i) => (
                 <th
                   key={s.id}
-                  className={`px-4 py-2 text-left font-medium ${i > 0 ? "border-l border-stone-100 dark:border-stone-800" : ""}`}
+                  className={`px-2 sm:px-4 py-2 text-left font-medium ${i > 0 ? "border-l border-stone-100 dark:border-stone-800" : ""}`}
                 >
                   {s.brand} {s.model}
                 </th>
@@ -360,13 +361,13 @@ function SpecsTable({
                 key={label}
                 className="border-t border-stone-100 dark:border-stone-800 align-top"
               >
-                <th className="px-4 py-3 text-left font-normal text-stone-500">
+                <th className="px-2 sm:px-4 py-3 text-left font-normal text-xs sm:text-sm text-stone-500">
                   {label}
                 </th>
                 {cells.map((cell, i) => (
                   <td
                     key={i}
-                    className={`px-4 py-3 ${i > 0 ? "border-l border-stone-100 dark:border-stone-800" : ""}`}
+                    className={`px-2 sm:px-4 py-3 ${i > 0 ? "border-l border-stone-100 dark:border-stone-800" : ""}`}
                   >
                     {cell}
                   </td>

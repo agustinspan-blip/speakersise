@@ -1198,11 +1198,18 @@ function SpecsComparison({
         <table className="w-full text-sm">
           <thead>
             <tr className="bg-stone-50 dark:bg-stone-900/50 text-xs uppercase tracking-wide text-stone-500">
-              <th className="px-4 py-2 text-left font-medium w-40"></th>
-              <th className="px-4 py-2 text-left font-medium">
+              {/*
+                Mobile-tuned column widths: the label column shrinks
+                from w-40 (160 px) to w-24 (96 px) so the two data
+                columns each gain ~32 px of usable width — enough to
+                stop most spec values (drivers, enclosure) from
+                wrapping to 6+ lines on a portrait phone.
+              */}
+              <th className="px-2 sm:px-4 py-2 text-left font-medium w-24 sm:w-40"></th>
+              <th className="px-2 sm:px-4 py-2 text-left font-medium">
                 <span style={{ color: COLOR_A }}>A</span>
               </th>
-              <th className="px-4 py-2 text-left font-medium border-l border-stone-100 dark:border-stone-800">
+              <th className="px-2 sm:px-4 py-2 text-left font-medium border-l border-stone-100 dark:border-stone-800">
                 <span style={{ color: COLOR_B }}>B</span>
               </th>
             </tr>
@@ -1213,12 +1220,12 @@ function SpecsComparison({
                 key={label}
                 className="border-t border-stone-100 dark:border-stone-800"
               >
-                <th className="px-4 py-3 text-left font-normal text-stone-500">
+                <th className="px-2 sm:px-4 py-3 text-left font-normal text-xs sm:text-sm text-stone-500">
                   {label}
                 </th>
-                <td className={`px-4 py-3 ${diffClass(na, nb, true)}`}>{av}</td>
+                <td className={`px-2 sm:px-4 py-3 ${diffClass(na, nb, true)}`}>{av}</td>
                 <td
-                  className={`px-4 py-3 border-l border-stone-100 dark:border-stone-800 ${diffClass(nb, na, true)}`}
+                  className={`px-2 sm:px-4 py-3 border-l border-stone-100 dark:border-stone-800 ${diffClass(nb, na, true)}`}
                 >
                   {bv}
                 </td>
