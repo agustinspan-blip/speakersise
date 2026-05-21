@@ -1,21 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324 442" role="img" aria-label="TrueScale mark">
-<g transform="translate(0.000000,442.000000) scale(0.100000,-0.100000)"
-fill="#d97706" stroke="none">
-<path d="M2015 4408 c-2 -7 -9 -56 -15 -108 -6 -52 -20 -156 -30 -230 -11 -74
--40 -283 -65 -465 -25 -181 -50 -361 -55 -400 -14 -99 -36 -259 -55 -405 -9
--69 -18 -135 -21 -148 -4 -21 -21 -12 -232 131 -125 84 -319 218 -430 296
--112 79 -206 141 -209 138 -2 -3 111 -161 254 -352 304 -407 354 -477 349
--482 -6 -6 -926 -132 -1371 -188 -71 -9 -132 -18 -134 -21 -12 -12 33 -21 306
--61 351 -51 1135 -171 1179 -181 l31 -7 -79 -110 c-43 -60 -165 -226 -271
--368 -249 -334 -271 -366 -264 -373 3 -4 34 14 69 38 35 25 92 65 128 90 36
-24 106 73 155 108 219 155 504 350 512 350 5 0 23 -100 41 -222 54 -380 109
--769 157 -1107 25 -178 47 -327 50 -329 3 -3 8 -3 11 0 6 7 1 -30 99 693 79
-583 133 967 138 971 2 3 54 -33 371 -258 338 -240 373 -264 429 -302 32 -21
-60 -36 63 -33 3 3 -38 66 -92 139 -54 73 -152 207 -219 298 -138 187 -227 312
--268 373 l-28 42 23 7 c20 6 671 108 691 108 4 0 7 54 7 120 0 116 -1 120 -22
-125 -13 2 -111 16 -218 30 -310 40 -413 54 -447 60 l-33 6 42 57 c23 31 134
-181 247 332 113 151 231 310 263 353 53 71 67 97 53 97 -3 0 -94 -63 -202
--139 -357 -252 -625 -434 -642 -435 -13 -1 -21 34 -47 224 -88 628 -180 1329
--190 1453 -6 81 -18 116 -29 85z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 140" role="img" aria-label="TrueScale mark">
+  <!--
+    8-point sunburst, hand-crafted to match the original brand lockup.
+    The shape is mirror-symmetric across both axes (the previous
+    auto-vectorised version inherited a clipped right arm because the
+    source PNG was cropped too tightly before the trace).
+
+    Geometry (viewBox 100×140, centre at 50,70):
+      - N / S tips: long vertical points at y=0 and y=140
+      - E / W tips: medium horizontal points at x=0 and x=100
+      - NE / NW / SE / SW: short diagonal points
+      - Inner valleys tight to the centre so the spikes read as sharp
+        rays rather than a chunky compass rose.
+  -->
+  <path
+    fill="#d97706"
+    d="M 50 0
+       L 54 64
+       L 72 50
+       L 58 66
+       L 100 70
+       L 58 74
+       L 72 90
+       L 54 76
+       L 50 140
+       L 46 76
+       L 28 90
+       L 42 74
+       L 0 70
+       L 42 66
+       L 28 50
+       L 46 64
+       Z"
+  />
 </svg>

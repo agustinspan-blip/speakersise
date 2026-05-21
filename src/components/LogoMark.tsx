@@ -8,10 +8,10 @@
  * over both the dark `bg-stone-900` header and lighter content surfaces
  * without needing per-theme variants.
  *
- * The natural aspect ratio of the asset is 324:442 (portrait, vertical
+ * The natural aspect ratio of the asset is 100:140 (portrait, vertical
  * axis is longer than horizontal — the north/south points extend
  * further than east/west). We size by height and let width follow
- * `w-auto` so the proportions stay correct at every render size.
+ * the same ratio so the proportions stay correct at every render size.
  *
  * For the unusual case where someone needs a raster fallback (e.g.
  * email signature, a place where SVG is not supported), there are PNG
@@ -37,10 +37,10 @@ export function LogoMark({
       alt=""
       aria-hidden
       height={heightPx}
-      // Width attribute is calibrated to the asset's 324/442 aspect ratio
+      // Width attribute is calibrated to the asset's 100/140 aspect ratio
       // so the layout reserves the right amount of horizontal space before
       // the SVG paints — avoids a tiny CLS jump on first render.
-      width={Math.round((heightPx * 324) / 442)}
+      width={Math.round((heightPx * 100) / 140)}
       className={`shrink-0 ${className}`}
     />
   );
