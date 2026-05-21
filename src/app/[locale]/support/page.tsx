@@ -11,6 +11,7 @@ import {
 import { pageMetadata } from "@/lib/metadata";
 import { SiteHeader } from "@/components/SiteHeader";
 import { BrandStrip } from "@/components/BrandStrip";
+import { SponsorBanner } from "@/components/SponsorBanner";
 import {
   DONATION_TIERS,
   KOFI_HANDLE,
@@ -98,6 +99,13 @@ export default async function SupportPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* Sponsor slot — sits between the hero/stats and the donation
+            tiers. Visitors who can't or don't want to donate themselves
+            still see the sponsoring brands here as an alternative way
+            to support the project. Populates from src/lib/sponsors.ts;
+            empty list renders the dashed "be the first" placeholder. */}
+        <SponsorBanner t={t} />
 
         {/* Donation tiers */}
         <section className="mx-auto max-w-6xl px-6 py-16">
