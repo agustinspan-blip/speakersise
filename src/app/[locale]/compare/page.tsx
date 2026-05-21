@@ -348,7 +348,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
         <NavCTAs locale={locale} t={t} />
         <form
           method="get"
-          className="grid grid-cols-1 gap-6 sm:grid-cols-[1fr_1fr_auto] sm:items-start"
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2"
         >
           <input type="hidden" name="view" value={view} />
           <SpeakerPicker
@@ -374,37 +374,24 @@ export default async function ComparePage({ params, searchParams }: Props) {
             selected={b?.id}
           />
           {/*
-            The two SpeakerPicker columns are fieldsets with a `legend`
-            above their first select, so visually their dropdowns sit
-            ~20 px below the cell top. Wrap the action row in a div with
-            an invisible spacer that mirrors the legend's height + bottom
-            margin — that way the buttons align with the brand select
-            automatically, no magic mt-[Npx] to drift if the legend's
-            text-size or spacing changes.
+            Action row sits below the speaker pickers, spanning the full
+            width on sm+. Visual style matches /compare4 verbatim so the
+            two comparator pages feel like one product.
           */}
-          <div>
-            <span
-              aria-hidden
-              className="block text-xs font-medium mb-1 invisible select-none"
+          <div className="sm:col-span-2 flex items-center gap-3 flex-wrap">
+            <button
+              type="submit"
+              className="h-10 px-5 rounded-full bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400 transition-colors text-sm font-medium"
             >
-              &nbsp;
-            </span>
-            <div className="flex items-center gap-2 flex-wrap">
-              <button
-                type="submit"
-                className="h-10 px-5 rounded-full bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400 transition-colors text-sm font-medium w-full sm:w-auto"
-              >
-                {t.compare.compareButton}
-              </button>
-              <ShuffleButton
-                locale={locale}
-                t={t}
-                target="compare"
-                count={2}
-                idsByType={idsByType}
-                className="w-full sm:w-auto"
-              />
-            </div>
+              {t.compare.compareButton}
+            </button>
+            <ShuffleButton
+              locale={locale}
+              t={t}
+              target="compare"
+              count={2}
+              idsByType={idsByType}
+            />
           </div>
         </form>
 
