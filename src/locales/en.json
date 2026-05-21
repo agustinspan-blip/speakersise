@@ -36,6 +36,15 @@
     "brandHeroSubtitle": "Models available in the curated catalog.",
     "brandHeroExploreCta": "View speakers",
     "brandHeroEmpty": "No catalog entries yet — speakers from this brand are coming soon.",
+    "quickFactsEyebrow": "Catalog Insights",
+    "didYouKnowEyebrow": "Did you know?",
+    "quickFactsLabels": {
+      "comparisons": "Same-type comparisons",
+      "speakers": "HiFi speakers",
+      "brands": "Brands",
+      "oldestBrand": "Oldest brand",
+      "mostBrandsCountry": "Most brands from"
+    },
     "founded": "Founded in",
     "officialSite": "Official website",
     "brandCountries": {

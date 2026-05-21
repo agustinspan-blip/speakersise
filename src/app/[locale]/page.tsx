@@ -13,12 +13,16 @@ import {
 } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/metadata";
 import { BrandStrip } from "@/components/BrandStrip";
+import { CatalogInsights } from "@/components/CatalogInsights";
 import { CatalogList } from "@/components/CatalogList";
 import { CompareCTA } from "@/components/CompareCTA";
+import { DidYouKnow } from "@/components/DidYouKnow";
 import { NavCTAs } from "@/components/NavCTAs";
 import { SiteHeader } from "@/components/SiteHeader";
 import { TopFive } from "@/components/TopFive";
 import { getPopularSpeakers } from "@/lib/popularity";
+import { computeStats } from "@/lib/stats";
+import { TRIVIA } from "@/lib/trivia";
 import {
   BRAND_LOGOS,
   BRAND_INFO,
@@ -216,6 +220,10 @@ export default async function Home({ params, searchParams }: Props) {
     displayed = sortSpeakers(filtered, sort, recencyRank);
   }
 
+  // QuickFacts stats are deterministic — the trivia rotation happens
+  // client-side inside the carousel (which seeds itself on mount).
+  const catalogStats = computeStats(all);
+
   // Pick a featured speaker for the editorial hero (the most recent one with
   // a hero image, falling back to the first displayed).
   const heroSpeaker =
@@ -242,8 +250,6 @@ export default async function Home({ params, searchParams }: Props) {
         {showFeatured && heroSpeaker && (
           <Hero
             speaker={heroSpeaker}
-            totalSpeakers={all.length}
-            totalBrands={brands.length}
             locale={locale}
             t={t}
             theme={theme}
@@ -260,6 +266,19 @@ export default async function Home({ params, searchParams }: Props) {
           />
         )}
 
+        {/*
+          Below the hero: full-width Catalog Insights row followed by
+          the rotating Did You Know trivia. Both only render on the
+          unfiltered home — brand-filtered or search-filtered views
+          stay focused on their own catalog.
+        */}
+        {showFeatured && (
+          <>
+            <CatalogInsights stats={catalogStats} locale={locale} t={t} />
+            <DidYouKnow trivia={TRIVIA} locale={locale} t={t} />
+          </>
+        )}
+
         {/* "Most-searched" Top 5s — only on the unfiltered home, where
             they act as a quick-pick / discovery aid above the full grid.
             Hidden on filtered or brand views to keep those focused. */}
@@ -272,7 +291,7 @@ export default async function Home({ params, searchParams }: Props) {
           />
         )}
 
-        <div className="mx-auto max-w-6xl px-6 py-16 space-y-12">
+        <div className="mx-auto max-w-6xl px-6 pt-6 pb-16 space-y-12">
           <Filters
             brands={brands}
             countries={countries}
@@ -377,22 +396,21 @@ export default async function Home({ params, searchParams }: Props) {
 
 function Hero({
   speaker,
-  totalSpeakers,
-  totalBrands,
   locale,
   t,
   theme,
 }: {
   speaker: Speaker;
-  totalSpeakers: number;
-  totalBrands: number;
   locale: Locale;
   t: Dictionary;
   theme: BrandTheme;
 }) {
   const img = speaker.images.hero ?? speaker.images.front;
   return (
-    <section className="relative overflow-hidden border-b border-stone-200 dark:border-stone-800">
+    // No bottom border here — the divider moved down so it sits after
+    // the Catalog Insights row, visually grouping the hero and the
+    // insights as one block above the rest of the home page.
+    <section className="relative overflow-hidden">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-0"
@@ -400,7 +418,7 @@ function Hero({
           background: `radial-gradient(60% 60% at 75% 30%, ${theme.glowColor}, transparent 70%)`,
         }}
       />
-      <div className="relative mx-auto max-w-6xl px-6 py-16 sm:py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
+      <div className="relative mx-auto max-w-6xl px-6 py-12 sm:py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
         <div>
           <p
             className={`text-xs uppercase tracking-[0.25em] ${theme.accentEyebrow} font-medium`}
@@ -418,47 +436,24 @@ function Hero({
             {t.home.heroSubtitle}
           </p>
           {/* Primary CTAs: paired TrueScale + TechSpecs. Default amber
-              theme on the unfiltered catalog. */}
+              theme on the unfiltered catalog. The Catalog Insights row
+              + "Browse the catalog ↓" link sit below the hero (outside
+              this component) instead of inside the left column, so the
+              hero stays focused on the headline + image. */}
           <NavCTAs locale={locale} t={t} className="mt-8" />
-          {/* Tertiary link to scroll to the catalog grid below the hero. */}
-          <a
-            href="#catalog"
-            className="mt-5 inline-block text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 underline-offset-4 hover:underline"
-          >
-            {t.home.heroExploreCta} ↓
-          </a>
-          <div className="mt-10 flex items-center gap-8 text-sm">
-            <div>
-              <p className="text-3xl font-semibold tracking-tight text-stone-900 dark:text-stone-100">
-                {totalSpeakers}
-              </p>
-              <p className="mt-1 text-xs uppercase tracking-wider text-stone-500">
-                {t.home.modelsCount}
-              </p>
-            </div>
-            <div className="h-10 w-px bg-stone-300 dark:bg-stone-700" />
-            <div>
-              <p className="text-3xl font-semibold tracking-tight text-stone-900 dark:text-stone-100">
-                {totalBrands}
-              </p>
-              <p className="mt-1 text-xs uppercase tracking-wider text-stone-500">
-                {t.home.brandsCount}
-              </p>
-            </div>
-          </div>
         </div>
 
         <Link
           href={`/${locale}/speaker/${speaker.id}`}
-          className="group relative block aspect-[4/5] lg:aspect-auto lg:h-[520px] overflow-hidden rounded-2xl bg-white dark:bg-stone-900"
+          className="group relative block aspect-[4/5] lg:aspect-auto lg:h-[400px] overflow-hidden rounded-2xl bg-white dark:bg-stone-900"
         >
           {img && (
             <Image
               src={img}
               alt={`${speaker.brand} ${speaker.model}`}
               fill
-              className="object-contain p-10 pb-24 transition-transform duration-500 group-hover:scale-[1.02]"
-              sizes="(max-width: 1024px) 100vw, 520px"
+              className="object-contain p-8 pb-20 transition-transform duration-500 group-hover:scale-[1.02]"
+              sizes="(max-width: 1024px) 100vw, 400px"
               priority
             />
           )}

@@ -36,6 +36,15 @@
     "brandHeroSubtitle": "Modelos disponibles en el catálogo curado.",
     "brandHeroExploreCta": "Ver parlantes",
     "brandHeroEmpty": "Todavía no hay parlantes en el catálogo — los modelos de esta marca están por llegar.",
+    "quickFactsEyebrow": "Datos del catálogo",
+    "didYouKnowEyebrow": "¿Sabías que…?",
+    "quickFactsLabels": {
+      "comparisons": "Comparaciones por tipo",
+      "speakers": "Parlantes HiFi",
+      "brands": "Marcas",
+      "oldestBrand": "Marca más antigua",
+      "mostBrandsCountry": "País con más marcas"
+    },
     "founded": "Fundada en",
     "officialSite": "Sitio web oficial",
     "brandCountries": {

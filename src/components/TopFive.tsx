@@ -29,7 +29,7 @@ export function TopFive({
   if (bookshelf.length === 0 && floorstander.length === 0) return null;
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-12">
+    <section className="mx-auto max-w-6xl px-6 pt-2 pb-12">
       <p className="text-xs uppercase tracking-[0.25em] text-amber-700 dark:text-amber-400 font-medium mb-6">
         {t.catalog.topFiveEyebrow}
       </p>
