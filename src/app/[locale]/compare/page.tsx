@@ -609,7 +609,7 @@ function FrontOverlay({
           while making the block fit on a 360-414 px portrait viewport.
         */}
         <div
-          className="mx-auto [--cmp-scale:0.62] sm:[--cmp-scale:1]"
+          className="mx-auto [--cmp-scale:0.5] sm:[--cmp-scale:1]"
           style={{
             width: `calc(${totalWidthPx}px * var(${SCALE_VAR}))`,
             height: `calc(${DISPLAY_HEIGHT_PX}px * var(${SCALE_VAR}))`,
@@ -738,7 +738,7 @@ function FrontSideBySide({
         {/* Same responsive scaler as the Overlay view — see the comment
             block in the Overlay branch for the rationale. */}
         <div
-          className="mx-auto [--cmp-scale:0.62] sm:[--cmp-scale:1]"
+          className="mx-auto [--cmp-scale:0.5] sm:[--cmp-scale:1]"
           style={{
             width: `calc(${totalWidthPx}px * var(${SCALE_VAR}))`,
             height: `calc(${DISPLAY_HEIGHT_PX}px * var(${SCALE_VAR}))`,
@@ -876,7 +876,12 @@ function ReferencePickers({
 
   return (
     <div className="flex items-end gap-3 flex-wrap">
-      <span className="text-xs uppercase tracking-wider text-stone-500 self-center">
+      {/*
+        On mobile the label takes the full row (basis-full) so the three
+        controls stack neatly below it as a labelled group; on sm+ it
+        reverts to its natural width and sits in-line with the controls.
+      */}
+      <span className="basis-full sm:basis-auto text-xs uppercase tracking-wider text-stone-500 sm:self-center">
         {t.compare.references}
       </span>
       <ReferenceSelect
