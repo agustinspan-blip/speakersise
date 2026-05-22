@@ -82,6 +82,22 @@
     "techSpecs": "TrueSpecs",
     "brands": "Brands"
   },
+  "newsletter": {
+    "eyebrow": "Stay in the loop",
+    "title": "New brands, new models, in your inbox.",
+    "subtitle": "Get a short note when new manufacturers or models join the catalog. No spam, no third parties — unsubscribe anytime.",
+    "placeholder": "you@example.com",
+    "submit": "Subscribe",
+    "submitting": "Subscribing…",
+    "success": "You're in. Thanks for joining — talk soon.",
+    "privacyHint": "We only email when something worth your time lands.",
+    "errors": {
+      "invalidEmail": "That doesn't look like a valid email address.",
+      "rateLimited": "Too many sign-ups from this network. Try again in a few minutes.",
+      "notConfigured": "Sign-up isn't fully configured yet. Try again later or drop us a line via the contact page.",
+      "generic": "Something went wrong. Try again in a moment."
+    }
+  },
   "contact": {
     "navLink": "Contact",
     "eyebrow": "Contact",

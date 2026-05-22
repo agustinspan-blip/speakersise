@@ -385,9 +385,7 @@ export default async function Home({ params, searchParams }: Props) {
         </div>
       </main>
 
-      {brands.length > 0 && (
-        <BrandStrip brands={brands} locale={locale} t={t} />
-      )}
+      <BrandStrip brands={brands} locale={locale} t={t} />
 
       <CompareCTA locale={locale} t={t} />
     </div>

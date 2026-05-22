@@ -132,9 +132,7 @@ export default async function BrandsPage({ params }: Props) {
         </section>
       </main>
 
-      {liveBrands.length > 0 && (
-        <BrandStrip brands={liveBrands} locale={locale} t={t} />
-      )}
+      <BrandStrip brands={liveBrands} locale={locale} t={t} />
 
       <CompareCTA locale={locale} t={t} />
     </div>

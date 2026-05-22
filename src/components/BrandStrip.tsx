@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { BRAND_LOGOS, type BrandLogo } from "@/lib/brands";
 import type { Dictionary, Locale } from "@/lib/i18n";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 /**
- * Renders as a full-width dark footer below `<main>`. Brand logos scroll
- * horizontally in an infinite marquee; the list is duplicated so the
- * translateX wrap looks seamless. Hovering pauses the animation and
- * `prefers-reduced-motion` disables it entirely (see globals.css).
+ * Renders as a full-width dark footer below `<main>`. Stacks three
+ * blocks vertically: the newsletter signup (so every page that uses
+ * this footer gets the form), the infinite brand-logo marquee, and
+ * the thin utility row of cross-links. The marquee pauses on hover
+ * and `prefers-reduced-motion` disables it entirely (see globals.css).
  */
 export function BrandStrip({
   brands,
@@ -17,10 +19,15 @@ export function BrandStrip({
   locale: Locale;
   t: Dictionary;
 }) {
-  if (brands.length === 0) return null;
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-20 bg-stone-900">
+    <footer className="mt-14 bg-stone-900">
+      {/* Newsletter signup — appears even when the brand list is empty
+          (rare edge case: a deeply-filtered catalog) so the call-to-action
+          is never lost. */}
+      <NewsletterSignup locale={locale} t={t} />
+
+      {brands.length > 0 && (
       <div className="mx-auto max-w-6xl px-6 pt-14 pb-8">
         <h3 className="text-xs font-medium uppercase tracking-[0.25em] text-stone-400 text-center mb-8">
           {t.catalog.browseByBrand}
@@ -100,6 +107,7 @@ export function BrandStrip({
           </nav>
         </div>
       </div>
+      )}
     </footer>
   );
 }

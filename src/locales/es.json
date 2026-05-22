@@ -82,6 +82,22 @@
     "techSpecs": "TrueSpecs",
     "brands": "Fabricantes"
   },
+  "newsletter": {
+    "eyebrow": "Mantenete al tanto",
+    "title": "Nuevas marcas y modelos, directo a tu bandeja.",
+    "subtitle": "Te avisamos cuando sumamos un fabricante o modelo nuevo al catálogo. Sin spam, sin terceros — te das de baja cuando quieras.",
+    "placeholder": "vos@ejemplo.com",
+    "submit": "Suscribirme",
+    "submitting": "Suscribiendo…",
+    "success": "Listo. Gracias por sumarte — nos hablamos pronto.",
+    "privacyHint": "Sólo te escribimos cuando hay algo que vale la pena.",
+    "errors": {
+      "invalidEmail": "No parece una dirección de email válida.",
+      "rateLimited": "Demasiados intentos desde esta red. Probá de nuevo en unos minutos.",
+      "notConfigured": "La suscripción aún no está configurada del todo. Probá más tarde o escribinos desde la página de contacto.",
+      "generic": "Algo salió mal. Probá de nuevo en un momento."
+    }
+  },
   "contact": {
     "navLink": "Contacto",
     "eyebrow": "Contacto",
