@@ -11,6 +11,7 @@ import { SpeakerPicker } from "@/components/SpeakerPicker";
 import { ReferenceSelect } from "@/components/ReferenceSelect";
 import { BrandStrip } from "@/components/BrandStrip";
 import { ScaleDisclaimer } from "@/components/ScaleDisclaimer";
+import { JsonLd } from "@/components/JsonLd";
 import {
   getDictionary,
   isLocale,
@@ -380,8 +381,59 @@ export default async function ComparePage({ params, searchParams }: Props) {
     floorstander: speakers.filter((s) => s.type === "floorstander").map((s) => s.id),
   };
 
+  // Compare-page structured data. When both speakers are selected we
+  // emit a BreadcrumbList (Home → Compare → "A vs B") plus an ItemList
+  // wrapping minimal Product references — the per-speaker pages carry
+  // the full Product schema, this just lets Google connect the dots.
+  const compareJsonLd =
+    a && b
+      ? {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "TrueScale",
+                  item: `${SITE_URL}/${locale}`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Compare",
+                  item: `${SITE_URL}/${locale}/compare`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: `${a.brand} ${a.model} vs ${b.brand} ${b.model}`,
+                },
+              ],
+            },
+            {
+              "@type": "ItemList",
+              name: `${a.brand} ${a.model} vs ${b.brand} ${b.model}`,
+              numberOfItems: 2,
+              itemListElement: [a, b].map((s, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                item: {
+                  "@type": "Product",
+                  name: `${s.brand} ${s.model}`,
+                  brand: { "@type": "Brand", name: s.brand },
+                  url: `${SITE_URL}/${locale}/speaker/${s.id}`,
+                },
+              })),
+            },
+          ],
+        }
+      : null;
+
   return (
     <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col">
+      {compareJsonLd && <JsonLd data={compareJsonLd} />}
       <SiteHeader locale={locale} t={t} />
 
       <main className="flex-1 mx-auto max-w-6xl w-full px-6 py-10 space-y-10">

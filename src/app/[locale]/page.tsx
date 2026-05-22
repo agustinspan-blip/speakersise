@@ -12,6 +12,8 @@ import {
   locales,
 } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/metadata";
+import { JsonLd } from "@/components/JsonLd";
+import { SITE_URL } from "@/lib/site";
 import { BrandStrip } from "@/components/BrandStrip";
 import { CatalogInsights } from "@/components/CatalogInsights";
 import { CatalogList } from "@/components/CatalogList";
@@ -288,8 +290,30 @@ export default async function Home({ params, searchParams }: Props) {
     ? displayed.find((s) => s.images.hero) ?? displayed[0] ?? null
     : null;
 
+  // ItemList structured data for the catalogue/brand view. Helps Google
+  // surface this page as a "collection" of speakers in search results
+  // and gives each item a canonical URL Google can crawl next. Capped at
+  // 50 entries (Google ignores beyond ~100 anyway and the payload stays
+  // small). Position is 1-indexed per schema.org spec.
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: brandPageMode
+      ? `${brandPageMode} speakers on TrueScale`
+      : "TrueScale speaker catalogue",
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: displayed.length,
+    itemListElement: displayed.slice(0, 50).map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SITE_URL}/${locale}/speaker/${s.id}`,
+      name: `${s.brand} ${s.model}`,
+    })),
+  };
+
   return (
     <div className={`min-h-screen ${theme.pageBg} flex flex-col`}>
+      <JsonLd data={itemListJsonLd} />
       <SiteHeader locale={locale} t={t} />
 
       <main className="flex-1">

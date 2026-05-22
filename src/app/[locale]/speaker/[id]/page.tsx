@@ -9,7 +9,9 @@ import { NavCTAs } from "@/components/NavCTAs";
 import { BrandStrip } from "@/components/BrandStrip";
 import { CompareCTA } from "@/components/CompareCTA";
 import { SideViewBadge } from "@/components/SideViewBadge";
+import { JsonLd } from "@/components/JsonLd";
 import { BRAND_LOGOS, BRAND_INFO } from "@/lib/brands";
+import { SITE_URL } from "@/lib/site";
 import {
   getDictionary,
   isLocale,
@@ -99,8 +101,85 @@ export default async function SpeakerDetailPage({ params }: Props) {
     ? t.home.brandCountries[brandInfo.countryKey]
     : null;
 
+  // Build the Product structured-data payload. Google understands
+  // `additionalProperty` for arbitrary attributes (dimensions, drivers,
+  // impedance, sensitivity, etc.), and `audio/speaker` is a recognised
+  // category. No `offers` block — we don't list price and an empty offer
+  // would be misleading. The canonical URL mirrors the route generator.
+  const canonical = `${SITE_URL}/${locale}/speaker/${speaker.id}`;
+  const productImages = [hero, front, side, top, back].filter(
+    (img): img is string => Boolean(img)
+  );
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${canonical}#product`,
+    name: `${speaker.brand} ${speaker.model}${speaker.generation ? ` ${speaker.generation}` : ""}`,
+    brand: { "@type": "Brand", name: speaker.brand },
+    category: speaker.type === "bookshelf" ? "Bookshelf speaker" : "Floorstanding speaker",
+    url: canonical,
+    image: productImages.map((p) => (p.startsWith("http") ? p : `${SITE_URL}${p}`)),
+    description:
+      speaker.description?.[locale] ??
+      speaker.description?.en ??
+      `${speaker.brand} ${speaker.model} ${typeLabel} speaker.`,
+    height: { "@type": "QuantitativeValue", value: speaker.dimensions.heightMm, unitCode: "MMT" },
+    width: { "@type": "QuantitativeValue", value: speaker.dimensions.widthMm, unitCode: "MMT" },
+    depth: { "@type": "QuantitativeValue", value: speaker.dimensions.depthMm, unitCode: "MMT" },
+    weight: { "@type": "QuantitativeValue", value: speaker.dimensions.weightKg, unitCode: "KGM" },
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "Frequency response (low)",
+        value: speaker.frequencyResponseHz.min,
+        unitText: "Hz",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Frequency response (high)",
+        value: speaker.frequencyResponseHz.max,
+        unitText: "Hz",
+      },
+      speaker.sensitivityDb
+        ? {
+            "@type": "PropertyValue",
+            name: "Sensitivity",
+            value: speaker.sensitivityDb,
+            unitText: "dB",
+          }
+        : null,
+      speaker.impedanceOhm
+        ? {
+            "@type": "PropertyValue",
+            name: "Nominal impedance",
+            value: speaker.impedanceOhm,
+            unitText: "Ohm",
+          }
+        : null,
+      speaker.recommendedAmpW
+        ? {
+            "@type": "PropertyValue",
+            name: "Recommended amplifier power",
+            value: speaker.recommendedAmpW.max,
+            unitText: "W",
+          }
+        : null,
+      {
+        "@type": "PropertyValue",
+        name: "Enclosure",
+        value: speaker.enclosure ?? "n/a",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Power type",
+        value: speaker.powerType,
+      },
+    ].filter((p): p is NonNullable<typeof p> => p !== null),
+  };
+
   return (
     <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col">
+      <JsonLd data={productJsonLd} />
       <SiteHeader locale={locale} t={t} />
 
       <main className="flex-1 mx-auto max-w-6xl w-full px-6 py-16 space-y-12">

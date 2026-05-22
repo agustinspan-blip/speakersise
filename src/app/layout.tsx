@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { defaultLocale, isLocale } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -44,6 +45,48 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        {/*
+          Site-wide structured data. The `WebSite` node with
+          `SearchAction.target` is what unlocks the Google sitelinks
+          search box on brand queries; the `Organization` node feeds the
+          knowledge-panel logo + URL. Both are JSON-serialisable and emit
+          once at the bottom of <body> (per Google guidance), no client
+          interactivity required.
+        */}
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": `${SITE_URL}/#organization`,
+                name: "TrueScale",
+                alternateName: "TrueScale Audio",
+                url: SITE_URL,
+                logo: `${SITE_URL}/icon.svg`,
+                sameAs: [],
+              },
+              {
+                "@type": "WebSite",
+                "@id": `${SITE_URL}/#website`,
+                url: SITE_URL,
+                name: "TrueScale",
+                description:
+                  "Compare HiFi bookshelf and floorstanding speakers side by side at true real-world scale.",
+                publisher: { "@id": `${SITE_URL}/#organization` },
+                inLanguage: ["en", "es"],
+                potentialAction: {
+                  "@type": "SearchAction",
+                  target: {
+                    "@type": "EntryPoint",
+                    urlTemplate: `${SITE_URL}/${lang}?q={search_term_string}`,
+                  },
+                  "query-input": "required name=search_term_string",
+                },
+              },
+            ],
+          }}
+        />
         {children}
         {/* Privacy-friendly first-party analytics from Vercel. Both
             packages read the project token from VERCEL_* env vars at
