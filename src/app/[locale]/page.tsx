@@ -66,9 +66,29 @@ function mulberry32(seed: number): () => number {
 //
 // The PRNG is seeded fresh every server render so the catalog rotation
 // feels genuinely random across visits, while still keeping the recency
-// bias so newly-added speakers surface more often.
-function pickWeightedRecent(speakers: Speaker[], count: number): Speaker[] {
-  const decay = 0.85;
+// bias so newly-added speakers surface more often. After the weighted
+// shuffle we re-rank the first `diverseHeadCount` positions to apply a
+// per-brand cap — without that, the same big brand (Sonus Faber, KEF,
+// Wharfedale) tends to dominate the visible featured block because each
+// has 15+ models and weighted sampling biases toward the recent end of
+// the catalog where bulk imports clustered.
+function pickWeightedRecent(
+  speakers: Speaker[],
+  count: number,
+  /**
+   * How many positions at the front of the returned list get the
+   * brand-diversity treatment. Anything beyond this is left in pure
+   * weighted-shuffle order — those entries are revealed by "Show more"
+   * pagination and don't shape the initial impression.
+   */
+  diverseHeadCount = 9,
+  /** Max occurrences of any single brand inside the diverse head. */
+  maxPerBrandInHead = 2
+): Speaker[] {
+  // 0.96 keeps a mild lean toward recently-added models without making
+  // the older half of the catalog effectively invisible (decay 0.85
+  // had position 50 at weight 0.0003 — pure noise).
+  const decay = 0.96;
   const seed = (Math.random() * 0x1_0000_0000) | 0;
   const rand = mulberry32(seed);
   const keyed = speakers.map((s, i) => {
@@ -78,7 +98,32 @@ function pickWeightedRecent(speakers: Speaker[], count: number): Speaker[] {
     return { s, key };
   });
   keyed.sort((a, b) => b.key - a.key);
-  return keyed.slice(0, count).map((k) => k.s);
+
+  // Pass 1: walk the shuffled list filling the diverse head, capping at
+  // `maxPerBrandInHead` per brand. Anything that overflows the cap is
+  // queued for the tail, preserving its shuffled order.
+  const brandSeen = new Map<string, number>();
+  const head: Speaker[] = [];
+  const tail: Speaker[] = [];
+  for (const { s } of keyed) {
+    if (head.length < diverseHeadCount) {
+      const current = brandSeen.get(s.brand) ?? 0;
+      if (current < maxPerBrandInHead) {
+        head.push(s);
+        brandSeen.set(s.brand, current + 1);
+        continue;
+      }
+    }
+    tail.push(s);
+  }
+  // Pass 2: if the catalog is too brand-concentrated to fill the head
+  // under the cap (rare — happens only if very few brands are present),
+  // top up from the tail in shuffled order.
+  while (head.length < diverseHeadCount && tail.length > 0) {
+    head.push(tail.shift() as Speaker);
+  }
+
+  return [...head, ...tail].slice(0, count);
 }
 
 interface Props {
