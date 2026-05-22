@@ -41,22 +41,45 @@
   "frequencyResponseToleranceDb": 1,
   "active": {
     "amplification": [
-      { "driverRole": "tweeter", "powerW": 250, "amplifierClass": "D" },
-      { "driverRole": "midrange", "powerW": 250, "amplifierClass": "D" },
-      { "driverRole": "woofer", "powerW": 500, "amplifierClass": "D" }
+      {
+        "driverRole": "tweeter",
+        "powerW": 250,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "midrange",
+        "powerW": 250,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "woofer",
+        "powerW": 500,
+        "amplifierClass": "D"
+      }
     ],
     "totalAmpPowerW": 1000,
     "maxSplDb": 106,
     "maxSampleRateKhz": 192,
     "maxBitDepth": 24,
-    "wiredInputs": ["xlr-analog", "aes-ebu", "ethernet"],
-    "wirelessProtocols": ["roon-ready"],
-    "outputs": ["xlr-sub"],
-    "roomCorrection": ["custom-dsp"]
+    "wiredInputs": [
+      "xlr-analog",
+      "aes-ebu",
+      "ethernet"
+    ],
+    "wirelessProtocols": [
+      "roon-ready"
+    ],
+    "outputs": [
+      "xlr-sub"
+    ],
+    "roomCorrection": [
+      "custom-dsp"
+    ]
   },
   "images": {
     "hero": "/speakers/dutch-dutch-8c-hero.png",
-    "front": "/speakers/dutch-dutch-8c-front.png"
+    "front": "/speakers/dutch-dutch-8c-front.png",
+    "side": "/speakers/dutch-dutch-8c-side.png"
   },
   "sourceUrl": "https://dutchdutch.com/products/8c",
   "description": {

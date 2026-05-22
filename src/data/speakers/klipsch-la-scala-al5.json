@@ -47,7 +47,8 @@
   },
   "images": {
     "hero": "/speakers/klipsch-la-scala-al5-hero.webp",
-    "front": "/speakers/klipsch-la-scala-al5-front.png"
+    "front": "/speakers/klipsch-la-scala-al5-front.png",
+    "side": "/speakers/klipsch-la-scala-al5-side.png"
   },
   "sourceUrl": "https://www.klipsch.com/products/la-scala-al5-floorstanding-speaker",
   "description": {

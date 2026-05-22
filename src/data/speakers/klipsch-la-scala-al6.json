@@ -48,7 +48,8 @@
   },
   "images": {
     "hero": "/speakers/klipsch-la-scala-al6-hero.webp",
-    "front": "/speakers/klipsch-la-scala-al6-front.png"
+    "front": "/speakers/klipsch-la-scala-al6-front.png",
+    "side": "/speakers/klipsch-la-scala-al6-side.png"
   },
   "sourceUrl": "https://www.klipsch.com/products/la-scala-al6-floorstanding-speaker",
   "description": {

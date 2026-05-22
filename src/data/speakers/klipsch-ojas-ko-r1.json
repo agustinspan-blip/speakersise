@@ -41,7 +41,8 @@
   },
   "images": {
     "hero": "/speakers/klipsch-ojas-ko-r1-hero.webp",
-    "front": "/speakers/klipsch-ojas-ko-r1-front.png"
+    "front": "/speakers/klipsch-ojas-ko-r1-front.png",
+    "side": "/speakers/klipsch-ojas-ko-r1-side.png"
   },
   "sourceUrl": "https://www.klipsch.com/products/ko-r1",
   "description": {

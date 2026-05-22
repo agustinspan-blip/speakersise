@@ -48,7 +48,8 @@
   },
   "images": {
     "hero": "/speakers/klipsch-klipschorn-ak7-hero.webp",
-    "front": "/speakers/klipsch-klipschorn-ak7-front.png"
+    "front": "/speakers/klipsch-klipschorn-ak7-front.png",
+    "side": "/speakers/klipsch-klipschorn-ak7-side.png"
   },
   "sourceUrl": "https://www.klipsch.com/products/klipschorn-ak7",
   "description": {

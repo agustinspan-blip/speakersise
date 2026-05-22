@@ -41,7 +41,8 @@
   },
   "images": {
     "hero": "/speakers/klipsch-jubilee-hero.webp",
-    "front": "/speakers/klipsch-jubilee-front.png"
+    "front": "/speakers/klipsch-jubilee-front.png",
+    "side": "/speakers/klipsch-jubilee-side.png"
   },
   "sourceUrl": "https://www.klipsch.com/products/klipsch-jubilee-floorstanding-speaker",
   "description": {

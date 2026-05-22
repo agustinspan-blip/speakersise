@@ -46,7 +46,7 @@ type ViewMode = "overlay" | "side" | "profile";
  * faces left, so the *front* of the cabinet is the LEFT edge of the
  * image and the *back* is the right edge.
  */
-type ProfileAlign = "front" | "center" | "back";
+type ProfileAlign = "sideBySide" | "front" | "center" | "back";
 const PERSON_HEIGHT_OPTIONS_CM = [160, 165, 170, 175, 180, 185, 190] as const;
 type PersonHeightCm = (typeof PERSON_HEIGHT_OPTIONS_CM)[number];
 // Width-to-height ratio of the silhouette's tight bounding box (incl.
@@ -224,9 +224,9 @@ function compareHref(
       // server applies when `view` is missing or invalid.
       view: base.view && base.view !== "side" ? base.view : undefined,
       // Same trick for `align`: only serialise when explicitly non-default
-      // (default is "center") so the URL stays minimal.
+      // (default is "sideBySide") so the URL stays minimal.
       align:
-        base.view === "profile" && base.align && base.align !== "center"
+        base.view === "profile" && base.align && base.align !== "sideBySide"
           ? base.align
           : undefined,
       person: base.person ? String(base.person) : undefined,
@@ -352,10 +352,14 @@ export default async function ComparePage({ params, searchParams }: Props) {
       : sp.view === "profile" && profileAvailable
         ? "profile"
         : "side";
-  // Profile alignment — defaults to center; only honoured when the
-  // active view is profile.
+  // Profile alignment — defaults to side-by-side (no overlap); only
+  // honoured when the active view is profile.
   const align: ProfileAlign =
-    sp.align === "front" || sp.align === "back" ? sp.align : "center";
+    sp.align === "front" ||
+    sp.align === "back" ||
+    sp.align === "center"
+      ? sp.align
+      : "sideBySide";
   const personHeight = parsePersonHeight(sp.person);
   const currency = parseCurrency(sp.currency);
   const disc = parseDisc(sp.disc);
@@ -903,9 +907,13 @@ function ProfileOverlay({
   const scale = DISPLAY_HEIGHT_PX / maxHeightMm;
   const scaledDepthA = a.dimensions.depthMm * scale;
   const scaledDepthB = b.dimensions.depthMm * scale;
-  // Container holds both overlaid cabinets — its width is the deeper of
-  // the two, plus 48 px breathing room.
-  const overlayBlockPx = Math.max(scaledDepthA, scaledDepthB) + 48;
+  const isSideBySide = align === "sideBySide";
+  // Container width depends on layout:
+  //  - side-by-side: both depths laid out horizontally + gap + padding
+  //  - overlay (front/center/back): width = deeper of the two + 48 px
+  const overlayBlockPx = isSideBySide
+    ? scaledDepthA + scaledDepthB + SIDE_BY_SIDE_GAP_PX + 48
+    : Math.max(scaledDepthA, scaledDepthB) + 48;
   const totalWidthPx = overlayBlockPx + RULER_WIDTH_PX;
   const swap = swapHref(a, b, "profile", personHeight, currency, disc, locale);
 
@@ -925,8 +933,10 @@ function ProfileOverlay({
         return (overlayBlockPx - scaledDepth) / 2;
     }
   }
-  const aLeft = computeLeft(scaledDepthA);
-  const bLeft = computeLeft(scaledDepthB);
+  // `aLeft`/`bLeft` are only consumed by the overlaid layout; in
+  // side-by-side mode we fall through to a flex row instead.
+  const aLeft = isSideBySide ? 0 : computeLeft(scaledDepthA);
+  const bLeft = isSideBySide ? 0 : computeLeft(scaledDepthB);
 
   // Build the URLs for the three align-mode buttons so each tap is a
   // shareable bookmark, exactly like the view tabs.
@@ -950,6 +960,11 @@ function ProfileOverlay({
     label: string;
     icon: React.ReactNode;
   }> = [
+    {
+      key: "sideBySide",
+      label: t.compare.alignSideBySide,
+      icon: <AlignSideBySideIcon />,
+    },
     {
       key: "front",
       label: t.compare.alignFront,
@@ -1018,56 +1033,98 @@ function ProfileOverlay({
             }}
           >
             <Ruler maxHeightMm={maxHeightMm} scale={scale} />
-            <div
-              className="relative"
-              style={{
-                height: `${DISPLAY_HEIGHT_PX}px`,
-                width: `${overlayBlockPx}px`,
-              }}
-            >
-              {/*
-                Both cabinets occupy the same overlay block. A is at full
-                opacity behind, B at the OVERLAY_B_OPACITY in front, so the
-                reader can see A's silhouette through B and judge the
-                relative depth at a glance.
-              */}
-              <Link href={swap} aria-label={t.compare.swapAriaLabel} title={t.compare.swapTitle}>
-                <SpeakerCabinet
-                  speaker={a}
-                  scale={scale}
-                  view="profile"
-                  opacity={1}
-                  outlineColor={COLOR_A}
-                  style={{
-                    position: "absolute",
-                    bottom: 0,
-                    left: `${aLeft}px`,
-                    zIndex: 1,
-                    cursor: "pointer",
-                  }}
-                />
-              </Link>
-              <Link href={swap} aria-label={t.compare.swapAriaLabel} title={t.compare.swapTitle}>
-                <SpeakerCabinet
-                  speaker={b}
-                  scale={scale}
-                  view="profile"
-                  opacity={OVERLAY_B_OPACITY}
-                  outlineColor={COLOR_B}
-                  style={{
-                    position: "absolute",
-                    bottom: 0,
-                    left: `${bLeft}px`,
-                    zIndex: 2,
-                    cursor: "pointer",
-                  }}
-                />
-              </Link>
+            {isSideBySide ? (
+              /*
+                Side-by-side profile: both cabinets laid out next to each
+                other at true depth scale, no overlap, both at full opacity.
+                Default Profile view — easier to read individual silhouettes
+                than the overlaid modes below.
+              */
               <div
-                aria-hidden
-                className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-stone-300 dark:bg-stone-700"
-              />
-            </div>
+                className="relative flex items-end justify-center"
+                style={{
+                  height: `${DISPLAY_HEIGHT_PX}px`,
+                  width: `${overlayBlockPx}px`,
+                  gap: `${SIDE_BY_SIDE_GAP_PX}px`,
+                }}
+              >
+                <Link href={swap} title={t.compare.swapTitle}>
+                  <SpeakerCabinet
+                    speaker={a}
+                    scale={scale}
+                    view="profile"
+                    opacity={1}
+                    outlineColor={COLOR_A}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Link>
+                <Link href={swap} title={t.compare.swapTitle}>
+                  <SpeakerCabinet
+                    speaker={b}
+                    scale={scale}
+                    view="profile"
+                    opacity={1}
+                    outlineColor={COLOR_B}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Link>
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-stone-300 dark:bg-stone-700"
+                />
+              </div>
+            ) : (
+              <div
+                className="relative"
+                style={{
+                  height: `${DISPLAY_HEIGHT_PX}px`,
+                  width: `${overlayBlockPx}px`,
+                }}
+              >
+                {/*
+                  Both cabinets occupy the same overlay block. A is at full
+                  opacity behind, B at the OVERLAY_B_OPACITY in front, so the
+                  reader can see A's silhouette through B and judge the
+                  relative depth at a glance.
+                */}
+                <Link href={swap} aria-label={t.compare.swapAriaLabel} title={t.compare.swapTitle}>
+                  <SpeakerCabinet
+                    speaker={a}
+                    scale={scale}
+                    view="profile"
+                    opacity={1}
+                    outlineColor={COLOR_A}
+                    style={{
+                      position: "absolute",
+                      bottom: 0,
+                      left: `${aLeft}px`,
+                      zIndex: 1,
+                      cursor: "pointer",
+                    }}
+                  />
+                </Link>
+                <Link href={swap} aria-label={t.compare.swapAriaLabel} title={t.compare.swapTitle}>
+                  <SpeakerCabinet
+                    speaker={b}
+                    scale={scale}
+                    view="profile"
+                    opacity={OVERLAY_B_OPACITY}
+                    outlineColor={COLOR_B}
+                    style={{
+                      position: "absolute",
+                      bottom: 0,
+                      left: `${bLeft}px`,
+                      zIndex: 2,
+                      cursor: "pointer",
+                    }}
+                  />
+                </Link>
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-stone-300 dark:bg-stone-700"
+                />
+              </div>
+            )}
           </div>
         </div>
         <p className="mt-4 text-xs text-stone-500 text-center">
@@ -1084,6 +1141,25 @@ function ProfileOverlay({
  * alignment edge sits. Matches Lucide's `align-horizontal-justify-*`
  * family, scaled to 16 px for the toolbar.
  */
+
+function AlignSideBySideIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <rect width="6" height="14" x="3" y="5" rx="2" />
+      <rect width="6" height="14" x="15" y="5" rx="2" />
+    </svg>
+  );
+}
 
 function AlignFrontIcon() {
   return (
