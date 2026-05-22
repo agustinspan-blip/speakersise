@@ -445,7 +445,7 @@ function Hero({
 
         <Link
           href={`/${locale}/speaker/${speaker.id}`}
-          className="group relative block aspect-[4/5] lg:aspect-auto lg:h-[400px] overflow-hidden rounded-2xl bg-white dark:bg-stone-900"
+          className="group relative block aspect-[4/5] lg:aspect-auto lg:h-[400px] overflow-hidden rounded-2xl bg-white"
         >
           {img && (
             <Image
@@ -596,7 +596,7 @@ function BrandHero({
         {speaker && img ? (
           <Link
             href={`/${locale}/speaker/${speaker.id}`}
-            className="group relative block aspect-[4/5] lg:aspect-auto lg:h-[520px] overflow-hidden rounded-2xl bg-white dark:bg-stone-900"
+            className="group relative block aspect-[4/5] lg:aspect-auto lg:h-[520px] overflow-hidden rounded-2xl bg-white"
           >
             <Image
               src={img}
@@ -807,7 +807,7 @@ function SpeakerCard({
         className="group block h-full"
       >
         {imgSrc && (
-          <div className="relative aspect-square overflow-hidden rounded-2xl bg-white dark:bg-stone-900 transition-shadow duration-300 group-hover:shadow-[0_20px_50px_-12px_rgba(28,25,23,0.18)]">
+          <div className="relative aspect-square overflow-hidden rounded-2xl bg-white transition-shadow duration-300 group-hover:shadow-[0_20px_50px_-12px_rgba(28,25,23,0.18)]">
             <Image
               src={imgSrc}
               alt={`${s.brand} ${s.model}`}

@@ -1,0 +1,62 @@
+{
+  "id": "paradigm-founder-80f",
+  "brand": "Paradigm",
+  "series": "Founder",
+  "model": "Founder 80F",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 970,
+    "widthMm": 301,
+    "depthMm": 356,
+    "weightKg": 23.6
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "AL-MAC ceramic dome",
+      "notes": "1\" aluminium-magnesium-ceramic dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 152,
+      "quantity": 1,
+      "material": "AL-MAG cone",
+      "notes": "6\" aluminium-magnesium cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 152,
+      "quantity": 2,
+      "material": "CARBON-X cone",
+      "notes": "6\" Unibody cone with Active Ridge Technology (ART) surround"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 50,
+    "max": 23000
+  },
+  "frequencyResponseToleranceDb": 2,
+  "sensitivityDb": 90,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 220
+  },
+  "powerHandlingW": {
+    "max": 180
+  },
+  "images": {
+    "hero": "/speakers/paradigm-founder-80f-hero.webp",
+    "front": "/speakers/paradigm-founder-80f-front.png",
+    "side": "/speakers/paradigm-founder-80f-side.png"
+  },
+  "sourceUrl": "https://www.paradigm.com/en/floorstanding/founder-80f",
+  "description": {
+    "en": "2.5-way Founder floorstander — AL-MAC ceramic tweeter, AL-MAG midrange and twin 152 mm CARBON-X Unibody woofers with ART surround in a faceted ported cabinet. Low-frequency extension to 28 Hz (DIN); 90 dB anechoic sensitivity.",
+    "es": "Floorstander Founder de 2.5 vías — tweeter cerámico AL-MAC, midrange AL-MAG y dos woofers CARBON-X Unibody de 152 mm con suspensión ART en gabinete facetado con puerto. Extensión de graves hasta 28 Hz (DIN); 90 dB de sensibilidad anecoica."
+  }
+}

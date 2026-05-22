@@ -64,13 +64,17 @@ export default async function BrandsPage({ params }: Props) {
   ).sort();
 
   return (
-    <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col pb-24 sm:pb-0">
+    <div className="min-h-screen bg-stone-50 flex flex-col pb-24 sm:pb-0">
+      {/* The Brands page is force-locked to its light palette regardless of
+          system dark-mode preference: the brand logos in the directory are
+          almost all monochrome black, so on a dark cabinet they'd vanish.
+          Every text/border class below drops its `dark:` variant on purpose. */}
       <SiteHeader locale={locale} t={t} currentPath="brands" />
 
       <main className="flex-1">
         {/* Hero — title + short pitch. The "suggest a brand" CTA sits
             here so it's the first thing readers see after the headline. */}
-        <section className="relative overflow-hidden border-b border-stone-200 dark:border-stone-800">
+        <section className="relative overflow-hidden border-b border-stone-200">
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 -z-0"
@@ -80,26 +84,26 @@ export default async function BrandsPage({ params }: Props) {
             }}
           />
           <div className="relative mx-auto max-w-6xl px-6 py-16 sm:py-20">
-            <p className="text-xs uppercase tracking-[0.25em] text-amber-700 dark:text-amber-400 font-medium">
+            <p className="text-xs uppercase tracking-[0.25em] text-amber-700 font-medium">
               {t.nav.brands}
             </p>
-            <h1 className="mt-5 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02] text-stone-900 dark:text-stone-50 max-w-4xl">
+            <h1 className="mt-5 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02] text-stone-900 max-w-4xl">
               {t.brands.title}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
+            <p className="mt-6 max-w-2xl text-lg text-stone-600 leading-relaxed">
               {t.brands.subtitle}
             </p>
-            <p className="mt-6 text-base text-stone-700 dark:text-stone-300">
+            <p className="mt-6 text-base text-stone-700">
               {t.brands.suggestPrompt}{" "}
               <a
                 href={`mailto:${t.brands.suggestEmailMailto}`}
-                className="font-semibold text-amber-700 dark:text-amber-400 underline-offset-4 hover:underline"
+                className="font-semibold text-amber-700 underline-offset-4 hover:underline"
               >
                 {t.brands.suggestEmail}
               </a>
               .
             </p>
-            <p className="mt-9 text-sm italic tracking-wide text-amber-700 dark:text-amber-400">
+            <p className="mt-9 text-sm italic tracking-wide text-amber-700">
               Sic parvis magna
             </p>
           </div>
@@ -153,13 +157,10 @@ function BrandTile({
   const isLive = status === "live";
   const label = isLive ? t.brands.live : t.brands.planned;
 
-  // Logos: live → full colour (use dark:invert if applicable to keep them
-  // readable in system dark mode). Planned → desaturated + low opacity.
-  const colourClasses = isLive
-    ? logo.darkInvert !== false
-      ? "dark:invert"
-      : ""
-    : "grayscale opacity-50";
+  // Logos: live → full colour. Planned → desaturated + low opacity.
+  // No dark-mode invert here — the Brands page is locked to its light
+  // palette so the monochrome wordmarks render in their native black.
+  const colourClasses = isLive ? "" : "grayscale opacity-50";
 
   // Tile body — clickable Link only for live brands (sends to brand page).
   const body = (
@@ -180,18 +181,14 @@ function BrandTile({
       <div className="text-center">
         <p
           className={`text-sm font-medium ${
-            isLive
-              ? "text-stone-900 dark:text-stone-100"
-              : "text-stone-500"
+            isLive ? "text-stone-900" : "text-stone-500"
           }`}
         >
           {name}
         </p>
         <p
           className={`mt-1 text-[10px] uppercase tracking-[0.2em] font-semibold ${
-            isLive
-              ? "text-amber-700 dark:text-amber-400"
-              : "text-stone-400"
+            isLive ? "text-amber-700" : "text-stone-400"
           }`}
         >
           {label}

@@ -42,6 +42,7 @@
       "comparisons": "Same-type comparisons",
       "speakers": "HiFi speakers",
       "brands": "Brands",
+      "countries": "Countries",
       "oldestBrand": "Oldest brand",
       "mostBrandsCountry": "Most brands from"
     },
@@ -55,7 +56,8 @@
       "france": "France",
       "italy": "Italy",
       "us": "United States",
-      "germany": "Germany"
+      "germany": "Germany",
+      "canada": "Canada"
     },
     "brandDescriptions": {
       "monitorAudio": "British brand founded in 1972 in Cambridgeshire. Designs and builds its own aluminium-magnesium (C-CAM) cones and ribbon tweeters, featured across the Bronze, Silver, Gold and Platinum lines — long-standing references in both accessible and high-end HiFi.",
@@ -70,7 +72,8 @@
       "sonusFaber": "Italian high-end loudspeaker maker founded in 1980 by Franco Serblin in Arcugnano, near Vicenza. Defined by solid-wood cabinets shaped like the lute, leather grilles and the natural-fibre cone — from the Heritage line (Amator family) up to the Aida and Suprema flagships.",
       "klipsch": "American loudspeaker maker founded in 1946 by Paul W. Klipsch in Hope, Arkansas. Defined by horn-loaded Tractrix compression tweeters and copper Cerametallic woofers — high-efficiency, dynamic-leaning designs spanning the Reference Premiere up to the Heritage line (Cornwall, Forte, Heresy, La Scala, Klipschorn).",
       "polk": "American loudspeaker maker founded in 1972 by Matthew Polk and George Klopfer in Baltimore, Maryland. Known for the Pinnacle Ring Radiator tweeter, Turbine Cone driver and the Power Port bass-loading system — the Reserve line is the current audiophile-oriented flagship, sitting beneath the Legend L800 SDA reference.",
-      "canton": "German loudspeaker maker founded in 1972 in Niederlauken (Weilrod). Defined by the Black Ceramic Tungsten (BCT) cone drivers and Mundorf crossovers — the Reference line is the audiophile flagship, topped by the Reference Alpha 1 as the state-of-the-art reference."
+      "canton": "German loudspeaker maker founded in 1972 in Niederlauken (Weilrod). Defined by the Black Ceramic Tungsten (BCT) cone drivers and Mundorf crossovers — the Reference line is the audiophile flagship, topped by the Reference Alpha 1 as the state-of-the-art reference.",
+      "paradigm": "Canadian loudspeaker maker founded in 1982 in Mississauga, Ontario. Defined by the AL-MAC ceramic tweeter, AL-MAG midrange cone and CARBON-X bass driver paired with Active Ridge Technology (ART) surrounds — the Founder line is the current audiophile flagship, sitting beneath the limited Persona reference."
     }
   },
   "nav": {

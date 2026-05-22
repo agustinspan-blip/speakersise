@@ -113,6 +113,15 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     // as "the green Rizzi logo".
     tintColor: "#5fa388",
   },
+  Paradigm: {
+    // Paradigm wordmark (900×500). Standard wider-wordmark tier.
+    src: "/brands/paradigm.png",
+    width: 900,
+    height: 500,
+    heightClass: "h-7",
+    stripHeightClass: "h-[44px]",
+    heroHeightClass: "h-[56px] sm:h-[72px]",
+  },
   Canton: {
     // Compact Canton wordmark (300×150, aspect 2.0). Sits in the wider
     // wordmark tier alongside KEF / Polk.
@@ -246,7 +255,6 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     Mission: ["mission.png", 330, 330],
     MoFi: ["mofi.png", 600, 350],
     OAudio: ["oaudio.png", 1465, 393],
-    Paradigm: ["paradigm.png", 900, 500],
     Perlisten: ["perlisten.png", 2231, 386],
     Piega: ["piega.png", 822, 172],
     "Pitt & Giblin": ["pitt-giblin.png", 1500, 1500],
@@ -336,9 +344,10 @@ export interface BrandInfo {
     | "sonusFaber"
     | "klipsch"
     | "polk"
-    | "canton";
+    | "canton"
+    | "paradigm";
   /** Translation key under `home.brandCountries.*` */
-  countryKey: "uk" | "denmark" | "netherlands" | "uruguay" | "france" | "italy" | "us" | "germany";
+  countryKey: "uk" | "denmark" | "netherlands" | "uruguay" | "france" | "italy" | "us" | "germany" | "canada";
   /** Year the brand was founded — shown as a small meta line. */
   foundedYear: number;
   /** Manufacturer's official website (homepage). */
@@ -449,6 +458,14 @@ export const BRAND_INFO: Record<string, BrandInfo> = {
     countryKey: "germany",
     foundedYear: 1972,
     websiteUrl: "https://www.canton.de",
+  },
+  Paradigm: {
+    countryCode: "CA",
+    countryFlag: "🇨🇦",
+    descriptionKey: "paradigm",
+    countryKey: "canada",
+    foundedYear: 1982,
+    websiteUrl: "https://www.paradigm.com",
   },
 };
 
@@ -594,6 +611,23 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
       "bg-sky-700 hover:bg-sky-800 dark:bg-sky-500 dark:hover:bg-sky-400",
     accentBorder: "border-sky-700 dark:border-sky-300",
     glowColor: "rgba(3, 105, 161, 0.10)", // sky-700, subtle
+  },
+  // Paradigm: Canadian premium tech identity — AL-MAC ceramic tweeter +
+  // CARBON-X bass tech in matte cabinets. `indigo-700` is fresh on the
+  // palette (no other brand uses indigo) and reads as "precision tech"
+  // without conflicting with KEF's `blue-700` (cobalt) or Polk's
+  // `slate-700` (gray).
+  Paradigm: {
+    pageBg: "bg-stone-50 dark:bg-stone-950",
+    accentEyebrow: "text-indigo-700 dark:text-indigo-300",
+    accentTitle: "text-indigo-700 dark:text-indigo-300",
+    accentHover:
+      "group-hover:text-indigo-700 dark:group-hover:text-indigo-300",
+    accentArrow: "text-indigo-700 dark:text-indigo-300",
+    ctaBg:
+      "bg-indigo-700 hover:bg-indigo-800 dark:bg-indigo-600 dark:hover:bg-indigo-500",
+    accentBorder: "border-indigo-700 dark:border-indigo-300",
+    glowColor: "rgba(67, 56, 202, 0.10)", // indigo-700, subtle
   },
   // Canton: cool German-engineered metallic identity — black/silver
   // cabinets with Black Ceramic Tungsten drivers. `zinc-700` is the

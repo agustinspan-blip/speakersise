@@ -32,7 +32,7 @@ export function CatalogInsights({
         {t.home.quickFactsEyebrow}
       </p>
 
-      <dl className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10">
+      <dl className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-10">
         <Stat
           value={fmt(stats.sameTypeComparisons2)}
           label={t.home.quickFactsLabels.comparisons}
@@ -44,6 +44,10 @@ export function CatalogInsights({
         <Stat
           value={fmt(stats.totalBrands)}
           label={t.home.quickFactsLabels.brands}
+        />
+        <Stat
+          value={fmt(stats.totalCountries)}
+          label={t.home.quickFactsLabels.countries}
         />
         <Stat
           value={String(stats.oldestBrandYear)}
@@ -59,7 +63,6 @@ export function CatalogInsights({
                 .countryKey as keyof typeof t.home.brandCountries
             ] ?? stats.countryWithMostBrands.countryKey
           }
-          large
         />
       </dl>
     </div>
@@ -71,26 +74,20 @@ function Stat({
   value,
   label,
   sublabel,
-  large = false,
 }: {
   value: string;
   label: string;
   sublabel?: string;
-  /** Render the value at flag-emoji size (used for the country slot). */
-  large?: boolean;
 }) {
   return (
     <div className="text-center">
-      <p
-        className={
-          large
-            ? "text-5xl sm:text-6xl leading-none"
-            : "text-3xl sm:text-4xl font-semibold tracking-tight tabular-nums text-stone-900 dark:text-stone-100"
-        }
-      >
+      {/* leading-none keeps the line-box tight so emoji (whose intrinsic
+          baseline sits above the numeric one) lines up with neighbouring
+          numbers. tabular-nums is harmless on emoji and useful on digits. */}
+      <p className="text-3xl sm:text-4xl font-semibold tracking-tight tabular-nums leading-none text-stone-900 dark:text-stone-100">
         {value}
       </p>
-      <p className="mt-2 text-[11px] uppercase tracking-wider text-stone-500">
+      <p className="mt-3 text-[11px] uppercase tracking-wider text-stone-500">
         {label}
       </p>
       {sublabel && (

@@ -1,0 +1,57 @@
+{
+  "id": "paradigm-founder-100f",
+  "brand": "Paradigm",
+  "series": "Founder",
+  "model": "Founder 100F",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1065,
+    "widthMm": 329,
+    "depthMm": 409,
+    "weightKg": 32.7
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "AL-MAC ceramic dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 152,
+      "quantity": 1,
+      "material": "AL-MAG cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 177,
+      "quantity": 3,
+      "material": "CARBON-X cone",
+      "notes": "7\" Unibody cone with Gen3 Active Ridge Technology (ART) surround"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 23000
+  },
+  "frequencyResponseToleranceDb": 2,
+  "sensitivityDb": 90,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 350
+  },
+  "images": {
+    "hero": "/speakers/paradigm-founder-100f-hero.webp",
+    "front": "/speakers/paradigm-founder-100f-front.png",
+    "side": "/speakers/paradigm-founder-100f-side.png"
+  },
+  "sourceUrl": "https://www.paradigm.com/en/floorstanding/founder-100f",
+  "description": {
+    "en": "Three-way Founder floorstander — AL-MAC ceramic tweeter, AL-MAG midrange and three 177 mm CARBON-X Unibody woofers with Gen3 ART surround in a faceted ported cabinet with Cascade-Fusion bracing and shock-mount isolation. Crossovers at 500 Hz / 2.1 kHz.",
+    "es": "Floorstander Founder de tres vías — tweeter cerámico AL-MAC, midrange AL-MAG y tres woofers CARBON-X Unibody de 177 mm con suspensión ART Gen3, en gabinete facetado con puerto, refuerzo Cascade-Fusion y aislación shock-mount. Crossovers a 500 Hz / 2,1 kHz."
+  }
+}

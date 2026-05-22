@@ -42,6 +42,7 @@
       "comparisons": "Comparaciones por tipo",
       "speakers": "Parlantes HiFi",
       "brands": "Marcas",
+      "countries": "Países",
       "oldestBrand": "Marca más antigua",
       "mostBrandsCountry": "País con más marcas"
     },
@@ -55,7 +56,8 @@
       "france": "Francia",
       "italy": "Italia",
       "us": "Estados Unidos",
-      "germany": "Alemania"
+      "germany": "Alemania",
+      "canada": "Canadá"
     },
     "brandDescriptions": {
       "monitorAudio": "Marca británica fundada en 1972 en Cambridgeshire. Diseña y fabrica drivers propios de aluminio-magnesio (C-CAM) y cintas planas, presentes en sus líneas Bronze, Silver, Gold y Platinum — referencias clásicas en HiFi accesible y de gama alta.",
@@ -70,7 +72,8 @@
       "sonusFaber": "Fabricante italiano de parlantes high-end fundado en 1980 por Franco Serblin en Arcugnano, cerca de Vicenza. Lo define el gabinete de madera maciza con forma de laúd, las grillas de cuero y el cono en fibras naturales — desde la línea Heritage (familia Amator) hasta los tope de gama Aida y Suprema.",
       "klipsch": "Fabricante norteamericano de parlantes fundado en 1946 por Paul W. Klipsch en Hope, Arkansas. Lo define el tweeter de compresión con horn Tractrix y los woofers Cerametallic de cobre — diseños dinámicos y de alta eficiencia que recorren desde la línea Reference Premiere hasta la Heritage (Cornwall, Forte, Heresy, La Scala, Klipschorn).",
       "polk": "Fabricante norteamericano de parlantes fundado en 1972 por Matthew Polk y George Klopfer en Baltimore, Maryland. Reconocido por el tweeter Pinnacle de anillo radiante, el driver Turbine Cone y el sistema de carga Power Port — la línea Reserve es el flagship actual orientado a audiófilos, por debajo del Legend L800 SDA como referencia.",
-      "canton": "Fabricante alemán de parlantes fundado en 1972 en Niederlauken (Weilrod). Lo definen los drivers con cono Black Ceramic Tungsten (BCT) y los crossovers Mundorf — la línea Reference es el flagship audiophile, coronada por el Reference Alpha 1 como referencia tope de gama."
+      "canton": "Fabricante alemán de parlantes fundado en 1972 en Niederlauken (Weilrod). Lo definen los drivers con cono Black Ceramic Tungsten (BCT) y los crossovers Mundorf — la línea Reference es el flagship audiophile, coronada por el Reference Alpha 1 como referencia tope de gama.",
+      "paradigm": "Fabricante canadiense de parlantes fundado en 1982 en Mississauga, Ontario. Lo definen el tweeter cerámico AL-MAC, el cono midrange AL-MAG y los woofers CARBON-X con suspensión Active Ridge Technology (ART) — la línea Founder es el flagship audiophile actual, por debajo de la limitada Persona como referencia."
     }
   },
   "nav": {

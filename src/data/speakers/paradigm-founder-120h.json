@@ -1,0 +1,57 @@
+{
+  "id": "paradigm-founder-120h",
+  "brand": "Paradigm",
+  "series": "Founder",
+  "model": "Founder 120H",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1153,
+    "widthMm": 356,
+    "depthMm": 441,
+    "weightKg": 41.7
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "AL-MAC ceramic dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 152,
+      "quantity": 1,
+      "material": "AL-MAG cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 215,
+      "quantity": 3,
+      "material": "CARBON-X cone",
+      "notes": "8\" Ultra-High-Excursion Unibody cone with Gen3 ART surround; driven by an internal 1000 W amplifier"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 22,
+    "max": 23000
+  },
+  "frequencyResponseToleranceDb": 2,
+  "sensitivityDb": 92,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 400
+  },
+  "images": {
+    "hero": "/speakers/paradigm-founder-120h-hero.webp",
+    "front": "/speakers/paradigm-founder-120h-front.png",
+    "side": "/speakers/paradigm-founder-120h-side.png"
+  },
+  "sourceUrl": "https://www.paradigm.com/en/floorstanding/founder-120h",
+  "description": {
+    "en": "Hybrid Founder flagship — the mid/HF section is passive (AL-MAC ceramic tweeter + AL-MAG midrange) and the three 215 mm CARBON-X woofers are powered by an integrated 1000 W amplifier with DSP. Connects to an external stereo amp for the mid/HF section (15–400 W); the active bass extends usable response to 22 Hz at 92 dB anechoic sensitivity.",
+    "es": "Insignia híbrido de la línea Founder — la sección mid/HF es pasiva (tweeter cerámico AL-MAC + midrange AL-MAG) y los tres woofers CARBON-X de 215 mm son alimentados por un amplificador interno de 1000 W con DSP. Se conecta a un amp estéreo externo para la sección mid/HF (15–400 W); el bajo activo extiende la respuesta utilizable hasta 22 Hz con 92 dB de sensibilidad anecoica."
+  }
+}

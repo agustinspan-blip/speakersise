@@ -1,0 +1,52 @@
+{
+  "id": "paradigm-founder-40b",
+  "brand": "Paradigm",
+  "series": "Founder",
+  "model": "Founder 40B",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 368,
+    "widthMm": 216,
+    "depthMm": 320,
+    "weightKg": 5.1
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "AL-MAC ceramic dome",
+      "notes": "1\" aluminium-magnesium-ceramic dome with Oblate Spherical Waveguide"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 152,
+      "quantity": 1,
+      "material": "AL-MAG cone",
+      "notes": "6\" aluminium-magnesium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 69,
+    "max": 23000
+  },
+  "frequencyResponseToleranceDb": 2,
+  "sensitivityDb": 89,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/paradigm-founder-40b-hero.webp",
+    "front": "/speakers/paradigm-founder-40b-front.png",
+    "side": "/speakers/paradigm-founder-40b-side.png"
+  },
+  "sourceUrl": "https://www.paradigm.com/en/passive/founder-40b",
+  "description": {
+    "en": "Compact 2-way Founder standmount handcrafted in Canada — 25 mm AL-MAC ceramic tweeter with Oblate Spherical Waveguide paired with a 152 mm AL-MAG midrange/bass driver in a faceted ported cabinet with Cascade-Fusion bracing. 89 dB anechoic sensitivity (92 dB in-room).",
+    "es": "Bookshelf compacto de 2 vías de la línea Founder, hecho a mano en Canadá — tweeter cerámico AL-MAC de 25 mm con guía de onda esférica oblata junto a un driver mid/bass AL-MAG de 152 mm en un gabinete facetado con puerto y refuerzo Cascade-Fusion. 89 dB de sensibilidad anecoica (92 dB in-room)."
+  }
+}

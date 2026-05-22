@@ -79,7 +79,7 @@ function Panel({
               </span>
               {/* Thumbnail — square container, object-contain so portrait
                   floorstanders and squat bookshelves both sit centered. */}
-              <div className="relative w-12 h-12 shrink-0 rounded-md bg-stone-50 dark:bg-stone-800/60 overflow-hidden">
+              <div className="relative w-12 h-12 shrink-0 rounded-md bg-stone-50 overflow-hidden">
                 {thumb ? (
                   <Image
                     src={thumb}
