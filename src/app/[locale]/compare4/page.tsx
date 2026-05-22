@@ -81,7 +81,7 @@ export default async function Compare4Page({ params, searchParams }: Props) {
   };
 
   return (
-    <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col pb-24 sm:pb-0">
+    <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col">
       <SiteHeader locale={locale} t={t} />
 
       <main className="flex-1 mx-auto max-w-6xl w-full px-6 py-10 space-y-10">

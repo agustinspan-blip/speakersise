@@ -64,7 +64,7 @@ export default async function BrandsPage({ params }: Props) {
   ).sort();
 
   return (
-    <div className="min-h-screen bg-stone-50 flex flex-col pb-24 sm:pb-0">
+    <div className="min-h-screen bg-stone-50 flex flex-col">
       {/* The Brands page is force-locked to its light palette regardless of
           system dark-mode preference: the brand logos in the directory are
           almost all monochrome black, so on a dark cabinet they'd vanish.

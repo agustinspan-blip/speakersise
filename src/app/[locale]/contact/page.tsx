@@ -44,7 +44,7 @@ export default async function ContactPage({ params }: Props) {
   const brands = Array.from(new Set(speakers.map((s) => s.brand))).sort();
 
   return (
-    <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col pb-24 sm:pb-0">
+    <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col">
       <SiteHeader locale={locale} t={t} currentPath="contact" />
 
       <main className="flex-1">

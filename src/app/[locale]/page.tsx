@@ -243,7 +243,7 @@ export default async function Home({ params, searchParams }: Props) {
     : null;
 
   return (
-    <div className={`min-h-screen ${theme.pageBg} flex flex-col pb-24 sm:pb-0`}>
+    <div className={`min-h-screen ${theme.pageBg} flex flex-col`}>
       <SiteHeader locale={locale} t={t} />
 
       <main className="flex-1">

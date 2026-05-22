@@ -79,7 +79,13 @@ export function NewsletterSignup({
 
   return (
     <div className="border-y border-stone-200 bg-stone-100">
-      <div className="mx-auto max-w-6xl px-6 py-3 sm:py-5 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-4 lg:gap-12 items-center">
+      {/*
+        Mobile gets generous vertical padding + a 6-unit gap between the
+        text block and the form so the email input doesn't feel pinched
+        against the subtitle above it. Desktop layout (two columns) keeps
+        its tighter padding since the columns separate visually.
+      */}
+      <div className="mx-auto max-w-6xl px-6 py-8 sm:py-6 lg:py-5 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-6 lg:gap-12 items-center">
         <div>
           <p className="text-xs uppercase tracking-[0.25em] text-amber-700 font-medium">
             {t.newsletter.eyebrow}
@@ -111,12 +117,12 @@ export function NewsletterSignup({
               placeholder={t.newsletter.placeholder}
               autoComplete="email"
               maxLength={200}
-              className="flex-1 h-11 px-3.5 rounded-md border border-stone-300 bg-white text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500 transition-colors"
+              className="flex-1 h-12 sm:h-11 px-4 sm:px-3.5 rounded-md border border-stone-300 bg-white text-base sm:text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500 transition-colors"
             />
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="h-11 px-5 inline-flex items-center justify-center rounded-md bg-amber-600 hover:bg-amber-700 text-white text-sm font-semibold transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+              className="h-12 sm:h-11 px-5 inline-flex items-center justify-center rounded-md bg-amber-600 hover:bg-amber-700 text-white text-base sm:text-sm font-semibold transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
             >
               {status === "submitting"
                 ? t.newsletter.submitting
