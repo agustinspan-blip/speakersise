@@ -1,0 +1,52 @@
+{
+  "id": "paradigm-persona-b",
+  "brand": "Paradigm",
+  "series": "Persona",
+  "model": "Persona B",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 435,
+    "widthMm": 231,
+    "depthMm": 330,
+    "weightKg": 14
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Truextent beryllium dome",
+      "notes": "Pure beryllium foil — full Persona-line tweeter"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 178,
+      "quantity": 1,
+      "material": "Truextent beryllium cone",
+      "notes": "7\" beryllium midrange/woofer"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 60,
+    "max": 45000
+  },
+  "frequencyResponseToleranceDb": 2,
+  "sensitivityDb": 89,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/paradigm-persona-b-hero.webp",
+    "front": "/speakers/paradigm-persona-b-front.png",
+    "side": "/speakers/paradigm-persona-b-side.png"
+  },
+  "sourceUrl": "https://www.paradigm.com/en/passive/persona-b",
+  "description": {
+    "en": "Compact 2-way Persona standmount — 25 mm and 178 mm Truextent pure-beryllium drivers in a faceted ported cabinet hand-finished in Canada. The smallest member of the Persona line, sharing the same Beryllium tweeter and midrange used in the 9H flagship; 2 kHz crossover.",
+    "es": "Bookshelf compacto de 2 vías de la línea Persona — drivers Truextent en berilio puro de 25 mm y 178 mm en gabinete facetado con puerto, terminado a mano en Canadá. El miembro más chico de la línea Persona, comparte el mismo tweeter y midrange en berilio del flagship 9H; crossover a 2 kHz."
+  }
+}

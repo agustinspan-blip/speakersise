@@ -1,0 +1,57 @@
+{
+  "id": "paradigm-persona-9h",
+  "brand": "Paradigm",
+  "series": "Persona",
+  "model": "Persona 9H",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1320,
+    "widthMm": 310,
+    "depthMm": 520,
+    "weightKg": 86
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Truextent beryllium dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 178,
+      "quantity": 1,
+      "material": "Truextent beryllium cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 215,
+      "quantity": 4,
+      "material": "X-PAL cone",
+      "notes": "Hybrid 3.5-way: front pair runs passively, rear pair is sealed and driven by two internal 700 W amplifiers with PBK room correction"
+    }
+  ],
+  "enclosure": "sealed",
+  "frequencyResponseHz": {
+    "min": 19,
+    "max": 45000
+  },
+  "frequencyResponseToleranceDb": 2,
+  "sensitivityDb": 93,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 500
+  },
+  "images": {
+    "hero": "/speakers/paradigm-persona-9h-hero.webp",
+    "front": "/speakers/paradigm-persona-9h-front.png",
+    "side": "/speakers/paradigm-persona-9h-side.png"
+  },
+  "sourceUrl": "https://www.paradigm.com/en/floorstanding/persona-9h",
+  "description": {
+    "en": "Hybrid flagship of the Persona line — Truextent beryllium tweeter and midrange paired with four 215 mm X-PAL woofers; the front pair runs passively, the rear pair lives in a sealed sub-cabinet driven by two internal 700 W amplifiers with Anthem PBK room correction. 19 Hz extension at 93 dB anechoic sensitivity. Requires an external stereo amp for the mid/HF section (15–500 W).",
+    "es": "Insignia híbrido de la línea Persona — tweeter y midrange Truextent en berilio puro junto a cuatro woofers de 215 mm en aluminio X-PAL; el par delantero funciona en modo pasivo y el par trasero vive en un sub-cabinet sellado impulsado por dos amplificadores internos de 700 W con corrección de sala Anthem PBK. Extensión hasta 19 Hz a 93 dB de sensibilidad anecoica. Requiere un amp estéreo externo para la sección mid/HF (15–500 W)."
+  }
+}
