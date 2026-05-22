@@ -195,8 +195,14 @@
     "unknownIdsHint": "The selection above was kept. Pick a valid model and press Compare.",
     "tabOverlay": "Overlay",
     "tabSide": "Side by side",
+    "tabProfile": "Profile",
     "headingOverlay": "Front view — overlaid at true scale",
     "headingSide": "Front view — side by side at true scale",
+    "headingProfile": "Profile view — overlaid at true scale",
+    "profileUnavailable": "Profile view available only when both speakers have a side image.",
+    "alignFront": "Aligned at front",
+    "alignCenter": "Centred",
+    "alignBack": "Aligned at back",
     "swapHint": "Click either cabinet to swap A ↔ B",
     "referenceHeight": "Reference height:",
     "swapAriaLabel": "Swap A and B",
@@ -271,6 +277,7 @@
   "detail": {
     "compareWith": "Compare with…",
     "sideView": "Side view",
+    "sideViewAvailable": "Side view available",
     "backView": "Back view",
     "topView": "Top view"
   },

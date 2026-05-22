@@ -38,7 +38,15 @@ const OVERLAY_B_OPACITY = 0.45;
 const SIDE_BY_SIDE_GAP_PX = 40;
 const RULER_WIDTH_PX = 54;
 
-type ViewMode = "overlay" | "side";
+type ViewMode = "overlay" | "side" | "profile";
+/**
+ * Within the Profile view, the user can choose how the two overlaid
+ * cabinets line up horizontally. Mirrors the carsized.com pattern.
+ * Convention for our side photos (Paradigm Founder line): the speaker
+ * faces left, so the *front* of the cabinet is the LEFT edge of the
+ * image and the *back* is the right edge.
+ */
+type ProfileAlign = "front" | "center" | "back";
 const PERSON_HEIGHT_OPTIONS_CM = [160, 165, 170, 175, 180, 185, 190] as const;
 type PersonHeightCm = (typeof PERSON_HEIGHT_OPTIONS_CM)[number];
 // Width-to-height ratio of the silhouette's tight bounding box (incl.
@@ -199,6 +207,7 @@ function compareHref(
     a?: string;
     b?: string;
     view?: ViewMode;
+    align?: ProfileAlign;
     person?: PersonHeightCm | null;
     currency?: CurrencyId | null;
     disc?: DiscId | null;
@@ -210,7 +219,16 @@ function compareHref(
     buildQuery({
       a: base.a,
       b: base.b,
-      view: base.view === "overlay" ? "overlay" : undefined,
+      // Serialize any non-default view ("overlay" or "profile"); leave
+      // "side" out of the URL since it's the implicit fallback the
+      // server applies when `view` is missing or invalid.
+      view: base.view && base.view !== "side" ? base.view : undefined,
+      // Same trick for `align`: only serialise when explicitly non-default
+      // (default is "center") so the URL stays minimal.
+      align:
+        base.view === "profile" && base.align && base.align !== "center"
+          ? base.align
+          : undefined,
       person: base.person ? String(base.person) : undefined,
       currency: base.currency ?? undefined,
       disc: base.disc ?? undefined,
@@ -228,6 +246,7 @@ interface Props {
     a?: string;
     b?: string;
     view?: string;
+    align?: string;
     person?: string;
     currency?: string;
     disc?: string;
@@ -318,8 +337,25 @@ export default async function ComparePage({ params, searchParams }: Props) {
   const unknownIds: string[] = [];
   if (sp.a && !a) unknownIds.push(sp.a);
   if (sp.b && !b) unknownIds.push(sp.b);
-  // Default to side-by-side. Overlay only when explicitly requested.
-  const view: ViewMode = sp.view === "overlay" ? "overlay" : "side";
+  // The profile view (side images of each cabinet rendered at true scale
+  // using `depthMm` as the horizontal axis) is only enabled when both
+  // selected speakers carry an `images.side` asset. Today only the
+  // Paradigm Founder line ships with side photography; the tab is hidden
+  // entirely for any other pair so the UI doesn't tease an unavailable
+  // mode.
+  const profileAvailable = Boolean(a?.images.side && b?.images.side);
+  // Default to side-by-side. Overlay or profile only when explicitly
+  // requested AND (for profile) when both speakers can render in that mode.
+  const view: ViewMode =
+    sp.view === "overlay"
+      ? "overlay"
+      : sp.view === "profile" && profileAvailable
+        ? "profile"
+        : "side";
+  // Profile alignment — defaults to center; only honoured when the
+  // active view is profile.
+  const align: ProfileAlign =
+    sp.align === "front" || sp.align === "back" ? sp.align : "center";
   const personHeight = parsePersonHeight(sp.person);
   const currency = parseCurrency(sp.currency);
   const disc = parseDisc(sp.disc);
@@ -427,17 +463,37 @@ export default async function ComparePage({ params, searchParams }: Props) {
               />
               <ShareButton t={t} />
             </div>
-            <ReferencePickers
-              a={a}
-              b={b}
-              view={view}
-              personHeight={personHeight}
-              currency={currency}
-              disc={disc}
-              locale={locale}
-              t={t}
-            />
-            {view === "side" ? (
+            {/*
+              Reference pickers (person / banknote / disc) only make sense
+              for the front views — in profile the references aren't
+              rendered alongside the cabinets, so the form would dangle
+              with no visible effect on the diagram.
+            */}
+            {view !== "profile" && (
+              <ReferencePickers
+                a={a}
+                b={b}
+                view={view}
+                personHeight={personHeight}
+                currency={currency}
+                disc={disc}
+                locale={locale}
+                t={t}
+              />
+            )}
+            {view === "overlay" && (
+              <FrontOverlay
+                a={a}
+                b={b}
+                refs={refs}
+                personHeight={personHeight}
+                currency={currency}
+                disc={disc}
+                locale={locale}
+                t={t}
+              />
+            )}
+            {view === "side" && (
               <FrontSideBySide
                 a={a}
                 b={b}
@@ -448,11 +504,12 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 locale={locale}
                 t={t}
               />
-            ) : (
-              <FrontOverlay
+            )}
+            {view === "profile" && (
+              <ProfileOverlay
                 a={a}
                 b={b}
-                refs={refs}
+                align={align}
                 personHeight={personHeight}
                 currency={currency}
                 disc={disc}
@@ -494,10 +551,17 @@ function ViewTabs({
   locale: Locale;
   t: Dictionary;
 }) {
+  const profileAvailable = Boolean(a.images.side && b.images.side);
   const tabs: { key: ViewMode; label: string }[] = [
     { key: "overlay", label: t.compare.tabOverlay },
     { key: "side", label: t.compare.tabSide },
   ];
+  // Only add the Profile tab when both speakers can render in profile —
+  // mixing a profile cabinet with a flat front placeholder would be
+  // worse UX than not offering the mode at all.
+  if (profileAvailable) {
+    tabs.push({ key: "profile", label: t.compare.tabProfile });
+  }
   return (
     <div className="flex gap-1 border-b border-stone-200 dark:border-stone-800">
       {tabs.map((tab) => {
@@ -798,6 +862,289 @@ function FrontSideBySide({
   );
 }
 
+/**
+ * Profile view — both cabinets overlaid in profile at true scale, with a
+ * three-way alignment selector (front / centre / back). Convention: side
+ * photos in this catalogue face left, so the front of the cabinet is the
+ * LEFT edge of the image and the back is the RIGHT edge.
+ *
+ *   - front   → both speakers share their front baffle line (visualises
+ *               how far back each cabinet extends from the listening
+ *               position)
+ *   - centre  → neutral comparison, both centred on the same vertical
+ *   - back    → both share their rear baffle line (the typical HiFi setup
+ *               with speakers against a wall — useful to see how far one
+ *               protrudes vs the other into the room)
+ *
+ * No reference items rendered here: person/banknote/disc references are
+ * calibrated against `widthMm`-style horizontal extents and don't add
+ * real information in a depth comparison.
+ */
+function ProfileOverlay({
+  a,
+  b,
+  align,
+  personHeight,
+  currency,
+  disc,
+  locale,
+  t,
+}: {
+  a: Speaker;
+  b: Speaker;
+  align: ProfileAlign;
+  personHeight: PersonHeightCm | null;
+  currency: CurrencyId | null;
+  disc: DiscId | null;
+  locale: Locale;
+  t: Dictionary;
+}) {
+  const maxHeightMm = Math.max(a.dimensions.heightMm, b.dimensions.heightMm);
+  const scale = DISPLAY_HEIGHT_PX / maxHeightMm;
+  const scaledDepthA = a.dimensions.depthMm * scale;
+  const scaledDepthB = b.dimensions.depthMm * scale;
+  // Container holds both overlaid cabinets — its width is the deeper of
+  // the two, plus 48 px breathing room.
+  const overlayBlockPx = Math.max(scaledDepthA, scaledDepthB) + 48;
+  const totalWidthPx = overlayBlockPx + RULER_WIDTH_PX;
+  const swap = swapHref(a, b, "profile", personHeight, currency, disc, locale);
+
+  // Compute X offset (within the 48 px-padded overlay block) for each
+  // cabinet given the chosen align mode. 24 px = half the breathing room.
+  function computeLeft(scaledDepth: number): number {
+    switch (align) {
+      case "front":
+        // Both fronts aligned → left edge of image (front-facing left in
+        // our convention) sits at x = 24.
+        return 24;
+      case "back":
+        // Both backs aligned → right edge of image at containerWidth - 24.
+        return overlayBlockPx - 24 - scaledDepth;
+      default:
+        // Centred on the overlay block.
+        return (overlayBlockPx - scaledDepth) / 2;
+    }
+  }
+  const aLeft = computeLeft(scaledDepthA);
+  const bLeft = computeLeft(scaledDepthB);
+
+  // Build the URLs for the three align-mode buttons so each tap is a
+  // shareable bookmark, exactly like the view tabs.
+  function alignHref(next: ProfileAlign): string {
+    return compareHref(
+      {
+        a: a.id,
+        b: b.id,
+        view: "profile",
+        align: next,
+        person: personHeight,
+        currency,
+        disc,
+      },
+      locale
+    );
+  }
+
+  const alignTabs: Array<{
+    key: ProfileAlign;
+    label: string;
+    icon: React.ReactNode;
+  }> = [
+    {
+      key: "front",
+      label: t.compare.alignFront,
+      icon: <AlignFrontIcon />,
+    },
+    {
+      key: "center",
+      label: t.compare.alignCenter,
+      icon: <AlignCenterIcon />,
+    },
+    {
+      key: "back",
+      label: t.compare.alignBack,
+      icon: <AlignBackIcon />,
+    },
+  ];
+
+  return (
+    <section>
+      <div className="mb-4 flex items-center justify-between gap-4 flex-wrap">
+        <h2 className="text-sm font-medium text-stone-600 dark:text-stone-400">
+          {t.compare.headingProfile}
+        </h2>
+        <Legend a={a} b={b} />
+      </div>
+
+      {/* Three-way alignment selector. Each tap navigates with ?align=…,
+          so the chosen mode is preserved in the URL and shareable. */}
+      <div className="mb-4 flex justify-center">
+        <div className="inline-flex rounded-md border border-stone-300 dark:border-stone-700 overflow-hidden">
+          {alignTabs.map((tab) => {
+            const isActive = tab.key === align;
+            return (
+              <Link
+                key={tab.key}
+                href={alignHref(tab.key)}
+                aria-label={tab.label}
+                title={tab.label}
+                className={`inline-flex items-center justify-center h-9 w-12 transition-colors ${
+                  isActive
+                    ? "bg-stone-900 text-white dark:bg-stone-100 dark:text-stone-900"
+                    : "bg-white dark:bg-stone-900 text-stone-600 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800"
+                }`}
+              >
+                {tab.icon}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="rounded-lg border border-stone-200 dark:border-stone-800 bg-white p-3 sm:p-6 overflow-x-auto">
+        <div
+          className="mx-auto [--cmp-scale:0.5] sm:[--cmp-scale:1]"
+          style={{
+            width: `calc(${totalWidthPx}px * var(${SCALE_VAR}))`,
+            height: `calc(${DISPLAY_HEIGHT_PX}px * var(${SCALE_VAR}))`,
+          }}
+        >
+          <div
+            className="relative flex items-end origin-top-left"
+            style={{
+              height: `${DISPLAY_HEIGHT_PX}px`,
+              width: `${totalWidthPx}px`,
+              transform: `scale(var(${SCALE_VAR}))`,
+            }}
+          >
+            <Ruler maxHeightMm={maxHeightMm} scale={scale} />
+            <div
+              className="relative"
+              style={{
+                height: `${DISPLAY_HEIGHT_PX}px`,
+                width: `${overlayBlockPx}px`,
+              }}
+            >
+              {/*
+                Both cabinets occupy the same overlay block. A is at full
+                opacity behind, B at the OVERLAY_B_OPACITY in front, so the
+                reader can see A's silhouette through B and judge the
+                relative depth at a glance.
+              */}
+              <Link href={swap} aria-label={t.compare.swapAriaLabel} title={t.compare.swapTitle}>
+                <SpeakerCabinet
+                  speaker={a}
+                  scale={scale}
+                  view="profile"
+                  opacity={1}
+                  outlineColor={COLOR_A}
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: `${aLeft}px`,
+                    zIndex: 1,
+                    cursor: "pointer",
+                  }}
+                />
+              </Link>
+              <Link href={swap} aria-label={t.compare.swapAriaLabel} title={t.compare.swapTitle}>
+                <SpeakerCabinet
+                  speaker={b}
+                  scale={scale}
+                  view="profile"
+                  opacity={OVERLAY_B_OPACITY}
+                  outlineColor={COLOR_B}
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: `${bLeft}px`,
+                    zIndex: 2,
+                    cursor: "pointer",
+                  }}
+                />
+              </Link>
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-stone-300 dark:bg-stone-700"
+              />
+            </div>
+          </div>
+        </div>
+        <p className="mt-4 text-xs text-stone-500 text-center">
+          {t.compare.swapHint} · {t.compare.referenceHeight} {maxHeightMm} mm (
+          {(maxHeightMm / 10).toFixed(1)} cm) · 1 mm = {scale.toFixed(2)} px
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/* ---------- Profile alignment icons (Lucide-style, 16×16) ----------
+ * Each icon shows two rectangles + a guideline indicating where the
+ * alignment edge sits. Matches Lucide's `align-horizontal-justify-*`
+ * family, scaled to 16 px for the toolbar.
+ */
+
+function AlignFrontIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <rect width="6" height="14" x="6" y="5" rx="2" />
+      <rect width="6" height="10" x="16" y="7" rx="2" />
+      <path d="M2 2v20" />
+    </svg>
+  );
+}
+
+function AlignCenterIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <rect width="6" height="14" x="2" y="5" rx="2" />
+      <rect width="6" height="10" x="16" y="7" rx="2" />
+      <path d="M12 2v20" />
+    </svg>
+  );
+}
+
+function AlignBackIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <rect width="6" height="14" x="2" y="5" rx="2" />
+      <rect width="6" height="10" x="12" y="7" rx="2" />
+      <path d="M22 2v20" />
+    </svg>
+  );
+}
+
 function ReferencePickers({
   a,
   b,
@@ -989,16 +1336,29 @@ function SpeakerCabinet({
   opacity = 1,
   outlineColor,
   style,
+  view = "front",
 }: {
   speaker: Speaker;
   scale: number;
   opacity?: number;
   outlineColor: string;
   style?: React.CSSProperties;
+  /**
+   * Which face of the cabinet to render. `front` uses `images.front` +
+   * `dimensions.widthMm`; `profile` uses `images.side` + `dimensions.depthMm`
+   * so the cabinet draws at true depth on the horizontal axis.
+   */
+  view?: "front" | "profile";
 }) {
-  const widthPx = speaker.dimensions.widthMm * scale;
+  const isProfile = view === "profile";
+  const widthMm = isProfile
+    ? speaker.dimensions.depthMm
+    : speaker.dimensions.widthMm;
+  const widthPx = widthMm * scale;
   const heightPx = speaker.dimensions.heightMm * scale;
-  const src = speaker.images.front ?? speaker.images.hero;
+  const src = isProfile
+    ? speaker.images.side
+    : (speaker.images.front ?? speaker.images.hero);
   if (!src) return null;
   return (
     <div
@@ -1014,7 +1374,7 @@ function SpeakerCabinet({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}
-        alt={`${speaker.brand} ${speaker.model} front view`}
+        alt={`${speaker.brand} ${speaker.model} ${isProfile ? "side" : "front"} view`}
         style={{
           width: "100%",
           height: "100%",

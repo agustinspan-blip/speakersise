@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { NavCTAs } from "@/components/NavCTAs";
 import { BrandStrip } from "@/components/BrandStrip";
 import { CompareCTA } from "@/components/CompareCTA";
+import { SideViewBadge } from "@/components/SideViewBadge";
 import { BRAND_LOGOS, BRAND_INFO } from "@/lib/brands";
 import {
   getDictionary,
@@ -115,6 +116,7 @@ export default async function SpeakerDetailPage({ params }: Props) {
                   sizes="380px"
                   priority
                 />
+                {speaker.images.side && <SideViewBadge t={t} />}
               </div>
             )}
             {front && (
@@ -474,3 +476,4 @@ function SpecsTable({
     </div>
   );
 }
+

@@ -195,8 +195,14 @@
     "unknownIdsHint": "La selección de arriba se mantuvo. Elegí un modelo válido y apretá Comparar.",
     "tabOverlay": "Superpuestos",
     "tabSide": "Lado a lado",
+    "tabProfile": "Perfil",
     "headingOverlay": "Vista de frente — superpuestos a escala real",
     "headingSide": "Vista de frente — lado a lado a escala real",
+    "headingProfile": "Vista de perfil — superpuestos a escala real",
+    "profileUnavailable": "Vista de perfil disponible sólo cuando ambos parlantes tienen imagen lateral.",
+    "alignFront": "Alineados al frente",
+    "alignCenter": "Centrados",
+    "alignBack": "Alineados al fondo",
     "swapHint": "Hacé click en cualquiera de los dos para intercambiar A ↔ B",
     "referenceHeight": "Altura de referencia:",
     "swapAriaLabel": "Intercambiar A y B",
@@ -271,6 +277,7 @@
   "detail": {
     "compareWith": "Comparar con…",
     "sideView": "Vista lateral",
+    "sideViewAvailable": "Vista lateral disponible",
     "backView": "Vista trasera",
     "topView": "Vista superior"
   },

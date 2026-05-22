@@ -18,6 +18,7 @@ import { CatalogList } from "@/components/CatalogList";
 import { CompareCTA } from "@/components/CompareCTA";
 import { DidYouKnow } from "@/components/DidYouKnow";
 import { NavCTAs } from "@/components/NavCTAs";
+import { SideViewBadge } from "@/components/SideViewBadge";
 import { SiteHeader } from "@/components/SiteHeader";
 import { TopFive } from "@/components/TopFive";
 import { getPopularSpeakers } from "@/lib/popularity";
@@ -455,6 +456,7 @@ function Hero({
               priority
             />
           )}
+          {speaker.images.side && <SideViewBadge t={t} />}
           <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-3">
             <div>
               <p className="text-xs uppercase tracking-wider text-stone-500">
@@ -604,6 +606,7 @@ function BrandHero({
               sizes="(max-width: 1024px) 100vw, 520px"
               priority
             />
+            {speaker.images.side && <SideViewBadge t={t} />}
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-3">
               <div>
                 <p className="text-xs uppercase tracking-wider text-stone-500">
@@ -813,6 +816,7 @@ function SpeakerCard({
               className="object-contain p-6 transition-transform duration-500 group-hover:scale-[1.03]"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
+            {s.images.side && <SideViewBadge t={t} size="sm" />}
           </div>
         )}
         <div className="pt-4 px-1">
