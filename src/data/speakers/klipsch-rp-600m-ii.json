@@ -41,7 +41,8 @@
   },
   "images": {
     "hero": "/speakers/klipsch-rp-600m-ii-hero.webp",
-    "front": "/speakers/klipsch-rp-600m-ii-front.png"
+    "front": "/speakers/klipsch-rp-600m-ii-front.png",
+    "side": "/speakers/klipsch-rp-600m-ii-side.png"
   },
   "sourceUrl": "https://www.klipsch.com/products/rp-600m-ii-bookshelf-speakers",
   "description": {

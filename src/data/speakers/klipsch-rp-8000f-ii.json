@@ -41,7 +41,8 @@
   },
   "images": {
     "hero": "/speakers/klipsch-rp-8000f-ii-hero.webp",
-    "front": "/speakers/klipsch-rp-8000f-ii-front.png"
+    "front": "/speakers/klipsch-rp-8000f-ii-front.png",
+    "side": "/speakers/klipsch-rp-8000f-ii-side.png"
   },
   "sourceUrl": "https://www.klipsch.com/products/rp-8000f-ii-floorstanding-speaker",
   "description": {
