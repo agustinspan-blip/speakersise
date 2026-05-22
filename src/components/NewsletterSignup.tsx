@@ -122,7 +122,7 @@ export function NewsletterSignup({
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="h-14 sm:h-11 px-5 inline-flex items-center justify-center rounded-md bg-amber-600 hover:bg-amber-700 text-white text-base sm:text-sm font-semibold transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+              className="h-11 px-5 inline-flex items-center justify-center rounded-md bg-amber-600 hover:bg-amber-700 text-white text-sm font-semibold transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
             >
               {status === "submitting"
                 ? t.newsletter.submitting
