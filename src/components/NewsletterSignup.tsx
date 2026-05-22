@@ -117,12 +117,12 @@ export function NewsletterSignup({
               placeholder={t.newsletter.placeholder}
               autoComplete="email"
               maxLength={200}
-              className="flex-1 h-12 sm:h-11 px-4 sm:px-3.5 rounded-md border border-stone-300 bg-white text-base sm:text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500 transition-colors"
+              className="flex-1 h-14 sm:h-11 px-5 sm:px-3.5 rounded-md border border-stone-300 bg-white text-base sm:text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500 transition-colors"
             />
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="h-12 sm:h-11 px-5 inline-flex items-center justify-center rounded-md bg-amber-600 hover:bg-amber-700 text-white text-base sm:text-sm font-semibold transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+              className="h-14 sm:h-11 px-5 inline-flex items-center justify-center rounded-md bg-amber-600 hover:bg-amber-700 text-white text-base sm:text-sm font-semibold transition-colors disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
             >
               {status === "submitting"
                 ? t.newsletter.submitting
