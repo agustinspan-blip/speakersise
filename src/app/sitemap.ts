@@ -3,6 +3,7 @@ import { getAllSpeakers } from "@/lib/speakers";
 import { BRAND_INFO } from "@/lib/brands";
 import { locales, defaultLocale } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
+import { getStrategicPairSlugs } from "@/lib/compare-pairs";
 
 /**
  * Sitemap auto-generated from the catalog. Next.js 16 reads this file at
@@ -71,6 +72,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.6,
+      })
+    );
+  }
+
+  // Pre-rendered long-tail compare URLs (/compare/<a>-vs-<b>). These
+  // exist for high-recognition same-type / cross-brand pairs only —
+  // see `lib/compare-pairs.ts` for the curated list. Each entry gets
+  // both locale variants via the standard hreflang shape, same as the
+  // speaker pages.
+  for (const slug of getStrategicPairSlugs()) {
+    entries.push(
+      withAlternates(`/compare/${slug}`, {
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.7,
       })
     );
   }

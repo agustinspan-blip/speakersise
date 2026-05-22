@@ -49,17 +49,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     t.meta.speakerDescriptionFallback
       .replace("{brand}", speaker.brand)
       .replace("{model}", speaker.model);
-  // Use the speaker's hero image as the OG card. It's the asset most
-  // visually identifiable with the model and we already serve it.
-  const heroImg = speaker.images.hero ?? speaker.images.front;
+  // Use our dynamic OG endpoint so the unfurl card shows brand + model +
+  // a true-scale silhouette next to a 170 cm person — far more readable
+  // in a chat thread than the bare hero PNG. Falls back to the static
+  // hero image only if there's no hero asset to reference.
+  const ogImage = {
+    url: `/api/og/speaker/${id}`,
+    alt: `${speaker.brand} ${speaker.model}`,
+  };
   return pageMetadata({
     locale: raw,
     path: `/speaker/${id}`,
     title,
     description,
-    ogImage: heroImg
-      ? { url: heroImg, alt: `${speaker.brand} ${speaker.model}` }
-      : undefined,
+    ogImage,
   });
 }
 
