@@ -279,6 +279,7 @@
     "compareWith": "Compare with…",
     "sideView": "Side view",
     "sideViewAvailable": "Side view available",
+    "sideViewTooltip": "This speaker ships with a side photo, so you can compare its true depth in the Profile view of the comparator.",
     "backView": "Back view",
     "topView": "Top view"
   },

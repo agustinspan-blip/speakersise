@@ -279,6 +279,7 @@
     "compareWith": "Comparar con…",
     "sideView": "Vista lateral",
     "sideViewAvailable": "Vista lateral disponible",
+    "sideViewTooltip": "Este parlante incluye una foto lateral, así podés comparar su profundidad real en la vista de Perfil del comparador.",
     "backView": "Vista trasera",
     "topView": "Vista superior"
   },

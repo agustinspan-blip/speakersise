@@ -34,14 +34,31 @@ export function SideViewBadge({
           ? "bottom-3 right-3"
           : "bottom-3 left-3";
   const dimensions = size === "sm" ? "h-6 w-6" : "h-7 w-7";
+  // Anchor the tooltip to the opposite horizontal edge of the badge so it
+  // never spills outside the hero container. Vertical placement follows
+  // the badge's corner — top corners drop the tooltip below, bottom
+  // corners raise it above.
+  const isTop = position.startsWith("top");
+  const isRight = position.endsWith("right");
+  const tooltipPosition = [
+    isTop ? "top-full mt-2" : "bottom-full mb-2",
+    isRight ? "right-0" : "left-0",
+  ].join(" ");
 
   return (
     <span
-      className={`absolute ${corner} inline-flex items-center justify-center ${dimensions} rounded-full bg-white/90 backdrop-blur border border-stone-200 text-stone-600 shadow-sm pointer-events-none`}
-      aria-label={t.detail.sideViewAvailable}
-      title={t.detail.sideViewAvailable}
+      className={`group absolute ${corner} inline-flex items-center justify-center ${dimensions} rounded-full bg-white/90 backdrop-blur border border-stone-200 text-stone-600 shadow-sm cursor-help`}
+      tabIndex={0}
+      role="button"
+      aria-label={t.detail.sideViewTooltip}
     >
       <CubeIcon size={size} />
+      <span
+        role="tooltip"
+        className={`pointer-events-none absolute ${tooltipPosition} z-10 w-56 rounded-md bg-stone-900 px-3 py-2 text-[11px] leading-snug font-normal text-white shadow-lg opacity-0 translate-y-1 transition-all duration-150 group-hover:opacity-100 group-hover:translate-y-0 group-focus:opacity-100 group-focus:translate-y-0`}
+      >
+        {t.detail.sideViewTooltip}
+      </span>
     </span>
   );
 }
