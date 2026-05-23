@@ -1,0 +1,74 @@
+{
+  "id": "klipsch-the-sevens-ii",
+  "brand": "Klipsch",
+  "generation": "II",
+  "model": "The Sevens II",
+  "type": "bookshelf",
+  "powerType": "active",
+  "year": 2026,
+  "dimensions": {
+    "heightMm": 381,
+    "widthMm": 206,
+    "depthMm": 318,
+    "weightKg": 10.73
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Titanium LTS dome (Tractrix horn)"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Jet Cerametallic"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 39,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "active": {
+    "maxSplDb": 106,
+    "maxSampleRateKhz": 96,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "hdmi-earc",
+      "hdmi-input",
+      "rca-analog",
+      "rca-phono",
+      "optical",
+      "coax",
+      "usb-audio",
+      "calibration-mic"
+    ],
+    "wirelessProtocols": [
+      "bluetooth",
+      "airplay-2",
+      "google-cast",
+      "spotify-connect",
+      "tidal-connect",
+      "qobuz-connect",
+      "wifi"
+    ],
+    "outputs": ["rca-sub", "hdmi-out"],
+    "roomCorrection": ["dirac-live-limited"],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": true
+  },
+  "images": {
+    "front": "/speakers/klipsch-the-sevens-ii-front.png",
+    "side": "/speakers/klipsch-the-sevens-ii-side.webp",
+    "hero": "/speakers/klipsch-the-sevens-ii-hero.webp"
+  },
+  "sourceUrl": "https://www.klipsch.com/intl/products/the-sevens-ii-powered-speakers/",
+  "priceUsd": 1999.99,
+  "description": {
+    "en": "Mid-size of Klipsch's 2026 powered trio. A 6.5\" Cerametallic woofer plus a 1\" Titanium LTS tweeter on a Tractrix horn, with HDMI 2.1 in/out, Dolby Atmos virtualisation, Dirac Live room correction and an optional wireless L-R stereo link for cable-free placement.",
+    "es": "Tamaño medio del trío powered 2026 de Klipsch. Woofer Cerametallic de 6,5\" más tweeter Titanium LTS de 1\" sobre horn Tractrix, con entrada y salida HDMI 2.1, virtualización Dolby Atmos, corrección de sala Dirac Live y enlace L-R inalámbrico opcional."
+  }
+}

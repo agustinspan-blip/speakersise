@@ -94,10 +94,14 @@ export default async function SpeakerDetailPage({ params }: Props) {
       [top, t.detail.topView],
     ] as const
   ).filter((p): p is readonly [string, string] => Boolean(p[0]));
-  const typeLabel =
-    speaker.type === "bookshelf"
-      ? t.catalog.bookshelf
-      : t.catalog.floorstander;
+  // Lookup table keeps the type→label mapping centralised so adding a
+  // new SpeakerType (e.g. "hybrid" alongside bookshelf/floorstander) is
+  // a single-line change here rather than a ternary update everywhere.
+  const typeLabel: string = {
+    bookshelf: t.catalog.bookshelf,
+    floorstander: t.catalog.floorstander,
+    hybrid: t.catalog.hybrid,
+  }[speaker.type];
   const brandLogo = BRAND_LOGOS[speaker.brand];
   const brandInfo = BRAND_INFO[speaker.brand];
   const countryName = brandInfo
@@ -119,7 +123,11 @@ export default async function SpeakerDetailPage({ params }: Props) {
     "@id": `${canonical}#product`,
     name: `${speaker.brand} ${speaker.model}${speaker.generation ? ` ${speaker.generation}` : ""}`,
     brand: { "@type": "Brand", name: speaker.brand },
-    category: speaker.type === "bookshelf" ? "Bookshelf speaker" : "Floorstanding speaker",
+    category: {
+      bookshelf: "Bookshelf speaker",
+      floorstander: "Floorstanding speaker",
+      hybrid: "Hybrid speaker",
+    }[speaker.type],
     url: canonical,
     image: productImages.map((p) => (p.startsWith("http") ? p : `${SITE_URL}${p}`)),
     description:

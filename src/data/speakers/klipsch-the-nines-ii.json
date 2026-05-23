@@ -1,0 +1,73 @@
+{
+  "id": "klipsch-the-nines-ii",
+  "brand": "Klipsch",
+  "generation": "II",
+  "model": "The Nines II",
+  "type": "bookshelf",
+  "powerType": "active",
+  "year": 2026,
+  "dimensions": {
+    "heightMm": 460,
+    "widthMm": 252,
+    "depthMm": 375,
+    "weightKg": 14.9
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Titanium LTS dome (Tractrix horn)"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 203,
+      "quantity": 1,
+      "material": "Jet Cerametallic"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 31,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "active": {
+    "maxSplDb": 107,
+    "maxSampleRateKhz": 96,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "hdmi-earc",
+      "hdmi-input",
+      "rca-analog",
+      "rca-phono",
+      "optical",
+      "coax",
+      "usb-audio",
+      "calibration-mic"
+    ],
+    "wirelessProtocols": [
+      "bluetooth",
+      "airplay-2",
+      "google-cast",
+      "spotify-connect",
+      "tidal-connect",
+      "qobuz-connect",
+      "wifi"
+    ],
+    "outputs": ["rca-sub", "hdmi-out"],
+    "roomCorrection": ["dirac-live-limited"],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": true
+  },
+  "images": {
+    "front": "/speakers/klipsch-the-nines-ii-front.png",
+    "side": "/speakers/klipsch-the-nines-ii-side.webp",
+    "hero": "/speakers/klipsch-the-nines-ii-hero.webp"
+  },
+  "sourceUrl": "https://www.klipsch.com/intl/products/the-nines-ii-8-powered-speakers/",
+  "description": {
+    "en": "Largest of Klipsch's 2026 powered trio. An 8\" Cerametallic woofer plus a 1\" Titanium LTS tweeter, Dolby Atmos and DTS:X virtualisation, Dirac Live room correction and a wireless 48 kHz L-R link (96 kHz wired) — designed as a complete home-theatre hub with HDMI 2.1 routing.",
+    "es": "El más grande del trío powered 2026 de Klipsch. Woofer Cerametallic de 8\" más tweeter Titanium LTS de 1\", virtualización Dolby Atmos y DTS:X, corrección de sala Dirac Live, y enlace L-R inalámbrico a 48 kHz (96 kHz cableado) — pensado como hub completo de home theatre con ruteo HDMI 2.1."
+  }
+}

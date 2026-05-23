@@ -1,0 +1,68 @@
+{
+  "id": "klipsch-the-fives-ii",
+  "brand": "Klipsch",
+  "generation": "II",
+  "model": "The Fives II",
+  "type": "bookshelf",
+  "powerType": "active",
+  "year": 2026,
+  "dimensions": {
+    "heightMm": 327,
+    "widthMm": 182,
+    "depthMm": 273,
+    "weightKg": 8.26
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Titanium LTS dome (Tractrix horn)"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "Jet Cerametallic"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 50,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "active": {
+    "maxSplDb": 103,
+    "maxSampleRateKhz": 96,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "hdmi-earc",
+      "rca-analog",
+      "rca-phono",
+      "optical",
+      "usb-audio"
+    ],
+    "wirelessProtocols": [
+      "bluetooth",
+      "airplay-2",
+      "google-cast",
+      "spotify-connect",
+      "tidal-connect",
+      "qobuz-connect",
+      "wifi"
+    ],
+    "outputs": ["rca-sub", "hdmi-out"],
+    "pairedSecondary": true
+  },
+  "images": {
+    "front": "/speakers/klipsch-the-fives-ii-front.png",
+    "side": "/speakers/klipsch-the-fives-ii-side.webp",
+    "hero": "/speakers/klipsch-the-fives-ii-hero.webp"
+  },
+  "sourceUrl": "https://www.klipsch.com/intl/products/the-fives-ii-powered-speakers/",
+  "description": {
+    "en": "The smallest of Klipsch's 2026 powered line, co-engineered with Onkyo. A 5.25\" Cerametallic woofer plus a 1\" Titanium LTS tweeter on a Tractrix horn in a compact desktop / bookshelf form, with HDMI 2.1 eARC, built-in streaming and Dolby Atmos virtualisation.",
+    "es": "El más chico de la línea powered 2026 de Klipsch, co-ingeniada con Onkyo. Woofer Cerametallic de 5,25\" más tweeter Titanium LTS de 1\" sobre horn Tractrix, en formato compacto de escritorio o estantería, con HDMI 2.1 eARC, streaming integrado y virtualización Dolby Atmos."
+  }
+}

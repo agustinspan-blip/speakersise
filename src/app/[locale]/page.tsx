@@ -819,6 +819,7 @@ function Filters({
         <option value="">{t.catalog.allTypes}</option>
         <option value="bookshelf">{t.catalog.bookshelf}</option>
         <option value="floorstander">{t.catalog.floorstander}</option>
+        <option value="hybrid">{t.catalog.hybrid}</option>
         <option value="active">{t.specs.active}</option>
         <option value="passive">{t.specs.passive}</option>
       </select>

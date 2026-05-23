@@ -16,12 +16,14 @@ export interface CatalogStats {
   totalSpeakers: number;
   totalBookshelves: number;
   totalFloorstanders: number;
+  totalHybrids: number;
   totalBrands: number;
   totalCountries: number;
   /**
    * Number of distinct same-type 2-speaker comparisons possible across
-   * the catalog: C(bookshelves, 2) + C(floorstanders, 2). Mirrors the
-   * "Shuffle" feature's type-coherence guard (never mixes types).
+   * the catalog: C(bookshelves, 2) + C(floorstanders, 2) + C(hybrids, 2).
+   * Mirrors the "Shuffle" feature's type-coherence guard (never mixes
+   * types).
    */
   sameTypeComparisons2: number;
   oldestBrandYear: number;
@@ -44,6 +46,7 @@ function choose2(n: number): number {
 export function computeStats(speakers: Speaker[]): CatalogStats {
   const bookshelves = speakers.filter((s) => s.type === "bookshelf").length;
   const floorstanders = speakers.filter((s) => s.type === "floorstander").length;
+  const hybrids = speakers.filter((s) => s.type === "hybrid").length;
 
   const brandsInCatalog = Array.from(new Set(speakers.map((s) => s.brand)));
   const liveBrandInfo = brandsInCatalog
@@ -78,9 +81,11 @@ export function computeStats(speakers: Speaker[]): CatalogStats {
     totalSpeakers: speakers.length,
     totalBookshelves: bookshelves,
     totalFloorstanders: floorstanders,
+    totalHybrids: hybrids,
     totalBrands: brandsInCatalog.length,
     totalCountries,
-    sameTypeComparisons2: choose2(bookshelves) + choose2(floorstanders),
+    sameTypeComparisons2:
+      choose2(bookshelves) + choose2(floorstanders) + choose2(hybrids),
     oldestBrandYear: oldest?.info.foundedYear ?? 0,
     oldestBrandName: oldest?.name ?? "—",
     newestBrandYear: newest?.info.foundedYear ?? 0,

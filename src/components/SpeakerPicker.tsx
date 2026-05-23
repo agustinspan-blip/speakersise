@@ -29,8 +29,7 @@ export function SpeakerPicker({
   pickBrandLabel,
   pickTypeLabel,
   pickSpeakerLabel,
-  bookshelfLabel,
-  floorstanderLabel,
+  typeLabels,
   options,
   selected,
 }: {
@@ -39,8 +38,13 @@ export function SpeakerPicker({
   pickBrandLabel: string;
   pickTypeLabel: string;
   pickSpeakerLabel: string;
-  bookshelfLabel: string;
-  floorstanderLabel: string;
+  /**
+   * Localised display name per SpeakerType. Receiving the full map (vs
+   * one prop per type) keeps the API stable when new types are added —
+   * adding "hybrid" alongside bookshelf/floorstander is a one-line
+   * change at the caller, not a new prop here.
+   */
+  typeLabels: Record<Speaker["type"], string>;
   options: Speaker[];
   selected?: string;
 }) {
@@ -254,7 +258,7 @@ export function SpeakerPicker({
         <option value="">{pickTypeLabel}</option>
         {typesAvailable.map((tp) => (
           <option key={tp} value={tp}>
-            {tp === "bookshelf" ? bookshelfLabel : floorstanderLabel}
+            {typeLabels[tp]}
           </option>
         ))}
       </select>

@@ -75,9 +75,14 @@ export default async function Compare4Page({ params, searchParams }: Props) {
   const brands = Array.from(new Set(speakers.map((s) => s.brand))).sort();
 
   // Bucketed catalog for the ShuffleButton — see /compare for rationale.
+  // Hybrid bucket only has 2 entries today (Paradigm Persona 9H + Founder
+  // 120H) so the 4-way shuffler can never fill from it; the
+  // ShuffleButton's eligibility check (>= `count` per bucket) skips
+  // hybrid here. Compare-2 still finds the pair.
   const idsByType = {
     bookshelf: speakers.filter((s) => s.type === "bookshelf").map((s) => s.id),
     floorstander: speakers.filter((s) => s.type === "floorstander").map((s) => s.id),
+    hybrid: speakers.filter((s) => s.type === "hybrid").map((s) => s.id),
   };
 
   return (
@@ -110,8 +115,11 @@ export default async function Compare4Page({ params, searchParams }: Props) {
               pickBrandLabel={t.compare.pickBrand}
               pickTypeLabel={t.compare.pickType}
               pickSpeakerLabel={t.compare.pickSpeaker}
-              bookshelfLabel={t.catalog.bookshelf}
-              floorstanderLabel={t.catalog.floorstander}
+              typeLabels={{
+                bookshelf: t.catalog.bookshelf,
+                floorstander: t.catalog.floorstander,
+                hybrid: t.catalog.hybrid,
+              }}
               options={speakers}
               selected={sp[key]}
             />
@@ -238,8 +246,12 @@ function SpecsTable({
           `${d.quantity ?? 1}× ${d.sizeMm > 0 ? `${d.sizeMm} mm ` : ""}${d.role}${d.material ? ` (${d.material})` : ""}`
       )
       .join(", ");
-  const typeLabel = (s: Speaker) =>
-    s.type === "bookshelf" ? t.catalog.bookshelf : t.catalog.floorstander;
+  const typeLabel = (s: Speaker): string =>
+    ({
+      bookshelf: t.catalog.bookshelf,
+      floorstander: t.catalog.floorstander,
+      hybrid: t.catalog.hybrid,
+    })[s.type];
   const powerLabel = (s: Speaker) =>
     s.powerType === "active" ? t.specs.active : t.specs.passive;
 

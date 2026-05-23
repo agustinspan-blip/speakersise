@@ -1,4 +1,12 @@
-export type SpeakerType = "bookshelf" | "floorstander";
+/**
+ * Physical category of the cabinet. `hybrid` is used for Paradigm's
+ * "H" line (Persona 9H, Founder 120H, etc.) — floorstanders that pair
+ * an active, DSP-controlled bass section with a passive mid/treble
+ * column, so they don't fit cleanly into the active/passive split nor
+ * into the floorstander silhouette comparisons (they always need their
+ * own pair of mains + sub electronics).
+ */
+export type SpeakerType = "bookshelf" | "floorstander" | "hybrid";
 
 export type PowerType = "active" | "passive";
 
