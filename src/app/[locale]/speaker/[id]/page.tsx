@@ -108,16 +108,18 @@ export default async function SpeakerDetailPage({ params }: Props) {
     ? t.home.brandCountries[brandInfo.countryKey]
     : null;
 
-  // Build the Product structured-data payload. Google understands
-  // `additionalProperty` for arbitrary attributes (dimensions, drivers,
-  // impedance, sensitivity, etc.), and `audio/speaker` is a recognised
-  // category. No `offers` block — we don't list price and an empty offer
-  // would be misleading. The canonical URL mirrors the route generator.
+  // Product structured data is emitted ONLY for speakers that ship a
+  // `priceUsd` field. Reason: Google's Product rich-result spec requires
+  // at least one of `offers`, `review`, or `aggregateRating`. Without a
+  // valid price we can't construct a complete `Offer`, and synthesising
+  // a fake rating would be dishonest — so for the 90% of the catalog
+  // that has no price published we skip the JSON-LD entirely. The page
+  // still renders fine, just without the optional rich snippet.
   const canonical = `${SITE_URL}/${locale}/speaker/${speaker.id}`;
   const productImages = [hero, front, side, top, back].filter(
     (img): img is string => Boolean(img)
   );
-  const productJsonLd = {
+  const productJsonLd = speaker.priceUsd ? {
     "@context": "https://schema.org",
     "@type": "Product",
     "@id": `${canonical}#product`,
@@ -186,11 +188,25 @@ export default async function SpeakerDetailPage({ params }: Props) {
         value: speaker.powerType,
       },
     ].filter((p): p is NonNullable<typeof p> => p !== null),
-  };
+    // Offers block — required to satisfy Google's Product rich-result
+    // validation. `url` points at the manufacturer's product page (not
+    // a buy-now link, but that's the closest authoritative seller URL
+    // we have) and `seller` carries the brand. Availability "InStock"
+    // is the lightest assumption — the manufacturer's page tells the
+    // real story per region.
+    offers: {
+      "@type": "Offer",
+      url: speaker.sourceUrl,
+      price: speaker.priceUsd,
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      seller: { "@type": "Organization", name: speaker.brand },
+    },
+  } : null;
 
   return (
     <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col">
-      <JsonLd data={productJsonLd} />
+      {productJsonLd && <JsonLd data={productJsonLd} />}
       <SiteHeader locale={locale} t={t} />
 
       <main className="flex-1 mx-auto max-w-6xl w-full px-6 py-16 space-y-12">
