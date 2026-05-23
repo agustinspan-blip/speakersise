@@ -43,7 +43,8 @@
   },
   "images": {
     "hero": "/speakers/focal-aria-evo-x-n1-hero.webp",
-    "front": "/speakers/focal-aria-evo-x-n1-front.png"
+    "front": "/speakers/focal-aria-evo-x-n1-front.png",
+    "side": "/speakers/focal-aria-evo-x-n1-side.png"
   },
   "sourceUrl": "https://www.focal.com/products/aria-evo-x-n1",
   "description": {

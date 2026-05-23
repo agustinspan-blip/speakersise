@@ -42,9 +42,21 @@
   "frequencyResponseToleranceDb": 3,
   "active": {
     "amplification": [
-      { "driverRole": "tweeter", "powerW": 75, "amplifierClass": "AB" },
-      { "driverRole": "midrange", "powerW": 75, "amplifierClass": "AB" },
-      { "driverRole": "woofer", "powerW": 250, "amplifierClass": "AB" }
+      {
+        "driverRole": "tweeter",
+        "powerW": 75,
+        "amplifierClass": "AB"
+      },
+      {
+        "driverRole": "midrange",
+        "powerW": 75,
+        "amplifierClass": "AB"
+      },
+      {
+        "driverRole": "woofer",
+        "powerW": 250,
+        "amplifierClass": "AB"
+      }
     ],
     "totalAmpPowerW": 800,
     "maxSplDb": 116,
@@ -66,13 +78,16 @@
       "qobuz-connect",
       "wifi"
     ],
-    "roomCorrection": ["custom-dsp"],
+    "roomCorrection": [
+      "custom-dsp"
+    ],
     "pairedSecondary": true,
     "wirelessSpeakerLink": true
   },
   "images": {
     "hero": "/speakers/focal-diva-utopia-hero.webp",
-    "front": "/speakers/focal-diva-utopia-front.png"
+    "front": "/speakers/focal-diva-utopia-front.png",
+    "side": "/speakers/focal-diva-utopia-side.png"
   },
   "sourceUrl": "https://www.focal.com/products/diva-utopia",
   "description": {

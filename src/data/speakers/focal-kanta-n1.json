@@ -42,7 +42,8 @@
   },
   "images": {
     "hero": "/speakers/focal-kanta-n1-hero.webp",
-    "front": "/speakers/focal-kanta-n1-front.png"
+    "front": "/speakers/focal-kanta-n1-front.png",
+    "side": "/speakers/focal-kanta-n1-side.png"
   },
   "sourceUrl": "https://www.focal.com/products/kanta-n1",
   "description": {
