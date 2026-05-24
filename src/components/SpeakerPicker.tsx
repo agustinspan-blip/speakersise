@@ -29,6 +29,7 @@ export function SpeakerPicker({
   pickBrandLabel,
   pickTypeLabel,
   pickSpeakerLabel,
+  sideViewLabel,
   typeLabels,
   options,
   selected,
@@ -38,6 +39,13 @@ export function SpeakerPicker({
   pickBrandLabel: string;
   pickTypeLabel: string;
   pickSpeakerLabel: string;
+  /**
+   * Tooltip / aria text for the small cube glyph that appears next to
+   * any speaker whose JSON ships an `images.side` asset. Hints to the
+   * user that picking this model will unlock the Profile view in
+   * /compare (when paired with another side-view-equipped speaker).
+   */
+  sideViewLabel: string;
   /**
    * Localised display name per SpeakerType. Receiving the full map (vs
    * one prop per type) keeps the API stable when new types are added —
@@ -312,15 +320,20 @@ export function SpeakerPicker({
                   />
                 )}
                 <span
-                  className={`flex-1 text-left truncate ${
+                  className={`flex-1 text-left truncate inline-flex items-center gap-1 ${
                     sel
                       ? "text-stone-900 dark:text-stone-100"
                       : "text-stone-500"
                   }`}
                 >
-                  {sel
-                    ? `${sel.model}${sel.generation ? ` ${sel.generation}` : ""}`
-                    : pickSpeakerLabel}
+                  <span className="truncate">
+                    {sel
+                      ? `${sel.model}${sel.generation ? ` ${sel.generation}` : ""}`
+                      : pickSpeakerLabel}
+                  </span>
+                  {sel?.images.side && (
+                    <SideViewMark title={sideViewLabel} />
+                  )}
                 </span>
                 <span
                   aria-hidden
@@ -379,12 +392,17 @@ export function SpeakerPicker({
                     ) : (
                       <div className="h-12 w-12 shrink-0" />
                     )}
-                    <span className="truncate">
-                      {s.model}
-                      {s.generation && (
-                        <span className="ml-1 text-stone-400 font-normal">
-                          {s.generation}
-                        </span>
+                    <span className="truncate inline-flex items-center gap-1">
+                      <span className="truncate">
+                        {s.model}
+                        {s.generation && (
+                          <span className="ml-1 text-stone-400 font-normal">
+                            {s.generation}
+                          </span>
+                        )}
+                      </span>
+                      {s.images.side && (
+                        <SideViewMark title={sideViewLabel} />
                       )}
                     </span>
                   </button>
@@ -395,5 +413,37 @@ export function SpeakerPicker({
         )}
       </div>
     </fieldset>
+  );
+}
+
+/**
+ * Inline cube glyph used in the picker rows + selected-button to flag
+ * speakers that ship an `images.side` asset (i.e. profile-mode capable
+ * in /compare). Same Lucide-style "Box" shape as the SideViewBadge that
+ * floats on the hero card, just sized for inline text flow instead of
+ * an overlay pill. Amber-tinted so the visual matches the rest of the
+ * site's affordance palette without competing with the row's hover/
+ * selected highlight.
+ */
+function SideViewMark({ title }: { title: string }) {
+  return (
+    <svg
+      width="13"
+      height="13"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="shrink-0 text-amber-600 dark:text-amber-400"
+      role="img"
+      aria-label={title}
+    >
+      <title>{title}</title>
+      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+      <path d="m3.3 7 8.7 5 8.7-5" />
+      <path d="M12 22V12" />
+    </svg>
   );
 }

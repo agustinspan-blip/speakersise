@@ -459,6 +459,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
               floorstander: t.catalog.floorstander,
               hybrid: t.catalog.hybrid,
             }}
+            sideViewLabel={t.detail.sideViewAvailable}
             options={speakers}
             selected={a?.id}
           />
@@ -473,6 +474,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
               floorstander: t.catalog.floorstander,
               hybrid: t.catalog.hybrid,
             }}
+            sideViewLabel={t.detail.sideViewAvailable}
             options={speakers}
             selected={b?.id}
           />

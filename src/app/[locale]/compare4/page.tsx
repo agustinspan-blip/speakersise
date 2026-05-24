@@ -120,6 +120,7 @@ export default async function Compare4Page({ params, searchParams }: Props) {
                 floorstander: t.catalog.floorstander,
                 hybrid: t.catalog.hybrid,
               }}
+              sideViewLabel={t.detail.sideViewAvailable}
               options={speakers}
               selected={sp[key]}
             />
