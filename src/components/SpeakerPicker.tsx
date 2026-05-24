@@ -221,8 +221,12 @@ export function SpeakerPicker({
     }
   };
 
+  // Selectors intentionally stay light in both color schemes — keeps the
+  // form controls high-contrast against the dark page chrome and avoids
+  // the native <option> menus inheriting an OS dark palette that clashes
+  // with the rest of the picker.
   const selectClass =
-    "w-full h-10 px-3 rounded-md border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-sm";
+    "w-full h-10 px-3 rounded-md border border-stone-300 bg-white text-stone-900 text-sm";
 
   return (
     <fieldset className="block space-y-2">
@@ -298,10 +302,10 @@ export function SpeakerPicker({
           tabIndex={brand && type ? 0 : -1}
           onClick={() => (speakerOpen ? closeListbox() : openListbox())}
           onKeyDown={onTriggerKeyDown}
-          className={`w-full h-10 pl-2 pr-3 rounded-md border bg-white dark:bg-stone-900 text-sm flex items-center gap-2 transition-colors ${
+          className={`w-full h-10 pl-2 pr-3 rounded-md border bg-white text-stone-900 text-sm flex items-center gap-2 transition-colors ${
             speakerOpen
-              ? "border-stone-500 dark:border-stone-400"
-              : "border-stone-300 dark:border-stone-700 hover:border-stone-400 dark:hover:border-stone-600"
+              ? "border-stone-500"
+              : "border-stone-300 hover:border-stone-400"
           }`}
         >
           {(() => {
@@ -321,9 +325,7 @@ export function SpeakerPicker({
                 )}
                 <span
                   className={`flex-1 text-left truncate inline-flex items-center gap-1 ${
-                    sel
-                      ? "text-stone-900 dark:text-stone-100"
-                      : "text-stone-500"
+                    sel ? "text-stone-900" : "text-stone-500"
                   }`}
                 >
                   <span className="truncate">
@@ -353,7 +355,7 @@ export function SpeakerPicker({
             id={listboxId}
             role="listbox"
             aria-label={pickSpeakerLabel}
-            className="absolute left-0 right-0 mt-2 z-30 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-lg shadow-xl shadow-stone-900/10 max-h-72 overflow-auto py-1"
+            className="absolute left-0 right-0 mt-2 z-30 bg-white border border-stone-200 rounded-lg shadow-xl shadow-stone-900/10 max-h-72 overflow-auto py-1"
           >
             {speakersAvailable.map((s, idx) => {
               const isSelected = s.id === speakerId;
@@ -376,10 +378,10 @@ export function SpeakerPicker({
                     onMouseEnter={() => setActiveIndex(idx)}
                     className={`flex items-center gap-3 w-full text-left px-2 py-2 text-sm transition-colors ${
                       isSelected
-                        ? "bg-amber-50 text-amber-900 dark:bg-amber-950/40 dark:text-amber-200"
+                        ? "bg-amber-50 text-amber-900"
                         : isActive
-                          ? "bg-stone-100 dark:bg-stone-800 text-stone-900 dark:text-stone-100"
-                          : "hover:bg-stone-100 dark:hover:bg-stone-800 text-stone-900 dark:text-stone-100"
+                          ? "bg-stone-100 text-stone-900"
+                          : "hover:bg-stone-100 text-stone-900"
                     }`}
                   >
                     {thumb ? (
@@ -387,7 +389,7 @@ export function SpeakerPicker({
                       <img
                         src={thumb}
                         alt=""
-                        className="h-12 w-12 object-contain shrink-0 rounded bg-white dark:bg-stone-950 p-0.5"
+                        className="h-12 w-12 object-contain shrink-0 rounded bg-white p-0.5"
                       />
                     ) : (
                       <div className="h-12 w-12 shrink-0" />
