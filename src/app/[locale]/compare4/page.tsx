@@ -9,6 +9,14 @@ import { SpeakerPicker } from "@/components/SpeakerPicker";
 import { BrandStrip } from "@/components/BrandStrip";
 import { CompareCTA } from "@/components/CompareCTA";
 import { ShuffleButton } from "@/components/ShuffleButton";
+import { UnitsToggle } from "@/components/UnitsToggle";
+import {
+  formatDriverSizeMm,
+  formatLengthMm,
+  formatWeightKg,
+  parseUnits,
+  type UnitSystem,
+} from "@/lib/units";
 import {
   getDictionary,
   isLocale,
@@ -38,7 +46,7 @@ export async function generateStaticParams() {
 
 interface Props {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<Partial<Record<SlotKey, string>>>;
+  searchParams: Promise<Partial<Record<SlotKey, string>> & { units?: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -67,6 +75,18 @@ export default async function Compare4Page({ params, searchParams }: Props) {
     b: sp.b ? getSpeakerById(sp.b) : undefined,
     c: sp.c ? getSpeakerById(sp.c) : undefined,
     d: sp.d ? getSpeakerById(sp.d) : undefined,
+  };
+  const units = parseUnits(sp.units);
+
+  /** Build a /compare4 URL preserving the current slot selection but
+   *  overriding the units choice. Used by the {@link UnitsToggle} to
+   *  let users flip mm/kg ↔ in/lb without losing context. */
+  const buildUnitsHref = (target: UnitSystem): string => {
+    const qs = new URLSearchParams();
+    for (const k of SLOT_KEYS) if (sp[k]) qs.set(k, sp[k]!);
+    if (target !== "metric") qs.set("units", target);
+    const q = qs.toString();
+    return `/${locale}/compare4${q ? `?${q}` : ""}`;
   };
   const filled = SLOT_KEYS.map((k) => slots[k]).filter(
     (s): s is Speaker => Boolean(s)
@@ -107,6 +127,11 @@ export default async function Compare4Page({ params, searchParams }: Props) {
           method="get"
           className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
         >
+          {/* Preserve the units selection through the form submit; only
+              serialised when imperial so the default URL stays clean. */}
+          {units !== "metric" && (
+            <input type="hidden" name="units" value={units} />
+          )}
           {SLOT_KEYS.map((key, idx) => (
             <SpeakerPicker
               key={key}
@@ -155,7 +180,13 @@ export default async function Compare4Page({ params, searchParams }: Props) {
         ) : (
           <>
             <PhotoRow speakers={filled} />
-            <SpecsTable speakers={filled} t={t} />
+            <SpecsTable
+              speakers={filled}
+              t={t}
+              units={units}
+              metricHref={buildUnitsHref("metric")}
+              imperialHref={buildUnitsHref("imperial")}
+            />
           </>
         )}
       </main>
@@ -234,9 +265,15 @@ function PhotoRow({ speakers }: { speakers: Speaker[] }) {
 function SpecsTable({
   speakers,
   t,
+  units,
+  metricHref,
+  imperialHref,
 }: {
   speakers: Speaker[];
   t: Dictionary;
+  units: UnitSystem;
+  metricHref: string;
+  imperialHref: string;
 }) {
   const fmtRange = (r: { min?: number; max: number }, unit: string) =>
     r.min !== undefined ? `${r.min}–${r.max} ${unit}` : `${r.max} ${unit}`;
@@ -244,7 +281,7 @@ function SpecsTable({
     s.drivers
       .map(
         (d) =>
-          `${d.quantity ?? 1}× ${d.sizeMm > 0 ? `${d.sizeMm} mm ` : ""}${d.role}${d.material ? ` (${d.material})` : ""}`
+          `${d.quantity ?? 1}× ${d.sizeMm > 0 ? `${formatDriverSizeMm(d.sizeMm, units)} ` : ""}${d.role}${d.material ? ` (${d.material})` : ""}`
       )
       .join(", ");
   const typeLabel = (s: Speaker): string =>
@@ -290,10 +327,10 @@ function SpecsTable({
     ],
     [t.specs.type, ...speakers.map(typeLabel)],
     [t.specs.powerType, ...speakers.map(powerLabel)],
-    [t.specs.height, ...speakers.map((s) => `${s.dimensions.heightMm} mm`)],
-    [t.specs.width, ...speakers.map((s) => `${s.dimensions.widthMm} mm`)],
-    [t.specs.depth, ...speakers.map((s) => `${s.dimensions.depthMm} mm`)],
-    [t.specs.weight, ...speakers.map((s) => `${s.dimensions.weightKg} kg`)],
+    [t.specs.height, ...speakers.map((s) => formatLengthMm(s.dimensions.heightMm, units))],
+    [t.specs.width, ...speakers.map((s) => formatLengthMm(s.dimensions.widthMm, units))],
+    [t.specs.depth, ...speakers.map((s) => formatLengthMm(s.dimensions.depthMm, units))],
+    [t.specs.weight, ...speakers.map((s) => formatWeightKg(s.dimensions.weightKg, units))],
     [t.specs.enclosure, ...speakers.map((s) => s.enclosure ?? "—")],
     [
       t.specs.portTuning,
@@ -349,9 +386,19 @@ function SpecsTable({
 
   return (
     <section>
-      <h2 className="mb-4 text-sm font-medium text-stone-600 dark:text-stone-400">
-        {t.specs.title}
-      </h2>
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <h2 className="text-sm font-medium text-stone-600 dark:text-stone-400">
+          {t.specs.title}
+        </h2>
+        <UnitsToggle
+          current={units}
+          metricHref={metricHref}
+          imperialHref={imperialHref}
+          label={t.specs.units}
+          metricLabel={t.specs.unitsMetric}
+          imperialLabel={t.specs.unitsImperial}
+        />
+      </div>
       <div className="rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 overflow-x-auto">
         {/* `table-fixed` so the speaker columns share equal width
             (default `auto` layout makes them wider/narrower based on

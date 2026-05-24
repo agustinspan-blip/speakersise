@@ -234,6 +234,9 @@
   },
   "specs": {
     "title": "Specifications",
+    "units": "Units",
+    "unitsMetric": "mm / kg",
+    "unitsImperial": "in / lb",
     "model": "Model",
     "height": "Height",
     "width": "Width",

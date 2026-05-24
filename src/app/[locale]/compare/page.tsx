@@ -12,6 +12,7 @@ import { ReferenceSelect } from "@/components/ReferenceSelect";
 import { BrandStrip } from "@/components/BrandStrip";
 import { ScaleDisclaimer } from "@/components/ScaleDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
+import { UnitsToggle } from "@/components/UnitsToggle";
 import {
   getDictionary,
   isLocale,
@@ -21,6 +22,13 @@ import {
   locales,
 } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
+import {
+  formatDriverSizeMm,
+  formatLengthMm,
+  formatWeightKg,
+  parseUnits,
+  type UnitSystem,
+} from "@/lib/units";
 
 const COLOR_A = "#2563eb";
 const COLOR_B = "#ea580c";
@@ -212,6 +220,7 @@ function compareHref(
     person?: PersonHeightCm | null;
     currency?: CurrencyId | null;
     disc?: DiscId | null;
+    units?: UnitSystem;
   },
   locale: Locale
 ): string {
@@ -233,6 +242,9 @@ function compareHref(
       person: base.person ? String(base.person) : undefined,
       currency: base.currency ?? undefined,
       disc: base.disc ?? undefined,
+      // Only serialise when imperial — metric is the implicit default,
+      // mirroring the same "omit defaults" pattern used by `view`/`align`.
+      units: base.units === "imperial" ? "imperial" : undefined,
     })
   );
 }
@@ -251,6 +263,7 @@ interface Props {
     person?: string;
     currency?: string;
     disc?: string;
+    units?: string;
   }>;
 }
 
@@ -364,6 +377,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
   const personHeight = parsePersonHeight(sp.person);
   const currency = parseCurrency(sp.currency);
   const disc = parseDisc(sp.disc);
+  const units = parseUnits(sp.units);
 
   // Build the active reference list from the user selections.
   const refs: Reference[] = [];
@@ -448,6 +462,11 @@ export default async function ComparePage({ params, searchParams }: Props) {
           className="grid grid-cols-1 gap-6 sm:grid-cols-2"
         >
           <input type="hidden" name="view" value={view} />
+          {/* Preserve the units selection when the form is re-submitted
+              via the Compare button (default omitted to keep URLs short). */}
+          {units !== "metric" && (
+            <input type="hidden" name="units" value={units} />
+          )}
           <SpeakerPicker
             name="a"
             label={t.compare.speakerA}
@@ -527,6 +546,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 personHeight={personHeight}
                 currency={currency}
                 disc={disc}
+                units={units}
                 locale={locale}
                 t={t}
               />
@@ -546,6 +566,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 personHeight={personHeight}
                 currency={currency}
                 disc={disc}
+                units={units}
                 locale={locale}
                 t={t}
               />
@@ -558,6 +579,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 personHeight={personHeight}
                 currency={currency}
                 disc={disc}
+                units={units}
                 locale={locale}
                 t={t}
               />
@@ -570,6 +592,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 personHeight={personHeight}
                 currency={currency}
                 disc={disc}
+                units={units}
                 locale={locale}
                 t={t}
               />
@@ -582,12 +605,26 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 personHeight={personHeight}
                 currency={currency}
                 disc={disc}
+                units={units}
                 locale={locale}
                 t={t}
               />
             )}
             <ScaleDisclaimer t={t} />
-            <SpecsComparison a={a} b={b} t={t} />
+            <SpecsComparison
+              a={a}
+              b={b}
+              t={t}
+              units={units}
+              metricHref={compareHref(
+                { a: a.id, b: b.id, view, align, person: personHeight, currency, disc, units: "metric" },
+                locale
+              )}
+              imperialHref={compareHref(
+                { a: a.id, b: b.id, view, align, person: personHeight, currency, disc, units: "imperial" },
+                locale
+              )}
+            />
           </>
         ) : (
           <p className="text-sm text-stone-500">{t.compare.pickTwo}</p>
@@ -608,6 +645,7 @@ function ViewTabs({
   personHeight,
   currency,
   disc,
+  units,
   locale,
   t,
 }: {
@@ -617,6 +655,7 @@ function ViewTabs({
   personHeight: PersonHeightCm | null;
   currency: CurrencyId | null;
   disc: DiscId | null;
+  units: UnitSystem;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -642,6 +681,7 @@ function ViewTabs({
             person: personHeight,
             currency,
             disc,
+            units,
           },
           locale
         );
@@ -671,6 +711,7 @@ function swapHref(
   personHeight: PersonHeightCm | null,
   currency: CurrencyId | null,
   disc: DiscId | null,
+  units: UnitSystem,
   locale: Locale
 ): string {
   return compareHref(
@@ -681,6 +722,7 @@ function swapHref(
       person: personHeight,
       currency,
       disc,
+      units,
     },
     locale
   );
@@ -693,6 +735,7 @@ function FrontOverlay({
   personHeight,
   currency,
   disc,
+  units,
   locale,
   t,
 }: {
@@ -702,6 +745,7 @@ function FrontOverlay({
   personHeight: PersonHeightCm | null;
   currency: CurrencyId | null;
   disc: DiscId | null;
+  units: UnitSystem;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -722,7 +766,7 @@ function FrontOverlay({
   );
   const contentWidthPx = overlayBlockPx + refsTotalPx;
   const totalWidthPx = contentWidthPx + RULER_WIDTH_PX;
-  const swap = swapHref(a, b, "overlay", personHeight, currency, disc, locale);
+  const swap = swapHref(a, b, "overlay", personHeight, currency, disc, units, locale);
 
   return (
     <section>
@@ -756,7 +800,7 @@ function FrontOverlay({
             transform: `scale(var(${SCALE_VAR}))`,
           }}
         >
-          <Ruler maxHeightMm={maxHeightMm} scale={scale} />
+          <Ruler maxHeightMm={maxHeightMm} scale={scale} units={units} />
           <div
             className="flex items-end"
             style={{
@@ -816,8 +860,10 @@ function FrontOverlay({
         </div>
         </div>
         <p className="mt-4 text-xs text-stone-500 text-center">
-          {t.compare.swapHint} · {t.compare.referenceHeight} {maxHeightMm} mm (
-          {(maxHeightMm / 10).toFixed(1)} cm) · 1 mm = {scale.toFixed(2)} px
+          {t.compare.swapHint} · {t.compare.referenceHeight}{" "}
+          {units === "imperial"
+            ? `${(maxHeightMm / 25.4).toFixed(1)} in · 1 in = ${(scale * 25.4).toFixed(2)} px`
+            : `${maxHeightMm} mm (${(maxHeightMm / 10).toFixed(1)} cm) · 1 mm = ${scale.toFixed(2)} px`}
         </p>
       </div>
     </section>
@@ -831,6 +877,7 @@ function FrontSideBySide({
   personHeight,
   currency,
   disc,
+  units,
   locale,
   t,
 }: {
@@ -840,6 +887,7 @@ function FrontSideBySide({
   personHeight: PersonHeightCm | null;
   currency: CurrencyId | null;
   disc: DiscId | null;
+  units: UnitSystem;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -857,7 +905,7 @@ function FrontSideBySide({
   const contentWidthPx =
     widthsMm * scale + SIDE_BY_SIDE_GAP_PX * (itemCount - 1) + 48;
   const totalWidthPx = contentWidthPx + RULER_WIDTH_PX;
-  const swap = swapHref(a, b, "side", personHeight, currency, disc, locale);
+  const swap = swapHref(a, b, "side", personHeight, currency, disc, units, locale);
 
   return (
     <section>
@@ -885,7 +933,7 @@ function FrontSideBySide({
             transform: `scale(var(${SCALE_VAR}))`,
           }}
         >
-          <Ruler maxHeightMm={maxHeightMm} scale={scale} />
+          <Ruler maxHeightMm={maxHeightMm} scale={scale} units={units} />
           <div
             className="relative flex items-end justify-center"
             style={{
@@ -923,8 +971,10 @@ function FrontSideBySide({
         </div>
         </div>
         <p className="mt-4 text-xs text-stone-500 text-center">
-          {t.compare.swapHint} · {t.compare.referenceHeight} {maxHeightMm} mm (
-          {(maxHeightMm / 10).toFixed(1)} cm) · 1 mm = {scale.toFixed(2)} px
+          {t.compare.swapHint} · {t.compare.referenceHeight}{" "}
+          {units === "imperial"
+            ? `${(maxHeightMm / 25.4).toFixed(1)} in · 1 in = ${(scale * 25.4).toFixed(2)} px`
+            : `${maxHeightMm} mm (${(maxHeightMm / 10).toFixed(1)} cm) · 1 mm = ${scale.toFixed(2)} px`}
         </p>
       </div>
     </section>
@@ -956,6 +1006,7 @@ function ProfileOverlay({
   personHeight,
   currency,
   disc,
+  units,
   locale,
   t,
 }: {
@@ -965,6 +1016,7 @@ function ProfileOverlay({
   personHeight: PersonHeightCm | null;
   currency: CurrencyId | null;
   disc: DiscId | null;
+  units: UnitSystem;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -980,7 +1032,7 @@ function ProfileOverlay({
     ? scaledDepthA + scaledDepthB + SIDE_BY_SIDE_GAP_PX + 48
     : Math.max(scaledDepthA, scaledDepthB) + 48;
   const totalWidthPx = overlayBlockPx + RULER_WIDTH_PX;
-  const swap = swapHref(a, b, "profile", personHeight, currency, disc, locale);
+  const swap = swapHref(a, b, "profile", personHeight, currency, disc, units, locale);
 
   // Compute X offset (within the 48 px-padded overlay block) for each
   // cabinet given the chosen align mode. 24 px = half the breathing room.
@@ -1015,6 +1067,7 @@ function ProfileOverlay({
         person: personHeight,
         currency,
         disc,
+        units,
       },
       locale
     );
@@ -1097,7 +1150,7 @@ function ProfileOverlay({
               transform: `scale(var(${SCALE_VAR}))`,
             }}
           >
-            <Ruler maxHeightMm={maxHeightMm} scale={scale} />
+            <Ruler maxHeightMm={maxHeightMm} scale={scale} units={units} />
             {isSideBySide ? (
               /*
                 Side-by-side profile: both cabinets laid out next to each
@@ -1193,8 +1246,10 @@ function ProfileOverlay({
           </div>
         </div>
         <p className="mt-4 text-xs text-stone-500 text-center">
-          {t.compare.swapHint} · {t.compare.referenceHeight} {maxHeightMm} mm (
-          {(maxHeightMm / 10).toFixed(1)} cm) · 1 mm = {scale.toFixed(2)} px
+          {t.compare.swapHint} · {t.compare.referenceHeight}{" "}
+          {units === "imperial"
+            ? `${(maxHeightMm / 25.4).toFixed(1)} in · 1 in = ${(scale * 25.4).toFixed(2)} px`
+            : `${maxHeightMm} mm (${(maxHeightMm / 10).toFixed(1)} cm) · 1 mm = ${scale.toFixed(2)} px`}
         </p>
       </div>
     </section>
@@ -1293,6 +1348,7 @@ function ReferencePickers({
   personHeight,
   currency,
   disc,
+  units,
   locale,
   t,
 }: {
@@ -1302,6 +1358,7 @@ function ReferencePickers({
   personHeight: PersonHeightCm | null;
   currency: CurrencyId | null;
   disc: DiscId | null;
+  units: UnitSystem;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -1312,7 +1369,7 @@ function ReferencePickers({
       value: "",
       label: t.compare.refPersonOff,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: null, currency, disc },
+        { a: a.id, b: b.id, view, person: null, currency, disc, units },
         locale
       ),
     },
@@ -1320,7 +1377,7 @@ function ReferencePickers({
       value: String(cm),
       label: `${t.compare.refMan} — ${fmtPersonHeight(cm, locale)}`,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: cm, currency, disc },
+        { a: a.id, b: b.id, view, person: cm, currency, disc, units },
         locale
       ),
     })),
@@ -1330,7 +1387,7 @@ function ReferencePickers({
       value: "",
       label: t.compare.refCurrencyOff,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: personHeight, currency: null, disc },
+        { a: a.id, b: b.id, view, person: personHeight, currency: null, disc, units },
         locale
       ),
     },
@@ -1338,7 +1395,7 @@ function ReferencePickers({
       value: id,
       label: CURRENCIES[id].shortLabel,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: personHeight, currency: id, disc },
+        { a: a.id, b: b.id, view, person: personHeight, currency: id, disc, units },
         locale
       ),
     })),
@@ -1348,7 +1405,7 @@ function ReferencePickers({
       value: "",
       label: t.compare.refDiscOff,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: personHeight, currency, disc: null },
+        { a: a.id, b: b.id, view, person: personHeight, currency, disc: null, units },
         locale
       ),
     },
@@ -1356,7 +1413,7 @@ function ReferencePickers({
       value: id,
       label: t.compare.discs[DISCS[id].labelKey],
       href: compareHref(
-        { a: a.id, b: b.id, view, person: personHeight, currency, disc: id },
+        { a: a.id, b: b.id, view, person: personHeight, currency, disc: id, units },
         locale
       ),
     })),
@@ -1428,13 +1485,34 @@ function ReferenceItem({
 function Ruler({
   maxHeightMm,
   scale,
+  units,
 }: {
   maxHeightMm: number;
   scale: number;
+  units: UnitSystem;
 }) {
-  const stepMm = maxHeightMm > 800 ? 200 : maxHeightMm > 400 ? 100 : 50;
+  // Pick a tick step + label suited to the active unit system. Metric
+  // steps follow the original 50/100/200 mm ladder (snaps to even cm).
+  // Imperial steps are chosen so the ladder lands on round inch values
+  // (3/6/12 in) — for a typical 1700 mm floorstander (~67 in) that
+  // yields six labels (0/12/24/36/48/60); for a 380 mm bookshelf
+  // (~15 in) five labels (0/3/6/9/12/15).
+  const stepMm =
+    units === "imperial"
+      ? maxHeightMm > 762 // ~30 in
+        ? 304.8 // 12 in
+        : maxHeightMm > 381 // ~15 in
+          ? 152.4 // 6 in
+          : 76.2 // 3 in
+      : maxHeightMm > 800
+        ? 200
+        : maxHeightMm > 400
+          ? 100
+          : 50;
   const marks: number[] = [];
   for (let mm = 0; mm <= maxHeightMm + 1; mm += stepMm) marks.push(mm);
+  const label = (mm: number) =>
+    units === "imperial" ? `${Math.round(mm / 25.4)} in` : `${mm / 10} cm`;
 
   return (
     <div
@@ -1458,7 +1536,7 @@ function Ruler({
             style={{ bottom: `${bottomPx - 6}px` }}
           >
             <span className="tabular-nums whitespace-nowrap pr-1">
-              {mm / 10} cm
+              {label(mm)}
             </span>
             <span
               className="inline-block h-px bg-stone-400 dark:bg-stone-600"
@@ -1564,10 +1642,16 @@ function SpecsComparison({
   a,
   b,
   t,
+  units,
+  metricHref,
+  imperialHref,
 }: {
   a: Speaker;
   b: Speaker;
   t: Dictionary;
+  units: UnitSystem;
+  metricHref: string;
+  imperialHref: string;
 }) {
   const fmtRange = (r: { min?: number; max: number }, unit: string) =>
     r.min !== undefined ? `${r.min}–${r.max} ${unit}` : `${r.max} ${unit}`;
@@ -1575,7 +1659,7 @@ function SpecsComparison({
     s.drivers
       .map(
         (d) =>
-          `${d.quantity ?? 1}× ${d.sizeMm > 0 ? `${d.sizeMm} mm ` : ""}${d.role}${d.material ? ` (${d.material})` : ""}`
+          `${d.quantity ?? 1}× ${d.sizeMm > 0 ? `${formatDriverSizeMm(d.sizeMm, units)} ` : ""}${d.role}${d.material ? ` (${d.material})` : ""}`
       )
       .join(", ");
 
@@ -1608,29 +1692,29 @@ function SpecsComparison({
     ],
     [
       t.specs.height,
-      `${a.dimensions.heightMm} mm`,
-      `${b.dimensions.heightMm} mm`,
+      formatLengthMm(a.dimensions.heightMm, units),
+      formatLengthMm(b.dimensions.heightMm, units),
       a.dimensions.heightMm,
       b.dimensions.heightMm,
     ],
     [
       t.specs.width,
-      `${a.dimensions.widthMm} mm`,
-      `${b.dimensions.widthMm} mm`,
+      formatLengthMm(a.dimensions.widthMm, units),
+      formatLengthMm(b.dimensions.widthMm, units),
       a.dimensions.widthMm,
       b.dimensions.widthMm,
     ],
     [
       t.specs.depth,
-      `${a.dimensions.depthMm} mm`,
-      `${b.dimensions.depthMm} mm`,
+      formatLengthMm(a.dimensions.depthMm, units),
+      formatLengthMm(b.dimensions.depthMm, units),
       a.dimensions.depthMm,
       b.dimensions.depthMm,
     ],
     [
       t.specs.weight,
-      `${a.dimensions.weightKg} kg`,
-      `${b.dimensions.weightKg} kg`,
+      formatWeightKg(a.dimensions.weightKg, units),
+      formatWeightKg(b.dimensions.weightKg, units),
       a.dimensions.weightKg,
       b.dimensions.weightKg,
     ],
@@ -1692,9 +1776,19 @@ function SpecsComparison({
 
   return (
     <section>
-      <h2 className="mb-4 text-sm font-medium text-stone-600 dark:text-stone-400">
-        {t.specs.title}
-      </h2>
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <h2 className="text-sm font-medium text-stone-600 dark:text-stone-400">
+          {t.specs.title}
+        </h2>
+        <UnitsToggle
+          current={units}
+          metricHref={metricHref}
+          imperialHref={imperialHref}
+          label={t.specs.units}
+          metricLabel={t.specs.unitsMetric}
+          imperialLabel={t.specs.unitsImperial}
+        />
+      </div>
       <div className="rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 overflow-hidden">
         {/*
           `table-fixed` makes the browser use the first row's column
