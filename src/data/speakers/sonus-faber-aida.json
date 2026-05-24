@@ -52,7 +52,8 @@
   },
   "images": {
     "hero": "/speakers/sonus-faber-aida-hero.webp",
-    "front": "/speakers/sonus-faber-aida-front.png"
+    "front": "/speakers/sonus-faber-aida-front.png",
+    "side": "/speakers/sonus-faber-aida-side.webp"
   },
   "sourceUrl": "https://www.sonusfaber.com/en/products/aida/tech-specs",
   "description": {

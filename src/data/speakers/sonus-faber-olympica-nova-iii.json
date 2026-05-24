@@ -46,7 +46,8 @@
   },
   "images": {
     "hero": "/speakers/sonus-faber-olympica-nova-iii-hero.webp",
-    "front": "/speakers/sonus-faber-olympica-nova-iii-front.png"
+    "front": "/speakers/sonus-faber-olympica-nova-iii-front.png",
+    "side": "/speakers/sonus-faber-olympica-nova-iii-side.webp"
   },
   "sourceUrl": "https://www.sonusfaber.com/en/products/olympica-nova-iii/tech-specs",
   "description": {

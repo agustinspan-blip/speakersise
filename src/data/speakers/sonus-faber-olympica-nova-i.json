@@ -40,7 +40,8 @@
   },
   "images": {
     "hero": "/speakers/sonus-faber-olympica-nova-i-hero.webp",
-    "front": "/speakers/sonus-faber-olympica-nova-i-front.png"
+    "front": "/speakers/sonus-faber-olympica-nova-i-front.png",
+    "side": "/speakers/sonus-faber-olympica-nova-i-side.webp"
   },
   "sourceUrl": "https://www.sonusfaber.com/en/products/olympica-nova-i/tech-specs",
   "description": {

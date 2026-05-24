@@ -41,7 +41,8 @@
   },
   "images": {
     "hero": "/speakers/sonus-faber-guarneri-g5-hero.webp",
-    "front": "/speakers/sonus-faber-guarneri-g5-front.png"
+    "front": "/speakers/sonus-faber-guarneri-g5-front.png",
+    "side": "/speakers/sonus-faber-guarneri-g5-side.webp"
   },
   "sourceUrl": "https://www.sonusfaber.com/en/products/guarneri",
   "description": {

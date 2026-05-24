@@ -34,8 +34,16 @@
   },
   "active": {
     "amplification": [
-      { "driverRole": "tweeter", "powerW": 100, "amplifierClass": "AB" },
-      { "driverRole": "mid-bass", "powerW": 250, "amplifierClass": "D" }
+      {
+        "driverRole": "tweeter",
+        "powerW": 100,
+        "amplifierClass": "AB"
+      },
+      {
+        "driverRole": "mid-bass",
+        "powerW": 250,
+        "amplifierClass": "D"
+      }
     ],
     "totalAmpPowerW": 700,
     "maxSplDb": 105,
@@ -55,12 +63,15 @@
       "bluetooth",
       "wifi"
     ],
-    "outputs": ["rca-sub"],
+    "outputs": [
+      "rca-sub"
+    ],
     "pairedSecondary": true
   },
   "images": {
     "hero": "/speakers/sonus-faber-duetto-hero.webp",
-    "front": "/speakers/sonus-faber-duetto-front.png"
+    "front": "/speakers/sonus-faber-duetto-front.png",
+    "side": "/speakers/sonus-faber-duetto-side.webp"
   },
   "sourceUrl": "https://www.sonusfaber.com/en/products/duetto/tech-specs",
   "description": {

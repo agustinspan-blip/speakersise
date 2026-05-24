@@ -52,7 +52,8 @@
   },
   "images": {
     "hero": "/speakers/sonus-faber-amati-supreme-hero.webp",
-    "front": "/speakers/sonus-faber-amati-supreme-front.png"
+    "front": "/speakers/sonus-faber-amati-supreme-front.png",
+    "side": "/speakers/sonus-faber-amati-supreme-side.webp"
   },
   "sourceUrl": "https://www.sonusfaber.com/en/products/amati-supreme/tech-specs",
   "description": {
