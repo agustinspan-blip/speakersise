@@ -53,7 +53,8 @@
   },
   "images": {
     "hero": "/speakers/sonus-faber-lilium-hero.webp",
-    "front": "/speakers/sonus-faber-lilium-front.png"
+    "front": "/speakers/sonus-faber-lilium-front.png",
+    "side": "/speakers/sonus-faber-lilium-side.webp"
   },
   "sourceUrl": "https://www.sonusfaber.com/en/products/lilium/tech-specs",
   "description": {

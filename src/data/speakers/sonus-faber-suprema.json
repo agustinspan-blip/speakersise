@@ -58,7 +58,8 @@
   },
   "images": {
     "hero": "/speakers/sonus-faber-suprema-hero.webp",
-    "front": "/speakers/sonus-faber-suprema-front.png"
+    "front": "/speakers/sonus-faber-suprema-front.png",
+    "side": "/speakers/sonus-faber-suprema-side.webp"
   },
   "sourceUrl": "https://www.sonusfaber.com/en/products/suprema/tech-specs",
   "description": {

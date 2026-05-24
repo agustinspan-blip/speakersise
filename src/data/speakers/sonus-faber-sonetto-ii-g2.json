@@ -41,7 +41,8 @@
   },
   "images": {
     "hero": "/speakers/sonus-faber-sonetto-ii-g2-hero.webp",
-    "front": "/speakers/sonus-faber-sonetto-ii-g2-front.png"
+    "front": "/speakers/sonus-faber-sonetto-ii-g2-front.png",
+    "side": "/speakers/sonus-faber-sonetto-ii-g2-side.webp"
   },
   "sourceUrl": "https://www.sonusfaber.com/en/products/sonetto-ii/tech-specs",
   "description": {
