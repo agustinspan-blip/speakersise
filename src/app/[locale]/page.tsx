@@ -528,10 +528,18 @@ function Hero({
           {speaker.images.side && <SideViewBadge t={t} />}
           <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-3">
             <div>
+              {/*
+                The hero card is `bg-white` in both colour modes (kept
+                light intentionally so the speaker imagery reads the
+                same way day or night). Force the caption text to its
+                light-mode colours too — without this, the dark variant
+                would render the model name in stone-100 on a white card
+                and disappear.
+              */}
               <p className="text-xs uppercase tracking-wider text-stone-500">
                 {speaker.brand}
               </p>
-              <p className="text-base font-medium text-stone-900 dark:text-stone-100">
+              <p className="text-base font-medium text-stone-900">
                 {speaker.model}
                 {speaker.generation && (
                   <span className="ml-1 text-stone-400 font-normal">
@@ -678,10 +686,13 @@ function BrandHero({
             {speaker.images.side && <SideViewBadge t={t} />}
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-3">
               <div>
+                {/* Caption sits over the bg-white card — keep it on
+                    light-mode colours in both palettes so it stays
+                    legible against the white card in dark mode. */}
                 <p className="text-xs uppercase tracking-wider text-stone-500">
                   {speaker.brand}
                 </p>
-                <p className="text-base font-medium text-stone-900 dark:text-stone-100">
+                <p className="text-base font-medium text-stone-900">
                   {speaker.model}
                   {speaker.generation && (
                     <span className="ml-1 text-stone-400 font-normal">
