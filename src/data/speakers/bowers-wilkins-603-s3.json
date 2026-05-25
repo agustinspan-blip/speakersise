@@ -1,0 +1,57 @@
+{
+  "id": "bowers-wilkins-603-s3",
+  "brand": "Bowers & Wilkins",
+  "series": "600",
+  "generation": "S3",
+  "model": "603 S3",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1020,
+    "widthMm": 256,
+    "depthMm": 402,
+    "weightKg": 27.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Titanium Dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "Continuum cone FST"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "paper cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 46,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 90,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.0,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/bowers-wilkins-603-s3-hero.webp",
+    "front": "/speakers/bowers-wilkins-603-s3-front.png"
+  },
+  "sourceUrl": "https://www.bowerswilkins.com/en/product/loudspeakers/603-s3/FP43869P.html",
+  "description": {
+    "en": "Three-way tower at the top of the 600 S3 line — the 25 mm Titanium Dome tweeter sits above a 150 mm Continuum cone FST midrange and a pair of 165 mm paper-cone woofers in a rear-ported cabinet. The dedicated midrange driver and 46 Hz low-end reach make it B&W's most full-range passive option below the 700 Series.",
+    "es": "Torre de tres vías al tope de la línea 600 S3 — el tweeter Titanium Dome de 25 mm corona un midrange Continuum cone FST de 150 mm y un par de woofers de 165 mm con cono de papel en una caja con puerto trasero. El driver de medios dedicado y los 46 Hz de extensión grave lo hacen la opción pasiva más full-range de B&W debajo de la serie 700."
+  }
+}

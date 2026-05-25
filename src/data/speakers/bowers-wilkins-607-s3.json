@@ -1,0 +1,51 @@
+{
+  "id": "bowers-wilkins-607-s3",
+  "brand": "Bowers & Wilkins",
+  "series": "600",
+  "generation": "S3",
+  "model": "607 S3",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 300,
+    "widthMm": 168,
+    "depthMm": 235,
+    "weightKg": 4.65
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Titanium Dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "Continuum cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 52,
+    "max": 28000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 84,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.0,
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/bowers-wilkins-607-s3-hero.webp",
+    "front": "/speakers/bowers-wilkins-607-s3-front.png"
+  },
+  "sourceUrl": "https://www.bowerswilkins.com/en/product/loudspeakers/607-s3/FP43958P.html",
+  "description": {
+    "en": "Compact two-way stand-mount in the 600 S3 line — pairs a new 25 mm Titanium Dome tweeter with a 130 mm Continuum cone bass-midrange in a small vented cabinet. Front-firing Flowport makes it relatively forgiving of placement near walls, while the modest 84 dB sensitivity asks for at least 30 W of clean amplification.",
+    "es": "Bookshelf de dos vías compacto de la línea 600 S3 — combina el nuevo tweeter Titanium Dome de 25 mm con un mid-bass Continuum de 130 mm en una caja ventilada chica. El Flowport frontal lo hace tolerante con la pared cercana; su sensibilidad modesta de 84 dB pide al menos 30 W de amplificación limpia."
+  }
+}
