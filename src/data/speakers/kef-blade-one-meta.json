@@ -50,7 +50,8 @@
   },
   "images": {
     "hero": "/speakers/kef-blade-one-meta-hero.webp",
-    "front": "/speakers/kef-blade-one-meta-front.png"
+    "front": "/speakers/kef-blade-one-meta-front.png",
+    "side": "/speakers/kef-blade-one-meta-side.webp"
   },
   "sourceUrl": "https://international.kef.com/products/blade",
   "description": {
