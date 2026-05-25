@@ -1,0 +1,61 @@
+{
+  "id": "paradigm-premier-700f",
+  "brand": "Paradigm",
+  "series": "Premier",
+  "model": "Premier 700F",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1012,
+    "widthMm": 215,
+    "depthMm": 321,
+    "weightKg": 21.88
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "X-PAL dome",
+      "notes": "Ferro-fluid cooled, Perforated Phase-Aligning (PPA) lens"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 140,
+      "quantity": 1,
+      "material": "Carbon-infused polypropylene cone",
+      "notes": "Active Ridge Technology (ART) surround, PPA lens"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 140,
+      "quantity": 2,
+      "material": "Carbon-infused polypropylene cone",
+      "notes": "Active Ridge Technology (ART) surround"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 33,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 88,
+  "impedanceOhm": 8,
+  "powerHandlingW": {
+    "max": 130
+  },
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 180
+  },
+  "images": {
+    "hero": "/speakers/paradigm-premier-700f-hero.webp",
+    "front": "/speakers/paradigm-premier-700f-front.png"
+  },
+  "sourceUrl": "https://www.paradigm.com/en/floorstanding/premier-700f",
+  "description": {
+    "en": "Slim three-way 4-driver tower in Paradigm's Premier line — 25 mm X-PAL dome tweeter on top, dedicated 140 mm midrange and two 140 mm woofers, all sharing the carbon-infused polypropylene cone with Active Ridge Technology surround. Crossovers at 800 Hz and 2.5 kHz; 33 Hz DIN extension and 88 dB anechoic sensitivity in a narrow 215 mm-wide footprint.",
+    "es": "Torre slim de tres vías y 4 drivers en la línea Premier de Paradigm — tweeter X-PAL de domo de 25 mm arriba, midrange dedicado de 140 mm y dos woofers de 140 mm, todos compartiendo el cono carbon-infused polypropylene con suspensión Active Ridge Technology. Crossovers a 800 Hz y 2.5 kHz; extensión a 33 Hz (DIN) y 88 dB anechoic en un footprint angosto de 215 mm."
+  }
+}

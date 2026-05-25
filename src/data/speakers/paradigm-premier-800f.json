@@ -1,0 +1,61 @@
+{
+  "id": "paradigm-premier-800f",
+  "brand": "Paradigm",
+  "series": "Premier",
+  "model": "Premier 800F",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1053,
+    "widthMm": 234,
+    "depthMm": 350,
+    "weightKg": 24.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "X-PAL dome",
+      "notes": "Ferro-fluid cooled, Perforated Phase-Aligning (PPA) lens"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Carbon-infused polypropylene cone",
+      "notes": "Active Ridge Technology (ART) surround, PPA lens"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 2,
+      "material": "Carbon-infused polypropylene cone",
+      "notes": "Active Ridge Technology (ART) surround"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 27,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "sensitivityDb": 89,
+  "impedanceOhm": 8,
+  "powerHandlingW": {
+    "max": 180
+  },
+  "recommendedAmpW": {
+    "min": 15,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/paradigm-premier-800f-hero.webp",
+    "front": "/speakers/paradigm-premier-800f-front.png"
+  },
+  "sourceUrl": "https://www.paradigm.com/en/floorstanding/premier-800f",
+  "description": {
+    "en": "Flagship three-way 4-driver tower in Paradigm's Premier line — same X-PAL tweeter as the 700F but scaled up to a 165 mm dedicated midrange and two 165 mm woofers, all carbon-infused polypropylene with Active Ridge Technology surround. Crossovers at 700 Hz and 2.5 kHz; reaches 27 Hz at DIN extension with 89 dB anechoic sensitivity, comfortably driven by 15–250 W amplifiers.",
+    "es": "Torre tope de tres vías y 4 drivers de la línea Premier de Paradigm — mismo tweeter X-PAL que el 700F pero escalado con un midrange dedicado de 165 mm y dos woofers de 165 mm, todos carbon-infused polypropylene con suspensión Active Ridge Technology. Crossovers a 700 Hz y 2.5 kHz; llega a 27 Hz (DIN) con 89 dB de sensibilidad anechoic, cómodo con amplis de 15 a 250 W."
+  }
+}
