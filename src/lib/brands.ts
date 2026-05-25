@@ -197,6 +197,18 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     stripHeightClass: "h-[22px]",
     heroHeightClass: "h-[28px] sm:h-[36px]",
   },
+  JBL: {
+    // Iconic JBL "exclamation + JBL" wordmark, solid-black silhouette on
+    // a transparent background (249×138, aspect ≈ 1.80). Single-colour
+    // mark, so it inherits the default dark-mode invert — black on light
+    // pages, white on the dark brand strip / search modal / footer.
+    src: "/brands/jbl.png",
+    width: 249,
+    height: 138,
+    heightClass: "h-7",
+    stripHeightClass: "h-[40px]",
+    heroHeightClass: "h-[52px] sm:h-[68px]",
+  },
   // Note: Monitor Audio's logo is a single-colour wordmark, so it implicitly
   // gets `darkInvert: true` (the default behaviour).
 
@@ -221,6 +233,7 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     Castle: ["castle.png", 600, 376],
     CSS: ["css.png", 400, 400],
     Devialet: ["devialet.png", 2633, 1550],
+    "Definitive Technology": ["definitive-technology.png", 3805, 1247],
     "DeVore Fidelity": ["devore.png", 650, 366],
     ELAC: ["elac.png", 500, 222],
     Elipson: ["elipson.png", 762, 257],
@@ -235,7 +248,6 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     Harbeth: ["harbeth.png", 504, 120],
     "HEDD Audio": ["hedd.png", 1037, 313],
     Jamo: ["jamo.png", 360, 360],
-    JBL: ["jbl.png", 256, 256],
     "Jones & Carreta": ["jones-carreta.png", 826, 386],
     "Kerr Acoustics": ["kerr-acoustics.png", 177, 180],
     Kanto: ["kanto.png", 1922, 484],
@@ -248,6 +260,7 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     Magico: ["magico.png", 1200, 1236],
     Magnat: ["magnat.png", 1935, 389],
     "Manger Audio": ["manger.png", 2108, 454],
+    Marantz: ["marantz.png", 3838, 388],
     Marten: ["marten.png", 1000, 800],
     MartinLogan: ["martin-logan.png", 960, 588],
     McIntosh: ["mcintosh.png", 900, 333],
@@ -345,7 +358,8 @@ export interface BrandInfo {
     | "klipsch"
     | "polk"
     | "canton"
-    | "paradigm";
+    | "paradigm"
+    | "jbl";
   /** Translation key under `home.brandCountries.*` */
   countryKey: "uk" | "denmark" | "netherlands" | "uruguay" | "france" | "italy" | "us" | "germany" | "canada";
   /** Year the brand was founded — shown as a small meta line. */
@@ -442,6 +456,14 @@ export const BRAND_INFO: Record<string, BrandInfo> = {
     countryKey: "us",
     foundedYear: 1946,
     websiteUrl: "https://www.klipsch.com",
+  },
+  JBL: {
+    countryCode: "US",
+    countryFlag: "🇺🇸",
+    descriptionKey: "jbl",
+    countryKey: "us",
+    foundedYear: 1946,
+    websiteUrl: "https://www.jbl.com",
   },
   Polk: {
     countryCode: "US",
@@ -677,6 +699,22 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
       "bg-orange-800 hover:bg-orange-900 dark:bg-orange-600 dark:hover:bg-orange-500",
     accentBorder: "border-orange-800 dark:border-orange-300",
     glowColor: "rgba(154, 52, 18, 0.10)", // orange-800, subtle
+  },
+  // JBL: vivid safety-orange identity carried by the L-Classic line's
+  // Quadrex foam grilles and the iconic exclamation badge. `orange-600`
+  // sits a step brighter than Klipsch's `orange-800` (copper-bronze) so
+  // the two US heritage brands read distinctly side by side.
+  JBL: {
+    pageBg: "bg-stone-50 dark:bg-stone-950",
+    accentEyebrow: "text-orange-600 dark:text-orange-300",
+    accentTitle: "text-orange-600 dark:text-orange-300",
+    accentHover:
+      "group-hover:text-orange-600 dark:group-hover:text-orange-300",
+    accentArrow: "text-orange-600 dark:text-orange-300",
+    ctaBg:
+      "bg-orange-600 hover:bg-orange-700 dark:bg-orange-500 dark:hover:bg-orange-400",
+    accentBorder: "border-orange-600 dark:border-orange-300",
+    glowColor: "rgba(234, 88, 12, 0.10)", // orange-600, subtle
   },
   // Sonus Faber: solid-walnut, brass and leather — the Heritage line's
   // warm Italian craftsmanship. `amber-700` sits between Rizzi's

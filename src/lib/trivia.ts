@@ -138,4 +138,24 @@ export const TRIVIA: TriviaItem[] = [
     en: "Dali's name was chosen partly because it sounds the same in every language on earth — easier when you sell in 70+ countries.",
     es: "Dali eligió el nombre en parte porque suena igual en todos los idiomas del planeta — útil cuando vendés en más de 70 países.",
   },
+  {
+    id: "jbl-name-origin",
+    en: "JBL stands for James Bullough Lansing — the same engineer who founded Altec Lansing first, then split off in 1946 to start his second speaker company. Both brands still bear his name.",
+    es: "JBL son las iniciales de James Bullough Lansing — el mismo ingeniero que ya había fundado Altec Lansing y se separó en 1946 para arrancar su segunda marca de parlantes. Las dos siguen llevando su nombre.",
+  },
+  {
+    id: "jbl-l100-bestseller",
+    en: "The JBL L100 from 1970 wasn't just JBL's bestseller — it was the bestselling speaker of any brand in the entire decade, with over 125,000 pairs sold. The L100 Classic MkII in this catalog is the modern revival of that exact silhouette.",
+    es: "El JBL L100 de 1970 no fue solo el más vendido de JBL — fue el parlante más vendido de cualquier marca en toda la década, con más de 125.000 pares colocados. El L100 Classic MkII de este catálogo es el revival actual del mismo perfil.",
+  },
+  {
+    id: "jbl-paragon",
+    en: "JBL's Paragon (1957–1983) was a 2.7-metre one-piece stereo console finished by hand — over 100 hours of woodwork per unit. It holds the longest production run of any JBL speaker and was the most expensive home loudspeaker on the market when it launched.",
+    es: "El Paragon de JBL (1957–1983) fue una consola estéreo de una sola pieza de 2,7 metros, terminada a mano — más de 100 horas de carpintería por unidad. Tiene la producción más larga de cualquier JBL y fue el parlante hogareño más caro del mundo cuando salió.",
+  },
+  {
+    id: "jbl-quadrex-colors",
+    en: "The black, orange and blue Quadrex foam grilles on the L-Classic line aren't a retro design flourish — they're the exact three colours JBL has offered for the L100 family since 1970.",
+    es: "Las grillas de espuma Quadrex en negro, naranja y azul de la línea L-Classic no son un guiño retro — son los mismos tres colores que JBL ofrece para la familia L100 desde 1970.",
+  },
 ];
