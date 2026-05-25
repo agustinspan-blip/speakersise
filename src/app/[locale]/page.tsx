@@ -14,6 +14,7 @@ import {
 import { pageMetadata } from "@/lib/metadata";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/site";
+import { getHeroArea } from "@/lib/hero-quality";
 import { BrandStrip } from "@/components/BrandStrip";
 import { CatalogInsights } from "@/components/CatalogInsights";
 import { CatalogList } from "@/components/CatalogList";
@@ -272,9 +273,22 @@ export default async function Home({ params, searchParams }: Props) {
   // client-side inside the carousel (which seeds itself on mount).
   const catalogStats = computeStats(all);
 
-  // Pick a featured speaker for the editorial hero (the most recent one with
-  // a hero image, falling back to the first displayed).
+  // Pick the editorial hero. Two rules layered on top of the existing
+  // recency-weighted shuffle:
+  //   1. The speaker must ship with a hero image asset.
+  //   2. That asset must be high-resolution (>= ~1 megapixel) so the
+  //      big rounded card on the home page never carries a blurry or
+  //      tiny image. The threshold catches most catalog imagery while
+  //      excluding the few legacy 600×600-ish files.
+  // Within the qualifying set we keep the shuffle order (so the home
+  // page still rotates between deploys) instead of always picking the
+  // single highest-res image. Falls back to "anything with a hero" and
+  // finally to "first displayed" so the page never renders empty.
+  const HERO_MIN_PIXELS = 1_000_000;
   const heroSpeaker =
+    displayed.find(
+      (s) => s.images.hero && getHeroArea(s.id) >= HERO_MIN_PIXELS
+    ) ??
     displayed.find((s) => s.images.hero) ??
     all.find((s) => s.images.hero) ??
     displayed[0];
@@ -285,9 +299,16 @@ export default async function Home({ params, searchParams }: Props) {
   const theme = brandPageMode ? getBrandTheme(brand) : getBrandTheme(null);
   // Random featured speaker from the active brand for the brand hero.
   // Falls back to `null` when the brand has no catalog entries yet —
-  // BrandHero then renders the brand metadata without a featured speaker.
+  // BrandHero then renders the brand metadata without a featured
+  // speaker. Same resolution gate as the editorial hero above so a
+  // brand's marquee image is always crisp.
   const brandHeroSpeaker = brandPageMode
-    ? displayed.find((s) => s.images.hero) ?? displayed[0] ?? null
+    ? displayed.find(
+        (s) => s.images.hero && getHeroArea(s.id) >= HERO_MIN_PIXELS
+      ) ??
+      displayed.find((s) => s.images.hero) ??
+      displayed[0] ??
+      null
     : null;
 
   // ItemList structured data for the catalogue/brand view. Helps Google
