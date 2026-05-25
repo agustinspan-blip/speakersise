@@ -1,0 +1,48 @@
+{
+  "id": "polk-signature-elite-es15",
+  "brand": "Polk",
+  "series": "Signature Elite",
+  "model": "Signature Elite ES15",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 305,
+    "widthMm": 191,
+    "depthMm": 259,
+    "weightKg": 5.9
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Terylene Dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "Dynamic Balance mica-reinforced polypropylene cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 44,
+    "max": 40000
+  },
+  "sensitivityDb": 85,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 20,
+    "max": 100
+  },
+  "images": {
+    "hero": "/speakers/polk-signature-elite-es15-hero.webp",
+    "front": "/speakers/polk-signature-elite-es15-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en/product/home-speakers/bookshelf/signature-elite-es15/300363.html",
+  "description": {
+    "en": "Compact two-way bookshelf in Polk's Signature Elite line — 25 mm Terylene dome tweeter paired with a 133 mm Dynamic Balance mica-reinforced polypropylene cone in a critically-damped MDF cabinet with rear-firing Power Port. Hi-Res Audio certified, wall-mount capable, and rated for a 20–100 W amplifier window.",
+    "es": "Bookshelf compacto de dos vías de la línea Signature Elite de Polk — tweeter Terylene de domo de 25 mm acompañado por un cono Dynamic Balance reforzado con mica y polipropileno de 133 mm en un cabinet de MDF críticamente amortiguado con Power Port trasero. Certificado Hi-Res Audio, montable a pared, y diseñado para amplis de 20 a 100 W."
+  }
+}

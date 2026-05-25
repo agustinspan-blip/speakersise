@@ -1,0 +1,48 @@
+{
+  "id": "polk-signature-elite-es20",
+  "brand": "Polk",
+  "series": "Signature Elite",
+  "model": "Signature Elite ES20",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 376,
+    "widthMm": 217,
+    "depthMm": 351,
+    "weightKg": 7.71
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Terylene Dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "Dynamic Balance mica-reinforced polypropylene cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 41,
+    "max": 40000
+  },
+  "sensitivityDb": 86,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 20,
+    "max": 125
+  },
+  "images": {
+    "hero": "/speakers/polk-signature-elite-es20-hero.webp",
+    "front": "/speakers/polk-signature-elite-es20-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en/product/home-speakers/bookshelf/signature-elite-es20/300364.html",
+  "description": {
+    "en": "Mid-size two-way bookshelf in Polk's Signature Elite line — 25 mm Terylene dome tweeter crossed at 2.4 kHz to a 165 mm Dynamic Balance mica-reinforced polypropylene cone. The bigger driver and rear-firing Power Port extend reach to 41 Hz; Hi-Res Audio certified and rated for a 20–125 W amplifier window.",
+    "es": "Bookshelf mediano de dos vías de la línea Signature Elite de Polk — tweeter Terylene de domo de 25 mm cruzando a 2.4 kHz con un cono Dynamic Balance reforzado con mica y polipropileno de 165 mm. El driver más grande y el Power Port trasero llevan la respuesta a 41 Hz; certificado Hi-Res Audio y diseñado para amplis de 20 a 125 W."
+  }
+}

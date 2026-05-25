@@ -1,0 +1,49 @@
+{
+  "id": "polk-signature-elite-es60",
+  "brand": "Polk",
+  "series": "Signature Elite",
+  "model": "Signature Elite ES60",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1130,
+    "widthMm": 297,
+    "depthMm": 399,
+    "weightKg": 23.59
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Terylene Dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 3,
+      "material": "Dynamic Balance mica-reinforced polypropylene cone",
+      "notes": "2.5-way topology — top driver covers mid-bass, lower pair rolls off lower"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 32,
+    "max": 40000
+  },
+  "sensitivityDb": 90,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/polk-signature-elite-es60-hero.webp",
+    "front": "/speakers/polk-signature-elite-es60-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en/product/home-speakers/floor-standing/signature-elite-es60/300369.html",
+  "description": {
+    "en": "Flagship 2.5-way tower in Polk's Signature Elite line — 25 mm Terylene dome tweeter and three 165 mm Dynamic Balance mica-reinforced polypropylene cones, in a critically-braced cabinet with down-firing Power Port. The 2.5-way crossover at 2.4 kHz lets the top driver carry mid-bass while the lower pair rolls off into the 32 Hz lower limit; 90 dB sensitivity and 50–300 W amp window suit larger rooms.",
+    "es": "Torre tope 2.5-way de la línea Signature Elite de Polk — tweeter Terylene de domo de 25 mm y tres conos Dynamic Balance reforzados con mica y polipropileno de 165 mm, en un cabinet críticamente reforzado con Power Port descendente. El crossover 2.5-way a 2.4 kHz deja al driver superior llevar el mid-bass mientras el par inferior rola hacia los 32 Hz; 90 dB de sensibilidad y ventana 50–300 W para salas grandes."
+  }
+}

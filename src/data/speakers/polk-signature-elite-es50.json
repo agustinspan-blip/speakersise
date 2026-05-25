@@ -1,0 +1,48 @@
+{
+  "id": "polk-signature-elite-es50",
+  "brand": "Polk",
+  "series": "Signature Elite",
+  "model": "Signature Elite ES50",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 950,
+    "widthMm": 261,
+    "depthMm": 277,
+    "weightKg": 14.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Terylene Dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 133,
+      "quantity": 2,
+      "material": "Dynamic Balance mica-reinforced polypropylene cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 40000
+  },
+  "sensitivityDb": 88,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/polk-signature-elite-es50-hero.webp",
+    "front": "/speakers/polk-signature-elite-es50-front.png"
+  },
+  "sourceUrl": "https://www.polkaudio.com/en/product/home-speakers/signature-elite-es50/300367.html",
+  "description": {
+    "en": "Compact two-way tower in Polk's Signature Elite line — 25 mm Terylene dome tweeter crossed at 2.3 kHz to two 133 mm Dynamic Balance mica-reinforced polypropylene cones. The down-firing Power Port through the plinth reaches 38 Hz; Hi-Res Audio certified and rated for a 40–200 W amplifier window.",
+    "es": "Torre compacta de dos vías de la línea Signature Elite de Polk — tweeter Terylene de domo de 25 mm cruzando a 2.3 kHz con dos conos Dynamic Balance reforzados con mica y polipropileno de 133 mm. El Power Port descendente a través del plinto llega a 38 Hz; certificado Hi-Res Audio y diseñado para amplis de 40 a 200 W."
+  }
+}
