@@ -1,0 +1,59 @@
+{
+  "id": "jbl-l100-classic-mkii",
+  "brand": "JBL",
+  "series": "Classic",
+  "generation": "MkII",
+  "model": "L100 Classic MkII",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 642,
+    "widthMm": 392,
+    "depthMm": 366,
+    "weightKg": 28.6
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Titanium Dome",
+      "notes": "Acoustic lens waveguide (JT025Ti2-4)"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "Pure Pulp cone, polymer-coated",
+      "notes": "JM125PC-8"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 300,
+      "quantity": 1,
+      "material": "Pure Pulp cone",
+      "notes": "Cast-frame, Dual Spider (JW300SW-8)"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 40,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 90,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/jbl-l100-classic-mkii-hero.webp",
+    "front": "/speakers/jbl-l100-classic-mkii-front.png"
+  },
+  "sourceUrl": "https://www.jbl.com/L100-MK2.html",
+  "description": {
+    "en": "Three-way large stand-mount that revives JBL's 1970s L100 studio-monitor silhouette in a walnut-veneer cabinet with the iconic Quadrex foam grille (black, orange or blue). A 300 mm Pure Pulp woofer, 130 mm polymer-coated Pure Pulp midrange and 25 mm Titanium Dome tweeter with acoustic lens cross at 450 Hz and 3.5 kHz, with MF/HF attenuators on the baffle for in-room tuning.",
+    "es": "Stand-mount grande de tres vías que revive el perfil del monitor de estudio L100 de JBL de los 70 en un cabinet de chapa de nogal con la icónica grilla de espuma Quadrex (negra, naranja o azul). El woofer Pure Pulp de 300 mm, el midrange Pure Pulp recubierto con polímero de 130 mm y el tweeter Titanium Dome de 25 mm con lente acústica cruzan a 450 Hz y 3.5 kHz, con atenuadores MF/HF en el bafle para ajustar al ambiente."
+  }
+}

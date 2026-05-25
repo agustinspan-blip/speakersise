@@ -1,0 +1,51 @@
+{
+  "id": "jbl-hdi-3600",
+  "brand": "JBL",
+  "series": "HDI",
+  "model": "HDI-3600",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 987,
+    "widthMm": 234,
+    "depthMm": 342,
+    "weightKg": 28.03
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Teonex compression driver",
+      "notes": "2410H-2 with HDI horn geometry waveguide"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 165,
+      "quantity": 3,
+      "material": "Advanced Aluminum Matrix cone",
+      "notes": "Cast-frame"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 30000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 90,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 20,
+    "max": 250
+  },
+  "images": {
+    "hero": "/speakers/jbl-hdi-3600-hero.webp",
+    "front": "/speakers/jbl-hdi-3600-front.png"
+  },
+  "sourceUrl": "https://www.jbl.com/HDI-3600.html",
+  "description": {
+    "en": "Mid-size 2½-way tower in JBL's High-Definition Imaging line — patented 2410H-2 25 mm Teonex compression driver in the HDI horn waveguide, mated to three 165 mm Advanced Aluminum Matrix cone woofers in a heavily braced cabinet with dual rear-firing flared ports. Crossovers at 900 Hz and 2 kHz set the lower woofer to roll off early so the middle pair extends the midband.",
+    "es": "Torre mediana de 2½ vías en la línea High-Definition Imaging de JBL — driver de compresión Teonex de 25 mm patentado (2410H-2) en la bocina HDI, acompañado por tres woofers Advanced Aluminum Matrix de 165 mm en un cabinet muy reforzado con dos puertos traseros con flares optimizados. Los crossovers a 900 Hz y 2 kHz hacen rolar al woofer inferior temprano para que el par del medio extienda la banda."
+  }
+}

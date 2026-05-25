@@ -1,0 +1,51 @@
+{
+  "id": "jbl-4349",
+  "brand": "JBL",
+  "series": "Studio Monitor",
+  "model": "4349",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 737,
+    "widthMm": 450,
+    "depthMm": 318,
+    "weightKg": 37.7
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 38,
+      "quantity": 1,
+      "material": "Annular Ring Teonex compression driver",
+      "notes": "D2415K dual-diaphragm compression driver with Sonoglass HDI waveguide horn"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 300,
+      "quantity": 1,
+      "material": "Pure Pulp cone",
+      "notes": "JW300PG-8 cast-frame woofer"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 32,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 91,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/jbl-4349-hero.webp",
+    "front": "/speakers/jbl-4349-front.png"
+  },
+  "sourceUrl": "https://global.jbl.com/bookshelf-speakers/4349.html",
+  "description": {
+    "en": "Large two-way studio monitor with 300 mm JW300PG-8 Pure Pulp cone woofer crossed at 1.5 kHz to a D2415K 38 mm Annular Ring Teonex compression driver in a Sonoglass HDI horn. V-braced front-ported cabinet with baffle-mounted HF and UHF tone attenuators (±1 dB in 0.5 dB steps), pairs with the JS-120 matching stand for floor placement.",
+    "es": "Monitor de estudio grande de dos vías con woofer Pure Pulp JW300PG-8 de 300 mm cruzando a 1.5 kHz con un driver de compresión D2415K de 38 mm con diafragma Annular Ring Teonex en bocina Sonoglass HDI. Cabinet front-ported V-braced con atenuadores HF y UHF en el bafle (±1 dB en pasos de 0.5 dB), se acopla con el stand JS-120 para uso en piso."
+  }
+}

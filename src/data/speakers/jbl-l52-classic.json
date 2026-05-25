@@ -1,0 +1,51 @@
+{
+  "id": "jbl-l52-classic",
+  "brand": "JBL",
+  "series": "Classic",
+  "model": "L52 Classic",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 330,
+    "widthMm": 197,
+    "depthMm": 216,
+    "weightKg": 5.0
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 20,
+      "quantity": 1,
+      "material": "Titanium Dome",
+      "notes": "Waveguide (JT020TI1-4)"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "Pure Pulp cone",
+      "notes": "JW135PW-4"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 47,
+    "max": 24000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 85,
+  "impedanceOhm": 4,
+  "recommendedAmpW": {
+    "min": 10,
+    "max": 75
+  },
+  "images": {
+    "hero": "/speakers/jbl-l52-classic-hero.webp",
+    "front": "/speakers/jbl-l52-classic-front.png"
+  },
+  "sourceUrl": "https://www.jbl.com/L52.html",
+  "description": {
+    "en": "Compact two-way stand-mount that miniaturises the L-Classic look — 133 mm Pure Pulp cone mid-bass crossed at 2.8 kHz to a 20 mm Titanium Dome tweeter with waveguide, in a satin walnut furniture-grade veneer cabinet. The Quadrex foam grille (black, orange or blue) and front-firing port are the family signature in their smallest expression.",
+    "es": "Stand-mount compacto de dos vías que miniaturiza la estética L-Classic — mid-bass Pure Pulp de 133 mm que cruza a 2.8 kHz con un tweeter Titanium Dome de 20 mm con waveguide, en cabinet de chapa de nogal satinada de calidad mueble. La grilla de espuma Quadrex (negra, naranja o azul) y el puerto frontal son la firma de la familia en su expresión más chica."
+  }
+}

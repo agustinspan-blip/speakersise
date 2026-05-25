@@ -1,0 +1,58 @@
+{
+  "id": "jbl-4312g",
+  "brand": "JBL",
+  "series": "Studio Monitor",
+  "model": "4312G",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 597,
+    "widthMm": 355,
+    "depthMm": 305,
+    "weightKg": 23.8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Magnesium-Aluminum alloy dome",
+      "notes": "054ALmg-1"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 125,
+      "quantity": 1,
+      "material": "Pure Pulp cone, polymer-coated",
+      "notes": "JM125PC-8"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 300,
+      "quantity": 1,
+      "material": "Pure Pulp cone",
+      "notes": "JW300SW-9"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 44,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 90,
+  "impedanceOhm": 6,
+  "recommendedAmpW": {
+    "min": 10,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/jbl-4312g-hero.webp",
+    "front": "/speakers/jbl-4312g-front.png"
+  },
+  "sourceUrl": "https://global.jbl.com/bookshelf-speakers/4312G-.html",
+  "description": {
+    "en": "Direct descendant of the JBL 4310/4312 lineage from the 1970s — a 3-way bookshelf with a 300 mm Pure Pulp cone woofer, 125 mm polymer-coated Pure Pulp midrange and 25 mm Magnesium-Aluminum alloy dome tweeter, all in a sleek black wood-grain cabinet with front-firing port. Baffle-mounted mid and HF attenuators preserve the classic studio-monitor tuning ritual.",
+    "es": "Descendiente directo del linaje JBL 4310/4312 de los 70 — bookshelf de tres vías con woofer Pure Pulp de 300 mm, midrange Pure Pulp recubierto con polímero de 125 mm y tweeter con domo de aleación Magnesio-Aluminio de 25 mm, todo en un cabinet de madera negra con puerto frontal. Los atenuadores de mid y HF en el bafle preservan el ritual del studio monitor clásico."
+  }
+}

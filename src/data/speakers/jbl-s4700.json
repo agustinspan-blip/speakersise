@@ -1,0 +1,56 @@
+{
+  "id": "jbl-s4700",
+  "brand": "JBL",
+  "series": "Studio Monitor",
+  "model": "S4700",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1068,
+    "widthMm": 497,
+    "depthMm": 371,
+    "weightKg": 54.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 45,
+      "quantity": 1,
+      "material": "Titanium compression driver",
+      "notes": "1.75-inch HF compression driver loaded into Bi-Radial horn"
+    },
+    {
+      "role": "super-tweeter",
+      "sizeMm": 20,
+      "quantity": 1,
+      "material": "Titanium compression driver",
+      "notes": "0.75-inch UHF compression driver, crosses at 12 kHz"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 380,
+      "quantity": 1,
+      "material": "Cast-frame woofer"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 94,
+  "impedanceOhm": 6,
+  "powerHandlingW": {
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/jbl-s4700-hero.webp",
+    "front": "/speakers/jbl-s4700-front.png"
+  },
+  "sourceUrl": "https://global.jbl.com/hifi-speakers/JBL+S4700-.html",
+  "description": {
+    "en": "Three-way Heritage-styled studio reference built on the technology of the Project K2 S9900 — a 380 mm cast-frame woofer, 45 mm titanium HF compression driver, and 20 mm titanium super-tweeter in a rosewood-veneered cabinet. Crossovers at 800 Hz and 12 kHz; 94 dB sensitivity and a low 38 Hz reach pair well with low-power tube or single-ended amplifiers.",
+    "es": "Referencia de estudio de tres vías con estética Heritage construida sobre la tecnología del Project K2 S9900 — woofer de 380 mm con frame fundido, driver de compresión HF de titanio de 45 mm y super-tweeter de titanio de 20 mm en cabinet de chapa de palisandro. Crossovers a 800 Hz y 12 kHz; 94 dB de sensibilidad y extensión a 38 Hz lo hacen amigo de amplis de baja potencia, válvulas o single-ended."
+  }
+}

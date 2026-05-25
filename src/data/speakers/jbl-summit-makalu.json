@@ -1,0 +1,59 @@
+{
+  "id": "jbl-summit-makalu",
+  "brand": "JBL",
+  "series": "Summit",
+  "model": "Summit Makalu",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1102,
+    "widthMm": 451,
+    "depthMm": 393,
+    "weightKg": 69.3
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 75,
+      "quantity": 1,
+      "material": "Annular Ring Teonex compression driver",
+      "notes": "D2515K dual-diaphragm D2 compression driver mated to Summit HDI horn"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 200,
+      "quantity": 1,
+      "material": "Hybrid Carbon Cellulose Composite cone (HC4)",
+      "notes": "JW200SG, dual inverted spiders, underhung neodymium motor, treated-cloth accordion-edge surround"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 300,
+      "quantity": 1,
+      "material": "Hybrid Carbon Cellulose Composite cone (HC4)",
+      "notes": "JW300SG, dual inverted spiders, 3-inch voice coil, ferrite motor, half-forward-roll surround"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 22,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.5,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/jbl-summit-makalu-hero.webp",
+    "front": "/speakers/jbl-summit-makalu-front.png"
+  },
+  "sourceUrl": "https://www.jbl.com/summit-series-makalu.html",
+  "description": {
+    "en": "Flagship three-way floorstander in JBL's Summit reference line — D2515K dual 75 mm Teonex compression driver in the Summit HDI horn, paired with a 200 mm HC4 mid-bass and a 300 mm HC4 woofer with 3-inch voice coil. Crossovers at 285 Hz and 1.1 kHz; multi-braced curved-wall cabinet with two pairs of rear-flared bass ports reaches down to 22 Hz at -6 dB.",
+    "es": "Floorstander tope de la línea de referencia Summit de JBL — driver de compresión Teonex D2515K con dual diafragma de 75 mm en la bocina Summit HDI, junto con un mid-bass HC4 de 200 mm y un woofer HC4 de 300 mm con bobina de 3 pulgadas. Crossovers a 285 Hz y 1.1 kHz; cabinet de pared curva multi-braced con dos pares de puertos traseros llega hasta 22 Hz a -6 dB."
+  }
+}

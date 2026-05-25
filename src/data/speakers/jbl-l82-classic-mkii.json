@@ -1,0 +1,52 @@
+{
+  "id": "jbl-l82-classic-mkii",
+  "brand": "JBL",
+  "series": "Classic",
+  "generation": "MkII",
+  "model": "L82 Classic MkII",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 472,
+    "widthMm": 282,
+    "depthMm": 315,
+    "weightKg": 12.8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Titanium Dome",
+      "notes": "Acoustic lens waveguide (JT025Ti2-4)"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 200,
+      "quantity": 1,
+      "material": "Pure Pulp cone",
+      "notes": "Cast-frame (JW200PW2-6)"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 44,
+    "max": 40000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 88,
+  "impedanceOhm": 8,
+  "recommendedAmpW": {
+    "min": 25,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/jbl-l82-classic-mkii-hero.webp",
+    "front": "/speakers/jbl-l82-classic-mkii-front.png"
+  },
+  "sourceUrl": "https://www.jbl.com/L82-MK2.html",
+  "description": {
+    "en": "Mid-size two-way stand-mount in JBL's L-Classic line — 200 mm Pure Pulp cone woofer crossed at 1.7 kHz to a 25 mm Titanium Dome tweeter with acoustic lens waveguide. Walnut-veneer cabinet with the Quadrex foam grille (black, orange or blue) and an HF level attenuator on the baffle; designed for the JBL JS-80 stand.",
+    "es": "Stand-mount mediano de dos vías en la línea L-Classic de JBL — woofer Pure Pulp de 200 mm que cruza a 1.7 kHz con un tweeter Titanium Dome de 25 mm con lente acústica. Cabinet de chapa de nogal con la grilla de espuma Quadrex (negra, naranja o azul) y un atenuador HF en el bafle; pensado para el stand JBL JS-80."
+  }
+}

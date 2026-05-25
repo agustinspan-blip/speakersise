@@ -1,0 +1,57 @@
+{
+  "id": "jbl-project-everest-dd67000",
+  "brand": "JBL",
+  "series": "Project Everest",
+  "model": "DD67000",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1109,
+    "widthMm": 952,
+    "depthMm": 469,
+    "weightKg": 142
+  },
+  "drivers": [
+    {
+      "role": "woofer",
+      "sizeMm": 380,
+      "quantity": 2,
+      "material": "Three-layer pure-pulp sandwich/foam-core cone"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "Pure-beryllium compression driver",
+      "notes": "Crosses at 850 Hz to the woofers and at 20 kHz to the super-tweeter"
+    },
+    {
+      "role": "super-tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Pure-beryllium compression driver",
+      "notes": "Extends response above 20 kHz"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 45,
+    "max": 60000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 96,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 3.0,
+  "recommendedAmpW": {
+    "max": 500
+  },
+  "images": {
+    "hero": "/speakers/jbl-project-everest-dd67000-hero.webp",
+    "front": "/speakers/jbl-project-everest-dd67000-front.png"
+  },
+  "sourceUrl": "https://www.jbl.com/DD67000RW-.html",
+  "description": {
+    "en": "JBL's wide-format reference flagship — two 380 mm three-layer pure-pulp sandwich/foam-core cone woofers sit side by side under a 100 mm pure-beryllium HF compression driver in JBL's Bi-Radial horn, with a 25 mm pure-beryllium super-tweeter on top extending response past 20 kHz. Three-way crossover at 150 / 850 Hz and 20 kHz, 96 dB sensitivity, hand-finished Rosewood cabinet — the modern continuation of the original 1985 Everest DD55000.",
+    "es": "Flagship de referencia formato ancho de JBL — dos woofers de 380 mm con cono pure-pulp sandwich/foam-core de tres capas montados lado a lado, bajo un driver de compresión HF de 100 mm con domo de berilio puro en la bocina Bi-Radial de JBL, y un super-tweeter de berilio puro de 25 mm arriba que extiende la respuesta por encima de los 20 kHz. Crossover de tres vías a 150 / 850 Hz y 20 kHz, sensibilidad de 96 dB, cabinet de Rosewood terminado a mano — la continuación moderna del Everest DD55000 original de 1985."
+  }
+}

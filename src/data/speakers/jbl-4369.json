@@ -1,0 +1,50 @@
+{
+  "id": "jbl-4369",
+  "brand": "JBL",
+  "series": "Studio Monitor",
+  "model": "4369",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1120,
+    "widthMm": 615,
+    "depthMm": 470,
+    "weightKg": 63.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 75,
+      "quantity": 1,
+      "material": "Annular Ring compression driver",
+      "notes": "D2830B dual-diaphragm dual voice coil compression driver with Sonoglass HDI waveguide horn"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 380,
+      "quantity": 1,
+      "material": "Cast-aluminum frame woofer",
+      "notes": "2219Nd Differential Drive with dual neodymium motors and dual 3-inch voice coils"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 28,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 93,
+  "impedanceOhm": 6,
+  "recommendedAmpW": {
+    "max": 350
+  },
+  "images": {
+    "hero": "/speakers/jbl-4369-hero.webp",
+    "front": "/speakers/jbl-4369-front.png"
+  },
+  "sourceUrl": "https://global.jbl.com/floor-standing-speakers/4369.html",
+  "description": {
+    "en": "Flagship 2-way of JBL's modern Studio Monitor line — a 380 mm 2219Nd Differential Drive woofer (cast aluminum, dual neodymium motors, dual 3-inch voice coils) meets a 75 mm D2830B dual-diaphragm compression driver in a Sonoglass HDI horn. Crosses at 800 Hz; 93 dB sensitivity into a 6-ohm load asks little of an amp, while the dual front-firing ports and Walnut/Black Walnut cabinets keep the room placement forgiving.",
+    "es": "Flagship de dos vías de la línea moderna Studio Monitor de JBL — un woofer Differential Drive 2219Nd de 380 mm (frame de aluminio fundido, motores duales de neodimio, dos bobinas de 3 pulgadas) se encuentra con un driver de compresión D2830B de 75 mm con doble diafragma en una bocina Sonoglass HDI. Cruza a 800 Hz; los 93 dB de sensibilidad sobre 6 ohms le piden poco al amp, y los puertos frontales duales junto al cabinet en nogal o nogal negro lo hacen tolerante con el emplazamiento."
+  }
+}

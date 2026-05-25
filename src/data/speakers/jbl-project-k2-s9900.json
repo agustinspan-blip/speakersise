@@ -1,0 +1,58 @@
+{
+  "id": "jbl-project-k2-s9900",
+  "brand": "JBL",
+  "series": "Project K2",
+  "model": "S9900",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1200,
+    "widthMm": 541,
+    "depthMm": 350,
+    "weightKg": 82.7
+  },
+  "drivers": [
+    {
+      "role": "woofer",
+      "sizeMm": 380,
+      "quantity": 1,
+      "material": "Pulp cone",
+      "notes": "1500AL-1 driver with 100 mm 4-layer aluminum voice coil and 16 kg motor structure"
+    },
+    {
+      "role": "tweeter",
+      "sizeMm": 100,
+      "quantity": 1,
+      "material": "Magnesium compression driver",
+      "notes": "476Mg driver loaded into a Sonoglass HF horn integrated with the curved baffle"
+    },
+    {
+      "role": "super-tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Beryllium compression driver",
+      "notes": "045Be-1 driver in a Sonoglass UHF horn mated to a die-cast aluminum housing (spec table mislabels material as magnesium — model code and description confirm beryllium)"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 48,
+    "max": 50000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 93,
+  "impedanceOhm": 8,
+  "impedanceMinOhm": 4.0,
+  "recommendedAmpW": {
+    "max": 500
+  },
+  "images": {
+    "hero": "/speakers/jbl-project-k2-s9900-hero.webp",
+    "front": "/speakers/jbl-project-k2-s9900-front.png"
+  },
+  "sourceUrl": "https://www.jbl.com/K2+S9900-.html",
+  "description": {
+    "en": "Three-way studio reference in JBL's Project K2 lineage — a 380 mm pulp-cone woofer (1500AL-1) with high-magnesium structure, a 100 mm magnesium HF compression driver (476Mg) loaded into a Sonoglass horn integrated with the curved baffle, and a 25 mm beryllium UHF compression driver (045Be-1) extending out to 50 kHz. Crossovers at 900 Hz and 15 kHz; heavily-braced curved cabinet with separate boards per frequency section.",
+    "es": "Referencia de estudio de tres vías en el linaje Project K2 de JBL — un woofer de 380 mm con cono de pulpa (1500AL-1) y estructura magnética de alta-masa, un driver de compresión HF de 100 mm con domo de magnesio (476Mg) cargado en una bocina Sonoglass integrada al bafle curvo, y un driver UHF de 25 mm con domo de berilio (045Be-1) que extiende la respuesta hasta 50 kHz. Crossovers a 900 Hz y 15 kHz; cabinet curvo muy reforzado con boards separados por sección de frecuencia."
+  }
+}

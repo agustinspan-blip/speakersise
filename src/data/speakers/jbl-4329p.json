@@ -1,0 +1,70 @@
+{
+  "id": "jbl-4329p",
+  "brand": "JBL",
+  "series": "Studio Monitor",
+  "model": "4329P",
+  "type": "bookshelf",
+  "powerType": "active",
+  "dimensions": {
+    "heightMm": 516,
+    "widthMm": 322,
+    "depthMm": 322,
+    "weightKg": 15.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "Annular Ring Teonex compression driver",
+      "notes": "2409H-1 with Advanced HDI geometry horn"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 200,
+      "quantity": 1,
+      "material": "Pure Pulp cone with black-paper cap",
+      "notes": "JW200P-4 cast-frame woofer"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 28,
+    "max": 25000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "impedanceOhm": 6,
+  "active": {
+    "amplification": [
+      { "driverRole": "tweeter", "powerW": 250, "amplifierClass": "D" },
+      { "driverRole": "mid-bass", "powerW": 250, "amplifierClass": "D" }
+    ],
+    "totalAmpPowerW": 600,
+    "maxSampleRateKhz": 192,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "xlr-analog",
+      "rca-analog",
+      "optical",
+      "usb-audio"
+    ],
+    "wirelessProtocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "outputs": [
+      "rca-sub"
+    ],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": true
+  },
+  "images": {
+    "hero": "/speakers/jbl-4329p-hero.webp",
+    "front": "/speakers/jbl-4329p-front.png"
+  },
+  "sourceUrl": "https://global.jbl.com/bookshelf-speakers/4329P.html",
+  "description": {
+    "en": "Active wireless evolution of the Studio Monitor line — a 200 mm JW200P-4 Pure Pulp cone woofer with black-paper cap meets a 25 mm 2409H-1 Annular Ring Teonex compression driver in JBL's Advanced HDI horn, each fed by its own 250 W class-D amplifier (600 W total per pair). Wi-Fi streaming and Bluetooth 5.3 share the inputs with XLR/TRS, 3.5 mm aux, optical and 24-bit/192 kHz USB-B; configurable 80 Hz sub-out adds a subwoofer cleanly.",
+    "es": "Evolución activa e inalámbrica de la línea Studio Monitor — un woofer Pure Pulp JW200P-4 de 200 mm con cap de papel negro se encuentra con un driver de compresión 2409H-1 Annular Ring Teonex de 25 mm en la bocina Advanced HDI de JBL, cada uno alimentado por su propio amplificador class-D de 250 W (600 W totales por par). Streaming WiFi y Bluetooth 5.3 comparten entradas con XLR/TRS, aux 3.5 mm, óptica y USB-B 24 bits/192 kHz; sub-out configurable a 80 Hz para sumar un subwoofer limpio."
+  }
+}
