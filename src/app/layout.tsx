@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { headers } from "next/headers";
 import { Analytics } from "@vercel/analytics/next";
@@ -25,6 +25,28 @@ export const metadata: Metadata = {
   title: "Truescale — compare HiFi speakers at true scale",
   description:
     "Visually compare the size and specs of HiFi bookshelf and floorstanding speakers side by side.",
+  // PWA manifest — turns the site into an installable progressive
+  // web app on Chrome/Edge desktop ("Install" button in the URL bar)
+  // and Android Chrome ("Add to home screen"). iOS reads the
+  // apple-touch-icon below and the apple-mobile-web-app-* tags.
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "TrueScale",
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icons/apple-touch-icon.png",
+  },
+};
+
+// `themeColor` controls the browser-chrome tint on Android Chrome
+// (and the status-bar background on installed PWAs). Kept in its
+// own export so Next.js can split it into the `<meta name="theme-color">`
+// tag at the right time in the head.
+export const viewport: Viewport = {
+  themeColor: "#1c1917",
 };
 
 export default async function RootLayout({

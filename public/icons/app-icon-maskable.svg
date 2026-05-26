@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="TrueScale">
+  <!--
+    Maskable PWA icon — Android applies adaptive shapes (circle,
+    squircle, rounded-square…) that can clip up to 20% of the
+    canvas edges. The safe zone is the centre 80% (a circle of
+    radius 204 px around 256,256).
+
+    We use a dark amber background so the sunburst reads as a
+    "filled brand chip" regardless of the device's mask shape, and
+    skip the TSA text — at the small sizes where this icon appears
+    (e.g. notification badges, Android home screen on cropped
+    masks), text becomes illegible anyway. The sunburst stays
+    comfortably inside the safe zone.
+  -->
+  <rect width="512" height="512" fill="#1c1917"/>
+  <g transform="translate(156 86) scale(2.0 2.0)">
+    <path
+      fill="#d97706"
+      d="M 50 0
+         L 54 64
+         L 72 50
+         L 58 66
+         L 100 70
+         L 58 74
+         L 72 90
+         L 54 76
+         L 50 140
+         L 46 76
+         L 28 90
+         L 42 74
+         L 0 70
+         L 42 66
+         L 28 50
+         L 46 64
+         Z"
+    />
+  </g>
+</svg>

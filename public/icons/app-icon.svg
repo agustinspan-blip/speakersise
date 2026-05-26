@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="TrueScale">
+  <!--
+    Standard (non-maskable) PWA icon — light background with the
+    sunburst mark and "TSA" wordmark in the same horizontal lockup
+    we use on the desktop logo. Sized to render cleanly at 192 and
+    512 px when rasterised via rsvg-convert.
+  -->
+  <rect width="512" height="512" rx="80" fill="#fafaf9"/>
+  <!-- Sunburst — geometry copied from public/icons/tsa-mark.svg,
+       sized to ~150 px tall and seated in the left third of the
+       canvas, vertically aligned with the cap-height of the TSA
+       wordmark on the right so the two read as one lockup. -->
+  <g transform="translate(56 178) scale(1.45 1.45)">
+    <path
+      fill="#d97706"
+      d="M 50 0
+         L 54 64
+         L 72 50
+         L 58 66
+         L 100 70
+         L 58 74
+         L 72 90
+         L 54 76
+         L 50 140
+         L 46 76
+         L 28 90
+         L 42 74
+         L 0 70
+         L 42 66
+         L 28 50
+         L 46 64
+         Z"
+    />
+  </g>
+  <!-- TSA wordmark — sits to the right of the sunburst with a
+       comfortable gap, vertically centred on the canvas. Font size
+       chosen so the "A" finishes ~30 px before the right edge. -->
+  <text
+    x="232"
+    y="316"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="150"
+    font-weight="800"
+    fill="#1c1917"
+    letter-spacing="-4"
+  >TSA</text>
+</svg>
