@@ -54,5 +54,8 @@
   "description": {
     "en": "An anniversary recreation of the iconic 1965 Linton, now a three-way standmount with an 8\" woven-Kevlar woofer, 5\" Kevlar midrange and 1\" soft-dome tweeter. The hand-veneered cabinet and optional matching stands preserve the vintage silhouette while modern crossover and driver work push the bass down to 35 Hz.",
     "es": "Una reedición aniversario del icónico Linton de 1965, ahora un standmount de tres vías con woofer de 8\" en Kevlar tejido, mediano de 5\" en Kevlar y tweeter de 1\" con domo suave. El gabinete chapado a mano y los stands opcionales mantienen la silueta vintage, mientras que el crossover y los nuevos drivers bajan la respuesta hasta 35 Hz."
+  },
+  "priceUsd": {
+    "max": 1499
   }
 }

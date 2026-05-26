@@ -55,5 +55,8 @@
   "description": {
     "en": "Latest evolution of the La Scala, with upgraded HF and MF compression drivers (K-771 on K-792 horn, K-933-HP on K-406M Tractrix horn) over a horn-loaded 12-inch K-28 woofer. Optional active DSP crossover; 103 dB sensitivity in a fully horn-loaded self-contained cabinet.",
     "es": "Última evolución del La Scala, con drivers de compresión HF y MF actualizados (K-771 sobre horn K-792, K-933-HP sobre horn Tractrix K-406M) sobre un woofer K-28 de 12\" horn-loaded. Crossover DSP activo opcional; 103 dB de sensibilidad en un gabinete totalmente horn-loaded y autosuficiente."
+  },
+  "priceUsd": {
+    "max": 17498
   }
 }

@@ -55,5 +55,8 @@
   "description": {
     "en": "Largest member of Focal's Sopra line — a three-way floorstander pairing the 27 mm IHL pure-beryllium tweeter and a 165 mm W-cone midrange with twin 210 mm W-cone woofers. Brings Utopia-derived driver technology (NIC, TMD) into a more compact, front-ported cabinet aimed at rooms up to 70 m².",
     "es": "El miembro más grande de la línea Sopra — floorstander de tres vías que combina el tweeter IHL de 27 mm en berilio puro y un midrange de 165 mm en cono W con dos woofers de 210 mm en cono W. Lleva la tecnología de drivers heredada del Utopia (NIC, TMD) a un gabinete más compacto con puerto frontal, pensado para salas de hasta 70 m²."
+  },
+  "priceUsd": {
+    "max": 22998
   }
 }

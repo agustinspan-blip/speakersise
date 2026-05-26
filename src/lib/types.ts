@@ -175,7 +175,22 @@ export interface Speaker {
 
   images: SpeakerImages;
   sourceUrl: string;
-  priceUsd?: number;
+  /**
+   * Manufacturer-suggested retail price in USD. Optional because the
+   * catalogue includes plenty of imports / discontinued / "POA" models
+   * with no public MSRP. When present:
+   *   - `max` is the canonical number (or upper bound of a range).
+   *   - `min` is set ONLY when the model is sold across a price band —
+   *     e.g. different finishes (piano black vs walnut Burr) priced
+   *     differently. With both bounds set we render "low–high" and
+   *     emit an AggregateOffer in the structured data.
+   *   - `unit` says whether the published MAP is for the pair or for
+   *     a single cabinet. Most consumer HiFi (B&W, KEF, Dali, Focal,
+   *     Wharfedale, Sonus faber) publishes per-pair pricing; Klipsch
+   *     Reference and many studio monitors publish per-each. Defaults
+   *     to `"pair"` when omitted to match the consumer-HiFi norm.
+   */
+  priceUsd?: { min?: number; max: number; unit?: "pair" | "each" };
   /**
    * Short marketing-style description per locale. Shown above the spec
    * table on the speaker detail page. Optional — speakers without a

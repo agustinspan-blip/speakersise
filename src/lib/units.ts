@@ -66,3 +66,33 @@ export function formatWeightKg(kg: number, units: UnitSystem): string {
   if (units === "imperial") return `${fmt(kg * LB_PER_KG, 1)} lb`;
   return `${kg} kg`;
 }
+
+/**
+ * Price in USD as stored on the speaker JSON: either a single max
+ * value or a min/max range with a per-pair / per-each unit hint.
+ * Rendered with locale-aware digit grouping so a US user sees
+ * "$1,649" while an es-AR user sees "USD 1.649".
+ *
+ * Examples:
+ *   { max: 1649 }                                 → "$1,649 / pair"
+ *   { min: 4500, max: 5500 }                      → "$4,500–5,500 / pair"
+ *   { max: 249, unit: "each" }                    → "$249 each"
+ */
+export function formatPriceUsd(
+  price: { min?: number; max: number; unit?: "pair" | "each" },
+  locale: "en" | "es" = "en",
+  unitLabels: { pair: string; each: string } = { pair: "/ pair", each: "each" }
+): string {
+  const fmt = new Intl.NumberFormat(locale === "es" ? "es-AR" : "en-US");
+  const currency = locale === "es" ? "USD " : "$";
+  const high = `${currency}${fmt.format(price.max)}`;
+  const value =
+    price.min !== undefined && price.min !== price.max
+      ? `${currency}${fmt.format(price.min)}–${fmt.format(price.max)}`
+      : high;
+  const unit = price.unit ?? "pair";
+  const suffix = unit === "each" ? unitLabels.each : unitLabels.pair;
+  // "each" reads more naturally inline ("$249 each") than with a slash;
+  // "pair" gets the slash to mirror review conventions ("$1,649 / pair").
+  return unit === "each" ? `${value} ${suffix}` : `${value} ${suffix}`;
+}

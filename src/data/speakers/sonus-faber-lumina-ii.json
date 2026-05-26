@@ -45,5 +45,8 @@
   "description": {
     "en": "Entry-tier two-way standmount of the Lumina line — 29 mm DAD soft-dome tweeter paired with a 150 mm paper midwoofer in a squared multilayer-wood cabinet with hand-applied leather accents. Front-vented; 1.8 kHz crossover.",
     "es": "Bookshelf de dos vías de la línea Lumina, puerta de entrada — tweeter DAD de domo blando de 29 mm junto a un midwoofer de 150 mm en cono de papel, en un gabinete cuadrado multicapa de madera con detalles de cuero aplicados a mano. Puerto frontal; crossover a 1,8 kHz."
+  },
+  "priceUsd": {
+    "max": 1499
   }
 }

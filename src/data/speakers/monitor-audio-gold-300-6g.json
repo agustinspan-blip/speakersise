@@ -55,7 +55,9 @@
     "front": "/speakers/monitor-audio-gold-300-6g-front.png"
   },
   "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/gold-series-6g/gold-300-6g/",
-  "priceUsd": 6199,
+  "priceUsd": {
+    "max": 6199
+  },
   "description": {
     "en": "A three-way Gold 6G floorstander. The MPD III folded-ribbon tweeter teams up with a dedicated RDT III midrange and twin 8″ RDT III woofers in a sculpted, heavily-braced cabinet — a serious full-range package shy of the brand's Platinum flagship.",
     "es": "Un floorstander Gold 6G de tres vías. El tweeter de cinta plegada MPD III se combina con un midrange RDT III dedicado y dos woofers RDT III de 8″ en un gabinete esculpido y fuertemente reforzado — un paquete serio de banda completa, justo por debajo del flagship Platinum de la marca."

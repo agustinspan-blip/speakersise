@@ -56,5 +56,8 @@
   "description": {
     "en": "Three-way floorstander one step below the 801 D4 — same Turbine head and 6\" Continuum-cone FST midrange, but with twin 8\" Aerofoil-cone bass drivers in a slightly smaller Matrix-braced cabinet. Closer to room-friendly footprint while keeping the 800-series tonal signature.",
     "es": "Floorstander de tres vías un escalón por debajo del 801 D4 — misma cabeza Turbine y midrange de 6\" con cono Continuum FST, pero con dos woofers de 8\" con cono Aerofoil dentro de un gabinete Matrix algo más chico. Footprint más amigable para salas medianas manteniendo la firma tonal de la serie 800."
+  },
+  "priceUsd": {
+    "max": 24000
   }
 }

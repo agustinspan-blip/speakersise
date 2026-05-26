@@ -49,5 +49,8 @@
   "description": {
     "en": "Two-way mid-size bookshelf in the Q Meta line — 25 mm MAT-treated tweeter coaxial with a 165 mm aluminium mid-bass in a rear-ported cabinet. The largest two-way of the Q Meta family before stepping up to the three-way Q Concerto Meta.",
     "es": "Bookshelf de dos vías de tamaño medio de la línea Q Meta — tweeter de 25 mm tratado con MAT coaxial al mid-bass de aluminio de 165 mm, en un gabinete con puerto trasero. El dos vías más grande de la familia Q Meta antes de saltar al tres vías Q Concerto Meta."
+  },
+  "priceUsd": {
+    "max": 999
   }
 }

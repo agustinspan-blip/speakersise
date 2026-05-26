@@ -49,7 +49,9 @@
     "front": "/speakers/monitor-audio-platinum-100-3g-front.png"
   },
   "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/platinum-series-3g/platinum-100-3g/",
-  "priceUsd": 7599,
+  "priceUsd": {
+    "max": 7599
+  },
   "description": {
     "en": "A flagship-level stand-mount in the Platinum 3G line. The MPD III ribbon tweeter and an 8″ RDT III mid-bass cone are mounted in a sculpted, hand-finished cabinet built for vanishingly low coloration. One of the most resolving bookshelves Monitor Audio has ever made.",
     "es": "Un stand-mount de nivel flagship dentro de la línea Platinum 3G. El tweeter de cinta MPD III y un cono mid-bass RDT III de 8″ van montados en un gabinete esculpido y terminado a mano construido para una coloración casi nula. Uno de los bookshelves más resolutivos que Monitor Audio haya hecho."

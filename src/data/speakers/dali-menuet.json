@@ -48,5 +48,8 @@
   "description": {
     "en": "A compact 2-way stand-mount that scales above its size — 28 mm soft-dome tweeter and a 4½″ wood-fibre mid-bass cone, crossed at 3 kHz, in a 250 × 150 × 230 mm rear-ported cabinet. Standard finishes: gloss black, gloss white, lacquer.",
     "es": "Un stand-mount compacto de dos vías que suena más grande de lo que parece — tweeter de domo suave de 28 mm y cono mid-bass de fibra de madera de 4½″, acoplados a 3 kHz, en un gabinete de 250 × 150 × 230 mm con puerto trasero. Acabados estándar: negro gloss, blanco gloss y laqueado."
+  },
+  "priceUsd": {
+    "max": 1749
   }
 }

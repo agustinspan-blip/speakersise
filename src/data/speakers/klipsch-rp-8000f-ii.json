@@ -48,5 +48,9 @@
   "description": {
     "en": "Flagship of the Reference Premiere II floorstander line — 1\" titanium LTS tweeter in a Hybrid Cross-Section Tractrix horn paired with twin 8\" Cerametallic woofers with Faraday rings, in an internally-braced MDF cabinet with dual rear Tractrix ports. 98 dB sensitivity and 600 W peak.",
     "es": "Insignia entre los floorstanders de la línea Reference Premiere II — tweeter LTS de titanio de 1\" en horn Tractrix Hybrid Cross-Section junto a dos woofers Cerametallic de 8\" con anillos Faraday, en un gabinete MDF reforzado con doble puerto trasero Tractrix. 98 dB de sensibilidad y 600 W de pico."
+  },
+  "priceUsd": {
+    "max": 599,
+    "unit": "each"
   }
 }

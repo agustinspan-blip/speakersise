@@ -45,5 +45,8 @@
   "description": {
     "en": "A two-way Rubicon-series bookshelf that brings Dali's 29 mm/17×45 mm hybrid tweeter module down from the flagship lines and pairs it with a 6½″ wood-fibre woofer. The result is a wide, airy soundstage and treble extension well past audibility, in a relatively compact cabinet.",
     "es": "Un bookshelf de la serie Rubicon, dos vías, que toma el módulo híbrido de Dali — domo de 29 mm más cinta de 17×45 mm — de las líneas tope y lo combina con un woofer de 6½″ con membrana de fibra de madera. Resulta en una escena amplia y abierta y una extensión de agudos muy por encima del límite audible, en un gabinete relativamente compacto."
+  },
+  "priceUsd": {
+    "max": 2999
   }
 }

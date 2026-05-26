@@ -45,5 +45,8 @@
   "description": {
     "en": "Compact two-way standmount of the Lumina line — 29 mm DAD soft-dome tweeter paired with a 120 mm paper midwoofer in a squared multilayer-wood cabinet with hand-applied leather accents. Front-vented; visco-elastic driver decoupling and a 2 kHz crossover.",
     "es": "Bookshelf compacto de dos vías de la línea Lumina — tweeter DAD de domo blando de 29 mm junto a un midwoofer de 120 mm en cono de papel, en un gabinete cuadrado multicapa de madera con detalles de cuero aplicados a mano. Puerto frontal; desacople visco-elástico de drivers y crossover a 2 kHz."
+  },
+  "priceUsd": {
+    "max": 999
   }
 }

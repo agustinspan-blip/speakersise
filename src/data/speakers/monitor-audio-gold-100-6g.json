@@ -55,7 +55,9 @@
     "front": "/speakers/monitor-audio-gold-100-6g-front.png"
   },
   "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/gold-series-6g/gold-100-6g/",
-  "priceUsd": 4599,
+  "priceUsd": {
+    "max": 4599
+  },
   "description": {
     "en": "A high-end stand-mount in the Gold 6G family. The MPD III ribbon tweeter and 6½″ RDT III mid-bass cone share a curved, heavily-braced cabinet for a refined, low-coloration delivery — a clear step up from Silver in resolution and treble air.",
     "es": "Un stand-mount de alta gama dentro de la familia Gold 6G. El tweeter de cinta MPD III y el cono mid-bass RDT III de 6½″ comparten un gabinete curvo y fuertemente reforzado, para una entrega refinada y de baja coloración — un salto claro respecto a Silver en resolución y aire en los agudos."

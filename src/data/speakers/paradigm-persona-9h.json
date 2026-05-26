@@ -53,5 +53,8 @@
   "description": {
     "en": "Hybrid flagship of the Persona line — Truextent beryllium tweeter and midrange paired with four 215 mm X-PAL woofers; the front pair runs passively, the rear pair lives in a sealed sub-cabinet driven by two internal 700 W amplifiers with Anthem PBK room correction. 19 Hz extension at 93 dB anechoic sensitivity. Requires an external stereo amp for the mid/HF section (15–500 W).",
     "es": "Insignia híbrido de la línea Persona — tweeter y midrange Truextent en berilio puro junto a cuatro woofers de 215 mm en aluminio X-PAL; el par delantero funciona en modo pasivo y el par trasero vive en un sub-cabinet sellado impulsado por dos amplificadores internos de 700 W con corrección de sala Anthem PBK. Extensión hasta 19 Hz a 93 dB de sensibilidad anecoica. Requiere un amp estéreo externo para la sección mid/HF (15–500 W)."
+  },
+  "priceUsd": {
+    "max": 35000
   }
 }

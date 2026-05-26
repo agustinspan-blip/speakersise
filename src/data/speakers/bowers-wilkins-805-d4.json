@@ -50,5 +50,8 @@
   "description": {
     "en": "Stand-mount bookshelf of the 800 Diamond range. Two-way design with the Solid Body Tweeter-on-Top diamond dome and a single 6.5\" Continuum-cone bass/midrange driver in a compact Matrix-braced cabinet. Pair with the optional matching FS-805 D4 stand.",
     "es": "Standmount bookshelf de la 800 Diamond. Diseño de dos vías con el Solid Body Tweeter-on-Top de domo de diamante y un único driver de 6.5\" con cono Continuum para bajos/medios, dentro de un gabinete compacto reforzado por Matrix. Combina con el stand opcional FS-805 D4."
+  },
+  "priceUsd": {
+    "max": 8000
   }
 }

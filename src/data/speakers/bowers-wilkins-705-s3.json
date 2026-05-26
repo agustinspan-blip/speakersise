@@ -48,5 +48,8 @@
   "description": {
     "en": "Flagship stand-mount of the 700 S3 line, the only two-way to retain the Solid Body Tweeter-on-Top from the 800 Diamond family. A single 165 mm Continuum-cone driver pairs with a Decoupled Carbon Dome tweeter; a front-firing Flowport keeps placement near walls forgiving.",
     "es": "Bookshelf insignia de la línea 700 S3, el único de dos vías que conserva el Solid Body Tweeter-on-Top heredado de la 800 Diamond. Un driver Continuum de 165 mm trabaja junto al tweeter Carbon Dome desacoplado, con un Flowport frontal que permite ubicarlo cerca de la pared."
+  },
+  "priceUsd": {
+    "max": 3700
   }
 }

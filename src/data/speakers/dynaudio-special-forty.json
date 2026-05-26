@@ -44,5 +44,8 @@
   "description": {
     "en": "A 40th-anniversary stand-mount commemorative model. The Special Forty pairs the Esotar Forty 28 mm soft-dome tweeter — derived from the Esotar2 lineage — with a 17 cm MSP mid-bass driver, crossed at 2 kHz with a 1st-order topology and a rear bass-reflex port. Hand-built in Skanderborg.",
     "es": "Un stand-mount conmemorativo del 40 aniversario. El Special Forty combina el tweeter de domo suave Esotar Forty de 28 mm — derivado del linaje Esotar2 — con un mid-bass MSP de 17 cm, acoplados a 2 kHz con topología de primer orden y puerto bass-reflex trasero. Construido a mano en Skanderborg."
+  },
+  "priceUsd": {
+    "max": 3500
   }
 }

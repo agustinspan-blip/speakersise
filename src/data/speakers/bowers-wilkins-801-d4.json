@@ -56,5 +56,8 @@
   "description": {
     "en": "Flagship of the 800 Series Diamond. Three-way reverse-wrap floorstander with the Solid Body Tweeter-on-Top diamond dome, a 6\" Continuum-cone FST midrange in a stand-alone Turbine head, and twin 10\" Aerofoil-cone woofers in the Matrix-braced cabinet. Reference monitor at Abbey Road Studios.",
     "es": "Tope de gama de la 800 Series Diamond. Floorstander de tres vías con cabinet de envolvente curva (reverse-wrap), el Solid Body Tweeter-on-Top con domo de diamante, midrange de 6\" con cono Continuum FST montado en una cabeza Turbine independiente, y dos woofers de 10\" con cono Aerofoil dentro del gabinete reforzado por Matrix. Referencia de monitoreo en Abbey Road Studios."
+  },
+  "priceUsd": {
+    "max": 35000
   }
 }

@@ -85,5 +85,8 @@
   "description": {
     "en": "Three-way active studio/HiFi monitor with sealed-LF and acoustic-cardioid MF radiation. Three Class-D amplifier stages (500/250/250 W) feed the side-firing woofer pair, the front 8″ midrange and the 1″ alloy-dome tweeter under linear-phase Linkwitz–Riley crossovers at 100 Hz and 1.25 kHz. Balanced XLR or AES3 inputs plus Ethernet for Roon and remote DSP/room correction; 106 dB continuous SPL @ 1 m in half-space.",
     "es": "Monitor activo de tres vías para estudio o HiFi, con bajo en caja sellada y mediano de radiación cardioide acústica. Tres etapas Class D (500/250/250 W) alimentan el par de woofers laterales, el mediano de 8″ frontal y el tweeter de 1″ con domo de aleación, con crossovers Linkwitz–Riley de fase lineal a 100 Hz y 1,25 kHz. Entradas XLR balanceada y AES3 más Ethernet para Roon y control DSP/corrección de sala; 106 dB SPL continuo @ 1 m en media-espacio."
+  },
+  "priceUsd": {
+    "max": 13400
   }
 }

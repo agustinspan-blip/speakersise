@@ -55,7 +55,9 @@
     "front": "/speakers/monitor-audio-platinum-300-3g-front.png"
   },
   "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/platinum-series-3g/platinum-300-3g/",
-  "priceUsd": 19999,
+  "priceUsd": {
+    "max": 19999
+  },
   "description": {
     "en": "A three-way Platinum 3G floorstander pairing the MPD III ribbon tweeter with a 4″ RDT III midrange and two 8″ RDT III woofers. The hand-finished, multi-layer cabinet and refined crossover deliver effortless scale and resolution in serious listening rooms.",
     "es": "Un floorstander Platinum 3G de tres vías que combina el tweeter de cinta MPD III con un midrange RDT III de 4″ y dos woofers RDT III de 8″. El gabinete multicapa terminado a mano y el crossover refinado entregan escala y resolución sin esfuerzo en salas de escucha serias."

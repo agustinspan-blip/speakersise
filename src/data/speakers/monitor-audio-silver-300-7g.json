@@ -54,7 +54,9 @@
     "front": "/speakers/monitor-audio-silver-300-7g-front.png"
   },
   "sourceUrl": "https://www.monitoraudio.com/en/us/product-ranges/silver-series-7g/silver-300-7g/",
-  "priceUsd": 3149,
+  "priceUsd": {
+    "max": 3149
+  },
   "description": {
     "en": "A 2½-way Silver 7G floorstander built around a 25 mm C-CAM tweeter and three RST II cones — one 4″ midrange and two 6″ bass — in a tall, braced cabinet. Designed for confident, full-range performance in mid-to-large rooms.",
     "es": "Un floorstander Silver 7G de 2½ vías construido alrededor de un tweeter C-CAM de 25 mm y tres conos RST II — un midrange de 4″ y dos graves de 6″ — en un gabinete alto y reforzado. Pensado para una respuesta segura y de banda completa en salas medianas y grandes."

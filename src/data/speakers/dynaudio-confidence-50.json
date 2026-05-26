@@ -52,5 +52,8 @@
   "description": {
     "en": "A 3-way floorstander built around a vertical D'Appolito-style array: the Esotar3 tweeter is bracketed by two 15 cm MSP midranges, with twin 18 cm NeoTec MSP woofers below. The result is bigger scale and lower distortion than the Confidence 30 in similarly-sized rooms.",
     "es": "Un floorstander de tres vías construido alrededor de un arreglo vertical estilo D'Appolito: el tweeter Esotar3 va flanqueado por dos midranges MSP de 15 cm, con dos woofers NeoTec MSP de 18 cm debajo. Resulta en una escala mayor y menor distorsión que el Confidence 30 en salas de tamaño similar."
+  },
+  "priceUsd": {
+    "max": 30000
   }
 }

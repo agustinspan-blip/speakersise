@@ -57,5 +57,8 @@
   "description": {
     "en": "KEF's Single Apparent Source flagship — the curved, slim Blade One Meta places its 12th-gen Uni-Q array (25 mm MAT tweeter + 125 mm aluminium midrange) acoustically at the same point as four side-firing 225 mm woofers arranged in force-cancelling pairs. Hand-built in Maidstone, UK.",
     "es": "El insignia Single Apparent Source de KEF — el Blade One Meta, de bafle curvo y delgado, ubica su array Uni-Q de 12ª generación (tweeter MAT de 25 mm + midrange de aluminio de 125 mm) acústicamente en el mismo punto que cuatro woofers laterales de 225 mm dispuestos en pares de cancelación de fuerza. Construido a mano en Maidstone, Reino Unido."
+  },
+  "priceUsd": {
+    "max": 38000
   }
 }

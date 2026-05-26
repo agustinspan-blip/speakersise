@@ -48,5 +48,8 @@
   "description": {
     "en": "Compact two-way standmount of the Reference Premiere II line — 1\" titanium LTS tweeter in a Hybrid Cross-Section Tractrix horn paired with a 5.25\" Cerametallic woofer with Faraday ring. Internally-braced MDF cabinet with rear-firing Tractrix port; 92 dB sensitivity and 300 W peak handling.",
     "es": "Bookshelf compacto de dos vías de la línea Reference Premiere II — tweeter LTS de titanio de 1\" en horn Tractrix Hybrid Cross-Section junto a un woofer Cerametallic de 5,25\" con anillo Faraday. Gabinete MDF reforzado con puerto trasero Tractrix; 92 dB de sensibilidad y 300 W de pico."
+  },
+  "priceUsd": {
+    "max": 549
   }
 }

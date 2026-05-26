@@ -20,6 +20,7 @@ import {
   locales,
 } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/metadata";
+import { formatPriceUsd } from "@/lib/units";
 
 interface Props {
   params: Promise<{ locale: string; id: string }>;
@@ -189,15 +190,29 @@ export default async function SpeakerDetailPage({ params }: Props) {
       },
     ].filter((p): p is NonNullable<typeof p> => p !== null),
     // Offers block — required to satisfy Google's Product rich-result
-    // validation. `url` points at the manufacturer's product page (not
-    // a buy-now link, but that's the closest authoritative seller URL
-    // we have) and `seller` carries the brand. Availability "InStock"
-    // is the lightest assumption — the manufacturer's page tells the
-    // real story per region.
-    offers: {
+    // validation. We emit AggregateOffer when the JSON ships a price
+    // range (different finishes priced differently); single Offer
+    // when only `max` is set. `url` points at the manufacturer's
+    // product page and `seller` carries the brand. Availability
+    // "InStock" is the lightest assumption — the manufacturer's page
+    // tells the real story per region.
+    offers:
+      speaker.priceUsd.min !== undefined &&
+      speaker.priceUsd.min !== speaker.priceUsd.max
+        ? {
+            "@type": "AggregateOffer",
+            url: speaker.sourceUrl,
+            lowPrice: speaker.priceUsd.min,
+            highPrice: speaker.priceUsd.max,
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            offerCount: 2,
+            seller: { "@type": "Organization", name: speaker.brand },
+          }
+        : {
       "@type": "Offer",
       url: speaker.sourceUrl,
-      price: speaker.priceUsd,
+      price: speaker.priceUsd.max,
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       seller: { "@type": "Organization", name: speaker.brand },
@@ -311,7 +326,7 @@ export default async function SpeakerDetailPage({ params }: Props) {
 
             <ProductDescription speaker={speaker} locale={locale} t={t} />
 
-            <SpecsTable speaker={speaker} typeLabel={typeLabel} t={t} />
+            <SpecsTable speaker={speaker} typeLabel={typeLabel} locale={locale} t={t} />
           </div>
         </section>
       </main>
@@ -357,10 +372,12 @@ function ProductDescription({
 function SpecsTable({
   speaker: s,
   typeLabel,
+  locale,
   t,
 }: {
   speaker: Speaker;
   typeLabel: string;
+  locale: Locale;
   t: Dictionary;
 }) {
   const fmtRange = (r: { min?: number; max: number }, unit: string) =>
@@ -474,6 +491,15 @@ function SpecsTable({
       : null,
     s.recommendedAmpW
       ? [t.specs.recommendedAmp, fmtRange(s.recommendedAmpW, "W")]
+      : null,
+    s.priceUsd
+      ? [
+          t.specs.price,
+          formatPriceUsd(s.priceUsd, locale, {
+            pair: t.specs.pricePerPair,
+            each: t.specs.priceEach,
+          }),
+        ]
       : null,
     // Active-only rows. Always rendered for active speakers, with "—"
     // placeholders when the manufacturer hasn't published the field.

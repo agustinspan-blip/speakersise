@@ -57,7 +57,9 @@
     "min": 50,
     "max": 1500
   },
-  "priceUsd": 60000,
+  "priceUsd": {
+    "max": 60000
+  },
   "images": {
     "hero": "/speakers/dali-kore-hero.png",
     "front": "/speakers/dali-kore-front.png"

@@ -59,5 +59,8 @@
   "description": {
     "en": "The largest Epicon floorstander — a 3½-way design built around the Dali Hybrid Tweeter module (29 mm soft dome plus 10 × 55 mm planar ribbon), a 6½″ midrange and twin 8″ wood-fibre woofers with SMC motors. EISA Best Product 2012-2013 award winner; 50–500 W amp window, bass-reflex tuned to 28 Hz and 112 dB max SPL with the cabinet measuring 1225 × 264 × 485 mm without the base.",
     "es": "El floorstander más grande de la línea Epicon — un diseño de 3½ vías construido alrededor del módulo Hybrid Tweeter de Dali (domo suave de 29 mm más cinta plana de 10 × 55 mm), un midrange de 6½″ y dos woofers de 8″ con conos de fibra de madera y motores SMC. Ganador del EISA Best Product 2012-2013; ventana de amp 50–500 W, bass-reflex sintonizado a 28 Hz y 112 dB SPL máx., con el gabinete de 1225 × 264 × 485 mm sin la base."
+  },
+  "priceUsd": {
+    "max": 23000
   }
 }

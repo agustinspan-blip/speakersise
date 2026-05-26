@@ -38,7 +38,9 @@
     "front": "/speakers/rizzi-acoustics-the-owl-front.png"
   },
   "sourceUrl": "https://rizziacoustics.com/product/the-owl-hi-fi-speaker-system/",
-  "priceUsd": 4320,
+  "priceUsd": {
+    "max": 4320
+  },
   "description": {
     "en": "A boutique standmount/floor speaker whose Baltic-birch front panel is itself the radiator, driven by Rizzi Acoustics' patented multi-vibration membrane that operates across multiple resonance zones. Specs report 95.5 dB SPL continuous (115 dB program), 8 Ω, 80 W RMS / 160 W program handling, and –6 dB at 34 Hz with response holding within –0.5 dB above 22 kHz.",
     "es": "Un parlante boutique cuyo panel frontal de abedul báltico es la misma superficie radiante, impulsado por la membrana multi-vibración patentada de Rizzi Acoustics, que opera en múltiples zonas de resonancia. La hoja de specs marca 95,5 dB SPL continuos (115 dB program), 8 Ω, 80 W RMS / 160 W program y –6 dB a 34 Hz, manteniéndose dentro de –0,5 dB por encima de 22 kHz."

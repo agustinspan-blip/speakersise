@@ -47,5 +47,8 @@
   "description": {
     "en": "Two-way standmount of the Reserve line — 1\" Pinnacle ring-radiator tweeter paired with a 6.5\" Turbine-cone mid-bass in a rear-X-Port cabinet. Named 'Bookshelf Loudspeaker of the Year' by The Absolute Sound; cross-braced cabinet designed in Baltimore.",
     "es": "Bookshelf de dos vías de la línea Reserve — tweeter Pinnacle de anillo radiante de 1\" junto a un mid-bass Turbine Cone de 6,5\" en gabinete con X-Port trasero. Nombrado 'Bookshelf del Año' por The Absolute Sound; gabinete con refuerzo cruzado diseñado en Baltimore."
+  },
+  "priceUsd": {
+    "max": 749
   }
 }

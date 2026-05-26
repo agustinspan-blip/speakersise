@@ -55,5 +55,8 @@
   "description": {
     "en": "Three-way standmount built around the 12th-gen Uni-Q array — 25 mm MAT-treated tweeter sitting in a 125 mm aluminium midrange — paired with a dedicated 165 mm hybrid-aluminium woofer in a rear-ported cabinet. The R3 Meta brings R-series driver technology down to a bookshelf footprint.",
     "es": "Bookshelf de tres vías construido en torno al array Uni-Q de 12ª generación — tweeter de 25 mm tratado con MAT centrado en un midrange de aluminio de 125 mm — junto a un woofer dedicado de 165 mm en cono híbrido de aluminio, con puerto trasero. El R3 Meta lleva la tecnología de la línea R al formato de un estante."
+  },
+  "priceUsd": {
+    "max": 2999
   }
 }

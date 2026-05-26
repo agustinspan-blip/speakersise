@@ -55,8 +55,13 @@
       "qobuz-connect",
       "wifi"
     ],
-    "outputs": ["rca-sub", "hdmi-out"],
-    "roomCorrection": ["dirac-live-limited"],
+    "outputs": [
+      "rca-sub",
+      "hdmi-out"
+    ],
+    "roomCorrection": [
+      "dirac-live-limited"
+    ],
     "pairedSecondary": true,
     "wirelessSpeakerLink": true
   },
@@ -66,7 +71,9 @@
     "hero": "/speakers/klipsch-the-sevens-ii-hero.webp"
   },
   "sourceUrl": "https://www.klipsch.com/intl/products/the-sevens-ii-powered-speakers/",
-  "priceUsd": 1999.99,
+  "priceUsd": {
+    "max": 1999
+  },
   "description": {
     "en": "Mid-size of Klipsch's 2026 powered trio. A 6.5\" Cerametallic woofer plus a 1\" Titanium LTS tweeter on a Tractrix horn, with HDMI 2.1 in/out, Dolby Atmos virtualisation, Dirac Live room correction and an optional wireless L-R stereo link for cable-free placement.",
     "es": "Tamaño medio del trío powered 2026 de Klipsch. Woofer Cerametallic de 6,5\" más tweeter Titanium LTS de 1\" sobre horn Tractrix, con entrada y salida HDMI 2.1, virtualización Dolby Atmos, corrección de sala Dirac Live y enlace L-R inalámbrico opcional."

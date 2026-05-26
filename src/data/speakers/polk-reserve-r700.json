@@ -54,5 +54,9 @@
   "description": {
     "en": "Flagship of the Reserve floorstander line — 1\" Pinnacle ring-radiator tweeter, sealed 6.5\" Turbine-cone midrange and twin 8\" polypropylene woofers in a floor-firing Power Port 2.0 vented system. 88 dB sensitivity, 38 Hz extension and 300 W continuous handling.",
     "es": "Tope de gama entre los floorstanders de la línea Reserve — tweeter Pinnacle de anillo radiante de 1\", midrange Turbine Cone de 6,5\" en cámara sellada y dos woofers de polipropileno de 8\" en un sistema vented Power Port 2.0 de tiro inferior. 88 dB de sensibilidad, extensión hasta 38 Hz y 300 W continuos."
+  },
+  "priceUsd": {
+    "max": 1499,
+    "unit": "each"
   }
 }

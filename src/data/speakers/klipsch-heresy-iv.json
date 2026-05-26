@@ -53,5 +53,8 @@
   "description": {
     "en": "Compact three-way horn-loaded Heritage floorstander first introduced in 1957, hand-built in Hope, Arkansas. K-107-TI titanium tweeter, K-702 polyimide midrange on a K-704 Tractrix horn and a 305 mm K-28-E fiber-composite woofer; gen IV adds a rear Tractrix port for extended low end at 99 dB sensitivity.",
     "es": "Floorstander Heritage compacto de tres vías horn-loaded, presentado originalmente en 1957 y construido a mano en Hope, Arkansas. Tweeter K-107-TI de titanio, midrange K-702 en polyimide sobre horn Tractrix K-704 y un woofer K-28-E de 305 mm en fibra-compuesta; la gen IV suma un puerto trasero Tractrix para extender los graves manteniendo 99 dB de sensibilidad."
+  },
+  "priceUsd": {
+    "max": 4198
   }
 }

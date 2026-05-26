@@ -49,5 +49,8 @@
   "description": {
     "en": "Compact two-way standmount built around the 12th-gen Uni-Q array — a 25 mm MAT-treated aluminium dome sitting in the acoustic centre of a 130 mm aluminium mid-bass. A rear-firing flexible port and braced cabinet keep the LS50 family's neutral, point-source character.",
     "es": "Bookshelf compacto de dos vías construido en torno al array Uni-Q de 12ª generación — un domo de aluminio tratado con MAT de 25 mm ubicado en el centro acústico de un mid-bass de aluminio de 130 mm. Puerto flexible trasero y gabinete reforzado mantienen el carácter neutro y de fuente puntual de la línea LS50."
+  },
+  "priceUsd": {
+    "max": 1599
   }
 }

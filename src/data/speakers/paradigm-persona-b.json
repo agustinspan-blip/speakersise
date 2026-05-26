@@ -48,5 +48,8 @@
   "description": {
     "en": "Compact 2-way Persona standmount — 25 mm and 178 mm Truextent pure-beryllium drivers in a faceted ported cabinet hand-finished in Canada. The smallest member of the Persona line, sharing the same Beryllium tweeter and midrange used in the 9H flagship; 2 kHz crossover.",
     "es": "Bookshelf compacto de 2 vías de la línea Persona — drivers Truextent en berilio puro de 25 mm y 178 mm en gabinete facetado con puerto, terminado a mano en Canadá. El miembro más chico de la línea Persona, comparte el mismo tweeter y midrange en berilio del flagship 9H; crossover a 2 kHz."
+  },
+  "priceUsd": {
+    "max": 10000
   }
 }

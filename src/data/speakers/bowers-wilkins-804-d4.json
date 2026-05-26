@@ -56,5 +56,8 @@
   "description": {
     "en": "Entry floorstander of the 800 Diamond range. Same Solid Body Tweeter-on-Top and 5\" Continuum-cone FST midrange (this time integrated into the Matrix cabinet rather than a separate Turbine head), with twin 6.5\" Aerofoil-cone bass drivers. Slimmer footprint targeted at smaller rooms.",
     "es": "Floorstander de entrada de la 800 Diamond. Mismo Solid Body Tweeter-on-Top y midrange de 5\" con cono Continuum FST (integrado al gabinete Matrix en este caso, sin cabeza Turbine separada), con dos woofers de 6.5\" con cono Aerofoil. Footprint más esbelto pensado para salas más chicas."
+  },
+  "priceUsd": {
+    "max": 13000
   }
 }

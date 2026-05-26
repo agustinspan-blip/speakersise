@@ -50,7 +50,9 @@
     "min": 200,
     "max": 1600
   },
-  "priceUsd": 49500,
+  "priceUsd": {
+    "max": 49500
+  },
   "images": {
     "hero": "/speakers/monitor-audio-hyphn-hero.jpg",
     "front": "/speakers/monitor-audio-hyphn-front.png"

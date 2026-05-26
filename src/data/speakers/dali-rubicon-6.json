@@ -52,5 +52,8 @@
   "description": {
     "en": "A three-way floorstander headlined by Dali's 29 mm soft-dome / 17×45 mm ribbon hybrid tweeter, with twin 6½″ wood-fibre woofers handling mid-bass and bass duties. A solid mid-range Rubicon designed for refined, full-range stereo in real living rooms.",
     "es": "Floorstander de tres vías con el característico módulo híbrido de Dali — domo de 29 mm y cinta de 17×45 mm — y dos woofers de 6½″ con membrana de fibra de madera para los medios-graves y graves. Un Rubicon de gama media pensado para un stereo refinado y de banda completa en salas reales."
+  },
+  "priceUsd": {
+    "max": 4999
   }
 }
