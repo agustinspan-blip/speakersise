@@ -221,6 +221,9 @@ function compareHref(
     currency?: CurrencyId | null;
     disc?: DiscId | null;
     units?: UnitSystem;
+    /** When true, append `present=1` so internal links keep the user
+     *  inside presentation mode while they switch tabs, swap, etc. */
+    present?: boolean;
   },
   locale: Locale
 ): string {
@@ -245,6 +248,7 @@ function compareHref(
       // Only serialise when imperial — metric is the implicit default,
       // mirroring the same "omit defaults" pattern used by `view`/`align`.
       units: base.units === "imperial" ? "imperial" : undefined,
+      present: base.present ? "1" : undefined,
     })
   );
 }
@@ -264,6 +268,7 @@ interface Props {
     currency?: string;
     disc?: string;
     units?: string;
+    present?: string;
   }>;
 }
 
@@ -378,6 +383,11 @@ export default async function ComparePage({ params, searchParams }: Props) {
   const currency = parseCurrency(sp.currency);
   const disc = parseDisc(sp.disc);
   const units = parseUnits(sp.units);
+  // Presentation mode: a `?present=1` flag strips the page down to
+  // just the comparator visualisation — useful for HiFi-store demos
+  // or YouTube reviews where the SiteHeader, picker form, specs
+  // table and footer chrome would crowd the frame.
+  const presentMode = sp.present === "1";
 
   // Build the active reference list from the user selections.
   const refs: Reference[] = [];
@@ -450,13 +460,67 @@ export default async function ComparePage({ params, searchParams }: Props) {
         }
       : null;
 
+  // In presentation mode we strip the site chrome (header, footer, CTA
+  // floater) plus the picker form, specs table and disclaimer — only
+  // the comparator visualisation plus a compact ViewTabs row stays.
+  // A floating Exit pill sits top-right with the inverse URL so the
+  // user can return to the regular view with one click.
+  const exitPresentHref = compareHref(
+    {
+      a: a?.id,
+      b: b?.id,
+      view,
+      align,
+      person: personHeight,
+      currency,
+      disc,
+      units,
+      present: false,
+    },
+    locale
+  );
+  const enterPresentHref = compareHref(
+    {
+      a: a?.id,
+      b: b?.id,
+      view,
+      align,
+      person: personHeight,
+      currency,
+      disc,
+      units,
+      present: true,
+    },
+    locale
+  );
+
   return (
     <div className="min-h-screen bg-stone-50 dark:bg-stone-950 flex flex-col">
       {compareJsonLd && <JsonLd data={compareJsonLd} />}
-      <SiteHeader locale={locale} t={t} />
+      {!presentMode && <SiteHeader locale={locale} t={t} />}
 
-      <main className="flex-1 mx-auto max-w-6xl w-full px-6 py-10 space-y-10">
-        <NavCTAs locale={locale} t={t} />
+      <main
+        className={
+          presentMode
+            ? "flex-1 mx-auto max-w-6xl w-full px-6 py-6 space-y-6"
+            : "flex-1 mx-auto max-w-6xl w-full px-6 py-10 space-y-10"
+        }
+      >
+        {presentMode && (
+          // Floating exit pill — top-right, semi-transparent so it
+          // doesn't compete with the comparator for attention.
+          <Link
+            href={exitPresentHref}
+            className="fixed top-4 right-4 z-30 inline-flex items-center gap-1.5 rounded-full bg-stone-900/85 dark:bg-stone-100/85 text-white dark:text-stone-900 px-4 py-2 text-xs font-medium backdrop-blur shadow-lg hover:bg-stone-900 dark:hover:bg-stone-100 transition-colors"
+            aria-label={t.compare.exitPresentation}
+            title={t.compare.exitPresentation}
+          >
+            <ExitFullscreenIcon />
+            {t.compare.exitPresentation}
+          </Link>
+        )}
+        {!presentMode && <NavCTAs locale={locale} t={t} />}
+        {!presentMode && (
         <form
           method="get"
           className="grid grid-cols-1 gap-6 sm:grid-cols-2"
@@ -518,8 +582,9 @@ export default async function ComparePage({ params, searchParams }: Props) {
             />
           </div>
         </form>
+        )}
 
-        {unknownIds.length > 0 && (
+        {!presentMode && unknownIds.length > 0 && (
           <div
             role="alert"
             className="rounded-md border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/40 px-4 py-3 text-sm text-amber-900 dark:text-amber-200"
@@ -547,18 +612,34 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 currency={currency}
                 disc={disc}
                 units={units}
+                present={presentMode}
                 locale={locale}
                 t={t}
               />
-              <ShareButton t={t} />
+              {!presentMode && (
+                <div className="flex items-center gap-3">
+                  <Link
+                    href={enterPresentHref}
+                    className="inline-flex items-center gap-1.5 text-xs text-stone-600 dark:text-stone-300 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
+                    aria-label={t.compare.enterPresentation}
+                    title={t.compare.enterPresentation}
+                  >
+                    <EnterFullscreenIcon />
+                    {t.compare.enterPresentation}
+                  </Link>
+                  <ShareButton t={t} />
+                </div>
+              )}
             </div>
             {/*
               Reference pickers (person / banknote / disc) only make sense
               for the front views — in profile the references aren't
               rendered alongside the cabinets, so the form would dangle
-              with no visible effect on the diagram.
+              with no visible effect on the diagram. In presentation mode
+              they're also suppressed so the demo stays focused on the
+              comparator block.
             */}
-            {view !== "profile" && (
+            {view !== "profile" && !presentMode && (
               <ReferencePickers
                 a={a}
                 b={b}
@@ -567,6 +648,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 currency={currency}
                 disc={disc}
                 units={units}
+                present={presentMode}
                 locale={locale}
                 t={t}
               />
@@ -580,6 +662,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 currency={currency}
                 disc={disc}
                 units={units}
+                present={presentMode}
                 locale={locale}
                 t={t}
               />
@@ -593,6 +676,7 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 currency={currency}
                 disc={disc}
                 units={units}
+                present={presentMode}
                 locale={locale}
                 t={t}
               />
@@ -606,11 +690,13 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 currency={currency}
                 disc={disc}
                 units={units}
+                present={presentMode}
                 locale={locale}
                 t={t}
               />
             )}
-            <ScaleDisclaimer t={t} />
+            {!presentMode && <ScaleDisclaimer t={t} />}
+            {!presentMode && (
             <SpecsComparison
               a={a}
               b={b}
@@ -625,15 +711,16 @@ export default async function ComparePage({ params, searchParams }: Props) {
                 locale
               )}
             />
+            )}
           </>
         ) : (
           <p className="text-sm text-stone-500">{t.compare.pickTwo}</p>
         )}
       </main>
 
-      <BrandStrip brands={brands} locale={locale} t={t} />
+      {!presentMode && <BrandStrip brands={brands} locale={locale} t={t} />}
 
-      <CompareCTA locale={locale} t={t} mode="to-compare4" />
+      {!presentMode && <CompareCTA locale={locale} t={t} mode="to-compare4" />}
     </div>
   );
 }
@@ -646,6 +733,7 @@ function ViewTabs({
   currency,
   disc,
   units,
+  present,
   locale,
   t,
 }: {
@@ -656,6 +744,7 @@ function ViewTabs({
   currency: CurrencyId | null;
   disc: DiscId | null;
   units: UnitSystem;
+  present: boolean;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -682,6 +771,7 @@ function ViewTabs({
             currency,
             disc,
             units,
+            present,
           },
           locale
         );
@@ -712,6 +802,7 @@ function swapHref(
   currency: CurrencyId | null,
   disc: DiscId | null,
   units: UnitSystem,
+  present: boolean,
   locale: Locale
 ): string {
   return compareHref(
@@ -723,6 +814,7 @@ function swapHref(
       currency,
       disc,
       units,
+      present,
     },
     locale
   );
@@ -736,6 +828,7 @@ function FrontOverlay({
   currency,
   disc,
   units,
+  present,
   locale,
   t,
 }: {
@@ -746,6 +839,7 @@ function FrontOverlay({
   currency: CurrencyId | null;
   disc: DiscId | null;
   units: UnitSystem;
+  present: boolean;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -766,7 +860,7 @@ function FrontOverlay({
   );
   const contentWidthPx = overlayBlockPx + refsTotalPx;
   const totalWidthPx = contentWidthPx + RULER_WIDTH_PX;
-  const swap = swapHref(a, b, "overlay", personHeight, currency, disc, units, locale);
+  const swap = swapHref(a, b, "overlay", personHeight, currency, disc, units, present, locale);
 
   return (
     <section>
@@ -878,6 +972,7 @@ function FrontSideBySide({
   currency,
   disc,
   units,
+  present,
   locale,
   t,
 }: {
@@ -888,6 +983,7 @@ function FrontSideBySide({
   currency: CurrencyId | null;
   disc: DiscId | null;
   units: UnitSystem;
+  present: boolean;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -905,7 +1001,7 @@ function FrontSideBySide({
   const contentWidthPx =
     widthsMm * scale + SIDE_BY_SIDE_GAP_PX * (itemCount - 1) + 48;
   const totalWidthPx = contentWidthPx + RULER_WIDTH_PX;
-  const swap = swapHref(a, b, "side", personHeight, currency, disc, units, locale);
+  const swap = swapHref(a, b, "side", personHeight, currency, disc, units, present, locale);
 
   return (
     <section>
@@ -1007,6 +1103,7 @@ function ProfileOverlay({
   currency,
   disc,
   units,
+  present,
   locale,
   t,
 }: {
@@ -1017,6 +1114,7 @@ function ProfileOverlay({
   currency: CurrencyId | null;
   disc: DiscId | null;
   units: UnitSystem;
+  present: boolean;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -1032,7 +1130,7 @@ function ProfileOverlay({
     ? scaledDepthA + scaledDepthB + SIDE_BY_SIDE_GAP_PX + 48
     : Math.max(scaledDepthA, scaledDepthB) + 48;
   const totalWidthPx = overlayBlockPx + RULER_WIDTH_PX;
-  const swap = swapHref(a, b, "profile", personHeight, currency, disc, units, locale);
+  const swap = swapHref(a, b, "profile", personHeight, currency, disc, units, present, locale);
 
   // Compute X offset (within the 48 px-padded overlay block) for each
   // cabinet given the chosen align mode. 24 px = half the breathing room.
@@ -1068,6 +1166,7 @@ function ProfileOverlay({
         currency,
         disc,
         units,
+        present,
       },
       locale
     );
@@ -1341,6 +1440,48 @@ function AlignBackIcon() {
   );
 }
 
+function EnterFullscreenIcon() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M3 7V3h4" />
+      <path d="M21 7V3h-4" />
+      <path d="M3 17v4h4" />
+      <path d="M21 17v4h-4" />
+    </svg>
+  );
+}
+
+function ExitFullscreenIcon() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M7 3v4H3" />
+      <path d="M17 3v4h4" />
+      <path d="M7 21v-4H3" />
+      <path d="M17 21v-4h4" />
+    </svg>
+  );
+}
+
 function ReferencePickers({
   a,
   b,
@@ -1349,6 +1490,7 @@ function ReferencePickers({
   currency,
   disc,
   units,
+  present,
   locale,
   t,
 }: {
@@ -1359,6 +1501,7 @@ function ReferencePickers({
   currency: CurrencyId | null;
   disc: DiscId | null;
   units: UnitSystem;
+  present: boolean;
   locale: Locale;
   t: Dictionary;
 }) {
@@ -1369,7 +1512,7 @@ function ReferencePickers({
       value: "",
       label: t.compare.refPersonOff,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: null, currency, disc, units },
+        { a: a.id, b: b.id, view, person: null, currency, disc, units, present },
         locale
       ),
     },
@@ -1377,7 +1520,7 @@ function ReferencePickers({
       value: String(cm),
       label: `${t.compare.refMan} — ${fmtPersonHeight(cm, locale)}`,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: cm, currency, disc, units },
+        { a: a.id, b: b.id, view, person: cm, currency, disc, units, present },
         locale
       ),
     })),
@@ -1387,7 +1530,7 @@ function ReferencePickers({
       value: "",
       label: t.compare.refCurrencyOff,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: personHeight, currency: null, disc, units },
+        { a: a.id, b: b.id, view, person: personHeight, currency: null, disc, units, present },
         locale
       ),
     },
@@ -1395,7 +1538,7 @@ function ReferencePickers({
       value: id,
       label: CURRENCIES[id].shortLabel,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: personHeight, currency: id, disc, units },
+        { a: a.id, b: b.id, view, person: personHeight, currency: id, disc, units, present },
         locale
       ),
     })),
@@ -1405,7 +1548,7 @@ function ReferencePickers({
       value: "",
       label: t.compare.refDiscOff,
       href: compareHref(
-        { a: a.id, b: b.id, view, person: personHeight, currency, disc: null, units },
+        { a: a.id, b: b.id, view, person: personHeight, currency, disc: null, units, present },
         locale
       ),
     },
@@ -1413,7 +1556,7 @@ function ReferencePickers({
       value: id,
       label: t.compare.discs[DISCS[id].labelKey],
       href: compareHref(
-        { a: a.id, b: b.id, view, person: personHeight, currency, disc: id, units },
+        { a: a.id, b: b.id, view, person: personHeight, currency, disc: id, units, present },
         locale
       ),
     })),

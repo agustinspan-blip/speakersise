@@ -6,6 +6,8 @@ import Link from "next/link";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import type { SpeakerType } from "@/lib/types";
 import type { BandKey } from "@/lib/ladder-bands";
+import { useUnits } from "@/lib/use-units";
+import type { UnitSystem } from "@/lib/units";
 
 /**
  * Client-side root of the HiFi ladder page. Owns two pieces of state:
@@ -23,11 +25,16 @@ const MAX_SELECTION = 4;
 // user-selectable unit display and to space the inch ruler ticks.
 const MM_PER_IN = 25.4;
 
-type Units = "cm" | "in";
+/**
+ * Local alias for the global UnitSystem — kept so the rest of this
+ * file reads naturally and so swapping to a third unit (e.g. metric +
+ * imperial + nautical) would only require touching one line.
+ */
+type Units = UnitSystem;
 
 /** Convert a height in mm into the display string for the active unit. */
 function formatHeight(heightMm: number, units: Units): string {
-  if (units === "in") {
+  if (units === "imperial") {
     return `${(heightMm / MM_PER_IN).toFixed(1)} in`;
   }
   return `${(heightMm / 10).toFixed(1)} cm`;
@@ -107,9 +114,10 @@ export function LadderClient({
   // Stored as an array so iteration order = selection order, which
   // determines slot assignment in the compare URLs.
   const [selected, setSelected] = useState<string[]>([]);
-  // cm by default — matches every other surface on the site. The
-  // toggle lives in the top-right corner of the band header.
-  const [units, setUnits] = useState<Units>("cm");
+  // Metric by default — matches the rest of the site. Persisted to
+  // localStorage so a flip here is remembered on /compare, /compare4
+  // and any other page that reads the same hook.
+  const { units, setUnits } = useUnits();
   // Hover tooltip — anchored to the hovered slot's bounding rect via
   // a portal so it can render outside the scroll container's clipping
   // box. Holds the active speaker plus the slot's screen rect; both
@@ -332,8 +340,8 @@ function UnitsToggle({
   t: Dictionary;
 }) {
   const options: { key: Units; label: string }[] = [
-    { key: "cm", label: t.ladder.unitsCm },
-    { key: "in", label: t.ladder.unitsIn },
+    { key: "metric", label: t.ladder.unitsCm },
+    { key: "imperial", label: t.ladder.unitsIn },
   ];
   return (
     <div
@@ -420,7 +428,7 @@ function FilterBar({
         <select
           value={brandFilter}
           onChange={(e) => onBrandFilter(e.target.value)}
-          className="h-7 rounded-full border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-200 px-2 pr-7 text-xs hover:bg-stone-50"
+          className="h-7 rounded-full border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-200 px-2 pr-7 text-xs hover:bg-stone-50 dark:hover:bg-stone-800"
         >
           <option value="">{t.ladder.filterAll}</option>
           {brands.map((b) => (
@@ -673,16 +681,16 @@ function RulerReference({
   // Step between labelled ticks in mm. cm modes are round metric
   // values; inch modes use 2"/10" steps to mirror those visually.
   const majorStepMm = denseLabels
-    ? units === "cm"
+    ? units === "metric"
       ? 50 // 5 cm
       : 2 * MM_PER_IN // 2 in
-    : units === "cm"
+    : units === "metric"
       ? 200 // 20 cm
       : 10 * MM_PER_IN; // 10 in
   // Minor ticks only exist in the floor (non-dense) pattern.
   const minorStepMm = denseLabels
     ? null
-    : units === "cm"
+    : units === "metric"
       ? 100 // 10 cm minor between 20 cm majors
       : 5 * MM_PER_IN; // 5 in minor between 10 in majors
   const maxMm = visualPx / scale;
@@ -697,7 +705,7 @@ function RulerReference({
   }
 
   function labelFor(mm: number): string {
-    if (units === "in") {
+    if (units === "imperial") {
       // Show one decimal for non-integer inch counts (avoids "5\" 5\"")
       const inches = mm / MM_PER_IN;
       return Number.isInteger(inches)

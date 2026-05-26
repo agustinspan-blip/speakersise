@@ -193,6 +193,8 @@
     "pickBrand": "— pick a brand —",
     "pickType": "— pick a type —",
     "compareButton": "Compare",
+    "enterPresentation": "Presentation mode",
+    "exitPresentation": "Exit presentation",
     "shuffle": "Shuffle",
     "shuffleTitle": "Pick a random comparison (same speaker type)",
     "pickTwo": "Pick two speakers above to start comparing.",
