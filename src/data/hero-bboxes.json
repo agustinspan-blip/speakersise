@@ -1,0 +1,1619 @@
+{
+  "bowers-wilkins-603-s3": {
+    "height": 1.0,
+    "imageAspect": 0.3089,
+    "left": 0.0036,
+    "top": 0.0,
+    "width": 0.9964
+  },
+  "bowers-wilkins-606-s3": {
+    "height": 1.0,
+    "imageAspect": 0.2778,
+    "left": 0.004,
+    "top": 0.0,
+    "width": 0.996
+  },
+  "bowers-wilkins-607-s3": {
+    "height": 1.0,
+    "imageAspect": 0.2922,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 0.9962
+  },
+  "bowers-wilkins-702-s3": {
+    "height": 1.0,
+    "imageAspect": 0.3238,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "bowers-wilkins-703-s3": {
+    "height": 1.0,
+    "imageAspect": 0.3025,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "bowers-wilkins-704-s3": {
+    "height": 1.0,
+    "imageAspect": 0.2908,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "bowers-wilkins-705-s3": {
+    "height": 1.0,
+    "imageAspect": 0.5196,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "bowers-wilkins-706-s3": {
+    "height": 1.0,
+    "imageAspect": 0.5965,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "bowers-wilkins-707-s3-prestige": {
+    "height": 1.0,
+    "imageAspect": 0.5714,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "bowers-wilkins-801-d4": {
+    "height": 0.9958,
+    "imageAspect": 0.3683,
+    "left": 0.0136,
+    "top": 0.0042,
+    "width": 0.9729
+  },
+  "bowers-wilkins-802-d4": {
+    "height": 0.9958,
+    "imageAspect": 0.3442,
+    "left": 0.0121,
+    "top": 0.0042,
+    "width": 0.9734
+  },
+  "bowers-wilkins-803-d4": {
+    "height": 0.9958,
+    "imageAspect": 0.3017,
+    "left": 0.0138,
+    "top": 0.0042,
+    "width": 0.9724
+  },
+  "bowers-wilkins-804-d4": {
+    "height": 0.8438,
+    "imageAspect": 1.0,
+    "left": 0.3964,
+    "top": 0.15,
+    "width": 0.2182
+  },
+  "bowers-wilkins-805-d4": {
+    "height": 0.9958,
+    "imageAspect": 0.28,
+    "left": 0.0149,
+    "top": 0.0042,
+    "width": 0.9702
+  },
+  "bowers-wilkins-formation-duo": {
+    "height": 1.0,
+    "imageAspect": 0.3078,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-reference-1": {
+    "height": 1.0,
+    "imageAspect": 0.719,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-reference-2": {
+    "height": 1.0,
+    "imageAspect": 0.6381,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-reference-3": {
+    "height": 1.0,
+    "imageAspect": 0.7111,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-reference-5": {
+    "height": 1.0,
+    "imageAspect": 0.9085,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-reference-7": {
+    "height": 1.0,
+    "imageAspect": 0.745,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-reference-9": {
+    "height": 0.7926,
+    "imageAspect": 1.0,
+    "left": 0.3657,
+    "top": 0.0991,
+    "width": 0.2667
+  },
+  "canton-reference-alpha-1": {
+    "height": 1.0,
+    "imageAspect": 0.6665,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-reference-alpha-2": {
+    "height": 1.0,
+    "imageAspect": 0.6973,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-townus-100": {
+    "height": 0.92,
+    "imageAspect": 1.0,
+    "left": 0.343,
+    "top": 0.072,
+    "width": 0.325
+  },
+  "canton-townus-30": {
+    "height": 0.6997,
+    "imageAspect": 0.5777,
+    "left": 0.1494,
+    "top": 0.1496,
+    "width": 0.6992
+  },
+  "canton-townus-90": {
+    "height": 0.767,
+    "imageAspect": 1.0,
+    "left": 0.371,
+    "top": 0.105,
+    "width": 0.234
+  },
+  "canton-vento-101": {
+    "height": 0.8758,
+    "imageAspect": 0.6667,
+    "left": 0.2888,
+    "top": 0.0342,
+    "width": 0.4125
+  },
+  "canton-vento-21": {
+    "height": 1.0,
+    "imageAspect": 0.9023,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-vento-31": {
+    "height": 1.0,
+    "imageAspect": 1.0431,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-vento-81": {
+    "height": 1.0,
+    "imageAspect": 0.5746,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "canton-vento-91": {
+    "height": 1.0,
+    "imageAspect": 0.5688,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dali-epicon-2": {
+    "height": 0.8008,
+    "imageAspect": 1.0,
+    "left": 0.1583,
+    "top": 0.1475,
+    "width": 0.6958
+  },
+  "dali-epicon-6": {
+    "height": 1.0,
+    "imageAspect": 0.4481,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dali-epicon-8": {
+    "height": 1.0,
+    "imageAspect": 0.4141,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dali-epikore-11": {
+    "height": 0.9832,
+    "imageAspect": 0.5388,
+    "left": 0.0104,
+    "top": 0.0096,
+    "width": 0.9837
+  },
+  "dali-epikore-3": {
+    "height": 0.9806,
+    "imageAspect": 0.4487,
+    "left": 0.0144,
+    "top": 0.0097,
+    "width": 0.964
+  },
+  "dali-epikore-7": {
+    "height": 0.9831,
+    "imageAspect": 0.4297,
+    "left": 0.0168,
+    "top": 0.0088,
+    "width": 0.9682
+  },
+  "dali-epikore-9": {
+    "height": 0.9814,
+    "imageAspect": 0.426,
+    "left": 0.019,
+    "top": 0.0089,
+    "width": 0.9734
+  },
+  "dali-kore": {
+    "height": 1.0,
+    "imageAspect": 0.3597,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dali-kupid": {
+    "height": 1.0,
+    "imageAspect": 1.0312,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dali-menuet": {
+    "height": 1.0,
+    "imageAspect": 1.0899,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dali-oberon-1": {
+    "height": 0.6767,
+    "imageAspect": 1.0,
+    "left": 0.1467,
+    "top": 0.1875,
+    "width": 0.6867
+  },
+  "dali-oberon-3": {
+    "height": 0.705,
+    "imageAspect": 1.0,
+    "left": 0.1458,
+    "top": 0.1708,
+    "width": 0.7083
+  },
+  "dali-oberon-5": {
+    "height": 0.898,
+    "imageAspect": 1.0,
+    "left": 0.204,
+    "top": 0.046,
+    "width": 0.589
+  },
+  "dali-oberon-7": {
+    "height": 1.0,
+    "imageAspect": 0.4769,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 0.9987
+  },
+  "dali-oberon-9": {
+    "height": 1.0,
+    "imageAspect": 0.5149,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dali-rubicon-2": {
+    "height": 0.6842,
+    "imageAspect": 1.0,
+    "left": 0.1458,
+    "top": 0.2217,
+    "width": 0.68
+  },
+  "dali-rubicon-6": {
+    "height": 0.8861,
+    "imageAspect": 1.0,
+    "left": 0.2844,
+    "top": 0.0911,
+    "width": 0.4206
+  },
+  "dali-rubikore-2": {
+    "height": 1.0,
+    "imageAspect": 1.0049,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dali-rubikore-6": {
+    "height": 1.0,
+    "imageAspect": 0.8696,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dali-rubikore-8": {
+    "height": 1.0,
+    "imageAspect": 0.4531,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dutch-dutch-8c": {
+    "height": 0.9933,
+    "imageAspect": 0.8219,
+    "left": 0.0008,
+    "top": 0.0,
+    "width": 0.9967
+  },
+  "dynaudio-confidence-20": {
+    "height": 0.969,
+    "imageAspect": 0.7365,
+    "left": 0.2845,
+    "top": 0.0275,
+    "width": 0.4311
+  },
+  "dynaudio-confidence-30": {
+    "height": 0.8315,
+    "imageAspect": 1.0,
+    "left": 0.352,
+    "top": 0.084,
+    "width": 0.292
+  },
+  "dynaudio-confidence-50": {
+    "height": 0.9871,
+    "imageAspect": 1.0,
+    "left": 0.3421,
+    "top": 0.0107,
+    "width": 0.3121
+  },
+  "dynaudio-confidence-60": {
+    "height": 0.9895,
+    "imageAspect": 0.3485,
+    "left": 0.0416,
+    "top": 0.0085,
+    "width": 0.9426
+  },
+  "dynaudio-consequence-ue": {
+    "height": 0.9896,
+    "imageAspect": 0.9433,
+    "left": 0.0352,
+    "top": 0.0062,
+    "width": 0.9436
+  },
+  "dynaudio-contour-20i": {
+    "height": 1.0,
+    "imageAspect": 0.3038,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dynaudio-contour-30i": {
+    "height": 0.8545,
+    "imageAspect": 1.0,
+    "left": 0.3447,
+    "top": 0.0771,
+    "width": 0.3008
+  },
+  "dynaudio-contour-60i": {
+    "height": 1.0,
+    "imageAspect": 0.335,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dynaudio-contour-legacy": {
+    "height": 1.0,
+    "imageAspect": 0.3438,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dynaudio-emit-10": {
+    "height": 1.0,
+    "imageAspect": 0.6071,
+    "left": 0.0123,
+    "top": 0.0,
+    "width": 0.9681
+  },
+  "dynaudio-emit-20": {
+    "height": 0.7087,
+    "imageAspect": 0.7063,
+    "left": 0.0637,
+    "top": 0.1462,
+    "width": 0.8637
+  },
+  "dynaudio-emit-30": {
+    "height": 0.825,
+    "imageAspect": 1.0,
+    "left": 0.3175,
+    "top": 0.087,
+    "width": 0.339
+  },
+  "dynaudio-emit-50": {
+    "height": 0.825,
+    "imageAspect": 1.0,
+    "left": 0.346,
+    "top": 0.088,
+    "width": 0.304
+  },
+  "dynaudio-evoke-10": {
+    "height": 0.9837,
+    "imageAspect": 0.7832,
+    "left": 0.0069,
+    "top": 0.0136,
+    "width": 0.9879
+  },
+  "dynaudio-evoke-20": {
+    "height": 0.987,
+    "imageAspect": 0.7792,
+    "left": 0.0233,
+    "top": 0.0052,
+    "width": 0.965
+  },
+  "dynaudio-evoke-30": {
+    "height": 0.8325,
+    "imageAspect": 1.0,
+    "left": 0.3365,
+    "top": 0.0835,
+    "width": 0.3275
+  },
+  "dynaudio-evoke-50": {
+    "height": 1.0,
+    "imageAspect": 1.5385,
+    "left": 0.3869,
+    "top": 0.0,
+    "width": 0.2263
+  },
+  "dynaudio-focus-10": {
+    "height": 1.0,
+    "imageAspect": 0.8023,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dynaudio-focus-30": {
+    "height": 1.0,
+    "imageAspect": 0.4089,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dynaudio-focus-50": {
+    "height": 1.0,
+    "imageAspect": 0.3668,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "dynaudio-heritage-special": {
+    "height": 0.9844,
+    "imageAspect": 0.8339,
+    "left": 0.0041,
+    "top": 0.0069,
+    "width": 0.9917
+  },
+  "dynaudio-special-forty": {
+    "height": 1.0,
+    "imageAspect": 0.7562,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-aria-evo-x-n1": {
+    "height": 1.0,
+    "imageAspect": 0.737,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-aria-evo-x-n2": {
+    "height": 1.0,
+    "imageAspect": 0.3679,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-aria-evo-x-n3": {
+    "height": 1.0,
+    "imageAspect": 0.3479,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-aria-evo-x-n4": {
+    "height": 1.0,
+    "imageAspect": 0.4088,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-diablo-utopia-colour-evo": {
+    "height": 1.0,
+    "imageAspect": 0.8096,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-diva-mezza-utopia": {
+    "height": 1.0,
+    "imageAspect": 0.4376,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-diva-utopia": {
+    "height": 1.0,
+    "imageAspect": 0.4503,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-grande-utopia-em-evo": {
+    "height": 1.0,
+    "imageAspect": 0.4634,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-kanta-n1": {
+    "height": 1.0,
+    "imageAspect": 0.7223,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-kanta-n2": {
+    "height": 1.0,
+    "imageAspect": 0.3784,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-kanta-n3": {
+    "height": 1.0,
+    "imageAspect": 0.388,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-maestro-utopia-evo": {
+    "height": 1.0,
+    "imageAspect": 0.4549,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-scala-utopia-evo": {
+    "height": 1.0,
+    "imageAspect": 0.4804,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-sopra-n1": {
+    "height": 1.0,
+    "imageAspect": 1.1093,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-sopra-n2": {
+    "height": 1.0,
+    "imageAspect": 0.4084,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "focal-sopra-n3": {
+    "height": 0.996,
+    "imageAspect": 0.424,
+    "left": 0.0153,
+    "top": 0.0005,
+    "width": 0.9705
+  },
+  "focal-stella-utopia-em-evo": {
+    "height": 1.0,
+    "imageAspect": 0.4647,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-4312g": {
+    "height": 1.0,
+    "imageAspect": 0.71,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-4329p": {
+    "height": 1.0,
+    "imageAspect": 0.8944,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-4349": {
+    "height": 1.0,
+    "imageAspect": 1.32,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-4367": {
+    "height": 1.0,
+    "imageAspect": 1.1933,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-4369": {
+    "height": 1.0,
+    "imageAspect": 0.6044,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-hdi-1600": {
+    "height": 1.0,
+    "imageAspect": 0.7256,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-hdi-3600": {
+    "height": 1.0,
+    "imageAspect": 0.7178,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-hdi-3800": {
+    "height": 1.0,
+    "imageAspect": 0.7267,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-l100-classic-mkii": {
+    "height": 1.0,
+    "imageAspect": 0.7056,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-l52-classic": {
+    "height": 1.0,
+    "imageAspect": 1.6733,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-l82-classic-mkii": {
+    "height": 1.0,
+    "imageAspect": 0.69,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-project-everest-dd67000": {
+    "height": 1.0,
+    "imageAspect": 1.3433,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-project-k2-s9900": {
+    "height": 1.0,
+    "imageAspect": 0.3593,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-s4700": {
+    "height": 1.0,
+    "imageAspect": 0.85,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-summit-ama": {
+    "height": 1.0,
+    "imageAspect": 0.78,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-summit-makalu": {
+    "height": 1.0,
+    "imageAspect": 0.8867,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "jbl-summit-pumori": {
+    "height": 1.0,
+    "imageAspect": 0.8344,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-blade-one-meta": {
+    "height": 1.0,
+    "imageAspect": 0.2473,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-coda-w": {
+    "height": 1.0,
+    "imageAspect": 1.5127,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-ls50-meta": {
+    "height": 1.0,
+    "imageAspect": 1.6852,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-ls60-wireless": {
+    "height": 1.0,
+    "imageAspect": 0.5574,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-lsx-2": {
+    "height": 1.0,
+    "imageAspect": 1.4731,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-q-concerto-meta": {
+    "height": 1.0,
+    "imageAspect": 1.3371,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-q1-meta": {
+    "height": 1.0,
+    "imageAspect": 1.697,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-q11-meta": {
+    "height": 1.0,
+    "imageAspect": 0.6686,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-q3-meta": {
+    "height": 1.0,
+    "imageAspect": 1.5321,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-q7-meta": {
+    "height": 1.0,
+    "imageAspect": 0.7015,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-r11-meta": {
+    "height": 1.0,
+    "imageAspect": 0.5448,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-r3-meta": {
+    "height": 1.0,
+    "imageAspect": 1.3192,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-r5-meta": {
+    "height": 1.0,
+    "imageAspect": 0.598,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-r7-meta": {
+    "height": 1.0,
+    "imageAspect": 0.6096,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-reference-1-meta": {
+    "height": 1.0,
+    "imageAspect": 1.3406,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-reference-3-meta": {
+    "height": 1.0,
+    "imageAspect": 0.6031,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "kef-reference-5-meta": {
+    "height": 1.0,
+    "imageAspect": 0.5266,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-forte-iv": {
+    "height": 1.0,
+    "imageAspect": 0.5292,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-heresy-iv": {
+    "height": 1.0,
+    "imageAspect": 0.8169,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-jubilee": {
+    "height": 1.0,
+    "imageAspect": 0.5683,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-klipschorn-ak6": {
+    "height": 1.0,
+    "imageAspect": 0.5626,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-klipschorn-ak7": {
+    "height": 1.0,
+    "imageAspect": 0.5729,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-la-scala-al5": {
+    "height": 1.0,
+    "imageAspect": 0.8096,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-la-scala-al6": {
+    "height": 1.0,
+    "imageAspect": 0.7882,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-ojas-ko-r1": {
+    "height": 1.0,
+    "imageAspect": 0.397,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-rf-7-iii": {
+    "height": 1.0,
+    "imageAspect": 0.4103,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-rp-5000f-ii": {
+    "height": 1.0,
+    "imageAspect": 0.4261,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-rp-500m-ii": {
+    "height": 1.0,
+    "imageAspect": 1.1504,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-rp-6000f-ii": {
+    "height": 1.0,
+    "imageAspect": 0.4645,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-rp-600m-ii": {
+    "height": 1.0,
+    "imageAspect": 1.0298,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-rp-8000f-ii": {
+    "height": 1.0,
+    "imageAspect": 0.4729,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-the-fives-ii": {
+    "height": 1.0,
+    "imageAspect": 0.9694,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-the-nines-ii": {
+    "height": 1.0,
+    "imageAspect": 0.9651,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "klipsch-the-sevens-ii": {
+    "height": 1.0,
+    "imageAspect": 0.9749,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "monitor-audio-bronze-300-7g": {
+    "height": 1.0,
+    "imageAspect": 0.6375,
+    "left": 0.0074,
+    "top": 0.0,
+    "width": 0.9914
+  },
+  "monitor-audio-bronze-50-7g": {
+    "height": 0.47,
+    "imageAspect": 1.0,
+    "left": 0.15,
+    "top": 0.2606,
+    "width": 0.6819
+  },
+  "monitor-audio-gold-100-6g": {
+    "height": 0.49,
+    "imageAspect": 1.0,
+    "left": 0.165,
+    "top": 0.26,
+    "width": 0.67
+  },
+  "monitor-audio-gold-300-6g": {
+    "height": 0.9905,
+    "imageAspect": 0.75,
+    "left": 0.0,
+    "top": 0.0052,
+    "width": 0.9977
+  },
+  "monitor-audio-gold-50-6g": {
+    "height": 1.0,
+    "imageAspect": 1.6714,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "monitor-audio-gold-500-6g": {
+    "height": 1.0,
+    "imageAspect": 0.78,
+    "left": 0.0011,
+    "top": 0.0,
+    "width": 0.9989
+  },
+  "monitor-audio-hyphn": {
+    "height": 1.0,
+    "imageAspect": 0.738,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "monitor-audio-platinum-100-3g": {
+    "height": 0.6056,
+    "imageAspect": 1.0,
+    "left": 0.1456,
+    "top": 0.2137,
+    "width": 0.71
+  },
+  "monitor-audio-platinum-200-3g": {
+    "height": 1.0,
+    "imageAspect": 0.731,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "monitor-audio-platinum-300-3g": {
+    "height": 0.9992,
+    "imageAspect": 0.7911,
+    "left": 0.0,
+    "top": 0.0008,
+    "width": 1.0
+  },
+  "monitor-audio-silver-100-7g": {
+    "height": 0.6419,
+    "imageAspect": 1.0,
+    "left": 0.045,
+    "top": 0.1825,
+    "width": 0.8944
+  },
+  "monitor-audio-silver-300-7g": {
+    "height": 0.9993,
+    "imageAspect": 0.5691,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 0.993
+  },
+  "monitor-audio-silver-50-7g": {
+    "height": 1.0,
+    "imageAspect": 1.3934,
+    "left": 0.0007,
+    "top": 0.0,
+    "width": 0.9985
+  },
+  "monitor-audio-silver-500-7g": {
+    "height": 1.0,
+    "imageAspect": 0.6236,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 0.9932
+  },
+  "monitor-audio-studio-89": {
+    "height": 0.9971,
+    "imageAspect": 1.407,
+    "left": 0.0062,
+    "top": 0.0,
+    "width": 0.9886
+  },
+  "paradigm-founder-100f": {
+    "height": 1.0,
+    "imageAspect": 0.4073,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-founder-120h": {
+    "height": 1.0,
+    "imageAspect": 0.4062,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-founder-40b": {
+    "height": 1.0,
+    "imageAspect": 0.7265,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-founder-80f": {
+    "height": 1.0,
+    "imageAspect": 0.4025,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-persona-3f": {
+    "height": 1.0,
+    "imageAspect": 0.3007,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-persona-5f": {
+    "height": 1.0,
+    "imageAspect": 0.288,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-persona-7f": {
+    "height": 1.0,
+    "imageAspect": 0.3102,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-persona-9h": {
+    "height": 1.0,
+    "imageAspect": 0.3089,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-persona-b": {
+    "height": 1.0,
+    "imageAspect": 0.6494,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-premier-100b": {
+    "height": 1.0,
+    "imageAspect": 0.7811,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-premier-200b": {
+    "height": 1.0,
+    "imageAspect": 0.7767,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-premier-700f": {
+    "height": 1.0,
+    "imageAspect": 0.2678,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "paradigm-premier-800f": {
+    "height": 1.0,
+    "imageAspect": 0.2611,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-legend-l100": {
+    "height": 1.0,
+    "imageAspect": 1.4215,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-legend-l200": {
+    "height": 1.0,
+    "imageAspect": 1.4215,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-legend-l600": {
+    "height": 1.0,
+    "imageAspect": 0.3216,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-legend-l800": {
+    "height": 1.0,
+    "imageAspect": 0.4102,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-reserve-r100": {
+    "height": 1.0,
+    "imageAspect": 1.2385,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-reserve-r200": {
+    "height": 1.0,
+    "imageAspect": 1.2404,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-reserve-r500": {
+    "height": 1.0,
+    "imageAspect": 0.2944,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-reserve-r600": {
+    "height": 1.0,
+    "imageAspect": 0.3138,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-reserve-r700": {
+    "height": 1.0,
+    "imageAspect": 0.3391,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-signature-elite-es15": {
+    "height": 1.0,
+    "imageAspect": 1.4544,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-signature-elite-es20": {
+    "height": 1.0,
+    "imageAspect": 1.31,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-signature-elite-es50": {
+    "height": 1.0,
+    "imageAspect": 0.3211,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-signature-elite-es55": {
+    "height": 1.0,
+    "imageAspect": 0.3256,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "polk-signature-elite-es60": {
+    "height": 1.0,
+    "imageAspect": 0.3178,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "rizzi-acoustics-the-owl": {
+    "height": 1.0,
+    "imageAspect": 1.205,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-aida": {
+    "height": 1.0,
+    "imageAspect": 0.6552,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-amati-g5": {
+    "height": 1.0,
+    "imageAspect": 0.4167,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-amati-supreme": {
+    "height": 1.0,
+    "imageAspect": 0.416,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-concertino-g4": {
+    "height": 1.0,
+    "imageAspect": 0.9798,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-duetto": {
+    "height": 1.0,
+    "imageAspect": 0.8413,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-electa-amator-iii": {
+    "height": 1.0,
+    "imageAspect": 1.5862,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-guarneri-g5": {
+    "height": 1.0,
+    "imageAspect": 0.3854,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-il-cremonese": {
+    "height": 1.0,
+    "imageAspect": 0.3314,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-lilium": {
+    "height": 1.0,
+    "imageAspect": 0.3047,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-lumina-i": {
+    "height": 1.0,
+    "imageAspect": 1.3354,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-lumina-ii": {
+    "height": 1.0,
+    "imageAspect": 0.8404,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-lumina-iii": {
+    "height": 1.0,
+    "imageAspect": 0.324,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-lumina-v": {
+    "height": 1.0,
+    "imageAspect": 0.3726,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-maxima-amator": {
+    "height": 0.8504,
+    "imageAspect": 0.75,
+    "left": 0.2859,
+    "top": 0.0969,
+    "width": 0.4318
+  },
+  "sonus-faber-olympica-nova-i": {
+    "height": 1.0,
+    "imageAspect": 0.3344,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-olympica-nova-ii": {
+    "height": 0.9108,
+    "imageAspect": 0.5408,
+    "left": 0.1858,
+    "top": 0.0342,
+    "width": 0.6125
+  },
+  "sonus-faber-olympica-nova-iii": {
+    "height": 0.7806,
+    "imageAspect": 0.75,
+    "left": 0.3033,
+    "top": 0.1313,
+    "width": 0.405
+  },
+  "sonus-faber-olympica-nova-v": {
+    "height": 1.0,
+    "imageAspect": 0.4021,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-serafino-g2": {
+    "height": 1.0,
+    "imageAspect": 0.4383,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-sonetto-i-g2": {
+    "height": 1.0,
+    "imageAspect": 0.7168,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-sonetto-ii-g2": {
+    "height": 1.0,
+    "imageAspect": 0.7321,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-sonetto-iii-g2": {
+    "height": 0.7502,
+    "imageAspect": 1.0,
+    "left": 0.4236,
+    "top": 0.1918,
+    "width": 0.2545
+  },
+  "sonus-faber-sonetto-v-g2": {
+    "height": 0.856,
+    "imageAspect": 1.0,
+    "left": 0.368,
+    "top": 0.084,
+    "width": 0.324
+  },
+  "sonus-faber-sonetto-viii-g2": {
+    "height": 0.868,
+    "imageAspect": 1.0,
+    "left": 0.352,
+    "top": 0.088,
+    "width": 0.331
+  },
+  "sonus-faber-stradivari-g2": {
+    "height": 1.0,
+    "imageAspect": 0.4359,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "sonus-faber-suprema": {
+    "height": 1.0,
+    "imageAspect": 0.8169,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-aston": {
+    "height": 1.0,
+    "imageAspect": 0.758,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-aura-1": {
+    "height": 0.9417,
+    "imageAspect": 0.8105,
+    "left": 0.036,
+    "top": 0.0292,
+    "width": 0.9281
+  },
+  "wharfedale-aura-2": {
+    "height": 1.0,
+    "imageAspect": 0.5855,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-aura-3": {
+    "height": 1.0,
+    "imageAspect": 0.3674,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-aura-4": {
+    "height": 1.0,
+    "imageAspect": 0.3667,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-denton-1s": {
+    "height": 0.7,
+    "imageAspect": 0.8102,
+    "left": 0.1495,
+    "top": 0.15,
+    "width": 0.7001
+  },
+  "wharfedale-denton-80": {
+    "height": 1.0,
+    "imageAspect": 0.705,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-denton-85": {
+    "height": 1.0,
+    "imageAspect": 0.8289,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-dovedale": {
+    "height": 1.0,
+    "imageAspect": 0.7108,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-elysian-1": {
+    "height": 1.0,
+    "imageAspect": 0.6004,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-elysian-2": {
+    "height": 1.0,
+    "imageAspect": 0.499,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-elysian-3": {
+    "height": 1.0,
+    "imageAspect": 0.3559,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-elysian-4": {
+    "height": 1.0,
+    "imageAspect": 0.3657,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-evo-5-1": {
+    "height": 0.9604,
+    "imageAspect": 0.7265,
+    "left": 0.0273,
+    "top": 0.0198,
+    "width": 0.9454
+  },
+  "wharfedale-evo-5-2": {
+    "height": 0.9637,
+    "imageAspect": 0.6038,
+    "left": 0.03,
+    "top": 0.0181,
+    "width": 0.9399
+  },
+  "wharfedale-evo-5-3": {
+    "height": 1.0,
+    "imageAspect": 0.3278,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-evo-5-4": {
+    "height": 1.0,
+    "imageAspect": 0.3393,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-linton": {
+    "height": 1.0,
+    "imageAspect": 0.6599,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-super-denton": {
+    "height": 1.0,
+    "imageAspect": 0.8525,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  },
+  "wharfedale-super-linton": {
+    "height": 1.0,
+    "imageAspect": 0.603,
+    "left": 0.0,
+    "top": 0.0,
+    "width": 1.0
+  }
+}
