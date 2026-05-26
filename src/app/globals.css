@@ -42,3 +42,35 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .brand-marquee-track { animation: none; }
 }
+
+/*
+ * Amber horizontal scrollbar — applied via the `.ladder-scroll` opt-in
+ * class so we only restyle scrollbars where it makes sense (the HiFi
+ * ladder bands) and don't disturb the OS default everywhere else.
+ *
+ * Two engines:
+ *   - WebKit / Blink (Chrome, Edge, Safari): ::-webkit-scrollbar pseudo
+ *     elements give pixel control over the track and thumb colours.
+ *   - Firefox: `scrollbar-color` accepts thumb + track colours.
+ *
+ * Both target Tailwind's amber-600 (#d97706) for the thumb so the bar
+ * reads as "TrueScale brand" matching the TrueScale CTAs.
+ */
+.ladder-scroll {
+  scrollbar-color: #d97706 #f5f5f4; /* amber-600 thumb · stone-100 track */
+  scrollbar-width: thin;
+}
+.ladder-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+.ladder-scroll::-webkit-scrollbar-track {
+  background: #f5f5f4; /* stone-100 */
+  border-radius: 999px;
+}
+.ladder-scroll::-webkit-scrollbar-thumb {
+  background: #d97706; /* amber-600 */
+  border-radius: 999px;
+}
+.ladder-scroll::-webkit-scrollbar-thumb:hover {
+  background: #b45309; /* amber-700 */
+}

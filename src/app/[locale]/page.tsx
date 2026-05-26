@@ -529,12 +529,12 @@ function Hero({
               + "Browse the catalog ↓" link sit below the hero (outside
               this component) instead of inside the left column, so the
               hero stays focused on the headline + image. */}
-          <NavCTAs locale={locale} t={t} className="mt-8" />
+          <NavCTAs locale={locale} t={t} showLadder className="mt-8" />
         </div>
 
         <Link
           href={`/${locale}/speaker/${speaker.id}`}
-          className="group relative block aspect-[4/5] lg:aspect-auto lg:h-[400px] overflow-hidden rounded-2xl bg-white"
+          className="group relative block aspect-[4/5] sm:aspect-auto sm:h-[380px] lg:h-[400px] overflow-hidden rounded-2xl bg-white"
         >
           {img && (
             <Image
@@ -682,7 +682,7 @@ function BrandHero({
           </p>
           {/* Paired primary CTAs in the brand's accent colour, so the
               page reads as cohesive (logo + theme + buttons all match). */}
-          <NavCTAs locale={locale} t={t} className="mt-8" />
+          <NavCTAs locale={locale} t={t} showLadder className="mt-8" />
           <a
             href="#catalog"
             className="mt-5 inline-block text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 underline-offset-4 hover:underline"
@@ -694,7 +694,7 @@ function BrandHero({
         {speaker && img ? (
           <Link
             href={`/${locale}/speaker/${speaker.id}`}
-            className="group relative block aspect-[4/5] lg:aspect-auto lg:h-[520px] overflow-hidden rounded-2xl bg-white"
+            className="group relative block aspect-[4/5] sm:aspect-auto sm:h-[460px] lg:h-[520px] overflow-hidden rounded-2xl bg-white"
           >
             <Image
               src={img}
@@ -734,7 +734,7 @@ function BrandHero({
           // catalog entries yet (e.g. Wharfedale before its first import).
           // Mirrors the dimensions of the speaker card so the hero layout
           // doesn't collapse.
-          <div className="relative aspect-[4/5] lg:aspect-auto lg:h-[520px] overflow-hidden rounded-2xl border-2 border-dashed border-stone-300 dark:border-stone-700 bg-white/40 dark:bg-stone-900/40 flex items-center justify-center px-8 text-center">
+          <div className="relative aspect-[4/5] sm:aspect-auto sm:h-[460px] lg:h-[520px] overflow-hidden rounded-2xl border-2 border-dashed border-stone-300 dark:border-stone-700 bg-white/40 dark:bg-stone-900/40 flex items-center justify-center px-8 text-center">
             <p className="text-sm font-medium tracking-wide text-stone-500 dark:text-stone-400">
               {t.home.brandHeroEmpty}
             </p>

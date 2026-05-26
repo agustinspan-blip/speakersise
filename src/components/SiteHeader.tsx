@@ -27,7 +27,7 @@ export function SiteHeader({
 }: {
   locale: Locale;
   t: Dictionary;
-  currentPath?: "brands" | "contact" | "support";
+  currentPath?: "brands" | "countries" | "contact" | "support";
 }) {
   // Shared classes — every nav link reads with the same amber treatment;
   // only the active one drops the hover transition so its colour is solid.
@@ -37,7 +37,7 @@ export function SiteHeader({
     "hover:text-amber-700 dark:hover:text-amber-300 transition-colors";
 
   const links: Array<{
-    key: "brands" | "contact" | "support";
+    key: "brands" | "countries" | "contact" | "support";
     href: string;
     label: string;
     icon: React.ReactNode;
@@ -47,6 +47,12 @@ export function SiteHeader({
       href: `/${locale}/brands`,
       label: t.nav.brands,
       icon: <GridIcon />,
+    },
+    {
+      key: "countries",
+      href: `/${locale}/countries`,
+      label: t.nav.countries,
+      icon: <GlobeIcon />,
     },
     {
       key: "contact",
@@ -119,6 +125,28 @@ function GridIcon() {
       <rect x="14" y="3" width="7" height="7" rx="1" />
       <rect x="3" y="14" width="7" height="7" rx="1" />
       <rect x="14" y="14" width="7" height="7" rx="1" />
+    </svg>
+  );
+}
+
+function GlobeIcon() {
+  // Globe with longitude/latitude lines — visual shorthand for
+  // "by country / world directory".
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18" />
+      <path d="M12 3a13.5 13.5 0 0 1 0 18" />
+      <path d="M12 3a13.5 13.5 0 0 0 0 18" />
     </svg>
   );
 }

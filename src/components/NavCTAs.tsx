@@ -22,12 +22,19 @@ export function NavCTAs({
   locale,
   t,
   prefillId,
+  showLadder = false,
   className,
 }: {
   locale: Locale;
   t: Dictionary;
   /** Speaker id to pre-select as the first slot on both targets. */
   prefillId?: string;
+  /**
+   * Add a third button linking to the HiFi Ladder. Enabled only on
+   * the home landing (Hero + BrandHero) — surfaces are kept to two
+   * elsewhere (e.g. speaker detail) so the row stays focused.
+   */
+  showLadder?: boolean;
   /** Extra layout classes for the wrapper (margin, alignment, etc.). */
   className?: string;
 }) {
@@ -40,6 +47,7 @@ export function NavCTAs({
   const compare4Href = prefillId
     ? `/${locale}/compare4?a=${prefillId}`
     : `/${locale}/compare4`;
+  const ladderHref = `/${locale}/ladder`;
 
   const buttonCls = `h-11 px-5 inline-flex items-center justify-center gap-2 rounded-full ${ctaBg} text-white text-sm font-medium transition-colors`;
   // Caption: bumped contrast a step (stone-700 / stone-300) so the legend
@@ -47,10 +55,15 @@ export function NavCTAs({
   const captionCls =
     "mt-2 text-xs text-stone-700 dark:text-stone-300 leading-snug";
 
+  // Two-column layout stays the default for surfaces that don't show
+  // the ladder; bump to three columns on lg+ when ladder is enabled
+  // so the row keeps a comfortable cadence at desktop widths.
+  const gridCls = showLadder
+    ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-5 max-w-3xl"
+    : "grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5 max-w-xl";
+
   return (
-    <div
-      className={`grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5 max-w-xl ${className ?? ""}`}
-    >
+    <div className={`${gridCls} ${className ?? ""}`}>
       <div>
         <Link href={compareHref} className={buttonCls}>
           <RulerIcon />
@@ -65,6 +78,15 @@ export function NavCTAs({
         </Link>
         <p className={captionCls}>{t.home.techSpecsDesc}</p>
       </div>
+      {showLadder && (
+        <div>
+          <Link href={ladderHref} className={buttonCls}>
+            <LadderIcon />
+            {t.nav.ladderCta}
+          </Link>
+          <p className={captionCls}>{t.home.ladderDesc}</p>
+        </div>
+      )}
     </div>
   );
 }
@@ -90,6 +112,27 @@ function RulerIcon() {
       <path d="m10.5 7.5 2 2" />
       <path d="m13.5 4.5 2 2" />
       <path d="m4.5 13.5 2 2" />
+    </svg>
+  );
+}
+
+function LadderIcon() {
+  // Ascending step bars — reads as "size ladder, smallest → tallest".
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <rect x="3" y="15" width="4" height="6" rx="0.5" />
+      <rect x="10" y="10" width="4" height="11" rx="0.5" />
+      <rect x="17" y="4" width="4" height="17" rx="0.5" />
     </svg>
   );
 }

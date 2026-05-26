@@ -20,6 +20,9 @@ import { locales, defaultLocale, type Locale } from "@/lib/i18n";
 const CACHEABLE_PATTERNS: RegExp[] = [
   /^\/(en|es)$/,
   /^\/(en|es)\/brands$/,
+  /^\/(en|es)\/countries$/,
+  /^\/(en|es)\/country\/[^/]+$/,
+  /^\/(en|es)\/ladder$/,
   /^\/(en|es)\/support$/,
   /^\/(en|es)\/speaker\/[^/]+$/,
   /^\/(en|es)\/compare$/,

@@ -4,6 +4,7 @@ import { BRAND_INFO } from "@/lib/brands";
 import { locales, defaultLocale } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
 import { getStrategicPairSlugs } from "@/lib/compare-pairs";
+import { getActiveCountryKeys } from "@/lib/countries";
 
 /**
  * Sitemap auto-generated from the catalog. Next.js 16 reads this file at
@@ -49,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     withAlternates("/brands", { lastModified: now, changeFrequency: "weekly", priority: 0.8 }),
     withAlternates("/compare", { lastModified: now, changeFrequency: "monthly", priority: 0.8 }),
     withAlternates("/compare4", { lastModified: now, changeFrequency: "monthly", priority: 0.7 }),
+    withAlternates("/ladder", { lastModified: now, changeFrequency: "weekly", priority: 0.8 }),
     withAlternates("/contact", { lastModified: now, changeFrequency: "yearly", priority: 0.4 }),
     withAlternates("/support", { lastModified: now, changeFrequency: "monthly", priority: 0.5 }),
   ];
@@ -72,6 +74,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.6,
+      })
+    );
+  }
+
+  // Countries hub (the navigational index) + one canonical page
+  // per country. The hub captures "speakers by country" queries;
+  // the per-country pages capture nationality-specific queries like
+  // "danish HiFi speakers" or "italian floorstanders".
+  entries.push(
+    withAlternates("/countries", {
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    })
+  );
+  for (const code of getActiveCountryKeys()) {
+    entries.push(
+      withAlternates(`/country/${code}`, {
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.7,
       })
     );
   }
