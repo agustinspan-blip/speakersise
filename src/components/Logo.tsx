@@ -115,10 +115,14 @@ export function Logo({
   // The mark inherits its ring colour from `currentColor`, so we wrap it in
   // the same colour class that drives the wordmark — that way both adapt
   // together to light / dark / auto variants.
+  // With the mark, the wordmark collapses below 400 px so the header
+  // (logo + four nav icons + search + language switcher) stops
+  // overflowing on narrow phones — the star mark alone still reads as
+  // the brand and links home.
   const content = withMark ? (
     <span className={`inline-flex items-center gap-2.5 ${wordmarkColor}`}>
       <LogoMark size="md" />
-      {wordmark}
+      <span className="hidden min-[400px]:inline-flex">{wordmark}</span>
     </span>
   ) : (
     wordmark

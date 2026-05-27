@@ -69,12 +69,19 @@ export function SiteHeader({
   ];
 
   return (
-    <header className="bg-stone-900 sticky top-0 z-10 border-b border-stone-800">
-      <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between gap-4">
+    <header className="bg-stone-900 sticky top-0 z-50 border-b border-stone-800">
+      {/*
+        Tighter horizontal padding + gaps on mobile: with four nav
+        icons plus search and the language switcher, the default
+        spacing pushed the EN/ES toggle off the right edge on ~360 px
+        phones. Padding and gaps relax back to their roomy values at
+        sm+ where there's space.
+      */}
+      <div className="mx-auto max-w-6xl px-3 sm:px-6 py-5 flex items-center justify-between gap-2 sm:gap-4">
         {/* Logo + wordmark always link back to the catalog home so the
             user has a consistent way out of any subpage. */}
         <Logo locale={locale} linkToHome variant="light" withMark />
-        <nav className="flex items-center gap-5 sm:gap-6">
+        <nav className="flex items-center gap-3 sm:gap-6">
           {links.map((l) => {
             const isActive = currentPath === l.key;
             return (

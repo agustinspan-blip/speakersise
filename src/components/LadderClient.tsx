@@ -590,9 +590,11 @@ function Band({
     band.speakers.length > 0
       ? band.speakers[band.speakers.length - 1].heightMm * scale
       : 0;
-  // Reference column width: ruler content + ReferenceSlot's
-  // `pl-6 pr-2` inner padding (32 px) → a fixed gutter for either tab.
-  const refSlotWidth = Math.max(LABEL_MIN_WIDTH, 56 + 30) + 24 + 8;
+  // Reference column width: just the ruler content (RULER_WIDTH) plus
+  // ReferenceSlot's `pl-6 pr-2` inner padding (32 px). Kept tight so
+  // the ruler doesn't eat half the viewport on a narrow phone — the
+  // old `LABEL_MIN_WIDTH` floor was a leftover from the bill reference.
+  const refSlotWidth = RULER_WIDTH + 24 + 8;
 
   return (
     <section>
@@ -649,6 +651,9 @@ function Band({
 }
 
 const LABEL_MIN_WIDTH = 140;
+// On-screen width of the vertical ruler (tick marks + their cm/in
+// labels). The reference column is sized to this plus padding.
+const RULER_WIDTH = 56;
 
 function RulerReference({
   scale,
@@ -671,8 +676,7 @@ function RulerReference({
   //   - Floor bands cover 80-180 cm at 0.25 px/mm — labelling every
   //     5 cm there would smush the text, so we keep the previous
   //     "major every 20 cm, minor every 10 cm unlabelled" pattern.
-  const RULER_WIDTH = 56;
-  const SLOT_WIDTH = Math.max(LABEL_MIN_WIDTH, RULER_WIDTH + 30);
+  const SLOT_WIDTH = RULER_WIDTH;
   const denseLabels = type === "bookshelf";
   // Step between labelled ticks in mm. cm modes are round metric
   // values; inch modes use 2"/10" steps to mirror those visually.
