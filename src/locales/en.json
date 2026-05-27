@@ -366,6 +366,7 @@
     "referencePersonLabel": "170 cm person",
     "referenceBillLabel": "USD $100 banknote",
     "referenceRulerLabel": "Ruler",
+    "nextBand": "Next: {band}",
     "unitsLabel": "Units",
     "unitsCm": "cm",
     "unitsIn": "in",

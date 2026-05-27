@@ -153,6 +153,14 @@ export function LadderClient({
     () => tabBands.find((b) => b.key === activeBand) ?? tabBands[0],
     [tabBands, activeBand]
   );
+  // The band that follows the active one within the current tab (e.g.
+  // Compact → Larger). Null when the active band is the last one.
+  // Drives the "next scale" button that surfaces at the end of the
+  // horizontal scroll.
+  const nextBand = useMemo(() => {
+    const idx = tabBands.findIndex((b) => b.key === (visibleBand?.key ?? ""));
+    return idx >= 0 && idx < tabBands.length - 1 ? tabBands[idx + 1] : null;
+  }, [tabBands, visibleBand]);
   // Lists of brands / countries present in the active band drive the
   // filter UI — there's no point offering "Wharfedale" as an option
   // if the active band has zero Wharfedale entries. Computed off the
@@ -265,6 +273,7 @@ export function LadderClient({
           <p className="text-sm text-stone-500">{t.ladder.emptyTab}</p>
         ) : (
           <Band
+            key={visibleBand.key}
             band={visibleBand}
             speakers={filteredSpeakers}
             containerPx={maxVisualPx}
@@ -273,6 +282,12 @@ export function LadderClient({
             onToggle={toggle}
             onHover={(speaker, rect) => setHovered({ speaker, rect })}
             onHoverEnd={() => setHovered(null)}
+            nextBandLabel={
+              nextBand ? t.ladder[BAND_LABEL_KEY[nextBand.key]] : null
+            }
+            onNextBand={
+              nextBand ? () => changeActiveBand(nextBand.key) : undefined
+            }
             units={units}
             t={t}
           />
@@ -580,6 +595,8 @@ function Band({
   onToggle,
   onHover,
   onHoverEnd,
+  nextBandLabel,
+  onNextBand,
   units,
   t,
 }: {
@@ -604,9 +621,32 @@ function Band({
   onToggle: (id: string) => void;
   onHover: (speaker: ClientSpeaker, rect: DOMRect) => void;
   onHoverEnd: () => void;
+  /** Localised label of the band that follows this one, or null if
+   *  this is the last band in the tab. */
+  nextBandLabel: string | null;
+  /** Switch to the next band. Undefined when there is no next band. */
+  onNextBand?: () => void;
   units: Units;
   t: Dictionary;
 }) {
+  // Track whether the horizontal scroll has reached (or is within a
+  // hair of) its end — that's when we reveal the "next scale" button
+  // below the row. Also true when the content doesn't overflow at all,
+  // so the button shows immediately on short bands.
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const [atScrollEnd, setAtScrollEnd] = useState(true);
+  const recomputeAtEnd = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    setAtScrollEnd(maxScroll <= 4 || el.scrollLeft >= maxScroll - 24);
+  };
+  // Re-check on mount and whenever the filtered speaker set changes
+  // (filters can shrink the row below the overflow threshold).
+  useEffect(() => {
+    recomputeAtEnd();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [speakers.length, containerPx]);
   // Both tabs use the same vertical ruler as the reference — the ruler
   // ticks honour the cm/in toggle and scale with the band.
   const scale = SCALE_BY_TAB[band.type];
@@ -649,7 +689,11 @@ function Band({
             t={t}
           />
         </div>
-        <div className="flex-1 min-w-0 overflow-x-auto ladder-scroll">
+        <div
+          ref={scrollRef}
+          onScroll={recomputeAtEnd}
+          className="flex-1 min-w-0 overflow-x-auto ladder-scroll"
+        >
           <div className="flex items-stretch gap-6 pl-6 pr-6 pt-6 pb-6">
             {speakers.map((s) => (
               <Entry
@@ -671,6 +715,24 @@ function Band({
           </div>
         </div>
       </div>
+      {/*
+        "Next scale" CTA — appears below the card once the horizontal
+        scroll reaches its end (or right away when the row doesn't
+        overflow), nudging the user from Compact → Larger (bookshelf)
+        or Mid → Tall (floorstander). Hidden on the last band of a tab.
+      */}
+      {nextBandLabel && onNextBand && atScrollEnd && (
+        <div className="mt-3 flex justify-center">
+          <button
+            type="button"
+            onClick={onNextBand}
+            className="inline-flex items-center gap-2 rounded-full border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 px-5 py-2 text-sm font-medium text-stone-700 dark:text-stone-200 hover:border-amber-500 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
+          >
+            {t.ladder.nextBand.replace("{band}", nextBandLabel)}
+            <span aria-hidden>→</span>
+          </button>
+        </div>
+      )}
     </section>
   );
 }

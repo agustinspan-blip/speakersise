@@ -366,6 +366,7 @@
     "referencePersonLabel": "Persona de 170 cm",
     "referenceBillLabel": "Billete USD $100",
     "referenceRulerLabel": "Regla",
+    "nextBand": "Siguiente: {band}",
     "unitsLabel": "Unidades",
     "unitsCm": "cm",
     "unitsIn": "pulgadas",
