@@ -22,10 +22,8 @@ import type { Speaker, SpeakerType } from "@/lib/types";
  * label, and mix entry/mid-tier with flagships so the strip reads as
  * "popular HiFi" rather than "expensive HiFi only".
  *
- * Typed as `Partial` because not every type warrants a curated Top-5 —
- * the `hybrid` category currently has just two models in the catalog
- * (Paradigm Persona 9H and Founder 120H), so it's omitted intentionally
- * and `getPopularSpeakers("hybrid")` returns an empty list.
+ * Typed as `Partial` because not every type necessarily warrants a
+ * curated Top-5 — a type with no entry just yields an empty list.
  */
 export const POPULAR_BY_TYPE: Partial<Record<SpeakerType, string[]>> = {
   bookshelf: [

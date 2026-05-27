@@ -1,14 +1,19 @@
 /**
- * Physical category of the cabinet. `hybrid` is used for Paradigm's
- * "H" line (Persona 9H, Founder 120H, etc.) — floorstanders that pair
- * an active, DSP-controlled bass section with a passive mid/treble
- * column, so they don't fit cleanly into the active/passive split nor
- * into the floorstander silhouette comparisons (they always need their
- * own pair of mains + sub electronics).
+ * Physical category of the cabinet.
  */
-export type SpeakerType = "bookshelf" | "floorstander" | "hybrid";
+export type SpeakerType = "bookshelf" | "floorstander";
 
-export type PowerType = "active" | "passive";
+/**
+ * How the speaker is driven:
+ *   - `passive`: needs an external power amp (the classic case).
+ *   - `active`: fully self-powered, amps built into every driver.
+ *   - `hybrid`: a passive mid/treble column married to an active,
+ *     usually DSP-controlled, powered bass section. Paradigm's "H"
+ *     line (Persona 9H, Founder 120H) is the canonical example —
+ *     physically floorstanders, but neither purely passive nor
+ *     purely active, so they get their own power category.
+ */
+export type PowerType = "active" | "passive" | "hybrid";
 
 export type DriverRole =
   | "tweeter"

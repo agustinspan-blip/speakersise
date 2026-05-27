@@ -113,7 +113,11 @@ export function SpeakerSpecs({
     [t.specs.type, typeLabel],
     [
       t.specs.powerType,
-      s.powerType === "active" ? t.specs.active : t.specs.passive,
+      {
+        active: t.specs.active,
+        passive: t.specs.passive,
+        hybrid: t.specs.hybrid,
+      }[s.powerType],
     ],
     [t.specs.height, formatLengthMm(s.dimensions.heightMm, units)],
     [t.specs.width, formatLengthMm(s.dimensions.widthMm, units)],

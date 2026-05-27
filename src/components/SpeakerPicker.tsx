@@ -80,15 +80,8 @@ export function SpeakerPicker({
   const typesAvailable = useMemo(() => {
     if (!brand) return [];
     return Array.from(
-      new Set(
-        options.filter((s) => s.brand === brand).map((s) => s.type)
-      )
-      // "hybrid" (today only the Paradigm Founder 120H, a floorstander
-      // with built-in powered subs) is intentionally hidden from the
-      // type selector — it muddies the otherwise clean bookshelf /
-      // floorstander split. The model stays reachable from the catalog
-      // and its own detail page.
-    ).filter((tp) => tp !== "hybrid");
+      new Set(options.filter((s) => s.brand === brand).map((s) => s.type))
+    );
   }, [options, brand]);
 
   const speakersAvailable = useMemo(() => {

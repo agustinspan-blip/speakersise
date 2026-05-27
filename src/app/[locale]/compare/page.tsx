@@ -400,14 +400,9 @@ export default async function ComparePage({ params, searchParams }: Props) {
   // ShuffleButton needs the catalog bucketed by type so it can pick a
   // same-type random pair on the client without re-parsing all speakers.
   // Compute once on the server, pass down as a small JSON payload.
-  // The hybrid bucket today carries just two models (Paradigm Persona 9H
-  // + Founder 120H) so Shuffle there only ever yields that one pair —
-  // intentional: hybrids are physically different beasts and shouldn't
-  // be mixed with regular floorstanders in a same-type comparison.
   const idsByType = {
     bookshelf: speakers.filter((s) => s.type === "bookshelf").map((s) => s.id),
     floorstander: speakers.filter((s) => s.type === "floorstander").map((s) => s.id),
-    hybrid: speakers.filter((s) => s.type === "hybrid").map((s) => s.id),
   };
 
   // Compare-page structured data. When both speakers are selected we
@@ -540,7 +535,6 @@ export default async function ComparePage({ params, searchParams }: Props) {
             typeLabels={{
               bookshelf: t.catalog.bookshelf,
               floorstander: t.catalog.floorstander,
-              hybrid: t.catalog.hybrid,
             }}
             sideViewLabel={t.detail.sideViewAvailable}
             options={speakers}
@@ -555,7 +549,6 @@ export default async function ComparePage({ params, searchParams }: Props) {
             typeLabels={{
               bookshelf: t.catalog.bookshelf,
               floorstander: t.catalog.floorstander,
-              hybrid: t.catalog.hybrid,
             }}
             sideViewLabel={t.detail.sideViewAvailable}
             options={speakers}

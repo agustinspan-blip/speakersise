@@ -95,13 +95,10 @@ export default async function SpeakerDetailPage({ params }: Props) {
       [top, t.detail.topView],
     ] as const
   ).filter((p): p is readonly [string, string] => Boolean(p[0]));
-  // Lookup table keeps the type→label mapping centralised so adding a
-  // new SpeakerType (e.g. "hybrid" alongside bookshelf/floorstander) is
-  // a single-line change here rather than a ternary update everywhere.
+  // Lookup table keeps the type→label mapping centralised.
   const typeLabel: string = {
     bookshelf: t.catalog.bookshelf,
     floorstander: t.catalog.floorstander,
-    hybrid: t.catalog.hybrid,
   }[speaker.type];
   const brandLogo = BRAND_LOGOS[speaker.brand];
   const brandInfo = BRAND_INFO[speaker.brand];

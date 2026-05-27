@@ -113,7 +113,6 @@ function SpeakerCard({
   const typeLabel: string = {
     bookshelf: "Bookshelf speaker",
     floorstander: "Floorstanding speaker",
-    hybrid: "Hybrid speaker",
   }[speaker.type];
   const dims = `${speaker.dimensions.heightMm} × ${speaker.dimensions.widthMm} × ${speaker.dimensions.depthMm} mm`;
   const heightCm = (speaker.dimensions.heightMm / 10).toFixed(1);

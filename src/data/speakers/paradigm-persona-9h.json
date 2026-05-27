@@ -3,8 +3,8 @@
   "brand": "Paradigm",
   "series": "Persona",
   "model": "Persona 9H",
-  "type": "hybrid",
-  "powerType": "passive",
+  "type": "floorstander",
+  "powerType": "hybrid",
   "dimensions": {
     "heightMm": 1320,
     "widthMm": 310,

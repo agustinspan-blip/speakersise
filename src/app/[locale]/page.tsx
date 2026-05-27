@@ -253,9 +253,10 @@ export default async function Home({ params, searchParams }: Props) {
       );
     }
     if (type) {
-      // The Type dropdown carries both physical type (bookshelf/floorstander)
-      // and power type (active/passive) — branch on which axis was picked.
-      if (type === "active" || type === "passive") {
+      // The Type dropdown carries both physical type (bookshelf/
+      // floorstander) and power type (active/passive/hybrid) — branch
+      // on which axis was picked.
+      if (type === "active" || type === "passive" || type === "hybrid") {
         filtered = filtered.filter((s) => s.powerType === type);
       } else {
         filtered = filtered.filter((s) => s.type === type);
@@ -851,9 +852,9 @@ function Filters({
         <option value="">{t.catalog.allTypes}</option>
         <option value="bookshelf">{t.catalog.bookshelf}</option>
         <option value="floorstander">{t.catalog.floorstander}</option>
-        <option value="hybrid">{t.catalog.hybrid}</option>
         <option value="active">{t.specs.active}</option>
         <option value="passive">{t.specs.passive}</option>
+        <option value="hybrid">{t.catalog.hybrid}</option>
       </select>
       <select
         name="country"

@@ -52,11 +52,11 @@ interface ClientSpeaker {
   sensitivityDb?: number;
   driversSummary: string;
   countryCode: string;
-  powerType: "active" | "passive";
+  powerType: "active" | "passive" | "hybrid";
   front: string;
 }
 
-type PowerFilter = "all" | "active" | "passive";
+type PowerFilter = "all" | "active" | "passive" | "hybrid";
 
 interface ClientBand {
   key: BandKey;
@@ -72,7 +72,6 @@ interface ClientBand {
 const SCALE_BY_TAB: Record<SpeakerType, number> = {
   bookshelf: 0.5,
   floorstander: 0.25,
-  hybrid: 0.5,
 };
 
 type TabKey = SpeakerType;
@@ -88,10 +87,6 @@ const BAND_LABEL_KEY: Record<BandKey, keyof Dictionary["ladder"]> = {
 const DEFAULT_BAND_FOR_TAB: Record<SpeakerType, BandKey> = {
   bookshelf: "compact-bookshelf",
   floorstander: "mid-floor",
-  // Hybrid speakers don't have a band today; map to bookshelf default
-  // to satisfy the exhaustive record. The page filters before render
-  // so this entry is never actually read.
-  hybrid: "compact-bookshelf",
 };
 
 export function LadderClient({
@@ -470,7 +465,7 @@ function FilterBar({
       <div className="inline-flex items-center gap-2">
         <span className="text-stone-500">{t.ladder.powerFilter}</span>
         <div className="inline-flex rounded-full border border-stone-300 dark:border-stone-700 overflow-hidden">
-          {(["all", "passive", "active"] as const).map((key) => {
+          {(["all", "passive", "active", "hybrid"] as const).map((key) => {
             const isActive = key === powerFilter;
             return (
               <button
@@ -488,6 +483,7 @@ function FilterBar({
                     all: t.ladder.filterAll,
                     active: t.ladder.powerActive,
                     passive: t.ladder.powerPassive,
+                    hybrid: t.ladder.powerHybrid,
                   }[key]
                 }
               </button>
