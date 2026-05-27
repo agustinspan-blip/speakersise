@@ -21,6 +21,7 @@ import {
   locales,
 } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/metadata";
+import { getStrategicPairsForSpeaker } from "@/lib/compare-pairs";
 
 interface Props {
   params: Promise<{ locale: string; id: string }>;
@@ -105,6 +106,9 @@ export default async function SpeakerDetailPage({ params }: Props) {
   const countryName = brandInfo
     ? t.home.brandCountries[brandInfo.countryKey]
     : null;
+  // Pre-rendered comparisons that feature this speaker — drives the
+  // "Compare with…" internal-link section below the specs.
+  const comparePairs = getStrategicPairsForSpeaker(speaker.id);
 
   // Product structured data is emitted ONLY for speakers that ship a
   // `priceUsd` field. Reason: Google's Product rich-result spec requires
@@ -333,6 +337,44 @@ export default async function SpeakerDetailPage({ params }: Props) {
             <SpeakerSpecs speaker={speaker} typeLabel={typeLabel} locale={locale} t={t} />
           </div>
         </section>
+
+        {/*
+          "Compare with…" — links to the pre-rendered /compare/<slug>
+          pages that pair this speaker with another. This is the
+          internal-linking surface that de-orphans those comparison
+          pages (Google had them as "Discovered – currently not
+          indexed" because nothing linked to them). Only renders when
+          this speaker is part of the curated strategic pair set.
+        */}
+        {comparePairs.length > 0 && (
+          <section>
+            <h2 className="mb-4 text-sm font-medium text-stone-600 dark:text-stone-400">
+              {t.detail.compareWith}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {comparePairs.map(({ other, slug }) => (
+                <Link
+                  key={slug}
+                  href={`/${locale}/compare/${slug}`}
+                  className="flex items-center justify-between gap-2 rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 px-4 py-3 text-sm transition-colors hover:border-amber-500"
+                >
+                  <span className="min-w-0">
+                    <span className="text-stone-500">
+                      {speaker.brand} {speaker.model}
+                    </span>
+                    <span className="mx-1.5 text-stone-400">vs</span>
+                    <span className="font-medium text-stone-900 dark:text-stone-100">
+                      {other.brand} {other.model}
+                    </span>
+                  </span>
+                  <span aria-hidden className="text-amber-600 dark:text-amber-400 shrink-0">
+                    →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </main>
 
       <BrandStrip brands={brands} locale={locale} t={t} />

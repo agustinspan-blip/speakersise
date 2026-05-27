@@ -198,6 +198,26 @@ export function getStrategicPairSlugs(): string[] {
 }
 
 /**
+ * Every pre-rendered strategic comparison that includes `speakerId`,
+ * as `{ other, slug }` — the OTHER speaker in the pair plus the
+ * canonical `/compare/<slug>` segment. Powers the "Compare with…"
+ * section on the speaker detail page, which is the internal-linking
+ * surface that de-orphans the compare-slug pages (they previously
+ * lived only in the sitemap, so Google left them "Discovered –
+ * currently not indexed").
+ */
+export function getStrategicPairsForSpeaker(
+  speakerId: string
+): Array<{ other: Speaker; slug: string }> {
+  const out: Array<{ other: Speaker; slug: string }> = [];
+  for (const { a, b } of getStrategicPairs()) {
+    if (a.id === speakerId) out.push({ other: b, slug: pairSlug(a, b) });
+    else if (b.id === speakerId) out.push({ other: a, slug: pairSlug(a, b) });
+  }
+  return out;
+}
+
+/**
  * Diagnostic: catalogue ids that are listed in STRATEGIC_IDS but no
  * longer resolve. Surfaced only as a JSON Lambda we can hit during
  * audits — useful to spot rot when speakers get renamed.
