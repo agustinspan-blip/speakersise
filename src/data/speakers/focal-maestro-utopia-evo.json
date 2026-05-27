@@ -56,5 +56,8 @@
   "description": {
     "en": "Three-way Utopia floorstander mating the IAL2 beryllium tweeter and a Power-Flower W-cone midrange with twin 270 mm W-cone woofers. Bi-amp-ready, with the Focus Time cabinet articulation that keeps every driver time-aligned to the listening seat. Note: the spec width (770 mm) includes a wide stabilising plinth — the rendered silhouette shows the cabinet itself.",
     "es": "Floorstander Utopia de tres vías que combina el tweeter IAL2 en berilio y un midrange Power Flower con cono W junto a dos woofers de 270 mm en cono W. Listo para bi-amplificación, con la articulación Focus Time del gabinete alineando cada driver al punto de escucha. Nota: el ancho oficial (770 mm) incluye el plinto estabilizador; la silueta renderizada muestra sólo el cabinet."
+  },
+  "priceUsd": {
+    "max": 75998
   }
 }

@@ -51,5 +51,8 @@
   "description": {
     "en": "Compact 3-way Reference (2023) tower — 25 mm aluminium-oxide ceramic tweeter, 174 mm BCT midrange and twin 174 mm BCT woofers in a down-firing bass-reflex cabinet. Crossover points: 170 Hz / 3 kHz; 370 W music load capacity.",
     "es": "Torre Reference 2023 compacta de 3 vías — tweeter cerámico de óxido de aluminio de 25 mm, midrange BCT de 174 mm y dos woofers BCT de 174 mm en gabinete con reflex inferior. Crossovers a 170 Hz / 3 kHz; capacidad de pico 370 W."
+  },
+  "priceUsd": {
+    "max": 11000
   }
 }

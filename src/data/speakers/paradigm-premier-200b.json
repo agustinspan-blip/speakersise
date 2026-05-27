@@ -50,5 +50,8 @@
   "description": {
     "en": "Mid-size two-way bookshelf in Paradigm's Premier line — 25 mm X-PAL dome tweeter crossed at 2 kHz to a 165 mm carbon-infused polypropylene cone with Active Ridge Technology surround. The bigger driver pushes the DIN anechoic extension to 45 Hz; same 87 dB sensitivity as the 100B but with more headroom (15–130 W window, 80 W power handling).",
     "es": "Bookshelf mediano de dos vías de la línea Premier de Paradigm — tweeter X-PAL de domo de 25 mm cruzando a 2 kHz con un cono carbon-infused polypropylene de 165 mm con suspensión Active Ridge Technology. El driver más grande lleva la extensión grave a 45 Hz (DIN anechoic); misma sensibilidad de 87 dB que el 100B pero con más headroom (ventana 15–130 W, 80 W de power handling)."
+  },
+  "priceUsd": {
+    "max": 998
   }
 }

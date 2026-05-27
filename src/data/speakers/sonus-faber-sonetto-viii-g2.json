@@ -55,5 +55,8 @@
   "description": {
     "en": "Flagship of the Sonetto G2 line — three-way floorstander with the 28 mm DAD Arrow Point tweeter, a 165 mm Camelia midrange in its sealed cork sub-enclosure and twin 203 mm paper-cone woofers in a down-firing vented box. Lute-shaped cabinet in the Sonus Faber tradition.",
     "es": "Tope de gama de la línea Sonetto G2 — floorstander de tres vías con el tweeter DAD Arrow Point de 28 mm, un midrange Camelia de 165 mm en su sub-cámara sellada de corcho y dos woofers de 203 mm en cono de papel con caja vented de tiro inferior. Gabinete con forma de laúd en la tradición Sonus Faber."
+  },
+  "priceUsd": {
+    "max": 7999
   }
 }

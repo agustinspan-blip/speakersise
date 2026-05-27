@@ -55,5 +55,8 @@
   "description": {
     "en": "Second-generation Serafino — three-and-a-half-way Homage floorstander with the high-power neodymium soft-dome tweeter, a 150 mm paper midrange in a sealed Intono sub-enclosure and twin 180 mm paper woofers in the 'Stealth Ultraflex' vented system. Lute-shaped cabinet in high-gloss lacquered wood, black leather and aluminium.",
     "es": "Segunda generación del Serafino — floorstander Homage de tres y media vías con tweeter de domo blando neodimio de alta potencia, midrange de papel de 150 mm en sub-cámara sellada Intono y dos woofers de papel de 180 mm en el sistema vented 'Stealth Ultraflex'. Gabinete con forma de laúd en madera lacada de alto brillo, cuero negro y aluminio."
+  },
+  "priceUsd": {
+    "max": 16750
   }
 }

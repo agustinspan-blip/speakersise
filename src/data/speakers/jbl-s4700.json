@@ -52,5 +52,8 @@
   "description": {
     "en": "Three-way Heritage-styled studio reference built on the technology of the Project K2 S9900 — a 380 mm cast-frame woofer, 45 mm titanium HF compression driver, and 20 mm titanium super-tweeter in a rosewood-veneered cabinet. Crossovers at 800 Hz and 12 kHz; 94 dB sensitivity and a low 38 Hz reach pair well with low-power tube or single-ended amplifiers.",
     "es": "Referencia de estudio de tres vías con estética Heritage construida sobre la tecnología del Project K2 S9900 — woofer de 380 mm con frame fundido, driver de compresión HF de titanio de 45 mm y super-tweeter de titanio de 20 mm en cabinet de chapa de palisandro. Crossovers a 800 Hz y 12 kHz; 94 dB de sensibilidad y extensión a 38 Hz lo hacen amigo de amplis de baja potencia, válvulas o single-ended."
+  },
+  "priceUsd": {
+    "max": 20000
   }
 }

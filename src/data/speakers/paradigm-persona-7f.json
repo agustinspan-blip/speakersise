@@ -56,5 +56,8 @@
   "description": {
     "en": "3-way Persona floorstander — Truextent pure-beryllium tweeter and midrange paired with twin 215 mm X-PAL ultra-high-excursion aluminium woofers in a faceted ported cabinet. Crossovers at 450 Hz / 2.4 kHz; 89 dB anechoic sensitivity and 24 Hz low-frequency extension.",
     "es": "Floorstander Persona de tres vías — tweeter y midrange Truextent en berilio puro junto a dos woofers de 215 mm en aluminio X-PAL de ultra-alta excursión, en gabinete facetado con puerto. Crossovers a 450 Hz / 2,4 kHz; 89 dB de sensibilidad anecoica y extensión hasta 24 Hz."
+  },
+  "priceUsd": {
+    "max": 26898
   }
 }

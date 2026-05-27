@@ -61,5 +61,8 @@
   "description": {
     "en": "A 4-way floorstander shrunk down from the Epikore 11, swapping the four-woofer array for a 2 × 8″ Clarity-Cone bass section while keeping the same 6½″ midrange and EVO-K Hybrid Tweeter module. Curved cabinet with rear continuous-flare port tuned to 27 Hz, 112 dB max SPL and a 40–500 W amp window for medium-to-large listening rooms.",
     "es": "Un floorstander de 4 vías derivado del Epikore 11, que reemplaza la sección de cuatro woofers por un par de 8″ Clarity Cone manteniendo el mismo midrange de 6½″ y el módulo EVO-K Hybrid Tweeter. Gabinete curvado con puerto continuous-flare trasero sintonizado a 27 Hz, 112 dB SPL máx. y un rango de amp de 40–500 W para salas medianas a grandes."
+  },
+  "priceUsd": {
+    "max": 40000
   }
 }

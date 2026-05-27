@@ -35,8 +35,16 @@
   "frequencyResponseToleranceDb": 3,
   "active": {
     "amplification": [
-      { "driverRole": "tweeter", "powerW": 110, "amplifierClass": "D" },
-      { "driverRole": "mid-bass", "powerW": 280, "amplifierClass": "D" }
+      {
+        "driverRole": "tweeter",
+        "powerW": 110,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "mid-bass",
+        "powerW": 280,
+        "amplifierClass": "D"
+      }
     ],
     "totalAmpPowerW": 780,
     "maxSampleRateKhz": 192,
@@ -56,7 +64,10 @@
       "wifi",
       "wisa"
     ],
-    "roomCorrection": ["custom-dsp", "dirac-live-limited"],
+    "roomCorrection": [
+      "custom-dsp",
+      "dirac-live-limited"
+    ],
     "pairedSecondary": true,
     "wirelessSpeakerLink": true
   },
@@ -68,5 +79,8 @@
   "description": {
     "en": "Compact sealed-box active bookshelf — Dynaudio's 28 mm Cerotar soft-dome tweeter and a 140 mm MSP mid-bass driven by 110 + 280 W class-D Pascal stages per speaker. Full streaming (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, Bluetooth) with WiSA wireless inter-speaker link and optional Dirac Live room correction.",
     "es": "Bookshelf activo compacto con caja sellada — el tweeter Cerotar de domo blando de 28 mm de Dynaudio y un mid-bass MSP de 140 mm impulsados por etapas class-D Pascal de 110 + 280 W por parlante. Streaming completo (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, Bluetooth) con enlace inalámbrico WiSA entre parlantes y corrección de sala Dirac Live opcional."
+  },
+  "priceUsd": {
+    "max": 5500
   }
 }

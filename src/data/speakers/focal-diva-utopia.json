@@ -93,5 +93,8 @@
   "description": {
     "en": "Co-developed by Focal and Naim Audio over five years, Diva Utopia is an all-in-one active floorstander pairing the IAL2 beryllium tweeter and a W-cone midrange with four side-firing 165 mm W-cone woofers in push-push pairs. 800 W of multi-amp class-AB power, full streaming (AirPlay 2, Chromecast, Bluetooth, Spotify/Tidal/Qobuz Connect, UPnP) and ADAPT room correction via the Focal & Naim app.",
     "es": "Co-desarrollado por Focal y Naim Audio a lo largo de cinco años, el Diva Utopia es un floorstander activo all-in-one que combina el tweeter IAL2 en berilio puro y un midrange en cono W con cuatro woofers laterales de 165 mm en cono W en pares push-push. 800 W class-AB multi-amplificados, streaming completo (AirPlay 2, Chromecast, Bluetooth, Spotify/Tidal/Qobuz Connect, UPnP) y corrección de sala ADAPT vía la app Focal & Naim."
+  },
+  "priceUsd": {
+    "max": 39999
   }
 }

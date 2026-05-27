@@ -55,5 +55,8 @@
   "description": {
     "en": "The standmount of the Epikore range — a 3-way bookshelf carrying the EVO-K Hybrid Tweeter module above a 7″ Clarity-Cone bass/midrange driver. Curved real-wood-veneer cabinet with rear continuous-flare port tuned to 39 Hz; 108 dB max SPL and a 40–250 W amp window for smaller rooms. Optional matching Epikore Stand available.",
     "es": "El standmount de la línea Epikore — un bookshelf de 3 vías que combina el módulo EVO-K Hybrid Tweeter sobre un bass/midrange Clarity Cone de 7″. Gabinete curvado en chapa de madera real con puerto continuous-flare trasero sintonizado a 39 Hz; 108 dB SPL máx. y un rango de amp de 40–250 W para salas más chicas. Stand Epikore opcional disponible."
+  },
+  "priceUsd": {
+    "max": 15000
   }
 }

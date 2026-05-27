@@ -48,5 +48,8 @@
   "description": {
     "en": "Two-way stand-mount sharing the 705 S3's 165 mm Continuum cone and Decoupled Carbon Dome tweeter, here flush-mounted on a curved cabinet baffle. The rear-firing Flowport favours stands away from walls and rewards smaller rooms with detailed, articulate sound.",
     "es": "Bookshelf de dos vías que comparte con el 705 S3 el cono Continuum de 165 mm y el tweeter Carbon Dome desacoplado, ahora montado al ras del bafle curvo. El Flowport trasero pide stand separado de la pared y devuelve un sonido detallado en salas chicas."
+  },
+  "priceUsd": {
+    "max": 2500
   }
 }

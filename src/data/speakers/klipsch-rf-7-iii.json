@@ -46,5 +46,8 @@
   "description": {
     "en": "Flagship of the Reference line, hand-assembled in Hope, Arkansas — a 2-way horn-loaded floorstander with a 1.75-inch titanium-diaphragm compression driver in a square 90°×90° Tractrix horn, paired with twin 10-inch Cerametallic woofers. Dual rear-firing Tractrix ports, 100 dB sensitivity and 1000 W peak handling.",
     "es": "Insignia de la línea Reference, ensamblado a mano en Hope, Arkansas — floorstander de dos vías con horn-loading: driver de compresión con diafragma de titanio de 1,75\" en un horn Tractrix cuadrado de 90°×90°, junto a dos woofers Cerametallic de 10\". Doble puerto trasero Tractrix, 100 dB de sensibilidad y 1000 W de pico."
+  },
+  "priceUsd": {
+    "max": 4998
   }
 }

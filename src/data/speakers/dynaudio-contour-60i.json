@@ -50,5 +50,8 @@
   "description": {
     "en": "Top of the Contour i line — a 3-way floorstander with a dedicated 15 cm MSP midrange between the 28 mm Esotar 2i tweeter and twin 23 cm MSP woofers. 2nd-order crossover at 220/4500 Hz reaches 28 Hz with effortless dynamics in larger rooms.",
     "es": "El tope de la línea Contour i — un floorstander de tres vías con un midrange MSP dedicado de 15 cm entre el tweeter Esotar 2i de 28 mm y dos woofers MSP de 23 cm. Crossover de segundo orden a 220/4500 Hz que alcanza 28 Hz con dinámica sin esfuerzo en salas grandes."
+  },
+  "priceUsd": {
+    "max": 10750
   }
 }

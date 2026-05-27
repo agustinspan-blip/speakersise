@@ -54,5 +54,8 @@
   "description": {
     "en": "Flagship of the Reference Alpha line — a 3-way down-firing bass-reflex tower with a 25 mm DLC diamond-coated tweeter, a 174 mm Black Ceramic Tungsten midrange and four 219 mm double-cone BCT woofers in an acoustically optimised curved cabinet with Mundorf crossovers. Crossover points: 160 Hz / 3.1 kHz; 950 W music load capacity.",
     "es": "Insignia de la línea Reference Alpha — torre de 3 vías con puerto reflex inferior, tweeter DLC de 25 mm con recubrimiento diamantado, midrange Black Ceramic Tungsten de 174 mm y cuatro woofers BCT de doble cono de 219 mm, en gabinete curvo optimizado acústicamente con crossovers Mundorf. Crossovers a 160 Hz / 3,1 kHz; capacidad de pico 950 W."
+  },
+  "priceUsd": {
+    "max": 70000
   }
 }

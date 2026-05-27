@@ -55,5 +55,8 @@
   "description": {
     "en": "Flagship three-way floorstander of the R Meta line — 12th-gen Uni-Q array (25 mm MAT-treated tweeter coaxial with a 125 mm aluminium midrange) paired with four 165 mm hybrid-aluminium woofers in a rear-ported cabinet. EISA Loudspeaker Series 2023-2024 winner.",
     "es": "Floorstander insignia de tres vías de la línea R Meta — array Uni-Q de 12ª generación (tweeter de 25 mm tratado con MAT coaxial al midrange de aluminio de 125 mm) junto a cuatro woofers de 165 mm en cono híbrido de aluminio, en gabinete con puerto trasero. Premio EISA Loudspeaker Series 2023-2024."
+  },
+  "priceUsd": {
+    "max": 6500
   }
 }

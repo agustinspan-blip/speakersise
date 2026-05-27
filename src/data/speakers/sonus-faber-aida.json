@@ -59,5 +59,8 @@
   "description": {
     "en": "Reference Collection 3⅔-way flagship — H28 DAD tweeter, M18 midrange, twin W22 woofers and a 320 mm SW32 sub-bass in a double-curvature lute-shaped cabinet. Adds proprietary Sound Field Shaper drivers (29 mm rear tweeter + two 80 mm rear midranges) and Zero Vibration Transmission technology for an enveloping soundstage.",
     "es": "Insignia 3⅔ vías de la Reference Collection — tweeter H28 DAD, midrange M18, dos woofers W22 y un sub-bass SW32 de 320 mm en gabinete con forma de laúd y doble curvatura. Suma drivers Sound Field Shaper propietarios (tweeter trasero de 29 mm + dos midranges traseros de 80 mm) y tecnología Zero Vibration Transmission para una escena envolvente."
+  },
+  "priceUsd": {
+    "max": 160000
   }
 }

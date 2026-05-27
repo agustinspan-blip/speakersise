@@ -55,5 +55,8 @@
   "description": {
     "en": "Slim three-way floorstander of the Aria Evo X line, scaling the bass to three 165 mm flax woofers under a 165 mm flax midrange and the new 25 mm TAM tweeter. Leather-effect front panel; 2024 Loudspeaker Hall of Fame finalist. Note: spec width (371 mm) includes the stabilising base.",
     "es": "Floorstander esbelto de tres vías de la línea Aria Evo X, que escala los graves a tres woofers de 165 mm en cono de lino bajo un midrange de 165 mm también en lino y el nuevo tweeter TAM de 25 mm. Panel frontal con efecto cuero; finalista del Loudspeaker Hall of Fame 2024. Nota: el ancho oficial (371 mm) incluye la base estabilizadora."
+  },
+  "priceUsd": {
+    "max": 5198
   }
 }

@@ -54,5 +54,8 @@
   "description": {
     "en": "Heritage three-way horn-loaded floorstander handcrafted in Hope, Arkansas — K-100-TI titanium tweeter on a K-79T horn, K-702 polyimide compression midrange on a K-703 H horn and a 305 mm K-281 fiber-composite woofer assisted by a rear-firing 15-inch K-15 passive radiator. 99 dB sensitivity and 400 W peak handling.",
     "es": "Floorstander Heritage de tres vías horn-loaded construido a mano en Hope, Arkansas — tweeter K-100-TI de titanio sobre horn K-79T, midrange de compresión K-702 en polyimide sobre horn K-703 H y un woofer de 305 mm K-281 en fibra-compuesta asistido por un radiador pasivo trasero K-15 de 15\". 99 dB de sensibilidad y 400 W de pico."
+  },
+  "priceUsd": {
+    "max": 4998
   }
 }

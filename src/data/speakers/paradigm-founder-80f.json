@@ -58,5 +58,8 @@
   "description": {
     "en": "2.5-way Founder floorstander — AL-MAC ceramic tweeter, AL-MAG midrange and twin 152 mm CARBON-X Unibody woofers with ART surround in a faceted ported cabinet. Low-frequency extension to 28 Hz (DIN); 90 dB anechoic sensitivity.",
     "es": "Floorstander Founder de 2.5 vías — tweeter cerámico AL-MAC, midrange AL-MAG y dos woofers CARBON-X Unibody de 152 mm con suspensión ART en gabinete facetado con puerto. Extensión de graves hasta 28 Hz (DIN); 90 dB de sensibilidad anecoica."
+  },
+  "priceUsd": {
+    "max": 3800
   }
 }

@@ -46,5 +46,8 @@
   "description": {
     "en": "Compact 2-way Reference (2023) standmount — 25 mm aluminium-oxide ceramic tweeter paired with a 174 mm BCT mid-bass in a down-firing bass-reflex cabinet with stand. WBT-Nextgen connectors with adjustable treble control; 220 W music load capacity.",
     "es": "Bookshelf Reference 2023 compacto de 2 vías — tweeter cerámico de óxido de aluminio de 25 mm junto a un mid-bass BCT de 174 mm en gabinete con reflex inferior y zócalo dedicado. Terminales WBT-Nextgen con control de agudos ajustable; capacidad de pico 220 W."
+  },
+  "priceUsd": {
+    "max": 5800
   }
 }

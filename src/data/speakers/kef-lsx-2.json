@@ -34,8 +34,16 @@
   "frequencyResponseToleranceDb": 3,
   "active": {
     "amplification": [
-      { "driverRole": "tweeter", "powerW": 30, "amplifierClass": "D" },
-      { "driverRole": "mid-bass", "powerW": 70, "amplifierClass": "D" }
+      {
+        "driverRole": "tweeter",
+        "powerW": 30,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "mid-bass",
+        "powerW": 70,
+        "amplifierClass": "D"
+      }
     ],
     "totalAmpPowerW": 200,
     "maxSplDb": 102,
@@ -57,7 +65,9 @@
       "tidal-connect",
       "wifi"
     ],
-    "outputs": ["rca-sub"],
+    "outputs": [
+      "rca-sub"
+    ],
     "pairedSecondary": true,
     "wirelessSpeakerLink": true
   },
@@ -69,5 +79,8 @@
   "description": {
     "en": "Compact active bookshelf pair built around the Uni-Q coaxial driver array and a Music Integrity Engine DSP. 100 W per cabinet plus full network streaming (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, Bluetooth 5.0) make it a desk-friendly all-in-one — speakers connect to each other either over the supplied cable or wirelessly via KEF's W2 link.",
     "es": "Bookshelf activo compacto construido alrededor del array coaxial Uni-Q y el DSP Music Integrity Engine. 100 W por gabinete y streaming completo (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, Bluetooth 5.0) lo convierten en un all-in-one ideal para escritorio — los parlantes se conectan entre sí por cable o inalámbricamente vía el sistema W2 de KEF."
+  },
+  "priceUsd": {
+    "max": 1500
   }
 }

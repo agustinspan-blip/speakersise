@@ -53,5 +53,8 @@
   "description": {
     "en": "A three-way standmount of significant scale, with a dedicated 6″ midrange between the AMT tweeter and an 8.5″ woofer. The PROS-built cabinet, hand-polished piano-lacquer finish and SLPP port reach down to 35 Hz — closer to a floorstander than to a typical bookshelf in both presence and bass extension.",
     "es": "Un standmount de tres vías de gran escala, con mediano dedicado de 6″ entre el AMT y un woofer de 8.5″. El gabinete PROS, la terminación piano-lacquer pulida a mano y el puerto SLPP llegan hasta 35 Hz — más cerca de un floorstander que de un bookshelf típico, tanto en presencia como en extensión grave."
+  },
+  "priceUsd": {
+    "max": 6995
   }
 }

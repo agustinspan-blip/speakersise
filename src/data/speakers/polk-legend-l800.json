@@ -55,5 +55,8 @@
   "description": {
     "en": "Reference flagship of the Legend line, using SDA-PRO (Stereo Dimensional Array) topology — main tweeter + Turbine midrange pair on the front baffle plus an outboard pair on the outer edge that cancels interaural acoustic crosstalk for three-dimensional imaging. Twin 10\" polypropylene woofers in a Power-Port-vented section; sold as a handed L/R pair.",
     "es": "Insignia tope de gama de la línea Legend, con topología SDA-PRO (Stereo Dimensional Array) — par principal de tweeter + midrange Turbine al frente más un par exterior que cancela el crosstalk acústico interaural para una imagen tridimensional. Dos woofers de polipropileno de 10\" en sección Power Port vented; se vende como par L/R handed."
+  },
+  "priceUsd": {
+    "max": 5998
   }
 }

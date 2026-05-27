@@ -50,5 +50,8 @@
   "description": {
     "en": "Compact two-way bookshelf at the bottom of Paradigm's Premier line — 25 mm X-PAL dome tweeter with ferro-fluid cooling and PPA lens, paired with a 140 mm carbon-infused polypropylene cone with Active Ridge Technology surround. Crosses at 2 kHz; 50 Hz low-frequency extension (DIN anechoic) and 87 dB sensitivity make it a benign load for amplifiers in the 15–130 W window.",
     "es": "Bookshelf compacto de dos vías en la base de la línea Premier de Paradigm — tweeter X-PAL de domo de 25 mm con enfriamiento ferro-fluid y lente PPA, acompañado por un cono carbon-infused polypropylene de 140 mm con suspensión Active Ridge Technology. Cruza a 2 kHz; extensión grave a 50 Hz (DIN anechoic) y sensibilidad de 87 dB lo hacen una carga benigna para amplis de 15 a 130 W."
+  },
+  "priceUsd": {
+    "max": 798
   }
 }

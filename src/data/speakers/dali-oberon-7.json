@@ -45,5 +45,8 @@
   "description": {
     "en": "The largest Oberon: a two-way floorstander with twin 7″ wood-fibre woofers driven in parallel and a 29 mm soft-dome tweeter. Delivers convincing low-end and effortless dynamics for medium-to-large rooms while remaining an easy load for modest amplifiers.",
     "es": "El más grande de la línea Oberon: un floorstander de dos vías con dos woofers de 7″ con membrana de fibra de madera trabajando en paralelo y tweeter de domo suave de 29 mm. Logra graves convincentes y dinámica sin esfuerzo en salas medianas y grandes, manteniéndose como una carga fácil para amplificadores modestos."
+  },
+  "priceUsd": {
+    "max": 2000
   }
 }

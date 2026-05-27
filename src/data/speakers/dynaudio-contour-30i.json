@@ -50,5 +50,8 @@
   "description": {
     "en": "A 2½-way Contour i floorstander combining the 28 mm Esotar 2i tweeter with two 18 cm MSP cones — one mid-bass, one dedicated woofer. 2nd-order crossover and rear bass-reflex tuning reach down to 32 Hz; voiced for medium-to-large rooms.",
     "es": "Un floorstander Contour i de 2½ vías que combina el tweeter Esotar 2i de 28 mm con dos conos MSP de 18 cm — uno mid-bass, uno woofer dedicado. Crossover de segundo orden y bass-reflex trasero llegan hasta 32 Hz; afinado para salas medianas y grandes."
+  },
+  "priceUsd": {
+    "max": 8250
   }
 }

@@ -59,5 +59,8 @@
   "description": {
     "en": "Reference Collection 3.5-way floorstander named for the Cremonese luthier — H28 DAD tweeter, M18 midrange and four paper-cone bass drivers (twin 180 mm W18 plus twin 220 mm W22 sub-bass) in a double-curvature lute-shaped cabinet. Note: spec width (398 mm) is the cabinet without the lute-shaped stabilising plinth that flares wider at the base.",
     "es": "Floorstander 3.5 vías de la Reference Collection bautizado por el luthier cremonés — tweeter H28 DAD, midrange M18 y cuatro woofers de papel (dos W18 de 180 mm más dos W22 de 220 mm sub-bass) en gabinete con forma de laúd y doble curvatura. Nota: el ancho oficial (398 mm) corresponde al cabinet sin el plinto en forma de laúd que se ensancha en la base."
+  },
+  "priceUsd": {
+    "max": 67500
   }
 }

@@ -53,5 +53,8 @@
   "description": {
     "en": "Three-way tower at the top of the 600 S3 line — the 25 mm Titanium Dome tweeter sits above a 150 mm Continuum cone FST midrange and a pair of 165 mm paper-cone woofers in a rear-ported cabinet. The dedicated midrange driver and 46 Hz low-end reach make it B&W's most full-range passive option below the 700 Series.",
     "es": "Torre de tres vías al tope de la línea 600 S3 — el tweeter Titanium Dome de 25 mm corona un midrange Continuum cone FST de 150 mm y un par de woofers de 165 mm con cono de papel en una caja con puerto trasero. El driver de medios dedicado y los 46 Hz de extensión grave lo hacen la opción pasiva más full-range de B&W debajo de la serie 700."
+  },
+  "priceUsd": {
+    "max": 2500
   }
 }

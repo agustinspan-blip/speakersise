@@ -48,5 +48,8 @@
   "description": {
     "en": "Modern reinterpretation of the Denton built around a coaxial driver — a 25 mm silk-dome tweeter mounted at the acoustic centre of a 165 mm enhanced-polypropylene mid-bass. 11.5 L rear-ported cabinet with a rear Brilliance EQ switch to adapt the treble to free-standing, shelf or wall placement; 2.6 kHz crossover.",
     "es": "Reinterpretación moderna del Denton construida en torno a un driver coaxial — un tweeter de domo de seda de 25 mm montado en el centro acústico de un mid-bass de 165 mm en polipropileno mejorado. Gabinete con puerto trasero de 11,5 L con un switch Brilliance EQ que adapta los agudos a colocación libre, sobre estante o en pared; crossover a 2,6 kHz."
+  },
+  "priceUsd": {
+    "max": 999
   }
 }

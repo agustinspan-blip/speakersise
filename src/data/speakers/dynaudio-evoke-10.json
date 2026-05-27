@@ -44,5 +44,8 @@
   "description": {
     "en": "The compact stand-mount of the Evoke series. The 28 mm Cerotar soft-dome tweeter pairs with a 14 cm MSP mid-bass driver in a heavily braced rear-ported cabinet — clean dynamics and tonal accuracy in tight rooms.",
     "es": "El stand-mount compacto de la serie Evoke. El tweeter de domo suave Cerotar de 28 mm acompaña a un mid-bass MSP de 14 cm en un gabinete reforzado con puerto trasero — dinámica limpia y precisión tonal en salas chicas."
+  },
+  "priceUsd": {
+    "max": 1699
   }
 }

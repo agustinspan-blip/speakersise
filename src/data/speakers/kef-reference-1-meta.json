@@ -55,5 +55,8 @@
   "description": {
     "en": "Three-way standmount of KEF's Reference Meta line, hand-built in Maidstone (UK). Combines the 12th-gen Uni-Q array — 25 mm MAT-treated tweeter coaxial with a 125 mm aluminium midrange — with a 165 mm all-aluminium woofer in a switchable-port cabinet, with each pair calibrated within 0.5 dB to the lab reference.",
     "es": "Bookshelf de tres vías de la línea Reference Meta de KEF, construido a mano en Maidstone (Reino Unido). Combina el array Uni-Q de 12ª generación — tweeter de 25 mm tratado con MAT coaxial al midrange de aluminio de 125 mm — con un woofer de 165 mm en aluminio puro, en un gabinete con puerto conmutable; cada par calibrado a 0,5 dB del estándar de laboratorio."
+  },
+  "priceUsd": {
+    "max": 10000
   }
 }

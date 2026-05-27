@@ -46,5 +46,8 @@
   "description": {
     "en": "2.5-way Reserve floorstander — 1\" Pinnacle ring-radiator tweeter over twin 6.5\" Turbine-cone woofers with a single 2.7 kHz crossover. Floor-firing Power Port with X-Port technology delivers down-tuned bass extension to 43 Hz at 87.5 dB sensitivity.",
     "es": "Floorstander Reserve de 2.5 vías — tweeter Pinnacle de anillo radiante de 1\" sobre dos woofers Turbine Cone de 6,5\" con un único crossover a 2,7 kHz. Power Port de tiro inferior con tecnología X-Port que extiende los graves a 43 Hz, con 87,5 dB de sensibilidad."
+  },
+  "priceUsd": {
+    "max": 1798
   }
 }

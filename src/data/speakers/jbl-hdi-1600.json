@@ -47,5 +47,8 @@
   "description": {
     "en": "Compact two-way stand-mount in JBL's High-Definition Imaging line — pairs the patented 2410H-2 25 mm Teonex compression driver loaded into the HDI horn with a 165 mm Advanced Aluminum Matrix cone woofer in a rear-ported cabinet. Designed at JBL's Northridge, California engineering facility around the same waveguide geometry used in the bigger HDI-3600 and HDI-3800 towers.",
     "es": "Bookshelf compacto de dos vías en la línea High-Definition Imaging de JBL — combina el driver de compresión Teonex de 25 mm patentado (2410H-2) cargado en la bocina HDI con un woofer Advanced Aluminum Matrix de 165 mm en cabinet con puerto trasero. Diseñado en la planta de ingeniería de JBL en Northridge, California, alrededor de la misma geometría de waveguide que usan las torres HDI-3600 y HDI-3800."
+  },
+  "priceUsd": {
+    "max": 1800
   }
 }

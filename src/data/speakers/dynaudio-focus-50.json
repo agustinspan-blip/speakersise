@@ -40,9 +40,21 @@
   "frequencyResponseToleranceDb": 3,
   "active": {
     "amplification": [
-      { "driverRole": "tweeter", "powerW": 110, "amplifierClass": "D" },
-      { "driverRole": "midrange", "powerW": 280, "amplifierClass": "D" },
-      { "driverRole": "woofer", "powerW": 280, "amplifierClass": "D" }
+      {
+        "driverRole": "tweeter",
+        "powerW": 110,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "midrange",
+        "powerW": 280,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "woofer",
+        "powerW": 280,
+        "amplifierClass": "D"
+      }
     ],
     "totalAmpPowerW": 1900,
     "maxSampleRateKhz": 192,
@@ -62,7 +74,10 @@
       "wifi",
       "wisa"
     ],
-    "roomCorrection": ["custom-dsp", "dirac-live-limited"],
+    "roomCorrection": [
+      "custom-dsp",
+      "dirac-live-limited"
+    ],
     "pairedSecondary": true,
     "wirelessSpeakerLink": true
   },
@@ -74,5 +89,8 @@
   "description": {
     "en": "Flagship active wireless floorstander of the Focus line — sealed-box three-way with 28 mm Cerotar tweeter, 150 mm MSP midrange and twin 180 mm Esotec+ woofers, bi-amped at 110 + 280 + 280 W per channel (peak 1000 W per speaker). Driver tech borrowed from the Contour/Confidence passive ranges with full streaming and WiSA wireless link. Note: spec width (215 mm) is the cabinet; the rendered silhouette includes the stabilising base.",
     "es": "Floorstander activo wireless tope de gama de la línea Focus — caja sellada de tres vías con tweeter Cerotar de 28 mm, midrange MSP de 150 mm y dos woofers Esotec+ de 180 mm, multi-amplificados a 110 + 280 + 280 W por canal (pico 1000 W por parlante). Tecnología de drivers heredada de las líneas pasivas Contour/Confidence con streaming completo y enlace WiSA inalámbrico. Nota: el ancho oficial (215 mm) es el cabinet; la silueta incluye la base estabilizadora."
+  },
+  "priceUsd": {
+    "max": 11000
   }
 }

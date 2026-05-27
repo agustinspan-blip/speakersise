@@ -50,5 +50,8 @@
   "description": {
     "en": "A slim 2½-way Evoke floorstander pairing the 28 mm Cerotar tweeter with two 14 cm MSP drivers — one mid-bass, one dedicated woofer — in a narrow walnut cabinet. 88 dB sensitivity and a rear-ported tuning suit medium-to-large rooms.",
     "es": "Un floorstander Evoke delgado de 2½ vías que combina el tweeter Cerotar de 28 mm con dos transductores MSP de 14 cm — uno mid-bass, uno woofer dedicado — en un gabinete angosto de nogal. 88 dB de sensibilidad y puerto trasero apuntan a salas medianas y grandes."
+  },
+  "priceUsd": {
+    "max": 3999
   }
 }

@@ -53,5 +53,8 @@
   "description": {
     "en": "The slim floorstander of the EVO 5 line — a three-way design with twin 5″ Kevlar woofers, a 2″ soft-dome midrange and the 35 × 70 mm AMT. The Slot Loaded Profiled Port at the base reaches down to 46 Hz, suiting medium rooms where space matters as much as scale.",
     "es": "El floorstander angosto de la línea EVO 5 — un diseño de tres vías con dos woofers de 5″ con cono de Kevlar, un mediano de 2″ con domo suave y el AMT de 35 × 70 mm. El Slot Loaded Profiled Port en la base llega hasta los 46 Hz — pensado para salas medianas donde el espacio importa tanto como la escala."
+  },
+  "priceUsd": {
+    "max": 1899
   }
 }

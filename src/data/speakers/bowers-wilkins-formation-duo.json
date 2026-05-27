@@ -33,8 +33,16 @@
   },
   "active": {
     "amplification": [
-      { "driverRole": "tweeter", "powerW": 125, "amplifierClass": "D" },
-      { "driverRole": "mid-bass", "powerW": 125, "amplifierClass": "D" }
+      {
+        "driverRole": "tweeter",
+        "powerW": 125,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "mid-bass",
+        "powerW": 125,
+        "amplifierClass": "D"
+      }
     ],
     "totalAmpPowerW": 250,
     "maxSampleRateKhz": 96,
@@ -60,5 +68,8 @@
   "description": {
     "en": "Active wireless bookshelf with the Continuum mid-bass + Carbon Dome tweeter borrowed from the 700 Series, each driven by its own 125 W class-D amplifier (250 W total per speaker). The proprietary Mesh Network links the pair without any wire between them; streaming is via AirPlay 2, Bluetooth aptX HD, Spotify Connect and Roon, with an optical input as the only wired audio option.",
     "es": "Bookshelf activo inalámbrico con el mid-bass Continuum y el tweeter Carbon Dome heredados de la serie 700, cada uno con su propio amplificador class-D de 125 W (250 W totales por parlante). La Mesh Network propietaria enlaza el par sin cables entre ellos; el streaming va por AirPlay 2, Bluetooth aptX HD, Spotify Connect y Roon, con una entrada óptica como única opción cableada."
+  },
+  "priceUsd": {
+    "max": 4000
   }
 }

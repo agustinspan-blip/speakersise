@@ -54,5 +54,8 @@
   "description": {
     "en": "Three-way studio reference in JBL's Project K2 lineage — a 380 mm pulp-cone woofer (1500AL-1) with high-magnesium structure, a 100 mm magnesium HF compression driver (476Mg) loaded into a Sonoglass horn integrated with the curved baffle, and a 25 mm beryllium UHF compression driver (045Be-1) extending out to 50 kHz. Crossovers at 900 Hz and 15 kHz; heavily-braced curved cabinet with separate boards per frequency section.",
     "es": "Referencia de estudio de tres vías en el linaje Project K2 de JBL — un woofer de 380 mm con cono de pulpa (1500AL-1) y estructura magnética de alta-masa, un driver de compresión HF de 100 mm con domo de magnesio (476Mg) cargado en una bocina Sonoglass integrada al bafle curvo, y un driver UHF de 25 mm con domo de berilio (045Be-1) que extiende la respuesta hasta 50 kHz. Crossovers a 900 Hz y 15 kHz; cabinet curvo muy reforzado con boards separados por sección de frecuencia."
+  },
+  "priceUsd": {
+    "max": 48400
   }
 }

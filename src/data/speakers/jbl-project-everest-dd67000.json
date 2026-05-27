@@ -53,5 +53,8 @@
   "description": {
     "en": "JBL's wide-format reference flagship — two 380 mm three-layer pure-pulp sandwich/foam-core cone woofers sit side by side under a 100 mm pure-beryllium HF compression driver in JBL's Bi-Radial horn, with a 25 mm pure-beryllium super-tweeter on top extending response past 20 kHz. Three-way crossover at 150 / 850 Hz and 20 kHz, 96 dB sensitivity, hand-finished Rosewood cabinet — the modern continuation of the original 1985 Everest DD55000.",
     "es": "Flagship de referencia formato ancho de JBL — dos woofers de 380 mm con cono pure-pulp sandwich/foam-core de tres capas montados lado a lado, bajo un driver de compresión HF de 100 mm con domo de berilio puro en la bocina Bi-Radial de JBL, y un super-tweeter de berilio puro de 25 mm arriba que extiende la respuesta por encima de los 20 kHz. Crossover de tres vías a 150 / 850 Hz y 20 kHz, sensibilidad de 96 dB, cabinet de Rosewood terminado a mano — la continuación moderna del Everest DD55000 original de 1985."
+  },
+  "priceUsd": {
+    "max": 75000
   }
 }

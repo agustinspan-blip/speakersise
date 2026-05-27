@@ -53,5 +53,8 @@
   "description": {
     "en": "The flagship floorstander of the EVO 5 range — a three-way with twin 6.5″ Kevlar woofers, a 2″ soft-dome midrange and the AMT tweeter, reaching 42 Hz at 90 dB sensitivity. The Slot Loaded Profiled Port and PROS-style cabinet bracing target controlled bass and dynamic ease in larger rooms.",
     "es": "El floorstander insignia del rango EVO 5 — un tres vías con dos woofers de 6.5″ con cono de Kevlar, un mediano de 2″ con domo suave y el tweeter AMT, llegando a 42 Hz con 90 dB de sensibilidad. El Slot Loaded Profiled Port y los refuerzos al estilo PROS apuntan a un grave controlado y dinámica suelta en salas grandes."
+  },
+  "priceUsd": {
+    "max": 2199
   }
 }

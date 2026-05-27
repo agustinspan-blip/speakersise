@@ -48,5 +48,9 @@
   "description": {
     "en": "Slim two-way floorstander of the Reference Premiere II line — Klipsch's 1\" titanium LTS tweeter in a vented Hybrid Cross-Section Tractrix horn paired with twin 5.25\" Cerametallic woofers with Faraday rings, in an internally-braced MDF cabinet vented through dual rear Tractrix ports. 95 dB sensitivity, 400 W peak.",
     "es": "Floorstander esbelto de dos vías de la línea Reference Premiere II — tweeter LTS de titanio de 1\" de Klipsch en un horn Tractrix Hybrid Cross-Section ventilado junto a dos woofers Cerametallic de 5,25\" con anillos Faraday, en un gabinete MDF reforzado con doble puerto trasero Tractrix. 95 dB de sensibilidad y 400 W de pico."
+  },
+  "priceUsd": {
+    "max": 600,
+    "unit": "each"
   }
 }

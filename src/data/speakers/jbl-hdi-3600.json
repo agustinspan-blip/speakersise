@@ -47,5 +47,8 @@
   "description": {
     "en": "Mid-size 2½-way tower in JBL's High-Definition Imaging line — patented 2410H-2 25 mm Teonex compression driver in the HDI horn waveguide, mated to three 165 mm Advanced Aluminum Matrix cone woofers in a heavily braced cabinet with dual rear-firing flared ports. Crossovers at 900 Hz and 2 kHz set the lower woofer to roll off early so the middle pair extends the midband.",
     "es": "Torre mediana de 2½ vías en la línea High-Definition Imaging de JBL — driver de compresión Teonex de 25 mm patentado (2410H-2) en la bocina HDI, acompañado por tres woofers Advanced Aluminum Matrix de 165 mm en un cabinet muy reforzado con dos puertos traseros con flares optimizados. Los crossovers a 900 Hz y 2 kHz hacen rolar al woofer inferior temprano para que el par del medio extienda la banda."
+  },
+  "priceUsd": {
+    "max": 3800
   }
 }

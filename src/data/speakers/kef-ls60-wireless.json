@@ -42,9 +42,21 @@
   "frequencyResponseToleranceDb": 3,
   "active": {
     "amplification": [
-      { "driverRole": "tweeter", "powerW": 100, "amplifierClass": "AB" },
-      { "driverRole": "midrange", "powerW": 100, "amplifierClass": "D" },
-      { "driverRole": "woofer", "powerW": 500, "amplifierClass": "D" }
+      {
+        "driverRole": "tweeter",
+        "powerW": 100,
+        "amplifierClass": "AB"
+      },
+      {
+        "driverRole": "midrange",
+        "powerW": 100,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "woofer",
+        "powerW": 500,
+        "amplifierClass": "D"
+      }
     ],
     "totalAmpPowerW": 1400,
     "maxSplDb": 111,
@@ -78,5 +90,8 @@
   "description": {
     "en": "Slim active floorstander built around the 12th-gen Uni-Q tweeter/midrange and four side-firing 135 mm Uni-Core woofers in force-cancelling pairs. Per-cabinet 700 W of bi-amplification plus full network streaming — AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect — make it a complete two-piece hi-fi system that only needs power and ethernet/Wi-Fi.",
     "es": "Floorstander activo de bafle delgado construido alrededor del tweeter/midrange Uni-Q de 12ª generación y cuatro woofers laterales Uni-Core de 135 mm en pares de cancelación de fuerza. Cada gabinete entrega 700 W bi-amplificados y suma streaming completo — AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect — convirtiéndolo en un sistema HiFi completo de dos piezas que sólo necesita corriente y red."
+  },
+  "priceUsd": {
+    "max": 7000
   }
 }

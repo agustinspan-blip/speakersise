@@ -46,5 +46,8 @@
   "description": {
     "en": "Two-way reference floorstander in JBL's Studio Monitor line — 380 mm 2216Nd-1 Dual Differential Drive woofer with dual neodymium motors, crossed at 700 Hz to a 75 mm D2430K dual-diaphragm compression driver in a Sonoglass HDI horn. 94 dB sensitivity and a low 30 Hz extension make it a low-stress load that still moves serious air; dual front-firing ports keep it free of rear-wall loading constraints.",
     "es": "Floorstander de referencia de dos vías en la línea Studio Monitor de JBL — woofer Dual Differential Drive 2216Nd-1 de 380 mm con doble motor de neodimio, cruzando a 700 Hz con un driver de compresión D2430K de 75 mm con doble diafragma en una bocina Sonoglass HDI. 94 dB de sensibilidad y extensión a 30 Hz lo hacen una carga fácil que mueve aire en serio; los puertos frontales duales lo liberan de exigencias de pared trasera."
+  },
+  "priceUsd": {
+    "max": 16500
   }
 }

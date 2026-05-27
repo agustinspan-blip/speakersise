@@ -48,5 +48,8 @@
   "description": {
     "en": "The final project from founder Paul W. Klipsch — a two-piece fully horn-loaded Heritage flagship with a 1-inch K-693 titanium HF driver mated to a phase plug and twin 12-inch K-283 woofers in a horn-loaded LF cabinet. Requires an external active DSP crossover (340 Hz); 107 dB sensitivity and 125 dB max SPL.",
     "es": "El último proyecto del fundador Paul W. Klipsch — flagship Heritage de dos piezas, totalmente horn-loaded, con driver HF K-693 de titanio de 1\" acoplado a un phase plug y dos woofers K-283 de 12\" en una caja LF horn-loaded. Requiere un crossover DSP activo externo (340 Hz); 107 dB de sensibilidad y 125 dB de SPL máximo."
+  },
+  "priceUsd": {
+    "max": 35000
   }
 }

@@ -48,5 +48,8 @@
   "description": {
     "en": "Limited-edition collaboration between Klipsch and OJAS — a multicelled two-way loudspeaker hand-built in Hope, Arkansas. 13-ply Baltic-birch cabinet houses a K-28-E 12-inch cellulose-fibre woofer and a K-706 titanium-diaphragm horn driver, with a 970 Hz crossover and 97.5 dB sensitivity. Pairs with the optional Klipsch KS-12 stand.",
     "es": "Edición limitada de la colaboración entre Klipsch y OJAS — parlante multicelular de dos vías construido a mano en Hope, Arkansas. El gabinete en abedul báltico de 13 capas aloja un woofer K-28-E de 12 pulgadas en fibra de celulosa y un driver de horn K-706 con diafragma de titanio, con crossover a 970 Hz y sensibilidad de 97,5 dB. Se acompaña del stand opcional Klipsch KS-12."
+  },
+  "priceUsd": {
+    "max": 8498
   }
 }

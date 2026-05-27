@@ -47,5 +47,8 @@
   "description": {
     "en": "Compact two-way stand-mount in the 600 S3 line — pairs a new 25 mm Titanium Dome tweeter with a 130 mm Continuum cone bass-midrange in a small vented cabinet. Front-firing Flowport makes it relatively forgiving of placement near walls, while the modest 84 dB sensitivity asks for at least 30 W of clean amplification.",
     "es": "Bookshelf de dos vías compacto de la línea 600 S3 — combina el nuevo tweeter Titanium Dome de 25 mm con un mid-bass Continuum de 130 mm en una caja ventilada chica. El Flowport frontal lo hace tolerante con la pared cercana; su sensibilidad modesta de 84 dB pide al menos 30 W de amplificación limpia."
+  },
+  "priceUsd": {
+    "max": 1000
   }
 }

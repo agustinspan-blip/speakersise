@@ -55,5 +55,8 @@
   "description": {
     "en": "Mid-sized three-way floorstander pairing the 12th-gen Uni-Q array — 25 mm MAT-treated tweeter coaxial with a 125 mm aluminium midrange — with twin 165 mm hybrid-aluminium woofers in a rear-ported cabinet. Sits between the R5 and the flagship R11 Meta in the R Meta line.",
     "es": "Floorstander de tres vías de tamaño medio que combina el array Uni-Q de 12ª generación — tweeter de 25 mm tratado con MAT coaxial al midrange de aluminio de 125 mm — con dos woofers de 165 mm en cono híbrido de aluminio, en un gabinete con puerto trasero. Ubicado entre el R5 y el R11 Meta tope de la línea."
+  },
+  "priceUsd": {
+    "max": 5000
   }
 }

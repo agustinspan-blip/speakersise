@@ -53,5 +53,8 @@
   "description": {
     "en": "The flagship of Wharfedale's flagship line: a three-way floorstander with twin 8.5″ glass-fibre woofers, a 6″ midrange and the AMT tweeter, reaching 30 Hz with 92 dB sensitivity. PROS-braced cabinet with hand-polished piano-lacquer finish — the most ambitious speaker Wharfedale builds.",
     "es": "El tope de gama de la línea tope de gama de Wharfedale: un floorstander de tres vías con dos woofers de 8.5″ con cono de fibra de vidrio, un mediano de 6″ y el AMT, llegando a 30 Hz con 92 dB de sensibilidad. Gabinete con refuerzos PROS y terminación piano-lacquer pulida a mano — el parlante más ambicioso que fabrica Wharfedale."
+  },
+  "priceUsd": {
+    "max": 8995
   }
 }

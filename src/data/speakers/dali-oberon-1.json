@@ -45,5 +45,8 @@
   "description": {
     "en": "The smallest model in the Oberon family. A compact two-way bookshelf with a 29 mm soft-dome tweeter and a 5¼″ wood-fibre woofer, designed to deliver Dali's open, easygoing sound character at an entry-level price.",
     "es": "El más chico de la familia Oberon. Un bookshelf compacto de dos vías con tweeter de domo suave de 29 mm y woofer de 5¼″ con membrana de fibra de madera, pensado para llevar el sonido abierto y suelto característico de Dali a un precio de entrada."
+  },
+  "priceUsd": {
+    "max": 750
   }
 }

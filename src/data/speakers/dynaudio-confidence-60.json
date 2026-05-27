@@ -52,5 +52,8 @@
   "description": {
     "en": "Flagship of the Confidence series — a full 3-way floorstander pairing the Esotar3 tweeter and twin 15 cm MSP midranges with two 23 cm NeoTec MSP woofers. The Compex composite baffle and DDC Lens waveguide preserve directivity even at the cabinet's larger scale, targeting effortless dynamics in serious listening rooms.",
     "es": "El tope de la serie Confidence — un floorstander completo de tres vías que combina el tweeter Esotar3 y dos midranges MSP de 15 cm con dos woofers NeoTec MSP de 23 cm. El bafle compuesto Compex y la guía DDC Lens preservan la directividad incluso a la escala mayor del gabinete, apuntando a una dinámica sin esfuerzo en salas serias."
+  },
+  "priceUsd": {
+    "max": 50000
   }
 }

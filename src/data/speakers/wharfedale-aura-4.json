@@ -53,5 +53,8 @@
   "description": {
     "en": "The flagship of the Aura line: a three-way floorstander pairing the 27 × 90 mm AMT and a 4″ glass-fibre midrange with two 6½″ woofers, reaching down to 37 Hz. A 4 Ω nominal load and 89 dB sensitivity invite higher-power amplification to drive larger rooms with full dynamic authority.",
     "es": "El tope de gama de la serie Aura: un floorstander de tres vías que combina el AMT de 27 × 90 mm y un mediano de 4″ con dos woofers de 6½″, bajando hasta 37 Hz. Carga nominal de 4 Ω y 89 dB de sensibilidad invitan a amplificación de mayor potencia para empujar salas grandes con plena autoridad dinámica."
+  },
+  "priceUsd": {
+    "max": 5499
   }
 }

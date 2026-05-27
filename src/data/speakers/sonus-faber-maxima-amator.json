@@ -47,5 +47,8 @@
   "description": {
     "en": "Two-way floorstander of the Heritage Amator family — solid walnut cabinet with Port Saint Laurent marble plinth and brass details, pairing the H28 soft-dome tweeter (DAD) with a 180 mm MW18 natural-fibre mid-bass. Hand-built in Vicenza on iron spikes that decouple the cabinet from the floor.",
     "es": "Floorstander de dos vías de la familia Heritage Amator — gabinete en nogal macizo con plinto en mármol Port Saint Laurent y detalles en bronce, que combina el tweeter H28 de domo blando (DAD) con un mid-bass MW18 de 180 mm en fibras naturales. Construido a mano en Vicenza sobre spikes de hierro que desacoplan el cabinet del piso."
+  },
+  "priceUsd": {
+    "max": 15000
   }
 }

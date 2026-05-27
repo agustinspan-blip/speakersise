@@ -54,5 +54,8 @@
   "description": {
     "en": "Compact three-way floorstander with the Solid Body Tweeter-on-Top, a Continuum-cone FST midrange and dual 130 mm Aerofoil bass drivers. The slim, rear-ported cabinet suits smaller listening rooms without sacrificing the 700 S3 family's tonal balance.",
     "es": "Floorstander compacto de tres vías con Solid Body Tweeter-on-Top, midrange Continuum FST y dos woofers Aerofoil de 130 mm. Su gabinete esbelto con puerto trasero se adapta a salas chicas sin perder el balance tonal de la línea 700 S3."
+  },
+  "priceUsd": {
+    "max": 4500
   }
 }

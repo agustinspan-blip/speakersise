@@ -47,5 +47,8 @@
   "description": {
     "en": "Compact 2.5-way Reserve floorstander — 1\" Pinnacle ring-radiator tweeter over twin 5.25\" Turbine-cone woofers in a rear-X-Port cabinet with cross-bracing. 2.5 kHz crossover, 87 dB sensitivity and Hi-Res Audio certification — the entry-point to the Reserve floorstander line.",
     "es": "Floorstander Reserve compacto de 2.5 vías — tweeter Pinnacle de anillo radiante de 1\" sobre dos woofers Turbine Cone de 5,25\" en gabinete con X-Port trasero y refuerzo cruzado. Crossover a 2,5 kHz, 87 dB de sensibilidad y certificación Hi-Res Audio — la puerta de entrada a los floorstanders de la línea Reserve."
+  },
+  "priceUsd": {
+    "max": 1398
   }
 }

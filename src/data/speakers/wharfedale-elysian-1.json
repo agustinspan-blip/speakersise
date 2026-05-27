@@ -47,5 +47,8 @@
   "description": {
     "en": "The standmount entry to Wharfedale's flagship Elysian line. A two-way bookshelf pairing the 27 × 90 mm AMT high-frequency transducer with a 7″ coated glass-fibre matrix mid-bass, in a hand-finished piano-lacquer cabinet using the SLPP downward port for tight, articulate bass extension.",
     "es": "El standmount de entrada a la línea insignia Elysian de Wharfedale. Un bookshelf de dos vías que combina el AMT de 27 × 90 mm con un mid-bass de 7″ con cono de fibra de vidrio recubierta, en un gabinete con terminación piano-lacquer hecha a mano y puerto SLPP de descarga inferior para graves articulados y precisos."
+  },
+  "priceUsd": {
+    "max": 4495
   }
 }

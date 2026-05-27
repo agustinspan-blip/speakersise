@@ -48,5 +48,8 @@
   "description": {
     "en": "Compact 2-way Founder standmount handcrafted in Canada — 25 mm AL-MAC ceramic tweeter with Oblate Spherical Waveguide paired with a 152 mm AL-MAG midrange/bass driver in a faceted ported cabinet with Cascade-Fusion bracing. 89 dB anechoic sensitivity (92 dB in-room).",
     "es": "Bookshelf compacto de 2 vías de la línea Founder, hecho a mano en Canadá — tweeter cerámico AL-MAC de 25 mm con guía de onda esférica oblata junto a un driver mid/bass AL-MAG de 152 mm en un gabinete facetado con puerto y refuerzo Cascade-Fusion. 89 dB de sensibilidad anecoica (92 dB in-room)."
+  },
+  "priceUsd": {
+    "max": 2200
   }
 }

@@ -59,5 +59,8 @@
   "description": {
     "en": "A 2½-way floorstander with Dali's Hybrid Tweeter module (29 mm soft dome plus 17 × 45 mm planar ribbon) above two 6½″ Clarity Cone drivers running SMC motors. Bi-wire/bi-amp terminals, bass-reflex tuned to 34 Hz, 110 dB max SPL and a 40–200 W amp window for medium listening rooms.",
     "es": "Un floorstander de 2½ vías con el módulo Hybrid Tweeter de Dali (domo suave de 29 mm más cinta plana de 17 × 45 mm) sobre dos drivers Clarity Cone de 6½″ con motor SMC. Terminales bi-wire/bi-amp, bass-reflex sintonizado a 34 Hz, 110 dB SPL máx. y un rango de amp de 40–200 W para salas medianas."
+  },
+  "priceUsd": {
+    "max": 8000
   }
 }

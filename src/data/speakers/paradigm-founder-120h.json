@@ -53,5 +53,8 @@
   "description": {
     "en": "Hybrid Founder flagship — the mid/HF section is passive (AL-MAC ceramic tweeter + AL-MAG midrange) and the three 215 mm CARBON-X woofers are powered by an integrated 1000 W amplifier with DSP. Connects to an external stereo amp for the mid/HF section (15–400 W); the active bass extends usable response to 22 Hz at 92 dB anechoic sensitivity.",
     "es": "Insignia híbrido de la línea Founder — la sección mid/HF es pasiva (tweeter cerámico AL-MAC + midrange AL-MAG) y los tres woofers CARBON-X de 215 mm son alimentados por un amplificador interno de 1000 W con DSP. Se conecta a un amp estéreo externo para la sección mid/HF (15–400 W); el bajo activo extiende la respuesta utilizable hasta 22 Hz con 92 dB de sensibilidad anecoica."
+  },
+  "priceUsd": {
+    "max": 8500
   }
 }

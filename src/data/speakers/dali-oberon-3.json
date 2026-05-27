@@ -45,5 +45,8 @@
   "description": {
     "en": "Step up from the Oberon 1: a slightly larger two-way bookshelf with a 7″ wood-fibre woofer for more bass extension and effortless midrange in real-world rooms. Same 29 mm soft-dome tweeter and the same easy-to-drive Dali signature.",
     "es": "Un escalón sobre el Oberon 1: un bookshelf de dos vías algo más grande con un woofer de 7″ con membrana de fibra de madera, que aporta más extensión de graves y un medio sin esfuerzo en salas reales. Mismo tweeter de domo suave de 29 mm y la misma firma fácil de manejar de Dali."
+  },
+  "priceUsd": {
+    "max": 950
   }
 }

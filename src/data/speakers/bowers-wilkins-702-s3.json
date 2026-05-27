@@ -54,5 +54,8 @@
   "description": {
     "en": "Flagship three-way floorstander of the 700 S3 line. A Solid Body Tweeter-on-Top houses a Decoupled Carbon Dome above a Continuum-cone FST midrange and three Aerofoil bass drivers in a rear-ported Matrix-braced cabinet, scaling effortlessly in larger rooms.",
     "es": "Floorstander insignia de tres vías de la línea 700 S3. Su Solid Body Tweeter-on-Top aloja un Carbon Dome desacoplado sobre un midrange Continuum FST y tres woofers Aerofoil en un gabinete con puerto trasero y refuerzo Matrix, ideal para salas grandes."
+  },
+  "priceUsd": {
+    "max": 7000
   }
 }

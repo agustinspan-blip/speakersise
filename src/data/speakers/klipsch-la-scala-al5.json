@@ -54,5 +54,8 @@
   "description": {
     "en": "Unveiled in 1963, the La Scala is Klipsch's classic Klipschorn-style three-way fully horn-loaded floorstander in a self-contained cabinet. The AL5 generation uses a K-771 polyimide tweeter on a Tractrix horn, K-55-X phenolic midrange and a K-33-E 15-inch folded-horn woofer — 105 dB sensitivity at just 100 W of input.",
     "es": "Presentado en 1963, el La Scala es el clásico floorstander Klipsch de tres vías totalmente horn-loaded, hermano menor del Klipschorn en gabinete cerrado. La generación AL5 usa un tweeter K-771 en polyimide sobre horn Tractrix, midrange K-55-X de fenolico y un woofer K-33-E de 15\" en horn plegado — 105 dB de sensibilidad con sólo 100 W de entrada."
+  },
+  "priceUsd": {
+    "max": 13198
   }
 }

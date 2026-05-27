@@ -48,5 +48,8 @@
   "description": {
     "en": "Fifth-generation Guarneri — flagship two-way standmount of the Homage Collection, named after the Cremonese luthiers. Extended-range soft-dome tweeter and a new low-resonance 150 mm midwoofer in a violin-curve cabinet of high-gloss lacquered wood, leather, aluminium and carbon-fibre stand. 'Stealth Ultraflex' vented loading.",
     "es": "Quinta generación del Guarneri — bookshelf insignia de dos vías de la Homage Collection, nombrado por el luthier cremonés. Tweeter de domo blando Extended Range y nuevo midwoofer de baja resonancia de 150 mm en un gabinete con curvas de violín en madera lacada de alto brillo, cuero, aluminio y stand de fibra de carbono. Carga vented 'Stealth Ultraflex'."
+  },
+  "priceUsd": {
+    "max": 19000
   }
 }

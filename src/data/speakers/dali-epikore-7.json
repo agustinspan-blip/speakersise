@@ -55,5 +55,8 @@
   "description": {
     "en": "Compact 3½-way floorstander pairing two 7″ Clarity-Cone bass/midrange drivers with the EVO-K Hybrid Tweeter module. The reduced cabinet keeps the curved silhouette and rear continuous-flare port tuning (33 Hz) for medium-sized rooms; 110 dB max SPL with a 40–400 W amp range.",
     "es": "Un floorstander compacto de 3½ vías que combina dos drivers Clarity Cone de 7″ con el módulo EVO-K Hybrid Tweeter. El gabinete más chico mantiene la silueta curva y el puerto continuous-flare trasero sintonizado a 33 Hz para salas medianas; 110 dB SPL máx. con un rango de amp de 40–400 W."
+  },
+  "priceUsd": {
+    "max": 25000
   }
 }

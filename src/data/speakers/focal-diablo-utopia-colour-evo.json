@@ -49,5 +49,8 @@
   "description": {
     "en": "Two-way standmount entry-point to the Utopia line — Power-Flower W-cone mid-bass paired with the IAL2 27 mm beryllium tweeter in a compact front-ported cabinet. The Colour Evo trim adds automotive-grade lacquer finishes alongside the classic wood veneers.",
     "es": "Bookshelf de dos vías, puerta de entrada a la línea Utopia — mid-bass Power Flower con cono W junto al tweeter IAL2 de berilio de 27 mm en un gabinete compacto con puerto frontal. La terminación Colour Evo suma lacas de grado automotor además de los chapados clásicos en madera."
+  },
+  "priceUsd": {
+    "max": 20998
   }
 }

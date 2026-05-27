@@ -48,5 +48,8 @@
   "description": {
     "en": "Two-way standmount of the Sopra line, packing the 27 mm IHL pure-beryllium tweeter and a 165 mm W-cone mid-bass with TMD suspension and NIC motor into a compact front-ported cabinet. Aimed at rooms under 25 m² where a slim, high-sensitivity standmount earns its keep.",
     "es": "Bookshelf de dos vías de la línea Sopra que reúne el tweeter IHL de 27 mm en berilio puro y un mid-bass de 165 mm en cono W con suspensión TMD y motor NIC en un gabinete compacto con puerto frontal. Pensado para salas de menos de 25 m² donde un bookshelf de alta sensibilidad rinde mejor."
+  },
+  "priceUsd": {
+    "max": 8999
   }
 }

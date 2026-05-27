@@ -48,5 +48,8 @@
   "description": {
     "en": "Flagship Legend bookshelf — 1\" Pinnacle ring-radiator tweeter and a 6.5\" Turbine-cone mid-bass in a Power-Port-vented cabinet. Hi-Res Audio certified, with deeper bass extension than the L100 and 200 W peak handling.",
     "es": "Bookshelf tope de gama de la línea Legend — tweeter Pinnacle de anillo radiante de 1\" y un mid-bass Turbine Cone de 6,5\" en un gabinete con Power Port. Certificado Hi-Res Audio, con extensión de graves más profunda que el L100 y 200 W de pico."
+  },
+  "priceUsd": {
+    "max": 1800
   }
 }

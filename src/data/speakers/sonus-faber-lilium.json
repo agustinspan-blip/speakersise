@@ -60,5 +60,8 @@
   "description": {
     "en": "Reference Collection 3.5-way floorstander — H28 DAD tweeter, M18 paper midrange and three W18 woofers complemented by a dedicated 260 mm SW26 sub-bass driver, all in a double-curvature lute-shaped cabinet. 100–800 W of amplification headroom and 20 Hz – 35 kHz range.",
     "es": "Floorstander 3.5 vías de la Reference Collection — tweeter H28 DAD, midrange de papel M18 y tres woofers W18 acompañados por un sub-bass dedicado SW26 de 260 mm, todo en un gabinete con forma de laúd y doble curvatura. Margen de amplificación 100–800 W y rango 20 Hz – 35 kHz."
+  },
+  "priceUsd": {
+    "max": 75000
   }
 }

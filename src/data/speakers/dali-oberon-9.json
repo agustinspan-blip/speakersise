@@ -52,5 +52,8 @@
   "description": {
     "en": "The flagship of the Oberon line — a three-way floorstander with a 29 mm textile-dome tweeter, a 7″ wood-fibre midrange and twin 9″ wood-fibre woofers. Available in Black Ash and Dark Walnut, it reaches 113 dB max SPL with a 50–400 W amp window, bass-reflex tuned to 31 Hz and a footprint of 1172 × 336 × 406 mm including the base.",
     "es": "El tope de gama de la línea Oberon — un floorstander de tres vías con tweeter de domo textil de 29 mm, midrange de 7″ con cono de fibra de madera y dos woofers de 9″ con la misma membrana. Disponible en Black Ash y Dark Walnut, llega a 113 dB SPL máx. con un rango de amp de 50–400 W, bass-reflex sintonizado a 31 Hz y una huella de 1172 × 336 × 406 mm incluyendo la base."
+  },
+  "priceUsd": {
+    "max": 2499
   }
 }

@@ -55,8 +55,13 @@
       "qobuz-connect",
       "wifi"
     ],
-    "outputs": ["rca-sub", "hdmi-out"],
-    "roomCorrection": ["dirac-live-limited"],
+    "outputs": [
+      "rca-sub",
+      "hdmi-out"
+    ],
+    "roomCorrection": [
+      "dirac-live-limited"
+    ],
     "pairedSecondary": true,
     "wirelessSpeakerLink": true
   },
@@ -69,5 +74,8 @@
   "description": {
     "en": "Largest of Klipsch's 2026 powered trio. An 8\" Cerametallic woofer plus a 1\" Titanium LTS tweeter, Dolby Atmos and DTS:X virtualisation, Dirac Live room correction and a wireless 48 kHz L-R link (96 kHz wired) — designed as a complete home-theatre hub with HDMI 2.1 routing.",
     "es": "El más grande del trío powered 2026 de Klipsch. Woofer Cerametallic de 8\" más tweeter Titanium LTS de 1\", virtualización Dolby Atmos y DTS:X, corrección de sala Dirac Live, y enlace L-R inalámbrico a 48 kHz (96 kHz cableado) — pensado como hub completo de home theatre con ruteo HDMI 2.1."
+  },
+  "priceUsd": {
+    "max": 2399
   }
 }

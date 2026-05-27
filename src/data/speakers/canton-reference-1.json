@@ -51,5 +51,8 @@
   "description": {
     "en": "Top of Canton's 2023 Reference line — 3-way down-firing bass-reflex tower with a 25 mm aluminium-oxide ceramic tweeter, a 174 mm BCT midrange and three 219 mm BCT woofers. Crossover points: 170 Hz / 3.1 kHz; 820 W music load capacity.",
     "es": "Tope de la línea Reference 2023 de Canton — torre de 3 vías con reflex inferior, tweeter cerámico de óxido de aluminio de 25 mm, midrange BCT de 174 mm y tres woofers BCT de 219 mm. Crossovers a 170 Hz / 3,1 kHz; capacidad de pico 820 W."
+  },
+  "priceUsd": {
+    "max": 25000
   }
 }

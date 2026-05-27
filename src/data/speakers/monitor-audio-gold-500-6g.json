@@ -57,5 +57,8 @@
   "description": {
     "en": "Top of the Gold 6G line — a 3-way floorstander pairing the MPD III tweeter with a dedicated 3″ HDT C-CAM midrange and twin 8″ HDT C-CAM woofers. Crossover at 700 Hz / 2.6 kHz, rear HiVe II port tuned to 33 Hz; designed for confident full-range performance in larger rooms.",
     "es": "El tope de la línea Gold 6G — un floorstander de tres vías que combina el tweeter MPD III con un midrange HDT C-CAM dedicado de 3″ y dos woofers HDT C-CAM de 8″. Crossover a 700 Hz / 2,6 kHz, puerto trasero HiVe II sintonizado a 33 Hz; diseñado para una respuesta segura de banda completa en salas grandes."
+  },
+  "priceUsd": {
+    "max": 7499
   }
 }

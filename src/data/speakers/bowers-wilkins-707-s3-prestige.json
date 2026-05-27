@@ -48,5 +48,8 @@
   "description": {
     "en": "Limited Santos Gloss edition of the 700 S3 compact stand-mount, inheriting the 705 S3 Signature's optimised tweeter grille and premium binding posts. A 130 mm Continuum cone and Decoupled Carbon Dome tweeter make it the smallest two-way in the 700 S3 family.",
     "es": "Edición limitada en Santos Gloss del bookshelf compacto de la 700 S3 que hereda la grilla optimizada del tweeter y los terminales premium del 705 S3 Signature. Un cono Continuum de 130 mm y el tweeter Carbon Dome desacoplado lo convierten en el dos vías más chico de la familia 700 S3."
+  },
+  "priceUsd": {
+    "max": 2000
   }
 }

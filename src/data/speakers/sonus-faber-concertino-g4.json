@@ -48,5 +48,8 @@
   "description": {
     "en": "Compact two-way bookshelf of the Heritage Collection, fourth-generation revival of the original Concertino. DAD Arrow Point tweeter and a 134 mm paper midwoofer inside a vented cork-lined cabinet; 1.7 kHz crossover.",
     "es": "Bookshelf compacto de dos vías de la Heritage Collection, cuarta generación del Concertino original. Tweeter DAD Arrow Point y un midwoofer de 134 mm en cono de papel dentro de un gabinete con caja vented y revestimiento en corcho; crossover a 1,7 kHz."
+  },
+  "priceUsd": {
+    "max": 5000
   }
 }

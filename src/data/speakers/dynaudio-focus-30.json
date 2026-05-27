@@ -40,9 +40,21 @@
   "frequencyResponseToleranceDb": 3,
   "active": {
     "amplification": [
-      { "driverRole": "tweeter", "powerW": 110, "amplifierClass": "D" },
-      { "driverRole": "midrange", "powerW": 280, "amplifierClass": "D" },
-      { "driverRole": "woofer", "powerW": 280, "amplifierClass": "D" }
+      {
+        "driverRole": "tweeter",
+        "powerW": 110,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "midrange",
+        "powerW": 280,
+        "amplifierClass": "D"
+      },
+      {
+        "driverRole": "woofer",
+        "powerW": 280,
+        "amplifierClass": "D"
+      }
     ],
     "totalAmpPowerW": 1340,
     "maxSampleRateKhz": 192,
@@ -62,7 +74,10 @@
       "wifi",
       "wisa"
     ],
-    "roomCorrection": ["custom-dsp", "dirac-live-limited"],
+    "roomCorrection": [
+      "custom-dsp",
+      "dirac-live-limited"
+    ],
     "pairedSecondary": true,
     "wirelessSpeakerLink": true
   },
@@ -74,5 +89,8 @@
   "description": {
     "en": "Compact sealed-box active floorstander — 28 mm Cerotar tweeter with twin 140 mm MSP drivers (midrange + woofer), bi-amped at 110 + 280 + 280 W class-D per speaker. Studio-grade Pascal amplification and full streaming with WiSA wireless inter-speaker link.",
     "es": "Floorstander activo compacto con caja sellada — tweeter Cerotar de 28 mm con dos drivers MSP de 140 mm (midrange + woofer), tri-amplificados a 110 + 280 + 280 W class-D por parlante. Amplificación Pascal de nivel studio y streaming completo con enlace WiSA inalámbrico entre parlantes."
+  },
+  "priceUsd": {
+    "max": 8250
   }
 }

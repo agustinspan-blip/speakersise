@@ -54,5 +54,8 @@
   "description": {
     "en": "Flagship floorstander of the Olympica Nova line — H28 XTR3 silk-dome tweeter with DAD, 150 mm MW15 paper midrange and three 180 mm W18 paper woofers in a lute-shaped cabinet with the 'Stealth Ultraflex' para-aperiodic vented system.",
     "es": "Floorstander tope de gama de la línea Olympica Nova — tweeter de domo de seda H28 XTR3 con DAD, midrange MW15 de papel de 150 mm y tres woofers W18 de papel de 180 mm, en un gabinete con forma de laúd con el sistema 'Stealth Ultraflex' para-aperiódico."
+  },
+  "priceUsd": {
+    "max": 16500
   }
 }

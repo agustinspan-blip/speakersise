@@ -44,5 +44,8 @@
   "description": {
     "en": "A 2-way Contour i stand-mount built around the 28 mm Esotar 2i tweeter and a 18 cm MSP mid-bass driver, crossed at 2.2 kHz with 2nd-order slopes. Black aluminium baffle and rear bass-reflex tuning extend low-end reach to 39 Hz.",
     "es": "Un stand-mount Contour i de dos vías construido alrededor del tweeter Esotar 2i de 28 mm y un mid-bass MSP de 18 cm, acoplados a 2,2 kHz con pendientes de segundo orden. Bafle de aluminio negro y puerto bass-reflex trasero llevan la respuesta grave a 39 Hz."
+  },
+  "priceUsd": {
+    "max": 5250
   }
 }

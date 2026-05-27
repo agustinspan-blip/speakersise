@@ -53,5 +53,8 @@
   "description": {
     "en": "Three-way Founder floorstander — AL-MAC ceramic tweeter, AL-MAG midrange and three 177 mm CARBON-X Unibody woofers with Gen3 ART surround in a faceted ported cabinet with Cascade-Fusion bracing and shock-mount isolation. Crossovers at 500 Hz / 2.1 kHz.",
     "es": "Floorstander Founder de tres vías — tweeter cerámico AL-MAC, midrange AL-MAG y tres woofers CARBON-X Unibody de 177 mm con suspensión ART Gen3, en gabinete facetado con puerto, refuerzo Cascade-Fusion y aislación shock-mount. Crossovers a 500 Hz / 2,1 kHz."
+  },
+  "priceUsd": {
+    "max": 5200
   }
 }

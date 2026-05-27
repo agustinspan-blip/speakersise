@@ -49,5 +49,8 @@
   "description": {
     "en": "Two-way standmount of the Kanta line — Focal's 27 mm IAL3 pure-beryllium tweeter paired with a 165 mm flax-cone mid-bass with TMD suspension in a compact front-ported cabinet. Famous for bold finish options (Carrara White, Solar Yellow, Gauloise Blue) with a high-density polymer baffle.",
     "es": "Bookshelf de dos vías de la línea Kanta — el tweeter IAL3 de 27 mm en berilio puro de Focal junto a un mid-bass de 165 mm en cono de lino con suspensión TMD, en un gabinete compacto con puerto frontal. Reconocido por sus terminaciones llamativas (Carrara White, Solar Yellow, Gauloise Blue) con bafle en polímero de alta densidad."
+  },
+  "priceUsd": {
+    "max": 5999
   }
 }

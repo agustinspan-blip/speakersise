@@ -55,5 +55,8 @@
   "description": {
     "en": "Flagship of the Aria Evo X line — three-way floorstander combining the 25 mm TAM Al/Mg tweeter and 165 mm flax midrange with twin 210 mm (8\") flax bass drivers in a front-ported MDF cabinet on an aluminium-alloy base.",
     "es": "Tope de gama de la línea Aria Evo X — floorstander de tres vías que combina el tweeter TAM Al/Mg de 25 mm y el midrange de 165 mm en cono de lino con dos woofers de 210 mm (8\") también en lino, en un gabinete MDF con puerto frontal sobre base de aleación de aluminio."
+  },
+  "priceUsd": {
+    "max": 5998
   }
 }

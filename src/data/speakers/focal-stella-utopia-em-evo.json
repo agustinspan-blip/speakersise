@@ -56,5 +56,8 @@
   "description": {
     "en": "Smaller technological twin of the Grande Utopia EM Evo — a three-way Utopia column with the same IAL2 beryllium tweeter and Power Flower W-cone midranges, paired with a 330 mm electromagnetic-motor woofer. 243 OPC+ filter combinations let you fine-tune the voicing to the room.",
     "es": "Hermana técnica menor del Grande Utopia EM Evo — columna Utopia de tres vías con el mismo tweeter IAL2 en berilio y los midranges Power Flower con cono W, sumando un woofer de 330 mm con motor electromagnético. Las 243 combinaciones del filtro OPC+ permiten ajustar el carácter sonoro a la sala."
+  },
+  "priceUsd": {
+    "max": 149998
   }
 }

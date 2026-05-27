@@ -47,5 +47,8 @@
   "description": {
     "en": "Mid-size stand-mount in the 600 S3 line — same 25 mm Titanium Dome tweeter as the rest of the series, here driven by a 165 mm Continuum cone instead of the 130 mm unit in the 607. The bigger cabinet pushes the low end into the low 50s Hz at ±3 dB and lifts sensitivity to 88 dB, making it the easier load of the two passive bookshelves in the family.",
     "es": "Bookshelf mediano de la línea 600 S3 — comparte el tweeter Titanium Dome de 25 mm con el resto de la serie, ahora apoyado en un Continuum de 165 mm en lugar del 130 mm del 607. La caja más grande baja la respuesta a poco más de 50 Hz a ±3 dB y sube la sensibilidad a 88 dB, lo que lo hace más fácil de manejar para amplificadores chicos."
+  },
+  "priceUsd": {
+    "max": 1100
   }
 }

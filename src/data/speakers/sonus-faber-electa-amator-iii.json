@@ -48,5 +48,8 @@
   "description": {
     "en": "Two-way standmount of the Heritage Amator family — a smaller sibling to the Maxima Amator with the same H28 DAD tweeter and 180 mm MW18 natural-fibre mid-bass, built in solid walnut with Port Saint Laurent marble accents. Optional dedicated stand brings the speaker to 1095 mm total.",
     "es": "Bookshelf de dos vías de la familia Heritage Amator — hermano menor del Maxima Amator con el mismo tweeter H28 DAD y un mid-bass MW18 de 180 mm en fibras naturales, construido en nogal macizo con detalles en mármol Port Saint Laurent. El stand dedicado opcional lleva el conjunto a 1095 mm de altura total."
+  },
+  "priceUsd": {
+    "max": 10000
   }
 }

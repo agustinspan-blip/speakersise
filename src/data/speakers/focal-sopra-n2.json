@@ -54,5 +54,8 @@
   "description": {
     "en": "Mid-sized three-way floorstander of the Sopra line — 27 mm IHL pure-beryllium tweeter and 165 mm W-cone midrange (TMD + NIC) paired with twin 180 mm W-cone woofers. Handcrafted in France in a front-ported cabinet sized for rooms of 30–70 m².",
     "es": "Floorstander de tres vías de tamaño medio de la línea Sopra — tweeter IHL de 27 mm en berilio puro y midrange de 165 mm en cono W (TMD + NIC) junto a dos woofers de 180 mm en cono W. Construido a mano en Francia en un gabinete con puerto frontal pensado para salas de 30–70 m²."
+  },
+  "priceUsd": {
+    "max": 13999
   }
 }

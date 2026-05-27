@@ -59,5 +59,8 @@
   "description": {
     "en": "Flagship floorstander of the Homage Collection — a 4.5-way system named after Andrea Amati, the Cremonese luthier. A 20 mm silk super-tweeter sits above a 38 mm silk tweeter, a 165 mm paper midrange in its sealed cork sub-enclosure, and twin 220 mm paper woofers in the 'Stealth Ultraflex' vented box. Lute-shaped cabinet with matte aluminium accents.",
     "es": "Floorstander insignia de la Homage Collection — sistema de 4.5 vías que lleva el nombre de Andrea Amati, el luthier cremonés. Un super-tweeter de seda de 20 mm se ubica sobre un tweeter de seda de 38 mm, un midrange de papel de 165 mm en su sub-cámara sellada de corcho, y dos woofers de papel de 220 mm en la caja vented 'Stealth Ultraflex'. Gabinete con forma de laúd con detalles de aluminio mate."
+  },
+  "priceUsd": {
+    "max": 78000
   }
 }

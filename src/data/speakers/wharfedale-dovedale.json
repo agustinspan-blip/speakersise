@@ -54,5 +54,8 @@
   "description": {
     "en": "Wharfedale's 90th-anniversary three-way standmount, a rare modern continuation of the original Dovedale silhouette built around a 10\" woven-Kevlar woofer, 5\" Kevlar midrange and 1\" soft-dome tweeter. UK-built with hand-veneered walnut, it pairs traditional cabinet craft with modern motor and crossover work for a 36 Hz reach and 112 dB peak SPL.",
     "es": "El standmount de tres vías del 90º aniversario de Wharfedale: una rara continuación moderna del Dovedale original, con woofer de 10\" en Kevlar tejido, mediano de 5\" en Kevlar y tweeter de 1\" con domo suave. Construido en el Reino Unido con chapas de walnut hechas a mano, combina la carpintería tradicional con motores y crossovers actualizados para llegar a 36 Hz y 112 dB de SPL pico."
+  },
+  "priceUsd": {
+    "max": 6995
   }
 }

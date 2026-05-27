@@ -48,5 +48,8 @@
   "description": {
     "en": "Two-way pedestal-mount reference loudspeaker in JBL's Summit line — D2515K dual 38 mm Teonex compression driver loaded into the Summit HDI horn, crossing at 1.6 kHz to a 200 mm HC4 hybrid carbon-cellulose composite cone in a multi-braced curved-wall cabinet. Sold with a dedicated 412×412×550 mm stand and finished in Black High Gloss or Ebony Veneer High Gloss.",
     "es": "Bookshelf de referencia de dos vías pedestal-mount en la línea Summit de JBL — driver de compresión Teonex D2515K con dual diafragma de 38 mm cargado en la bocina Summit HDI, cruzando a 1.6 kHz con un cono HC4 híbrido de carbono-celulosa de 200 mm en un cabinet de pared curva multi-braced. Se vende con un stand dedicado de 412×412×550 mm y termina en Black High Gloss o Ebony Veneer High Gloss."
+  },
+  "priceUsd": {
+    "max": 19995
   }
 }

@@ -55,5 +55,8 @@
   "description": {
     "en": "Three-way floorstander of the Kanta line — Focal's IAL3 beryllium tweeter and a 165 mm flax midrange (TMD + NIC) paired with twin 165 mm flax woofers in a front-ported high-density-polymer baffle with moulded wood rear shell. Bold finish options (Carrara White, Solar Yellow, Gauloise Blue) are the line's signature.",
     "es": "Floorstander de tres vías de la línea Kanta — el tweeter IAL3 en berilio puro de Focal y un midrange de 165 mm en cono de lino (TMD + NIC) junto a dos woofers de 165 mm también en lino, en un bafle de polímero de alta densidad con cuerpo moldeado en madera y puerto frontal. Las terminaciones llamativas (Carrara White, Solar Yellow, Gauloise Blue) son sello de la línea."
+  },
+  "priceUsd": {
+    "max": 8999
   }
 }

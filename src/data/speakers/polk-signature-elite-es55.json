@@ -44,5 +44,8 @@
   "description": {
     "en": "Mid-size two-way tower in Polk's Signature Elite line — 25 mm Terylene dome tweeter crossed at 2.4 kHz to two 165 mm Dynamic Balance mica-reinforced polypropylene cones. The down-firing Power Port through the plinth pushes low-end reach to 33 Hz at the spec floor; Hi-Res Audio certified, 89 dB sensitivity into 8 ohms.",
     "es": "Torre mediana de dos vías de la línea Signature Elite de Polk — tweeter Terylene de domo de 25 mm cruzando a 2.4 kHz con dos conos Dynamic Balance reforzados con mica y polipropileno de 165 mm. El Power Port descendente a través del plinto baja la respuesta a 33 Hz; certificado Hi-Res Audio, 89 dB de sensibilidad sobre 8 ohms."
+  },
+  "priceUsd": {
+    "max": 900
   }
 }

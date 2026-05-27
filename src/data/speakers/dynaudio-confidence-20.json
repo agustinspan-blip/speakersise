@@ -46,5 +46,8 @@
   "description": {
     "en": "The smallest model in Dynaudio's Confidence series — a 2-way bookshelf built around the Esotar3 soft-dome tweeter and an 18 cm NeoTec MSP mid-bass driver. The Compex composite baffle, DDC Lens waveguide and down-firing port deliver wide directivity control and surprisingly extended low-end for a stand-mount.",
     "es": "El más chico de la serie Confidence de Dynaudio — un bookshelf de dos vías construido alrededor del tweeter de domo suave Esotar3 y un mid-bass NeoTec MSP de 18 cm. El bafle compuesto Compex, la guía de ondas DDC Lens y el puerto bass-reflex hacia abajo logran un control de directividad amplio y una extensión grave sorprendente para un stand-mount."
+  },
+  "priceUsd": {
+    "max": 13000
   }
 }

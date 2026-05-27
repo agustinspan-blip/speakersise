@@ -45,5 +45,8 @@
   "description": {
     "en": "A slim two-way floorstander built around dual 5¼″ wood-fibre woofers and the brand's 29 mm soft-dome tweeter. The narrow front baffle and rear-firing port make it easy to place close to walls without overpowering the room.",
     "es": "Un floorstander de dos vías y perfil delgado construido alrededor de dos woofers de 5¼″ con membrana de fibra de madera y el tweeter de domo suave de 29 mm de la marca. El frente angosto y el puerto trasero permiten ubicarlo cerca de las paredes sin saturar la habitación."
+  },
+  "priceUsd": {
+    "max": 1500
   }
 }

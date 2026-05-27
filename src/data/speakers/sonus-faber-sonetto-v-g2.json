@@ -55,5 +55,8 @@
   "description": {
     "en": "Three-way floorstander of the Sonetto G2 line — DAD Arrow Point tweeter, Camelia midrange in a sealed cork chamber and twin 165 mm paper-cone woofers in a down-firing vented box. Lute-shaped cabinet sized for medium-to-large rooms.",
     "es": "Floorstander de tres vías de la línea Sonetto G2 — tweeter DAD Arrow Point, midrange Camelia en cámara sellada de corcho y dos woofers de 165 mm en cono de papel con caja vented de tiro inferior. Gabinete con forma de laúd, pensado para salas medianas a grandes."
+  },
+  "priceUsd": {
+    "max": 6499
   }
 }

@@ -52,7 +52,10 @@
       "qobuz-connect",
       "wifi"
     ],
-    "outputs": ["rca-sub", "hdmi-out"],
+    "outputs": [
+      "rca-sub",
+      "hdmi-out"
+    ],
     "pairedSecondary": true
   },
   "images": {
@@ -64,5 +67,8 @@
   "description": {
     "en": "The smallest of Klipsch's 2026 powered line, co-engineered with Onkyo. A 5.25\" Cerametallic woofer plus a 1\" Titanium LTS tweeter on a Tractrix horn in a compact desktop / bookshelf form, with HDMI 2.1 eARC, built-in streaming and Dolby Atmos virtualisation.",
     "es": "El más chico de la línea powered 2026 de Klipsch, co-ingeniada con Onkyo. Woofer Cerametallic de 5,25\" más tweeter Titanium LTS de 1\" sobre horn Tractrix, en formato compacto de escritorio o estantería, con HDMI 2.1 eARC, streaming integrado y virtualización Dolby Atmos."
+  },
+  "priceUsd": {
+    "max": 1399
   }
 }

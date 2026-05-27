@@ -44,5 +44,8 @@
   "description": {
     "en": "Mid-size two-way bookshelf in Polk's Signature Elite line — 25 mm Terylene dome tweeter crossed at 2.4 kHz to a 165 mm Dynamic Balance mica-reinforced polypropylene cone. The bigger driver and rear-firing Power Port extend reach to 41 Hz; Hi-Res Audio certified and rated for a 20–125 W amplifier window.",
     "es": "Bookshelf mediano de dos vías de la línea Signature Elite de Polk — tweeter Terylene de domo de 25 mm cruzando a 2.4 kHz con un cono Dynamic Balance reforzado con mica y polipropileno de 165 mm. El driver más grande y el Power Port trasero llevan la respuesta a 41 Hz; certificado Hi-Res Audio y diseñado para amplis de 20 a 125 W."
+  },
+  "priceUsd": {
+    "max": 400
   }
 }

@@ -47,5 +47,8 @@
   "description": {
     "en": "The most compact model in Wharfedale's Aura series — a two-way bookshelf pairing a 27 × 90 mm AMT high-frequency transducer with a 5″ woven glass-fibre matrix mid-bass. The downward-firing port and dense plinth target tight, articulate bass in a footprint suited to nearfield and small-room listening.",
     "es": "El modelo más compacto de la serie Aura de Wharfedale: un bookshelf de dos vías que combina un transductor AMT de 27 × 90 mm con un mid-bass de 5″ con membrana de fibra de vidrio tejida. El puerto de descarga inferior y el plinto rígido buscan graves articulados y precisos en un formato pensado para campo cercano y salas chicas."
+  },
+  "priceUsd": {
+    "max": 2000
   }
 }

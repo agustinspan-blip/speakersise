@@ -50,5 +50,8 @@
   "description": {
     "en": "The largest Emit — a 3-way floorstander with a dedicated 15 cm MSP midrange between the 28 mm Cerotar tweeter and two 18 cm MSP woofers. Reaches down to 33 Hz with the rear double-flared port; designed for music and movies in larger rooms.",
     "es": "El más grande de la línea Emit — un floorstander de tres vías con un midrange MSP dedicado de 15 cm entre el tweeter Cerotar de 28 mm y dos woofers MSP de 18 cm. Llega hasta 33 Hz con el puerto trasero doble cónico — pensado para música y cine en salas grandes."
+  },
+  "priceUsd": {
+    "max": 2249
   }
 }

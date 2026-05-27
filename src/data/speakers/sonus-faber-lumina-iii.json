@@ -50,5 +50,8 @@
   "description": {
     "en": "Slim three-way floorstander of the Lumina line — 29 mm DAD soft-dome tweeter and three 150 mm paper drivers (one midrange + two woofers) in a squared cabinet with leather accents, front-vented and decoupled by iron spikes. Para-cross crossover topology for balanced amplitude and phase response.",
     "es": "Floorstander esbelto de tres vías de la línea Lumina — tweeter DAD de domo blando de 29 mm y tres drivers de papel de 150 mm (un midrange + dos woofers) en un gabinete cuadrado con detalles de cuero, puerto frontal y spikes de hierro desacoplados. Crossover con topología para-cross para respuesta balanceada en amplitud y fase."
+  },
+  "priceUsd": {
+    "max": 2199
   }
 }

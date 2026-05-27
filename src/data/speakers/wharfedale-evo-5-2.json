@@ -53,5 +53,8 @@
   "description": {
     "en": "The larger standmount of the EVO 5 range — a three-way bookshelf that adds a 2″ soft-dome midrange between the AMT tweeter and a 6.5″ woven-Kevlar woofer. The expanded cabinet pushes bass extension down to 44 Hz, blurring the line with a small floorstander.",
     "es": "El standmount más grande del rango EVO 5 — un bookshelf de tres vías que suma un mediano de 2″ con domo suave entre el tweeter AMT y un woofer de 6.5″ con cono de Kevlar tejido. El gabinete ampliado lleva la extensión grave hasta 44 Hz, acercándose al territorio de un floorstander chico."
+  },
+  "priceUsd": {
+    "max": 1499
   }
 }

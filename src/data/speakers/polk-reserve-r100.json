@@ -48,5 +48,8 @@
   "description": {
     "en": "Compact two-way bookshelf — Polk's 1\" Pinnacle ring-radiator tweeter and a 5.25\" Turbine-cone mid-bass in a rear-X-Port cabinet. Hi-Res Audio certified to 39 kHz with a 2.7 kHz crossover; pairs well as a stereo pair in small rooms or as surrounds in a larger system.",
     "es": "Bookshelf compacto de dos vías — el tweeter Pinnacle de anillo radiante de 1\" de Polk y un mid-bass Turbine Cone de 5,25\" en un gabinete con X-Port trasero. Certificado Hi-Res Audio hasta 39 kHz con crossover a 2,7 kHz; funciona bien como par estéreo en salas chicas o como surrounds en un sistema más grande."
+  },
+  "priceUsd": {
+    "max": 699
   }
 }

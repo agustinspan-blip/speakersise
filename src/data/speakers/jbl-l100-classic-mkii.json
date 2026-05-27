@@ -55,5 +55,8 @@
   "description": {
     "en": "Three-way large stand-mount that revives JBL's 1970s L100 studio-monitor silhouette in a walnut-veneer cabinet with the iconic Quadrex foam grille (black, orange or blue). A 300 mm Pure Pulp woofer, 130 mm polymer-coated Pure Pulp midrange and 25 mm Titanium Dome tweeter with acoustic lens cross at 450 Hz and 3.5 kHz, with MF/HF attenuators on the baffle for in-room tuning.",
     "es": "Stand-mount grande de tres vías que revive el perfil del monitor de estudio L100 de JBL de los 70 en un cabinet de chapa de nogal con la icónica grilla de espuma Quadrex (negra, naranja o azul). El woofer Pure Pulp de 300 mm, el midrange Pure Pulp recubierto con polímero de 130 mm y el tweeter Titanium Dome de 25 mm con lente acústica cruzan a 450 Hz y 3.5 kHz, con atenuadores MF/HF en el bafle para ajustar al ambiente."
+  },
+  "priceUsd": {
+    "max": 4800
   }
 }

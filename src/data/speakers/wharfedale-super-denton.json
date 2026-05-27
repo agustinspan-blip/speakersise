@@ -53,5 +53,8 @@
   "description": {
     "en": "A genuine three-way compact standmount within Wharfedale's Heritage line, packing tweeter, dome midrange and 6.5\" woven-Kevlar woofer into one of the smallest 14.7-litre cabinets on the market. Bass extension reaches 40 Hz despite the modest footprint, with the hand-veneered cabinet keeping the classic Denton silhouette.",
     "es": "Un standmount compacto de tres vías genuino dentro de la línea Heritage de Wharfedale, que mete tweeter, mediano de domo y woofer de 6.5\" con cono de Kevlar tejido en uno de los gabinetes más chicos del mercado (14.7 litros). El bajo extiende hasta 40 Hz pese al tamaño reducido, manteniendo la silueta clásica del Denton con chapado de madera hecho a mano."
+  },
+  "priceUsd": {
+    "max": 1499
   }
 }

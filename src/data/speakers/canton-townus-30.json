@@ -44,5 +44,8 @@
   "description": {
     "en": "Compact 2-way bookshelf of the Townus line — 25 mm ceramic tweeter and a 174 mm titanium-cone mid-bass in a rear-ported cabinet with 3 kHz crossover. Entry to Canton's modern Townus family.",
     "es": "Bookshelf compacto de 2 vías de la línea Townus — tweeter cerámico de 25 mm y un mid-bass de 174 mm en cono de titanio, en un gabinete con puerto trasero y crossover a 3 kHz. Puerta de entrada a la familia Townus de Canton."
+  },
+  "priceUsd": {
+    "max": 1495
   }
 }

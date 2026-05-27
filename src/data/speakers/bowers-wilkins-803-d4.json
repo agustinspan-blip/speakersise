@@ -56,5 +56,8 @@
   "description": {
     "en": "Mid-size three-way floorstander of the 800 Diamond range. Solid Body Tweeter-on-Top with a 5\" Continuum-cone FST midrange in the Turbine head, sitting over twin 7\" Aerofoil-cone bass drivers in the curved Matrix cabinet. Designed for medium-large rooms.",
     "es": "Floorstander de tres vías de tamaño medio dentro de la 800 Diamond. Solid Body Tweeter-on-Top con un midrange de 5\" con cono Continuum FST en la cabeza Turbine, sobre dos woofers de 7\" con cono Aerofoil dentro del gabinete Matrix curvado. Pensado para salas medianas-grandes."
+  },
+  "priceUsd": {
+    "max": 27000
   }
 }

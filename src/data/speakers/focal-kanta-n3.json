@@ -55,5 +55,8 @@
   "description": {
     "en": "Flagship of the Kanta line — three-way floorstander pairing the IAL3 beryllium tweeter and a 165 mm flax midrange (TMD + NIC) with twin 210 mm flax woofers in a front-ported cabinet. High-density-polymer baffle and moulded wood rear shell, with the Kanta line's bold colour palette.",
     "es": "Tope de gama de la línea Kanta — floorstander de tres vías que combina el tweeter IAL3 en berilio y un midrange de 165 mm en cono de lino (TMD + NIC) con dos woofers de 210 mm también en lino, en un gabinete con puerto frontal. Bafle de polímero de alta densidad y cuerpo moldeado en madera, con la paleta de colores llamativa característica de la línea Kanta."
+  },
+  "priceUsd": {
+    "max": 11999
   }
 }

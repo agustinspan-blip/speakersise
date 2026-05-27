@@ -44,5 +44,8 @@
   "description": {
     "en": "The smallest of the Emit line — a 2-way stand-mount with the 28 mm Cerotar soft-dome tweeter and a 14 cm MSP mid-bass driver. Rear-ported with a double-flared port for clean low-end extension despite the compact cabinet.",
     "es": "El más chico de la línea Emit — un stand-mount de dos vías con el tweeter de domo suave Cerotar de 28 mm y un mid-bass MSP de 14 cm. Puerto bass-reflex trasero doble cónico para extensión grave limpia a pesar del gabinete compacto."
+  },
+  "priceUsd": {
+    "max": 799
   }
 }

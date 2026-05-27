@@ -50,5 +50,8 @@
   "description": {
     "en": "A compact two-way bookshelf in MTM (mid-tweeter-mid) array — Monitor Audio's MPD III planar-ribbon tweeter flanked by two 4¼″ RDT III C-CAM drivers. Rear-ported and tuned to 58 Hz; crossover at 2.4 kHz. Builds on the brand's classic Studio lineage.",
     "es": "Un bookshelf compacto de dos vías en arreglo MTM — el tweeter de cinta plana MPD III de Monitor Audio flanqueado por dos transductores RDT III C-CAM de 4¼″. Bass-reflex trasero sintonizado a 58 Hz; crossover a 2,4 kHz. Continúa el linaje clásico Studio de la marca."
+  },
+  "priceUsd": {
+    "max": 2500
   }
 }

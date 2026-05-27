@@ -52,5 +52,8 @@
   "description": {
     "en": "A slim 3-way floorstander in the Confidence line. The Esotar3 tweeter and a dedicated 15 cm MSP midrange share the upper register while two 18 cm NeoTec MSP woofers handle the bass. DDC 2 directivity control and the Compex composite baffle keep distortion low and stage placement precise.",
     "es": "Floorstander delgado de tres vías de la línea Confidence. El tweeter Esotar3 y un midrange MSP de 15 cm dedicado se reparten la zona alta mientras que dos woofers NeoTec MSP de 18 cm se encargan del grave. El control de directividad DDC 2 y el bafle compuesto Compex mantienen la distorsión baja y la imagen estéreo precisa."
+  },
+  "priceUsd": {
+    "max": 24000
   }
 }

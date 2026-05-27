@@ -57,5 +57,8 @@
   "description": {
     "en": "Top of the Silver 7G line — a 3-way floorstander with the 25 mm C-CAM Gold Dome tweeter, a dedicated 3″ RST II midrange, and twin 8″ RST II woofers. Dual HiVe II ports tuned to 36 Hz; 90.5 dB sensitivity makes it an easy match for most amplifiers.",
     "es": "El tope de la línea Silver 7G — un floorstander de tres vías con tweeter C-CAM de domo dorado de 25 mm, un midrange RST II dedicado de 3″ y dos woofers RST II de 8″. Doble puerto HiVe II sintonizado a 36 Hz; 90,5 dB de sensibilidad lo hacen pareja fácil para la mayoría de los amplificadores."
+  },
+  "priceUsd": {
+    "max": 3400
   }
 }

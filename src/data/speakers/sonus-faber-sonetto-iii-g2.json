@@ -55,5 +55,8 @@
   "description": {
     "en": "Slim 2.5-way floorstander of the Sonetto G2 line — the 28 mm DAD Arrow Point tweeter sits above two 165 mm paper-cone drivers (midwoofer + woofer) in a lute-shaped cabinet built from wood, leather and concrete. Compact footprint for medium rooms.",
     "es": "Floorstander esbelto de 2.5 vías de la línea Sonetto G2 — el tweeter DAD Arrow Point de 28 mm se ubica sobre dos drivers de 165 mm en cono de papel (midwoofer + woofer), en un gabinete con forma de laúd construido en madera, cuero y concreto. Huella compacta para salas medianas."
+  },
+  "priceUsd": {
+    "max": 4500
   }
 }

@@ -46,5 +46,8 @@
   "description": {
     "en": "The standmount of the Rubikore range — a 2-way bookshelf pairing a 29 mm low-loss soft-dome tweeter with a 6½″ Clarity Cone bass/midrange driver running an SMC motor. Bi-wire/bi-amp terminals, bass-reflex tuned to 44 Hz and a 40–150 W amp window for nearfield or smaller listening rooms.",
     "es": "El standmount de la línea Rubikore — un bookshelf de dos vías que combina un tweeter de domo suave low-loss de 29 mm con un mid-bass de 6½″ Clarity Cone con motor SMC. Terminales bi-wire/bi-amp, bass-reflex sintonizado a 44 Hz y un rango de amp de 40–150 W para escucha cercana o salas chicas."
+  },
+  "priceUsd": {
+    "max": 3000
   }
 }

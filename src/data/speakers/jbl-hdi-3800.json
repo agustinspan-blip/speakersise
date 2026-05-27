@@ -47,5 +47,8 @@
   "description": {
     "en": "Flagship 2½-way tower in JBL's High-Definition Imaging line — patented 2410H-2 25 mm Teonex compression driver loaded into the HDI horn, paired with three 200 mm Advanced Aluminum Matrix cone woofers and dual rear-firing flared ports. 92 dB sensitivity and a 25–300 W amplifier window make it the easiest load of the HDI floorstanders to drive while still reaching down to 37 Hz.",
     "es": "Torre tope de la línea High-Definition Imaging de JBL — driver de compresión Teonex de 25 mm patentado (2410H-2) cargado en la bocina HDI, junto con tres woofers Advanced Aluminum Matrix de 200 mm y dos puertos traseros con flares optimizados. 92 dB de sensibilidad y una ventana de amplificación de 25–300 W lo hacen la torre HDI más fácil de manejar mientras llega abajo hasta 37 Hz."
+  },
+  "priceUsd": {
+    "max": 5000
   }
 }

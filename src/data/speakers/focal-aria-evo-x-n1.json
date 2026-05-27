@@ -50,5 +50,8 @@
   "description": {
     "en": "Compact two-way bookshelf — Focal's entry into the Aria Evo X line, pairing the new 25 mm TAM Al/Mg inverted-dome tweeter with a 165 mm flax mid-bass in a front-ported cabinet with non-parallel walls. Note: spec width (280 mm) reflects the cabinet bumper edges; rendered silhouette uses the front-on aspect.",
     "es": "Bookshelf compacto de dos vías — la puerta de entrada a la línea Aria Evo X, que combina el nuevo tweeter TAM de 25 mm en domo invertido Al/Mg con un mid-bass de 165 mm en cono de lino, en un gabinete con puerto frontal y paredes no paralelas. Nota: el ancho oficial (280 mm) incluye los bordes del cabinet; la silueta usa el aspect del frontal puro."
+  },
+  "priceUsd": {
+    "max": 2398
   }
 }

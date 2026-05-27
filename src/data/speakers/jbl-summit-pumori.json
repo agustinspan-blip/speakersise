@@ -55,5 +55,8 @@
   "description": {
     "en": "Mid-size three-way floorstander in JBL's Summit reference line — D2515K dual 38 mm Teonex compression driver in the Summit HDI horn, joined by a 200 mm HC4 mid-bass with underhung neodymium motor and a 250 mm HC4 woofer. Crossovers at 285 Hz and 1.25 kHz; multi-braced curved-wall cabinet with rear-flared bass port and OCC silver-plated internal wiring.",
     "es": "Floorstander mediano de tres vías en la línea de referencia Summit de JBL — driver de compresión Teonex D2515K con dual diafragma de 38 mm en la bocina Summit HDI, acompañado por un mid-bass HC4 de 200 mm con motor underhung de neodimio y un woofer HC4 de 250 mm. Crossovers a 285 Hz y 1.25 kHz; cabinet de pared curva multi-braced con puerto trasero y cableado interno OCC plateado."
+  },
+  "priceUsd": {
+    "max": 29995
   }
 }

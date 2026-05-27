@@ -44,5 +44,8 @@
   "description": {
     "en": "A larger Evoke stand-mount with a 18 cm MSP mid-bass — extends low-end response to 40 Hz while staying a comfortable load on most amps. Same 28 mm Cerotar soft-dome tweeter as the rest of the line.",
     "es": "Un stand-mount Evoke más grande con un mid-bass MSP de 18 cm — extiende la respuesta grave hasta 40 Hz manteniendo una carga cómoda para la mayoría de los amplificadores. Mismo tweeter Cerotar de domo suave de 28 mm que el resto de la línea."
+  },
+  "priceUsd": {
+    "max": 2399
   }
 }

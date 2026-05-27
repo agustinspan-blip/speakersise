@@ -77,5 +77,8 @@
   "description": {
     "en": "Active wireless two-way standmount in a curved lute-shaped cabinet — 28 mm silk-dome tweeter with copper cap paired with a 134 mm paper midwoofer, bi-amped at 100 W class-AB + 250 W class-D per speaker. ESS SABRE 32-bit DAC and full streaming (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, aptX HD Bluetooth) with HDMI eARC and built-in MM phono pre.",
     "es": "Bookshelf activo wireless de dos vías en un gabinete curvo con forma de laúd — tweeter de domo de seda de 28 mm con copper cap junto a un midwoofer de 134 mm en cono de papel, bi-amplificados a 100 W class-AB + 250 W class-D por parlante. DAC ESS SABRE 32-bit y streaming completo (AirPlay 2, Chromecast, Roon, Spotify/Tidal Connect, Bluetooth aptX HD) con HDMI eARC y pre de phono MM integrado."
+  },
+  "priceUsd": {
+    "max": 3999
   }
 }

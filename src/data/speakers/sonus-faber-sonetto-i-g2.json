@@ -48,5 +48,8 @@
   "description": {
     "en": "Compact two-way standmount — the smallest of the Sonetto G2 line. DAD Arrow Point tweeter paired with a 127 mm paper midwoofer (aluminium demodulation ring) in a front-vented lute-shaped cabinet (wood + leather + concrete).",
     "es": "Bookshelf compacto de dos vías — el más chico de la línea Sonetto G2. Tweeter DAD Arrow Point junto a un midwoofer de 127 mm en cono de papel (anillo de demodulación de aluminio), en un gabinete con forma de laúd con puerto frontal (madera + cuero + concreto)."
+  },
+  "priceUsd": {
+    "max": 2500
   }
 }

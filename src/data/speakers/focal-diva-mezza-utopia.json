@@ -92,5 +92,8 @@
   "description": {
     "en": "Larger sibling of the Diva Utopia — Focal & Naim's flagship wireless active floorstander, scaling the woofers up to four side-firing 205 mm (8\") W-cone drivers in push-push pairs. 1000 W of class-AB multi-amp power per speaker, ADAPT room correction, full streaming and Ultra-Wideband wireless link between primary and secondary cabinets.",
     "es": "Hermano mayor del Diva Utopia — el floorstander activo wireless tope de gama de Focal & Naim, con woofers escalados a cuatro de 205 mm (8\") laterales en cono W en pares push-push. 1000 W class-AB multi-amplificados por parlante, corrección de sala ADAPT, streaming completo y enlace wireless Ultra-Wideband entre el primary y el secondary."
+  },
+  "priceUsd": {
+    "max": 69000
   }
 }

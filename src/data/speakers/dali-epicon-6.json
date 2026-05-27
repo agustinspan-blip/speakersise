@@ -52,5 +52,8 @@
   "description": {
     "en": "A three-way floorstander in the Epicon range, pairing the brand's 28 mm soft-dome / 17×45 mm ribbon hybrid tweeter module with two 6½″ wood-fibre woofers. Together with a sculpted, heavily braced cabinet they target wide dispersion, low distortion and effortless dynamics in medium-to-large rooms.",
     "es": "Floorstander de tres vías de la línea Epicon. Combina el módulo híbrido de Dali — domo suave de 28 mm más cinta de 17×45 mm — con dos woofers de 6½″ con membrana de fibra de madera. El gabinete esculpido y fuertemente reforzado busca dispersión amplia, baja distorsión y dinámica sin esfuerzo en salas medianas y grandes."
+  },
+  "priceUsd": {
+    "max": 16000
   }
 }

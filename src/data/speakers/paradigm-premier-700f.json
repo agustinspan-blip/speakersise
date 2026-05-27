@@ -57,5 +57,8 @@
   "description": {
     "en": "Slim three-way 4-driver tower in Paradigm's Premier line — 25 mm X-PAL dome tweeter on top, dedicated 140 mm midrange and two 140 mm woofers, all sharing the carbon-infused polypropylene cone with Active Ridge Technology surround. Crossovers at 800 Hz and 2.5 kHz; 33 Hz DIN extension and 88 dB anechoic sensitivity in a narrow 215 mm-wide footprint.",
     "es": "Torre slim de tres vías y 4 drivers en la línea Premier de Paradigm — tweeter X-PAL de domo de 25 mm arriba, midrange dedicado de 140 mm y dos woofers de 140 mm, todos compartiendo el cono carbon-infused polypropylene con suspensión Active Ridge Technology. Crossovers a 800 Hz y 2.5 kHz; extensión a 33 Hz (DIN) y 88 dB anechoic en un footprint angosto de 215 mm."
+  },
+  "priceUsd": {
+    "max": 1598
   }
 }

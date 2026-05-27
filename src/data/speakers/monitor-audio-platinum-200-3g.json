@@ -57,5 +57,8 @@
   "description": {
     "en": "A 3-way Platinum 3G floorstander pairing the MPD III planar-ribbon tweeter with a dedicated 4″ RDT III midrange and twin 6″ RDT III woofers. Crossover at 825 Hz / 3 kHz, rear-ported and tuned to 38 Hz; sculpted, hand-finished cabinet voiced for refined full-range response.",
     "es": "Un floorstander Platinum 3G de tres vías que combina el tweeter de cinta plana MPD III con un midrange RDT III dedicado de 4″ y dos woofers RDT III de 6″. Crossover a 825 Hz / 3 kHz, bass-reflex trasero sintonizado a 38 Hz; gabinete esculpido y terminado a mano para una respuesta refinada de banda completa."
+  },
+  "priceUsd": {
+    "max": 15299
   }
 }

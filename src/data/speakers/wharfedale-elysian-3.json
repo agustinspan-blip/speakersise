@@ -54,5 +54,8 @@
   "description": {
     "en": "A slim three-way floorstander with dual 7″ glass-fibre woofers, a 6″ midrange and the AMT tweeter shared with the rest of the Elysian line. The narrow cabinet and downward SLPP keep imaging precise while reaching 44 Hz — the entry into Wharfedale's flagship floor-standing range.",
     "es": "Un floorstander angosto de tres vías con dos woofers de 7″ con cono de fibra de vidrio, un mediano de 6″ y el mismo AMT que comparte toda la línea Elysian. El gabinete estrecho y el SLPP de descarga inferior mantienen la imagen estéreo precisa llegando hasta los 44 Hz — la puerta de entrada al rango insignia de pie de Wharfedale."
+  },
+  "priceUsd": {
+    "max": 7495
   }
 }

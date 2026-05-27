@@ -48,5 +48,8 @@
   "description": {
     "en": "Mid-size two-way stand-mount in JBL's L-Classic line — 200 mm Pure Pulp cone woofer crossed at 1.7 kHz to a 25 mm Titanium Dome tweeter with acoustic lens waveguide. Walnut-veneer cabinet with the Quadrex foam grille (black, orange or blue) and an HF level attenuator on the baffle; designed for the JBL JS-80 stand.",
     "es": "Stand-mount mediano de dos vías en la línea L-Classic de JBL — woofer Pure Pulp de 200 mm que cruza a 1.7 kHz con un tweeter Titanium Dome de 25 mm con lente acústica. Cabinet de chapa de nogal con la grilla de espuma Quadrex (negra, naranja o azul) y un atenuador HF en el bafle; pensado para el stand JBL JS-80."
+  },
+  "priceUsd": {
+    "max": 3190
   }
 }

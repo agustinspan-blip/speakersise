@@ -53,5 +53,8 @@
   "description": {
     "en": "A scaled-up Linton with redesigned drivers and crossover inside a larger hand-veneered cabinet, available in walnut, black oak or mahogany. The bigger enclosure and reworked motors push bass extension down to 32 Hz while keeping the classic Heritage proportions and 90 dB sensitivity.",
     "es": "Un Linton agrandado, con drivers y crossover rediseñados dentro de un gabinete chapado a mano más grande, en walnut, black oak o mahogany. La caja mayor y los motores reformados llevan el grave hasta 32 Hz manteniendo las proporciones clásicas de la línea Heritage y los 90 dB de sensibilidad."
+  },
+  "priceUsd": {
+    "max": 2699
   }
 }

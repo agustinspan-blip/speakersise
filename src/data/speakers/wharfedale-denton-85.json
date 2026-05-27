@@ -47,5 +47,8 @@
   "description": {
     "en": "Two-way bookshelf in the classic Denton tradition, released for Wharfedale's 85th anniversary. Hand-veneered mahogany cabinet houses a 165 mm woven-Kevlar mid-bass paired with a 25 mm soft-dome tweeter, ported at the rear in the British heritage style.",
     "es": "Bookshelf de dos vías en la tradición clásica de la línea Denton, lanzado por el 85° aniversario de Wharfedale. El gabinete chapado a mano en caoba aloja un mid-bass de 165 mm con cono Kevlar tejido junto a un tweeter de domo blando de 25 mm, con puerto trasero en estilo británico clásico."
+  },
+  "priceUsd": {
+    "max": 1199
   }
 }

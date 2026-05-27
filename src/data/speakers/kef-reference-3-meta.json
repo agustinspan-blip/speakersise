@@ -55,5 +55,8 @@
   "description": {
     "en": "Three-way floorstander of KEF's Reference Meta line — 12th-gen Uni-Q array (25 mm MAT tweeter + 125 mm aluminium midrange) paired with twin 165 mm all-aluminium woofers in a switchable-port cabinet. Hand-built and pair-matched within 0.5 dB to the laboratory standard in Maidstone, UK.",
     "es": "Floorstander de tres vías de la línea Reference Meta — array Uni-Q de 12ª generación (tweeter de 25 mm con MAT + midrange de aluminio de 125 mm) junto a dos woofers de 165 mm en aluminio puro, en un gabinete con puerto conmutable. Construido a mano y emparejado a 0,5 dB del estándar de laboratorio en Maidstone, Reino Unido."
+  },
+  "priceUsd": {
+    "max": 16200
   }
 }

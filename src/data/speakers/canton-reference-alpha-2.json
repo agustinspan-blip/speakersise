@@ -53,5 +53,8 @@
   "description": {
     "en": "Compact sibling of the Reference Alpha 1 — same 3-way down-firing bass-reflex topology with DLC diamond tweeter, 174 mm BCT midrange and four 192 mm BCT double-cone woofers in a curved cabinet. Crossover points: 160 Hz / 3.1 kHz; 950 W music load capacity.",
     "es": "Hermano compacto del Reference Alpha 1 — misma topología 3 vías reflex inferior con tweeter DLC, midrange BCT de 174 mm y cuatro woofers BCT de doble cono de 192 mm en gabinete curvo. Crossovers a 160 Hz / 3,1 kHz; capacidad de pico 950 W."
+  },
+  "priceUsd": {
+    "max": 50000
   }
 }

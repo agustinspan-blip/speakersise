@@ -51,5 +51,8 @@
   "description": {
     "en": "Three-way floorstander of the Lumina line — 29 mm DAD soft-dome tweeter, 150 mm paper midrange and twin 165 mm sandwich-cone woofers in a squared multilayer-wood cabinet with hand-applied leather accents. Front-vented design with decoupled iron spikes.",
     "es": "Floorstander de tres vías de la línea Lumina — tweeter DAD de domo blando de 29 mm, midrange de papel de 150 mm y dos woofers de 165 mm en cono sandwich, en un gabinete cuadrado multicapa de madera con detalles de cuero aplicados a mano. Diseño con puerto frontal y spikes de hierro desacoplados."
+  },
+  "priceUsd": {
+    "max": 2799
   }
 }

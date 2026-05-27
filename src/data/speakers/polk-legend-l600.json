@@ -56,5 +56,8 @@
   "description": {
     "en": "Three-way Legend floorstander — 1\" Pinnacle ring-radiator tweeter, a 5.25\" Turbine-cone midrange in a sealed sub-chamber and twin 7\" polypropylene mid/woofers in a Power-Port-vented bass section. 86 dB sensitivity and 300 W peak handling.",
     "es": "Floorstander de tres vías de la línea Legend — tweeter Pinnacle de anillo radiante de 1\", midrange Turbine Cone de 5,25\" en sub-cámara sellada y dos mid/woofers de polipropileno de 7\" en sección de graves vented con Power Port. 86 dB de sensibilidad y 300 W de pico."
+  },
+  "priceUsd": {
+    "max": 3998
   }
 }

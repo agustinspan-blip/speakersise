@@ -54,5 +54,8 @@
   "description": {
     "en": "Continuously produced since 1946, the Klipschorn is Klipsch's iconic fully horn-loaded three-way floorstander designed to be corner-loaded — the room corners become part of the bass horn. The AK6 adds a fully enclosed cabinet (Birch plywood + MDF) at 105 dB sensitivity and 121 dB peak SPL.",
     "es": "Producido sin interrupciones desde 1946, el Klipschorn es el icónico floorstander de tres vías totalmente horn-loaded de Klipsch diseñado para apoyarse en las esquinas — las paredes de la sala forman parte del horn de graves. El AK6 incorpora un gabinete totalmente cerrado (abedul + MDF) con 105 dB de sensibilidad y 121 dB de SPL pico."
+  },
+  "priceUsd": {
+    "max": 14998
   }
 }

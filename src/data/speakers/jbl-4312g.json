@@ -54,5 +54,8 @@
   "description": {
     "en": "Direct descendant of the JBL 4310/4312 lineage from the 1970s — a 3-way bookshelf with a 300 mm Pure Pulp cone woofer, 125 mm polymer-coated Pure Pulp midrange and 25 mm Magnesium-Aluminum alloy dome tweeter, all in a sleek black wood-grain cabinet with front-firing port. Baffle-mounted mid and HF attenuators preserve the classic studio-monitor tuning ritual.",
     "es": "Descendiente directo del linaje JBL 4310/4312 de los 70 — bookshelf de tres vías con woofer Pure Pulp de 300 mm, midrange Pure Pulp recubierto con polímero de 125 mm y tweeter con domo de aleación Magnesio-Aluminio de 25 mm, todo en un cabinet de madera negra con puerto frontal. Los atenuadores de mid y HF en el bafle preservan el ritual del studio monitor clásico."
+  },
+  "priceUsd": {
+    "max": 2299
   }
 }

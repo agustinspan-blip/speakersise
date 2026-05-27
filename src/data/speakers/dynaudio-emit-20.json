@@ -44,5 +44,8 @@
   "description": {
     "en": "A larger 2-way Emit stand-mount built around the 28 mm Cerotar tweeter and a 18 cm MSP mid-bass driver. The bigger cone reaches lower (53 Hz) than the Emit 10 while keeping the same easy load on real-world amplifiers.",
     "es": "Un stand-mount Emit de dos vías más grande construido alrededor del tweeter Cerotar de 28 mm y un mid-bass MSP de 18 cm. El cono mayor llega más abajo (53 Hz) que el Emit 10 manteniendo la misma carga fácil para amplificadores reales."
+  },
+  "priceUsd": {
+    "max": 1049
   }
 }

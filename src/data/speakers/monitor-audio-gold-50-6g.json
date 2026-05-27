@@ -51,5 +51,8 @@
   "description": {
     "en": "A 2-way Gold 6G bookshelf with the MPD III planar-ribbon tweeter and a 6″ HDT C-CAM mid-bass driver, crossed at 2.5 kHz. Rear HiVe II port tuned to 50 Hz; refined cabinet finishing places it firmly above the Silver line in resolution and treble extension.",
     "es": "Un bookshelf Gold 6G de dos vías con el tweeter de cinta plana MPD III y un mid-bass HDT C-CAM de 6″, acoplados a 2,5 kHz. Puerto trasero HiVe II sintonizado a 50 Hz; terminación de gabinete refinada que lo ubica claramente por encima de la línea Silver en resolución y extensión de agudos."
+  },
+  "priceUsd": {
+    "max": 2749
   }
 }

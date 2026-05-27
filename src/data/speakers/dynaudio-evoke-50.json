@@ -51,5 +51,8 @@
   "description": {
     "en": "The flagship Evoke — a true 3-way floorstander with a 15 cm MSP midrange dedicated between the 28 mm Cerotar tweeter and twin 18 cm MSP woofers. Reaches 35 Hz with a 3rd/2nd-order crossover at 430/3500 Hz and a rear bass-reflex port.",
     "es": "El tope de la línea Evoke — un floorstander de tres vías reales con un midrange MSP de 15 cm dedicado entre el tweeter Cerotar de 28 mm y dos woofers MSP de 18 cm. Llega a 35 Hz con un crossover de tercer/segundo orden a 430/3500 Hz y puerto bass-reflex trasero."
+  },
+  "priceUsd": {
+    "max": 5499
   }
 }

@@ -54,5 +54,8 @@
   "description": {
     "en": "Three-way floorstander combining a Solid Body Tweeter-on-Top with a Continuum-cone FST midrange and dual Aerofoil bass drivers. Rear-ported cabinet with Biomimetic Suspension delivers transparent imaging and authoritative low end in medium-to-large rooms.",
     "es": "Floorstander de tres vías que combina el Solid Body Tweeter-on-Top con un midrange Continuum FST y dos woofers Aerofoil. El gabinete con puerto trasero y suspensión Biomimetic ofrece imagen transparente y graves contundentes en salas medianas a grandes."
+  },
+  "priceUsd": {
+    "max": 6700
   }
 }

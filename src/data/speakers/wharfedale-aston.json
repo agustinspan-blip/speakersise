@@ -47,5 +47,8 @@
   "description": {
     "en": "A limited-edition two-way standmount designed by Peter Comeau, with only 500 pairs built at Wharfedale's UK headquarters. Pairs a new 6\" carbon-fibre mid-bass with a 1\" soft-dome tweeter inside a hand-veneered cabinet, voiced for full-scale, naturally textured sound.",
     "es": "Un standmount de dos vías de edición limitada diseñado por Peter Comeau, con solo 500 pares producidos en la planta inglesa de Wharfedale. Combina un nuevo mid-bass de 6\" con cono de fibra de carbono y un tweeter de 1\" con domo suave dentro de un gabinete chapado a mano, ajustado para un sonido a gran escala con textura natural."
+  },
+  "priceUsd": {
+    "max": 3000
   }
 }

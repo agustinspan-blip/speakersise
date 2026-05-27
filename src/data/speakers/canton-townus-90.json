@@ -50,5 +50,8 @@
   "description": {
     "en": "3-way Townus floorstander — 25 mm ceramic tweeter, 174 mm titanium midrange and twin 174 mm titanium woofers in a down-firing bass-reflex cabinet. Crossover points: 170 Hz / 3.2 kHz; 300 W music load capacity.",
     "es": "Floorstander Townus de 3 vías — tweeter cerámico de 25 mm, midrange de titanio de 174 mm y dos woofers de titanio de 174 mm en gabinete con reflex inferior. Crossovers a 170 Hz / 3,2 kHz; capacidad de pico 300 W."
+  },
+  "priceUsd": {
+    "max": 3495
   }
 }

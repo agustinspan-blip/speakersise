@@ -61,5 +61,8 @@
   "description": {
     "en": "The largest Epikore — a 4½-way floorstander built around four 8″ Clarity-Cone woofers, a 6½″ midrange and the EVO-K Hybrid Tweeter module (35 mm soft dome plus 10 × 55 mm planar ribbon) inherited from the flagship Kore. Curved cabinet with rear bass-reflex tuned to 24 Hz, 116 dB max SPL and a 40–1000 W amp window.",
     "es": "El más grande de la línea Epikore — un floorstander de 4½ vías construido alrededor de cuatro woofers Clarity Cone de 8″, un midrange de 6½″ y el módulo EVO-K Hybrid Tweeter (domo suave de 35 mm más cinta plana de 10 × 55 mm) heredado del Kore tope de gama. Gabinete curvado con bass-reflex trasero sintonizado a 24 Hz, 116 dB SPL máx. y un rango de amp de 40–1000 W."
+  },
+  "priceUsd": {
+    "max": 60000
   }
 }
