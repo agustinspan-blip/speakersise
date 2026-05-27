@@ -291,15 +291,19 @@ function BrandCard({
         <span
           className={`${logo.stripHeightClass} w-auto inline-flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity`}
         >
+          {/*
+            No `dark:invert` here: the card stays `bg-white` in both
+            colour modes, so inverting the (black) logo would paint it
+            white-on-white and make it vanish. The monochrome mark
+            reads correctly against the white card in dark mode as-is.
+          */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logo.src}
             alt={brand}
             width={logo.width}
             height={logo.height}
-            className={`h-full w-auto object-contain ${
-              logo.darkInvert !== false ? "dark:invert" : ""
-            }`}
+            className="h-full w-auto object-contain"
           />
         </span>
       ) : (
