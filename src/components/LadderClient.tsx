@@ -157,6 +157,23 @@ export function LadderClient({
   // filter UI — there's no point offering "Wharfedale" as an option
   // if the active band has zero Wharfedale entries. Computed off the
   // raw band so the user can dial filters back to "all" cleanly.
+  // The tallest rendered speaker across *every* band, in pixels. Used
+  // as a fixed card height so the Bookshelf and Floorstanding ladders
+  // share the same box size (the user asked for both to match the
+  // largest one) instead of each shrinking to its own tallest model.
+  // Computed off the full band sets (not the filtered view) so the box
+  // doesn't resize as filters change.
+  const maxVisualPx = useMemo(() => {
+    let max = 0;
+    for (const b of bands) {
+      if (b.speakers.length === 0) continue;
+      const scale = SCALE_BY_TAB[b.type];
+      const tallestMm = Math.max(...b.speakers.map((s) => s.heightMm));
+      max = Math.max(max, tallestMm * scale);
+    }
+    return max;
+  }, [bands]);
+
   const availableBrands = useMemo(() => {
     if (!visibleBand) return [];
     return Array.from(new Set(visibleBand.speakers.map((s) => s.brand))).sort();
@@ -250,6 +267,7 @@ export function LadderClient({
           <Band
             band={visibleBand}
             speakers={filteredSpeakers}
+            containerPx={maxVisualPx}
             brandFlags={brandFlags}
             selected={selected}
             onToggle={toggle}
@@ -556,6 +574,7 @@ function BandSelector({
 function Band({
   band,
   speakers,
+  containerPx,
   brandFlags,
   selected,
   onToggle,
@@ -572,6 +591,14 @@ function Band({
    * to a handful of shorter speakers shouldn't squish the ruler.
    */
   speakers: ClientSpeaker[];
+  /**
+   * Fixed pixel height of the visual area, shared by every band so
+   * the Bookshelf and Floorstanding cards match (= the tallest
+   * rendered speaker across all bands). Speakers and the ruler are
+   * bottom-aligned inside it, leaving headroom above the shorter
+   * bands rather than shrinking their box.
+   */
+  containerPx: number;
   brandFlags: Record<string, { flag: string; countryName: string }>;
   selected: string[];
   onToggle: (id: string) => void;
@@ -580,16 +607,14 @@ function Band({
   units: Units;
   t: Dictionary;
 }) {
-  // Both tabs now use the same vertical ruler as the reference — the
-  // ruler ticks honour the cm/in toggle and scale with the band, so
-  // it doubles as a height legend in either tab.
+  // Both tabs use the same vertical ruler as the reference — the ruler
+  // ticks honour the cm/in toggle and scale with the band.
   const scale = SCALE_BY_TAB[band.type];
-  // The tallest speaker in the band determines how much vertical
-  // space the row needs. The ruler matches that height exactly.
-  const visualPx =
-    band.speakers.length > 0
-      ? band.speakers[band.speakers.length - 1].heightMm * scale
-      : 0;
+  // The rendered visual height is the shared `containerPx` so both
+  // ladders share a box size; the ruler fills it (its tick count
+  // derives from `containerPx / scale`), and speakers sit on the
+  // shared floor at their true heights.
+  const visualPx = containerPx;
   // Reference column width: just the ruler content (RULER_WIDTH) plus
   // ReferenceSlot's `pl-6 pr-2` inner padding (32 px). Kept tight so
   // the ruler doesn't eat half the viewport on a narrow phone — the
