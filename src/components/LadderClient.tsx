@@ -639,7 +639,9 @@ function Band({
     const el = scrollRef.current;
     if (!el) return;
     const maxScroll = el.scrollWidth - el.clientWidth;
-    setAtScrollEnd(maxScroll <= 4 || el.scrollLeft >= maxScroll - 24);
+    // Reveal once the user is 80% of the way through the row (or
+    // right away when the row doesn't overflow).
+    setAtScrollEnd(maxScroll <= 4 || el.scrollLeft >= maxScroll * 0.8);
   };
   // Re-check on mount and whenever the filtered speaker set changes
   // (filters can shrink the row below the overflow threshold).
@@ -722,7 +724,7 @@ function Band({
         or Mid → Tall (floorstander). Hidden on the last band of a tab.
       */}
       {nextBandLabel && onNextBand && atScrollEnd && (
-        <div className="mt-3 flex justify-center">
+        <div className="mt-3 flex justify-end">
           <button
             type="button"
             onClick={onNextBand}
