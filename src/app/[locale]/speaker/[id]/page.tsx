@@ -10,6 +10,7 @@ import { BrandStrip } from "@/components/BrandStrip";
 import { CompareCTA } from "@/components/CompareCTA";
 import { SideViewBadge } from "@/components/SideViewBadge";
 import { JsonLd } from "@/components/JsonLd";
+import { SpeakerSpecs } from "@/components/SpeakerSpecs";
 import { BRAND_LOGOS, BRAND_INFO } from "@/lib/brands";
 import { SITE_URL } from "@/lib/site";
 import {
@@ -20,7 +21,6 @@ import {
   locales,
 } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/metadata";
-import { formatPriceUsd } from "@/lib/units";
 
 interface Props {
   params: Promise<{ locale: string; id: string }>;
@@ -270,32 +270,39 @@ export default async function SpeakerDetailPage({ params }: Props) {
               </div>
             ))}
             {brandLogo && (
-              <Link
-                href={`/${locale}?brand=${encodeURIComponent(speaker.brand)}`}
-                className="flex flex-col items-center justify-center py-4 gap-2 opacity-80 hover:opacity-100 transition-opacity"
-                aria-label={speaker.brand}
-                title={speaker.brand}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={brandLogo.src}
-                  alt={speaker.brand}
-                  width={brandLogo.width}
-                  height={brandLogo.height}
-                  className={`${brandLogo.stripHeightClass} w-auto object-contain ${
-                    brandLogo.darkInvert !== false ? "dark:invert" : ""
-                  }`}
-                />
+              // Logo and flag are now two separate links (they can't be
+              // nested — invalid HTML — and they point to different
+              // destinations): the logo to the brand-filtered catalog,
+              // the flag to the country page.
+              <div className="flex flex-col items-center justify-center py-4 gap-2">
+                <Link
+                  href={`/${locale}?brand=${encodeURIComponent(speaker.brand)}`}
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  aria-label={speaker.brand}
+                  title={speaker.brand}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={brandLogo.src}
+                    alt={speaker.brand}
+                    width={brandLogo.width}
+                    height={brandLogo.height}
+                    className={`${brandLogo.stripHeightClass} w-auto object-contain ${
+                      brandLogo.darkInvert !== false ? "dark:invert" : ""
+                    }`}
+                  />
+                </Link>
                 {brandInfo && (
-                  <span
-                    className="text-5xl sm:text-6xl leading-none select-none"
+                  <Link
+                    href={`/${locale}/country/${brandInfo.countryKey}`}
+                    className="text-5xl sm:text-6xl leading-none select-none opacity-90 hover:opacity-100 transition-opacity"
                     aria-label={countryName ?? brandInfo.countryCode}
                     title={countryName ?? brandInfo.countryCode}
                   >
                     {brandInfo.countryFlag}
-                  </span>
+                  </Link>
                 )}
-              </Link>
+              </div>
             )}
           </div>
 
@@ -326,7 +333,7 @@ export default async function SpeakerDetailPage({ params }: Props) {
 
             <ProductDescription speaker={speaker} locale={locale} t={t} />
 
-            <SpecsTable speaker={speaker} typeLabel={typeLabel} locale={locale} t={t} />
+            <SpeakerSpecs speaker={speaker} typeLabel={typeLabel} locale={locale} t={t} />
           </div>
         </section>
       </main>
@@ -365,246 +372,6 @@ function ProductDescription({
           {text}
         </div>
       </div>
-    </div>
-  );
-}
-
-function SpecsTable({
-  speaker: s,
-  typeLabel,
-  locale,
-  t,
-}: {
-  speaker: Speaker;
-  typeLabel: string;
-  locale: Locale;
-  t: Dictionary;
-}) {
-  const fmtRange = (r: { min?: number; max: number }, unit: string) =>
-    r.min !== undefined ? `${r.min}–${r.max} ${unit}` : `${r.max} ${unit}`;
-  const fmtDrivers = (s: Speaker) =>
-    s.drivers
-      .map(
-        (d) =>
-          `${d.quantity ?? 1}× ${d.sizeMm > 0 ? `${d.sizeMm} mm ` : ""}${d.role}${d.material ? ` (${d.material})` : ""}`
-      )
-      .join(", ");
-  // Pretty labels for the active-spec enum values. Kept inline (not i18n)
-  // since these are brand/protocol names that should render the same in
-  // every locale.
-  const WIRED_INPUT_LABEL: Record<string, string> = {
-    "rca-analog": "RCA",
-    "rca-phono": "RCA Phono",
-    "xlr-analog": "XLR balanced",
-    optical: "Optical (Toslink)",
-    coax: "Coaxial S/PDIF",
-    "aes-ebu": "AES/EBU (XLR)",
-    "usb-audio": "USB Audio",
-    "usb-host": "USB-A host",
-    "hdmi-input": "HDMI in",
-    "hdmi-arc": "HDMI ARC",
-    "hdmi-earc": "HDMI eARC",
-    ethernet: "Ethernet",
-    "calibration-mic": "Calibration mic",
-  };
-  const WIRELESS_LABEL: Record<string, string> = {
-    bluetooth: "Bluetooth",
-    "airplay-2": "AirPlay 2",
-    "google-cast": "Google Cast",
-    "spotify-connect": "Spotify Connect",
-    "tidal-connect": "Tidal Connect",
-    "qobuz-connect": "Qobuz Connect",
-    "roon-ready": "Roon Ready",
-    wisa: "WiSA",
-    wifi: "Wi-Fi",
-  };
-  const OUTPUT_LABEL: Record<string, string> = {
-    "rca-sub": "RCA sub-out",
-    "xlr-sub": "XLR sub-out",
-    "hdmi-out": "HDMI out",
-  };
-  const ROOM_CORRECTION_LABEL: Record<string, string> = {
-    "dirac-live": "Dirac Live (full)",
-    "dirac-live-limited": "Dirac Live (limited)",
-    "custom-dsp": "Custom DSP / app",
-    "manufacturer-preset": "Manufacturer presets",
-  };
-  const fmtList = (
-    items: string[] | undefined,
-    map: Record<string, string>
-  ): string => {
-    if (!items || items.length === 0) return "—";
-    return items.map((i) => map[i] ?? i).join(", ");
-  };
-  const fmtAmp = (a: NonNullable<Speaker["active"]>["amplification"]) => {
-    if (!a || a.length === 0) return "—";
-    return a
-      .map(
-        (s) =>
-          `${s.driverRole} ${s.powerW} W${s.amplifierClass ? ` (class ${s.amplifierClass})` : ""}`
-      )
-      .join(" · ");
-  };
-  const yesNo = (v: boolean | undefined) =>
-    v === true ? t.specs.yes : v === false ? t.specs.no : "—";
-  const host = (() => {
-    try {
-      return new URL(s.sourceUrl).hostname.replace(/^www\./, "");
-    } catch {
-      return s.sourceUrl;
-    }
-  })();
-  const origin = (() => {
-    try {
-      return new URL(s.sourceUrl).origin;
-    } catch {
-      return s.sourceUrl;
-    }
-  })();
-
-  const rows: ([string, React.ReactNode] | null)[] = [
-    [t.specs.type, typeLabel],
-    [
-      t.specs.powerType,
-      s.powerType === "active" ? t.specs.active : t.specs.passive,
-    ],
-    [t.specs.height, `${s.dimensions.heightMm} mm`],
-    [t.specs.width, `${s.dimensions.widthMm} mm`],
-    [t.specs.depth, `${s.dimensions.depthMm} mm`],
-    [t.specs.weight, `${s.dimensions.weightKg} kg`],
-    [t.specs.enclosure, s.enclosure ?? "—"],
-    s.portTuningHz ? [t.specs.portTuning, `${s.portTuningHz} Hz`] : null,
-    [t.specs.drivers, fmtDrivers(s)],
-    [
-      t.specs.frequencyResponse,
-      `${fmtRange(s.frequencyResponseHz, "Hz")}${s.frequencyResponseToleranceDb ? ` (±${s.frequencyResponseToleranceDb} dB)` : ""}`,
-    ],
-    s.sensitivityDb ? [t.specs.sensitivity, `${s.sensitivityDb} dB`] : null,
-    s.impedanceOhm
-      ? [
-          t.specs.impedance,
-          `${s.impedanceOhm} Ω${s.impedanceMinOhm ? ` (${t.specs.impedanceMin} ${s.impedanceMinOhm} Ω)` : ""}`,
-        ]
-      : null,
-    s.powerHandlingW
-      ? [t.specs.powerHandling, fmtRange(s.powerHandlingW, "W")]
-      : null,
-    s.recommendedAmpW
-      ? [t.specs.recommendedAmp, fmtRange(s.recommendedAmpW, "W")]
-      : null,
-    s.priceUsd
-      ? [
-          t.specs.price,
-          formatPriceUsd(s.priceUsd, locale, {
-            pair: t.specs.pricePerPair,
-            each: t.specs.priceEach,
-          }),
-        ]
-      : null,
-    // Active-only rows. Always rendered for active speakers, with "—"
-    // placeholders when the manufacturer hasn't published the field.
-    ...(s.powerType === "active"
-      ? ([
-          [t.specs.amplification, fmtAmp(s.active?.amplification)],
-          [
-            t.specs.totalAmpPower,
-            s.active?.totalAmpPowerW !== undefined
-              ? `${s.active.totalAmpPowerW} W`
-              : "—",
-          ],
-          [
-            t.specs.maxSpl,
-            s.active?.maxSplDb !== undefined
-              ? `${s.active.maxSplDb} dB`
-              : "—",
-          ],
-          [
-            t.specs.audioFormat,
-            s.active?.maxBitDepth || s.active?.maxSampleRateKhz
-              ? `${s.active.maxBitDepth ?? "—"} bit / ${s.active.maxSampleRateKhz ?? "—"} kHz`
-              : "—",
-          ],
-          [t.specs.wiredInputs, fmtList(s.active?.wiredInputs, WIRED_INPUT_LABEL)],
-          [
-            t.specs.wirelessProtocols,
-            fmtList(s.active?.wirelessProtocols, WIRELESS_LABEL),
-          ],
-          [t.specs.audioOutputs, fmtList(s.active?.outputs, OUTPUT_LABEL)],
-          [
-            t.specs.roomCorrection,
-            fmtList(s.active?.roomCorrection, ROOM_CORRECTION_LABEL),
-          ],
-          [t.specs.pairedSecondary, yesNo(s.active?.pairedSecondary)],
-          [
-            t.specs.wirelessSpeakerLink,
-            yesNo(s.active?.wirelessSpeakerLink),
-          ],
-          [
-            t.specs.latency,
-            s.active?.latencyMs !== undefined
-              ? `${s.active.latencyMs} ms`
-              : "—",
-          ],
-          [
-            t.specs.idlePower,
-            s.active?.idlePowerW !== undefined
-              ? `${s.active.idlePowerW} W`
-              : "—",
-          ],
-          [
-            t.specs.maxPowerConsumption,
-            s.active?.maxPowerConsumptionW !== undefined
-              ? `${s.active.maxPowerConsumptionW} W`
-              : "—",
-          ],
-        ] as ([string, React.ReactNode] | null)[])
-      : []),
-    [
-      t.specs.manufacturer,
-      <a
-        key="manuf"
-        href={origin}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:underline dark:text-blue-400"
-      >
-        {host} ↗
-      </a>,
-    ],
-    [
-      t.specs.productPage,
-      <a
-        key="prod"
-        href={s.sourceUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:underline dark:text-blue-400 break-all"
-      >
-        {t.specs.openProductPage} ↗
-      </a>,
-    ],
-  ];
-  const filteredRows = rows.filter(
-    (r): r is [string, React.ReactNode] => r !== null
-  );
-
-  return (
-    <div className="mt-8 rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 overflow-hidden">
-      <table className="w-full text-sm">
-        <tbody>
-          {filteredRows.map(([label, value]) => (
-            <tr
-              key={label}
-              className="border-b border-stone-100 dark:border-stone-800 last:border-none"
-            >
-              <th className="px-4 py-3 text-left font-normal text-stone-500 w-40 align-top">
-                {label}
-              </th>
-              <td className="px-4 py-3">{value}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </div>
   );
 }
