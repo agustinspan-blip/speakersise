@@ -1,0 +1,59 @@
+{
+  "id": "elac-dcb41",
+  "brand": "ELAC",
+  "series": "Debut ConneX",
+  "model": "Debut ConneX DCB41",
+  "type": "bookshelf",
+  "powerType": "active",
+  "dimensions": {
+    "heightMm": 244,
+    "widthMm": 138,
+    "depthMm": 203,
+    "weightKg": 3.45
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 19,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 114,
+      "quantity": 1,
+      "material": "polypropylene cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 50,
+    "max": 25000
+  },
+  "active": {
+    "totalAmpPowerW": 50,
+    "maxSampleRateKhz": 96,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "hdmi-arc",
+      "rca-analog",
+      "rca-phono",
+      "usb-audio",
+      "optical"
+    ],
+    "wirelessProtocols": [
+      "bluetooth"
+    ],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": false
+  },
+  "images": {
+    "hero": "/speakers/elac-dcb41-hero.webp",
+    "front": "/speakers/elac-dcb41-front.png"
+  },
+  "sourceUrl": "https://elac.com/dcb41",
+  "description": {
+    "en": "Entry-level wireless powered bookshelf in ELAC's Debut ConneX line — a 19 mm soft-dome tweeter and a 114 mm polypropylene woofer driven by 50 W of class-D amplification per pair. Sold as a primary-plus-passive-secondary pair connected by an interconnect cable, with HDMI ARC, RCA line/phono, USB and optical inputs alongside Bluetooth aptX streaming at 24-bit/96 kHz.",
+    "es": "Bookshelf activo inalámbrico de entrada en la línea Debut ConneX de ELAC — un tweeter de domo blando de 19 mm y un woofer de polipropileno de 114 mm impulsados por 50 W de amplificación class-D por par. Se vende como par primario + secundario pasivo conectados por cable, con entradas HDMI ARC, RCA line/phono, USB y óptica, más streaming Bluetooth aptX a 24-bit/96 kHz."
+  }
+}

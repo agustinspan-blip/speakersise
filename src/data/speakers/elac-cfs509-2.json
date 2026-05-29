@@ -1,0 +1,69 @@
+{
+  "id": "elac-cfs509-2",
+  "brand": "ELAC",
+  "series": "Concentro",
+  "generation": "2.0",
+  "model": "Concentro S 509.2",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1320,
+    "widthMm": 297,
+    "depthMm": 460,
+    "weightKg": 42.8
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "JET 5c pleated-folded ribbon",
+      "notes": "Concentric — mounted in centre of the 130 mm aluminium high-midrange cone"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "aluminium cone",
+      "notes": "High-midrange (50/130 mm assembly with the JET 5c at centre); 2.6 kHz crossover"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "aluminium AS-XR cone",
+      "notes": "Low-midrange; 400 Hz crossover"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 4,
+      "material": "aluminium AS cone",
+      "notes": "Side-firing; 120 Hz crossover"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 22,
+    "max": 50000
+  },
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "powerHandlingW": {
+    "max": 340
+  },
+  "recommendedAmpW": {
+    "min": 60,
+    "max": 600
+  },
+  "images": {
+    "hero": "/speakers/elac-cfs509-2-hero.webp",
+    "front": "/speakers/elac-cfs509-2-front.png"
+  },
+  "sourceUrl": "https://elac.com/cfs509-2",
+  "description": {
+    "en": "Four-way floorstander in ELAC's Concentro 2.0 line — the JET 5c concentric tweeter sits at the centre of a 130 mm aluminium high-midrange driver, joined by a separate 180 mm AS-XR low-midrange and four side-firing 180 mm AS woofers handling bass below 120 Hz. ICD (Impulse Compensated Design) impulse-response tuning; 22 Hz at 88 dB on a 4 Ω load (3.2 Ω min), 60-600 W amp window.",
+    "es": "Floorstander de cuatro vías de la línea Concentro 2.0 de ELAC — el tweeter JET 5c concéntrico se ubica en el centro de un driver high-midrange de aluminio de 130 mm, acompañado por un low-midrange AS-XR de 180 mm separado y cuatro woofers AS de 180 mm side-firing cubriendo los graves debajo de 120 Hz. Diseño ICD (Impulse Compensated Design); 22 Hz a 88 dB sobre carga de 4 Ω (3.2 Ω mín.), ventana 60-600 W."
+  }
+}

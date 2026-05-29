@@ -1,0 +1,72 @@
+{
+  "id": "elac-m807",
+  "brand": "ELAC",
+  "series": "Concentro",
+  "generation": "2.0",
+  "model": "Concentro M807",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1340,
+    "widthMm": 468,
+    "depthMm": 595,
+    "weightKg": 62
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "JET 6c pleated-folded ribbon",
+      "notes": "Concentric — sits at the centre of the VXe high-midrange array"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 40,
+      "quantity": 6,
+      "material": "aluminium A-XR cone",
+      "notes": "VXe array — 6 high-mids around the JET 6c, 25 selectable directivity settings"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 115,
+      "quantity": 2,
+      "material": "aluminium AS-XR cone",
+      "notes": "Low-midrange, 650 Hz crossover"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 250,
+      "quantity": 2,
+      "material": "aluminium AS cone",
+      "notes": "Side-firing, 150 Hz crossover"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 24,
+    "max": 50000
+  },
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.1,
+  "powerHandlingW": {
+    "max": 400
+  },
+  "recommendedAmpW": {
+    "min": 80,
+    "max": 600
+  },
+  "priceUsd": {
+    "max": 45000
+  },
+  "images": {
+    "hero": "/speakers/elac-m807-hero.webp",
+    "front": "/speakers/elac-m807-front.png"
+  },
+  "sourceUrl": "https://elac.com/m807",
+  "description": {
+    "en": "ELAC's flagship Concentro M807 — a four-way statement floorstander built around the JET 6c concentric tweeter ringed by a VXe array of six 40 mm aluminium high-mids that allow 25 selectable directivity settings, plus a pair of 115 mm low-mids and two side-firing 250 mm aluminium woofers. Reaches 24 Hz at 88 dB sensitivity, 4 Ω nominal (3.1 Ω min), 80-600 W amp window.",
+    "es": "El flagship Concentro M807 de ELAC — un floorstander de cuatro vías construido alrededor del tweeter JET 6c concéntrico rodeado por un array VXe de seis high-mids de aluminio de 40 mm con 25 ajustes seleccionables de directividad, más un par de low-mids de 115 mm y dos woofers de aluminio de 250 mm side-firing. Llega a 24 Hz con 88 dB de sensibilidad, 4 Ω nominal (3.1 Ω mín.), ventana de 80-600 W."
+  }
+}

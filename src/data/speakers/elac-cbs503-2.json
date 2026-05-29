@@ -1,0 +1,60 @@
+{
+  "id": "elac-cbs503-2",
+  "brand": "ELAC",
+  "series": "Concentro",
+  "generation": "2.0",
+  "model": "Concentro S 503.2",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 400,
+    "widthMm": 219,
+    "depthMm": 372,
+    "weightKg": 13.4
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "JET 6 pleated-folded ribbon",
+      "notes": "Concentric — mounted in centre of the 130 mm aluminium midrange cone"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 130,
+      "quantity": 1,
+      "material": "aluminium AS-XR cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "aluminium AS-XR cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 40,
+    "max": 40000
+  },
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 4.8,
+  "powerHandlingW": {
+    "max": 200
+  },
+  "recommendedAmpW": {
+    "min": 60,
+    "max": 500
+  },
+  "images": {
+    "hero": "/speakers/elac-cbs503-2-hero.webp",
+    "front": "/speakers/elac-cbs503-2-front.png"
+  },
+  "sourceUrl": "https://elac.com/cbs503-2",
+  "description": {
+    "en": "Flagship bookshelf in ELAC's Concentro 2.0 line — the JET 6 pleated-folded ribbon tweeter sits coaxially in the centre of a 130 mm aluminium AS-XR midrange cone, paired with a 180 mm aluminium AS-XR woofer in a trapezoid cabinet with convex baffle. Three-way design with 87 dB sensitivity on a 4 Ω load, 60-500 W amp window.",
+    "es": "Bookshelf flagship de la línea Concentro 2.0 de ELAC — el tweeter JET 6 de cinta plegada se ubica coaxialmente en el centro de un cono midrange de aluminio AS-XR de 130 mm, junto con un woofer de aluminio AS-XR de 180 mm en una caja trapezoidal con bafle convexo. Diseño de tres vías con 87 dB de sensibilidad sobre carga de 4 Ω, ventana de 60-500 W."
+  }
+}

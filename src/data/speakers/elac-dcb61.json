@@ -1,0 +1,61 @@
+{
+  "id": "elac-dcb61",
+  "brand": "ELAC",
+  "series": "Debut ConneX",
+  "model": "Debut ConneX DCB61",
+  "type": "bookshelf",
+  "powerType": "active",
+  "dimensions": {
+    "heightMm": 330,
+    "widthMm": 199,
+    "depthMm": 243,
+    "weightKg": 5.45
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "soft dome",
+      "notes": "Custom waveguide"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "long-excursion paper cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 48,
+    "max": 22000
+  },
+  "frequencyResponseToleranceDb": 3,
+  "active": {
+    "totalAmpPowerW": 160,
+    "maxSampleRateKhz": 96,
+    "maxBitDepth": 24,
+    "wiredInputs": [
+      "hdmi-earc",
+      "rca-analog",
+      "rca-phono",
+      "usb-audio",
+      "optical"
+    ],
+    "wirelessProtocols": [
+      "bluetooth"
+    ],
+    "pairedSecondary": true,
+    "wirelessSpeakerLink": true
+  },
+  "images": {
+    "hero": "/speakers/elac-dcb61-hero.webp",
+    "front": "/speakers/elac-dcb61-front.png"
+  },
+  "sourceUrl": "https://elac.com/dcb61",
+  "description": {
+    "en": "Step-up wireless powered bookshelf in ELAC's Debut ConneX line — a 25 mm soft-dome tweeter on a custom waveguide and a 165 mm long-excursion woofer driven by 160 W class-D per pair. Wirelessly links primary and secondary via mesh (no cable between speakers), with HDMI eARC, RCA line/phono, USB Audio and optical inputs plus Bluetooth LC3+ streaming at 24-bit/96 kHz.",
+    "es": "Bookshelf activo inalámbrico escalón superior de la línea Debut ConneX de ELAC — un tweeter de domo blando de 25 mm con waveguide propietario y un woofer de excursión larga de 165 mm impulsados por 160 W class-D por par. Enlaza primario y secundario por mesh inalámbrico (sin cable entre parlantes), con entradas HDMI eARC, RCA line/phono, USB Audio y óptica, más streaming Bluetooth LC3+ a 24-bit/96 kHz."
+  }
+}
