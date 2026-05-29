@@ -49,5 +49,8 @@
   "description": {
     "en": "Carina floorstander in a 2.5-way configuration — a JET 5 pleated-folded ribbon tweeter atop two 133 mm aluminium AS-XR drivers in a downward-ported tower with outrigger plinth. Extends to 34 Hz at 87 dB sensitivity on a 6 Ω load (4.8 Ω min), with a 30-250 W amp window.",
     "es": "Carina floorstander en configuración 2.5 vías — un tweeter JET 5 de cinta plegada sobre dos drivers de aluminio AS-XR de 133 mm en una torre con puerto downward-firing y plinto outrigger. Extiende hasta 34 Hz con 87 dB de sensibilidad sobre carga de 6 Ω (4.8 Ω mín.), ventana de amplificación de 30-250 W."
+  },
+  "priceUsd": {
+    "max": 2398
   }
 }

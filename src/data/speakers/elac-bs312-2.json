@@ -49,5 +49,8 @@
   "description": {
     "en": "Compact two-way bookshelf in ELAC's Elegant 2.0 line — a JET 6 pleated-folded ribbon tweeter sits above a 115 mm aluminium AS-XR woofer in a rear-ported aluminium cabinet. Reaches 50 kHz at the top and 42 Hz on the low end with 87 dB sensitivity on a 4 Ω load (3.4 Ω min), 50-150 W amp window.",
     "es": "Bookshelf de dos vías compacto de la línea Elegant 2.0 de ELAC — un tweeter JET 6 de cinta plegada se ubica sobre un woofer de aluminio AS-XR de 115 mm en caja de aluminio con puerto trasero. Llega a 50 kHz arriba y 42 Hz abajo con 87 dB de sensibilidad sobre carga de 4 Ω (3.4 Ω mín.), ventana de 50-150 W."
+  },
+  "priceUsd": {
+    "max": 2099
   }
 }

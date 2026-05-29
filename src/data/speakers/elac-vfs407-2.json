@@ -50,5 +50,8 @@
   "description": {
     "en": "Entry 2.5-way floorstander in ELAC's Vela 2.0 line — a JET 6 pleated-folded ribbon tweeter atop two 150 mm aluminium AS-XR woofers in a trapezoidal cabinet with a downward-firing bass reflex port. Reaches 30 Hz with 88 dB sensitivity on 4 Ω (3.2 Ω min), 40-300 W amp window.",
     "es": "Floorstander 2.5 vías de entrada de la línea Vela 2.0 de ELAC — un tweeter JET 6 de cinta plegada sobre dos woofers de aluminio AS-XR de 150 mm en una caja trapezoidal con puerto downward-firing. Llega a 30 Hz con 88 dB de sensibilidad sobre 4 Ω (3.2 Ω mín.), ventana de 40-300 W."
+  },
+  "priceUsd": {
+    "max": 6598
   }
 }

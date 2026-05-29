@@ -51,5 +51,8 @@
   "description": {
     "en": "Reference-tier three-way floorstander in ELAC's UniFi Reference line — concentric 25 mm soft-dome tweeter inside a 102 mm aluminium midrange cone, plus three 133 mm aluminium woofers in a front-ported tower with dual flared slot ports. Reaches 40 Hz at -6 dB, 86 dB sensitivity on 6 Ω.",
     "es": "Floorstander de tres vías escalón Reference de la línea UniFi Reference de ELAC — tweeter de domo blando de 25 mm concéntrico en el centro de un cono midrange de aluminio de 102 mm, más tres woofers de aluminio de 133 mm en una torre con puerto frontal de doble flare tipo slot. Llega a 40 Hz a -6 dB, 86 dB de sensibilidad sobre 6 Ω."
+  },
+  "priceUsd": {
+    "max": 2598
   }
 }

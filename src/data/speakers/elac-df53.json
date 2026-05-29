@@ -55,5 +55,8 @@
   "description": {
     "en": "Slim three-way floorstander in ELAC's Debut 3.0 line — a 25 mm aluminium-dome tweeter atop a 133 mm aramid-fibre midrange and a pair of 133 mm aramid-fibre woofers, all in a front-ported cabinet with outrigger plinth. Reaches 38 Hz at -6 dB, 87.5 dB sensitivity, 30-150 W on 6 Ω.",
     "es": "Floorstander delgado de tres vías de la línea Debut 3.0 de ELAC — un tweeter de domo de aluminio de 25 mm sobre un midrange de fibra Aramid de 133 mm y un par de woofers de fibra Aramid de 133 mm, todo en una caja con puerto frontal y plinto outrigger. Llega a 38 Hz a -6 dB, 87.5 dB de sensibilidad, 30-150 W sobre 6 Ω."
+  },
+  "priceUsd": {
+    "max": 899
   }
 }

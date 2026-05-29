@@ -49,5 +49,8 @@
   "description": {
     "en": "Larger two-way bookshelf in ELAC's Vela 2.0 line — same JET 6 pleated-folded ribbon tweeter as the VBS403.2, here driven by a 180 mm aluminium AS-XR woofer instead of the smaller 150 mm unit. Reaches 38 Hz with 87 dB sensitivity on 4 Ω (3.2 Ω min); the trapezoidal cabinet's sculpted sides make the apparent front-face width narrower than the spec-sheet's max-cabinet width.",
     "es": "Bookshelf de dos vías más grande de la línea Vela 2.0 de ELAC — mismo tweeter JET 6 de cinta plegada que el VBS403.2, ahora apoyado en un woofer de aluminio AS-XR de 180 mm en lugar del 150 mm del menor. Llega a 38 Hz con 87 dB de sensibilidad sobre 4 Ω (3.2 Ω mín.); los laterales esculpidos del cabinet trapezoidal hacen que el ancho aparente del frente sea menor que el ancho máximo publicado."
+  },
+  "priceUsd": {
+    "max": 3699
   }
 }

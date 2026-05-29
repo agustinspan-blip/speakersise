@@ -44,5 +44,8 @@
   "description": {
     "en": "Floorstander in ELAC's Debut Reference line — a 25 mm soft-dome tweeter atop three 133 mm aramid-fibre drivers in a front-ported tower with dual flared slot ports and outrigger plinth. Reaches 42 Hz at -6 dB with 87 dB sensitivity on 6 Ω, max 140 W.",
     "es": "Floorstander de la línea Debut Reference de ELAC — un tweeter de domo blando de 25 mm sobre tres drivers de fibra Aramid de 133 mm en una torre con puerto frontal de doble flare tipo slot y plinto outrigger. Llega a 42 Hz a -6 dB con 87 dB de sensibilidad sobre 6 Ω, máximo 140 W."
+  },
+  "priceUsd": {
+    "max": 1598
   }
 }

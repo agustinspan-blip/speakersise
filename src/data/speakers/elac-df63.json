@@ -55,5 +55,8 @@
   "description": {
     "en": "Top of ELAC's Debut 3.0 line — a 25 mm aluminium-dome tweeter, a 165 mm aramid-fibre midrange and a pair of 165 mm aramid-fibre woofers in a front-ported tower with outrigger plinth. Reaches 31 Hz at -6 dB and 87.5 dB sensitivity, with a 30-180 W amp window on 6 Ω.",
     "es": "Tope de la línea Debut 3.0 de ELAC — un tweeter de domo de aluminio de 25 mm, un midrange de fibra Aramid de 165 mm y un par de woofers de fibra Aramid de 165 mm en una torre con puerto frontal y plinto outrigger. Llega a 31 Hz a -6 dB y 87.5 dB de sensibilidad, con ventana de 30-180 W sobre 6 Ω."
+  },
+  "priceUsd": {
+    "max": 1099
   }
 }

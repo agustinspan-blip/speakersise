@@ -55,5 +55,8 @@
   "description": {
     "en": "Entry-level wireless powered bookshelf in ELAC's Debut ConneX line — a 19 mm soft-dome tweeter and a 114 mm polypropylene woofer driven by 50 W of class-D amplification per pair. Sold as a primary-plus-passive-secondary pair connected by an interconnect cable, with HDMI ARC, RCA line/phono, USB and optical inputs alongside Bluetooth aptX streaming at 24-bit/96 kHz.",
     "es": "Bookshelf activo inalámbrico de entrada en la línea Debut ConneX de ELAC — un tweeter de domo blando de 19 mm y un woofer de polipropileno de 114 mm impulsados por 50 W de amplificación class-D por par. Se vende como par primario + secundario pasivo conectados por cable, con entradas HDMI ARC, RCA line/phono, USB y óptica, más streaming Bluetooth aptX a 24-bit/96 kHz."
+  },
+  "priceUsd": {
+    "max": 699
   }
 }

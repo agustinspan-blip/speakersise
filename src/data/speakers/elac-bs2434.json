@@ -49,5 +49,8 @@
   "description": {
     "en": "ELAC's Carina bookshelf — the entry point to the in-house JET tweeter family. A JET 5 pleated-folded ribbon sits above a 133 mm aluminium AS-XR woofer in a downward-ported cabinet. Reaches 46 Hz at 85 dB sensitivity, 6 Ω nominal (4.8 Ω min), 30-150 W amplifier window.",
     "es": "Bookshelf Carina de ELAC — la puerta de entrada a la familia con tweeter JET propio. Un JET 5 de cinta plegada se ubica sobre un woofer de aluminio AS-XR de 133 mm en una caja con puerto downward-firing. Llega a 46 Hz con 85 dB de sensibilidad, 6 Ω nominal (4.8 Ω mín.), ventana de amplificación de 30-150 W."
+  },
+  "priceUsd": {
+    "max": 1199
   }
 }

@@ -49,5 +49,8 @@
   "description": {
     "en": "Compact two-way bookshelf in ELAC's Vela 2.0 line — a JET 6 pleated-folded ribbon tweeter sits above a 150 mm aluminium AS-XR woofer in a trapezoidal bass-reflex cabinet. Reaches 41 Hz at the low end and 50 kHz on top with 86 dB sensitivity on 4 Ω (3.2 Ω min), 40-200 W amp window.",
     "es": "Bookshelf de dos vías compacto de la línea Vela 2.0 de ELAC — un tweeter JET 6 de cinta plegada se ubica sobre un woofer de aluminio AS-XR de 150 mm en caja bass-reflex trapezoidal. Llega a 41 Hz abajo y 50 kHz arriba con 86 dB de sensibilidad sobre 4 Ω (3.2 Ω mín.), ventana de 40-200 W."
+  },
+  "priceUsd": {
+    "max": 3299
   }
 }

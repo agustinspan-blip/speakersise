@@ -49,5 +49,8 @@
   "description": {
     "en": "Two-way bookshelf in ELAC's Solano 2.0 line — pairs a JET 6 pleated-folded ribbon tweeter with a 150 mm aluminium AS-XR woofer in a bass-reflex cabinet with a high-gloss curved baffle. Reaches 41 Hz at -6 dB and 50 kHz at the top with 85 dB sensitivity on 4 Ω (3.2 Ω min), 40-200 W amp window.",
     "es": "Bookshelf de dos vías de la línea Solano 2.0 de ELAC — combina un tweeter JET 6 de cinta plegada con un woofer de aluminio AS-XR de 150 mm en caja bass-reflex con bafle curvo de alto brillo. Llega a 41 Hz a -6 dB y 50 kHz arriba con 85 dB de sensibilidad sobre 4 Ω (3.2 Ω mín.), ventana de 40-200 W."
+  },
+  "priceUsd": {
+    "max": 2099
   }
 }

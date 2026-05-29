@@ -65,5 +65,8 @@
   "description": {
     "en": "Mid-flagship four-way floorstander in ELAC's Concentro 2.0 line — the JET 6 concentric tweeter sits at the centre of a 130 mm aluminium high-midrange driver, joined by a separate 180 mm AS-XR low-midrange and four side-firing 150 mm aluminium AS woofers handling bass below 120 Hz. 24 Hz at 88 dB on a 4 Ω load (3.0 Ω min), 60-500 W amp window.",
     "es": "Floorstander de cuatro vías mid-flagship de la línea Concentro 2.0 de ELAC — el tweeter JET 6 concéntrico se ubica en el centro de un driver high-midrange de aluminio de 130 mm, acompañado por un low-midrange AS-XR de 180 mm separado y cuatro woofers AS de 150 mm side-firing cubriendo los graves debajo de 120 Hz. 24 Hz a 88 dB sobre carga de 4 Ω (3.0 Ω mín.), ventana 60-500 W."
+  },
+  "priceUsd": {
+    "max": 15398
   }
 }

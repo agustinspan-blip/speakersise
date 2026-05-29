@@ -50,5 +50,8 @@
   "description": {
     "en": "2.5-way floorstander in ELAC's Solano 2.0 line — a JET 6 pleated-folded ribbon tweeter atop two 150 mm aluminium AS-XR drivers in a curved bass-reflex cabinet. Reaches 30 Hz at the low end with 87 dB sensitivity on a 4 Ω load (3.5 Ω min), 40-300 W amp window.",
     "es": "Floorstander 2.5 vías de la línea Solano 2.0 de ELAC — un tweeter JET 6 de cinta plegada sobre dos drivers de aluminio AS-XR de 150 mm en caja bass-reflex curva. Llega a 30 Hz abajo con 87 dB de sensibilidad sobre carga de 4 Ω (3.5 Ω mín.), ventana de 40-300 W."
+  },
+  "priceUsd": {
+    "max": 3999
   }
 }

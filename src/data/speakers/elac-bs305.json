@@ -47,5 +47,8 @@
   "description": {
     "en": "Compact two-way bookshelf in ELAC's Elegant line — a 25 mm fabric-dome tweeter and a 115 mm aluminium AS-cone woofer in a rear-ported aluminium cabinet. The only model in the Elegant range without the JET ribbon tweeter; reaches 42 Hz at 86 dB on a 4 Ω load, 50-150 W amp window.",
     "es": "Bookshelf de dos vías compacto de la línea Elegant de ELAC — un tweeter de domo de tela de 25 mm y un woofer de aluminio AS de 115 mm en caja de aluminio con puerto trasero. Único modelo de la línea Elegant sin tweeter JET de cinta; llega a 42 Hz con 86 dB sobre carga de 4 Ω, ventana de 50-150 W."
+  },
+  "priceUsd": {
+    "max": 2198
   }
 }

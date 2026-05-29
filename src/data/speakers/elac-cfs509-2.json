@@ -65,5 +65,8 @@
   "description": {
     "en": "Four-way floorstander in ELAC's Concentro 2.0 line — the JET 5c concentric tweeter sits at the centre of a 130 mm aluminium high-midrange driver, joined by a separate 180 mm AS-XR low-midrange and four side-firing 180 mm AS woofers handling bass below 120 Hz. ICD (Impulse Compensated Design) impulse-response tuning; 22 Hz at 88 dB on a 4 Ω load (3.2 Ω min), 60-600 W amp window.",
     "es": "Floorstander de cuatro vías de la línea Concentro 2.0 de ELAC — el tweeter JET 5c concéntrico se ubica en el centro de un driver high-midrange de aluminio de 130 mm, acompañado por un low-midrange AS-XR de 180 mm separado y cuatro woofers AS de 180 mm side-firing cubriendo los graves debajo de 120 Hz. Diseño ICD (Impulse Compensated Design); 22 Hz a 88 dB sobre carga de 4 Ω (3.2 Ω mín.), ventana 60-600 W."
+  },
+  "priceUsd": {
+    "max": 21998
   }
 }
