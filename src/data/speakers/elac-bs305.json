@@ -1,0 +1,51 @@
+{
+  "id": "elac-bs305",
+  "brand": "ELAC",
+  "series": "Elegant",
+  "model": "Elegant BS305",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 208,
+    "widthMm": 127,
+    "depthMm": 270,
+    "weightKg": 5.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "fabric dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 115,
+      "quantity": 1,
+      "material": "aluminium AS cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 23000
+  },
+  "sensitivityDb": 86,
+  "impedanceOhm": 4,
+  "powerHandlingW": {
+    "max": 120
+  },
+  "recommendedAmpW": {
+    "min": 50,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/elac-bs305-hero.webp",
+    "front": "/speakers/elac-bs305-front.png"
+  },
+  "sourceUrl": "https://elac.com/bs305",
+  "description": {
+    "en": "Compact two-way bookshelf in ELAC's Elegant line — a 25 mm fabric-dome tweeter and a 115 mm aluminium AS-cone woofer in a rear-ported aluminium cabinet. The only model in the Elegant range without the JET ribbon tweeter; reaches 42 Hz at 86 dB on a 4 Ω load, 50-150 W amp window.",
+    "es": "Bookshelf de dos vías compacto de la línea Elegant de ELAC — un tweeter de domo de tela de 25 mm y un woofer de aluminio AS de 115 mm en caja de aluminio con puerto trasero. Único modelo de la línea Elegant sin tweeter JET de cinta; llega a 42 Hz con 86 dB sobre carga de 4 Ω, ventana de 50-150 W."
+  }
+}

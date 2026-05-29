@@ -1,0 +1,53 @@
+{
+  "id": "elac-vbs404-2",
+  "brand": "ELAC",
+  "series": "Vela",
+  "generation": "2.0",
+  "model": "Vela VBS404.2",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 412,
+    "widthMm": 230,
+    "depthMm": 332,
+    "weightKg": 9.7
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "JET 6 pleated-folded ribbon"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 180,
+      "quantity": 1,
+      "material": "aluminium AS-XR cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 50000
+  },
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "powerHandlingW": {
+    "max": 120
+  },
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/elac-vbs404-2-hero.webp",
+    "front": "/speakers/elac-vbs404-2-front.png"
+  },
+  "sourceUrl": "https://elac.com/vbs404-2",
+  "description": {
+    "en": "Larger two-way bookshelf in ELAC's Vela 2.0 line — same JET 6 pleated-folded ribbon tweeter as the VBS403.2, here driven by a 180 mm aluminium AS-XR woofer instead of the smaller 150 mm unit. Reaches 38 Hz with 87 dB sensitivity on 4 Ω (3.2 Ω min); the trapezoidal cabinet's sculpted sides make the apparent front-face width narrower than the spec-sheet's max-cabinet width.",
+    "es": "Bookshelf de dos vías más grande de la línea Vela 2.0 de ELAC — mismo tweeter JET 6 de cinta plegada que el VBS403.2, ahora apoyado en un woofer de aluminio AS-XR de 180 mm en lugar del 150 mm del menor. Llega a 38 Hz con 87 dB de sensibilidad sobre 4 Ω (3.2 Ω mín.); los laterales esculpidos del cabinet trapezoidal hacen que el ancho aparente del frente sea menor que el ancho máximo publicado."
+  }
+}

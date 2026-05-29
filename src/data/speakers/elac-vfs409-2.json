@@ -1,0 +1,60 @@
+{
+  "id": "elac-vfs409-2",
+  "brand": "ELAC",
+  "series": "Vela",
+  "generation": "2.0",
+  "model": "Vela VFS409.2",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1307,
+    "widthMm": 275,
+    "depthMm": 332,
+    "weightKg": 32.1
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "JET 6 pleated-folded ribbon"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "aluminium AS-XR cone",
+      "notes": "Dedicated mid-woofer for the 3.5-way crossover"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 180,
+      "quantity": 2,
+      "material": "aluminium AS-XR cone"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 28,
+    "max": 50000
+  },
+  "sensitivityDb": 89,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.4,
+  "powerHandlingW": {
+    "max": 280
+  },
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 450
+  },
+  "images": {
+    "hero": "/speakers/elac-vfs409-2-hero.webp",
+    "front": "/speakers/elac-vfs409-2-front.png"
+  },
+  "sourceUrl": "https://elac.com/vfs409-2",
+  "description": {
+    "en": "Top-of-line Vela 2.0 floorstander — a JET 6 pleated-folded ribbon tweeter, a dedicated 150 mm aluminium AS-XR mid-woofer and two 180 mm aluminium AS-XR woofers below in a 3.5-way trapezoidal cabinet with a downward-firing bass reflex port. Reaches 28 Hz with the line's highest sensitivity (89 dB) on 4 Ω (3.4 Ω min), 40-450 W amp window.",
+    "es": "Floorstander tope de gama de la línea Vela 2.0 — un tweeter JET 6 de cinta plegada, un mid-woofer dedicado de aluminio AS-XR de 150 mm y dos woofers de aluminio AS-XR de 180 mm debajo en una caja trapezoidal 3.5 vías con puerto downward-firing. Llega a 28 Hz con la sensibilidad más alta de la línea (89 dB) sobre 4 Ω (3.4 Ω mín.), ventana de 40-450 W."
+  }
+}

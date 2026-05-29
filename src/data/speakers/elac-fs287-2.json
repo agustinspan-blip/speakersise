@@ -1,0 +1,54 @@
+{
+  "id": "elac-fs287-2",
+  "brand": "ELAC",
+  "series": "Solano",
+  "generation": "2.0",
+  "model": "Solano FS287.2",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 985,
+    "widthMm": 255,
+    "depthMm": 300,
+    "weightKg": 19.0
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "JET 6 pleated-folded ribbon"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 150,
+      "quantity": 2,
+      "material": "aluminium AS-XR cone",
+      "notes": "2.5-way crossover"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 30,
+    "max": 50000
+  },
+  "sensitivityDb": 87,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.5,
+  "powerHandlingW": {
+    "max": 170
+  },
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/elac-fs287-2-hero.webp",
+    "front": "/speakers/elac-fs287-2-front.png"
+  },
+  "sourceUrl": "https://elac.com/fs287-2",
+  "description": {
+    "en": "2.5-way floorstander in ELAC's Solano 2.0 line — a JET 6 pleated-folded ribbon tweeter atop two 150 mm aluminium AS-XR drivers in a curved bass-reflex cabinet. Reaches 30 Hz at the low end with 87 dB sensitivity on a 4 Ω load (3.5 Ω min), 40-300 W amp window.",
+    "es": "Floorstander 2.5 vías de la línea Solano 2.0 de ELAC — un tweeter JET 6 de cinta plegada sobre dos drivers de aluminio AS-XR de 150 mm en caja bass-reflex curva. Llega a 30 Hz abajo con 87 dB de sensibilidad sobre carga de 4 Ω (3.5 Ω mín.), ventana de 40-300 W."
+  }
+}

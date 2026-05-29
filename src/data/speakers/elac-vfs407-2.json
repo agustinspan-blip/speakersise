@@ -1,0 +1,54 @@
+{
+  "id": "elac-vfs407-2",
+  "brand": "ELAC",
+  "series": "Vela",
+  "generation": "2.0",
+  "model": "Vela VFS407.2",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1000,
+    "widthMm": 215,
+    "depthMm": 266,
+    "weightKg": 19.1
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "JET 6 pleated-folded ribbon"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 150,
+      "quantity": 2,
+      "material": "aluminium AS-XR cone",
+      "notes": "2.5-way crossover"
+    }
+  ],
+  "enclosure": "bass-reflex-down",
+  "frequencyResponseHz": {
+    "min": 30,
+    "max": 50000
+  },
+  "sensitivityDb": 88,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "powerHandlingW": {
+    "max": 170
+  },
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 300
+  },
+  "images": {
+    "hero": "/speakers/elac-vfs407-2-hero.webp",
+    "front": "/speakers/elac-vfs407-2-front.png"
+  },
+  "sourceUrl": "https://elac.com/vfs407-2",
+  "description": {
+    "en": "Entry 2.5-way floorstander in ELAC's Vela 2.0 line — a JET 6 pleated-folded ribbon tweeter atop two 150 mm aluminium AS-XR woofers in a trapezoidal cabinet with a downward-firing bass reflex port. Reaches 30 Hz with 88 dB sensitivity on 4 Ω (3.2 Ω min), 40-300 W amp window.",
+    "es": "Floorstander 2.5 vías de entrada de la línea Vela 2.0 de ELAC — un tweeter JET 6 de cinta plegada sobre dos woofers de aluminio AS-XR de 150 mm en una caja trapezoidal con puerto downward-firing. Llega a 30 Hz con 88 dB de sensibilidad sobre 4 Ω (3.2 Ω mín.), ventana de 40-300 W."
+  }
+}

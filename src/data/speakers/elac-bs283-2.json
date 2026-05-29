@@ -1,0 +1,53 @@
+{
+  "id": "elac-bs283-2",
+  "brand": "ELAC",
+  "series": "Solano",
+  "generation": "2.0",
+  "model": "Solano BS283.2",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 331,
+    "widthMm": 195,
+    "depthMm": 248,
+    "weightKg": 8.0
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 0,
+      "quantity": 1,
+      "material": "JET 6 pleated-folded ribbon"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 150,
+      "quantity": 1,
+      "material": "aluminium AS-XR cone"
+    }
+  ],
+  "enclosure": "bass-reflex-rear",
+  "frequencyResponseHz": {
+    "min": 41,
+    "max": 50000
+  },
+  "sensitivityDb": 85,
+  "impedanceOhm": 4,
+  "impedanceMinOhm": 3.2,
+  "powerHandlingW": {
+    "max": 100
+  },
+  "recommendedAmpW": {
+    "min": 40,
+    "max": 200
+  },
+  "images": {
+    "hero": "/speakers/elac-bs283-2-hero.webp",
+    "front": "/speakers/elac-bs283-2-front.png"
+  },
+  "sourceUrl": "https://elac.com/bs283-2",
+  "description": {
+    "en": "Two-way bookshelf in ELAC's Solano 2.0 line — pairs a JET 6 pleated-folded ribbon tweeter with a 150 mm aluminium AS-XR woofer in a bass-reflex cabinet with a high-gloss curved baffle. Reaches 41 Hz at -6 dB and 50 kHz at the top with 85 dB sensitivity on 4 Ω (3.2 Ω min), 40-200 W amp window.",
+    "es": "Bookshelf de dos vías de la línea Solano 2.0 de ELAC — combina un tweeter JET 6 de cinta plegada con un woofer de aluminio AS-XR de 150 mm en caja bass-reflex con bafle curvo de alto brillo. Llega a 41 Hz a -6 dB y 50 kHz arriba con 85 dB de sensibilidad sobre 4 Ω (3.2 Ω mín.), ventana de 40-200 W."
+  }
+}
