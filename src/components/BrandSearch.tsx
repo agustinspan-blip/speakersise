@@ -142,7 +142,7 @@ export function BrandSearch({
         onClick={openPanel}
         aria-label={t.brandSearch.buttonLabel}
         title={`${t.brandSearch.buttonLabel} ( / )`}
-        className="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors"
+        className="text-white hover:text-stone-300 transition-colors"
       >
         <SearchIcon />
       </button>

@@ -29,12 +29,11 @@ export function SiteHeader({
   t: Dictionary;
   currentPath?: "brands" | "countries" | "contact" | "support";
 }) {
-  // Shared classes — every nav link reads with the same amber treatment;
+  // Shared classes — every nav link reads in white on the dark header;
   // only the active one drops the hover transition so its colour is solid.
   const navBase =
-    "inline-flex items-center gap-1.5 text-sm font-semibold text-amber-600 dark:text-amber-400";
-  const navHover =
-    "hover:text-amber-700 dark:hover:text-amber-300 transition-colors";
+    "inline-flex items-center gap-1.5 text-sm font-semibold text-white";
+  const navHover = "hover:text-stone-300 transition-colors";
 
   const links: Array<{
     key: "brands" | "countries" | "contact" | "support";
