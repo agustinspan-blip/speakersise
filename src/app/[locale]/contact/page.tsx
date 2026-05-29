@@ -10,7 +10,6 @@ import {
 import { pageMetadata } from "@/lib/metadata";
 import { SiteHeader } from "@/components/SiteHeader";
 import { BrandStrip } from "@/components/BrandStrip";
-import { CompareCTA } from "@/components/CompareCTA";
 import { ContactForm } from "@/components/ContactForm";
 import { SponsorBanner } from "@/components/SponsorBanner";
 
@@ -100,8 +99,6 @@ export default async function ContactPage({ params }: Props) {
       </main>
 
       <BrandStrip brands={brands} locale={locale} t={t} />
-
-      <CompareCTA locale={locale} t={t} />
     </div>
   );
 }

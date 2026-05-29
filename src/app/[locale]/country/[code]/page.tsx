@@ -15,7 +15,6 @@ import {
 import { pageMetadata } from "@/lib/metadata";
 import { SiteHeader } from "@/components/SiteHeader";
 import { BrandStrip } from "@/components/BrandStrip";
-import { CompareCTA } from "@/components/CompareCTA";
 import { SponsorBanner } from "@/components/SponsorBanner";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/site";
@@ -185,7 +184,6 @@ export default async function CountryPage({ params }: Props) {
         <SponsorBanner t={t} />
       </main>
       <BrandStrip brands={allBrands} locale={locale} t={t} />
-      <CompareCTA locale={locale} t={t} mode="to-compare4" />
     </div>
   );
 }

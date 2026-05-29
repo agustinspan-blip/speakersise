@@ -4,7 +4,6 @@ import { getAllSpeakers, getSpeakerById } from "@/lib/speakers";
 import type { Speaker } from "@/lib/types";
 import { ShareButton } from "@/components/ShareButton";
 import { SiteHeader } from "@/components/SiteHeader";
-import { CompareCTA } from "@/components/CompareCTA";
 import { ShuffleButton } from "@/components/ShuffleButton";
 import { NavCTAs } from "@/components/NavCTAs";
 import { SpeakerPicker } from "@/components/SpeakerPicker";
@@ -712,8 +711,6 @@ export default async function ComparePage({ params, searchParams }: Props) {
       </main>
 
       {!presentMode && <BrandStrip brands={brands} locale={locale} t={t} />}
-
-      {!presentMode && <CompareCTA locale={locale} t={t} mode="to-compare4" />}
     </div>
   );
 }

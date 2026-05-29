@@ -7,7 +7,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { NavCTAs } from "@/components/NavCTAs";
 import { SpeakerPicker } from "@/components/SpeakerPicker";
 import { BrandStrip } from "@/components/BrandStrip";
-import { CompareCTA } from "@/components/CompareCTA";
 import { ShuffleButton } from "@/components/ShuffleButton";
 import { UnitsToggle } from "@/components/UnitsToggle";
 import {
@@ -186,8 +185,6 @@ export default async function Compare4Page({ params, searchParams }: Props) {
       </main>
 
       <BrandStrip brands={brands} locale={locale} t={t} />
-
-      <CompareCTA locale={locale} t={t} mode="to-compare" />
     </div>
   );
 }

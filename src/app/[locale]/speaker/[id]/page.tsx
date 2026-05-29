@@ -7,7 +7,6 @@ import type { Speaker } from "@/lib/types";
 import { SiteHeader } from "@/components/SiteHeader";
 import { NavCTAs } from "@/components/NavCTAs";
 import { BrandStrip } from "@/components/BrandStrip";
-import { CompareCTA } from "@/components/CompareCTA";
 import { SideViewBadge } from "@/components/SideViewBadge";
 import { JsonLd } from "@/components/JsonLd";
 import { SpeakerSpecs } from "@/components/SpeakerSpecs";
@@ -378,8 +377,6 @@ export default async function SpeakerDetailPage({ params }: Props) {
       </main>
 
       <BrandStrip brands={brands} locale={locale} t={t} />
-
-      <CompareCTA locale={locale} t={t} prefillId={speaker.id} />
     </div>
   );
 }

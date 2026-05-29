@@ -24,6 +24,7 @@ export function NavCTAs({
   prefillId,
   showLadder = false,
   className,
+  id,
 }: {
   locale: Locale;
   t: Dictionary;
@@ -37,6 +38,12 @@ export function NavCTAs({
   showLadder?: boolean;
   /** Extra layout classes for the wrapper (margin, alignment, etc.). */
   className?: string;
+  /**
+   * DOM id on the wrapper. Used by the persistent CompareCTA floater
+   * to observe this block via IntersectionObserver and hide itself on
+   * mobile while the static buttons are still on screen.
+   */
+  id?: string;
 }) {
   const ctaBg =
     "bg-amber-600 hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400";
@@ -63,7 +70,7 @@ export function NavCTAs({
     : "grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5 max-w-xl";
 
   return (
-    <div className={`${gridCls} ${className ?? ""}`}>
+    <div id={id} className={`${gridCls} ${className ?? ""}`}>
       <div>
         <Link href={compareHref} className={buttonCls}>
           <RulerIcon />

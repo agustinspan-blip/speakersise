@@ -479,7 +479,13 @@ export default async function Home({ params, searchParams }: Props) {
 
       <BrandStrip brands={brands} locale={locale} t={t} />
 
-      <CompareCTA locale={locale} t={t} />
+      {/*
+        Mobile gate: the floater stays hidden under sm while the hero's
+        static TrueScale/TrueSpecs/Ladder buttons (id="hero-ctas") are
+        still in the viewport. Once the user scrolls past them, the pill
+        row fades in. Desktop ignores the gate.
+      */}
+      <CompareCTA locale={locale} t={t} showAfterSelector="#hero-ctas" />
     </div>
   );
 }
@@ -529,8 +535,16 @@ function Hero({
               theme on the unfiltered catalog. The Catalog Insights row
               + "Browse the catalog ↓" link sit below the hero (outside
               this component) instead of inside the left column, so the
-              hero stays focused on the headline + image. */}
-          <NavCTAs locale={locale} t={t} showLadder className="mt-8" />
+              hero stays focused on the headline + image. The id is
+              observed by <CompareCTA> so the floating row stays hidden
+              on mobile while these static buttons are still on screen. */}
+          <NavCTAs
+            id="hero-ctas"
+            locale={locale}
+            t={t}
+            showLadder
+            className="mt-8"
+          />
         </div>
 
         <Link

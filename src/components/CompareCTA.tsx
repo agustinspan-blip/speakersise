@@ -5,49 +5,76 @@ import Link from "next/link";
 import type { Dictionary, Locale } from "@/lib/i18n";
 
 /**
- * Persistent floating call-to-action surfaced on every page so the user
- * always has a one-click path into the comparator tools. Replaces the role
- * the header used to play before TrueScale/TrueSpecs were pulled out of it.
+ * Persistent floating call-to-action into the comparator tools — used
+ * **only on the home page** (`/[locale]/page.tsx`). Other pages have
+ * dropped the floater so the in-page CTAs (`<NavCTAs>` on the hero,
+ * "Compare with…" buttons on speaker pages, etc.) do the work alone
+ * without doubling up.
  *
  *   - `mode="both"` (default): two pills side by side — TrueScale + TrueSpecs.
- *     Use on every page **except** the two compare pages themselves.
- *   - `mode="to-compare4"`: single pill linking to /compare4. Use on /compare.
- *   - `mode="to-compare"`: single pill linking to /compare. Use on /compare4.
+ *   - `mode="to-compare4"` / `mode="to-compare"`: single-pill modes used by
+ *     past callers (now unused; kept for backwards compatibility).
  *
  * Layout: fixed bottom-right on desktop (floats over content with a soft
  * shadow); full-width bottom bar on mobile so the touch targets are easy
  * to reach. Both viewports respect the iOS safe-area inset.
  *
- * Footer awareness: when the page footer (BrandStrip's `<footer>` element)
- * scrolls into view, this widget fades out so the floating pills don't
- * overlap the footer's utility row (Catalog · Compare · Brands · Contact
- * · Support). The fade is opacity-only — the element stays in the DOM so
- * its layout doesn't shift. Implemented via IntersectionObserver against
- * the first `<footer>` on the page; falls back to "always visible" if no
- * footer is present (e.g. /compare4 layout edge cases).
+ * Mobile gate (`showAfterSelector`): when a selector is passed, the floater
+ * stays hidden on phones while that element is in the viewport. On the
+ * home page this points at the hero's `<NavCTAs id="hero-ctas">` so the
+ * floating row only appears once the user scrolls past the static buttons —
+ * avoids two identical TrueScale/TrueSpecs rows stacking on mobile. Desktop
+ * ignores the gate (the floater lives in the bottom-right corner where it
+ * doesn't compete with the in-page block).
  *
- * Note about overlap: pages that show this should reserve ~80 px of bottom
- * padding on `<main>` for mobile so the floater doesn't cover the last
- * line of content. The wrapping `<div>` in each page already handles this
- * via the `pb-28 sm:pb-0` modifier added during the redesign.
+ * Footer awareness: when the page footer (BrandStrip's `<footer>` element)
+ * scrolls into view, this widget fades out on every viewport so the
+ * floating pills don't overlap the footer's utility row. Implemented via
+ * IntersectionObserver; falls back to "always visible" if no footer is
+ * present on the page.
+ *
+ * Note about overlap: the home reserves ~80 px of bottom padding on its
+ * `<main>` for mobile so the floater doesn't cover the last line of
+ * content (`pb-28 sm:pb-0` pattern).
  */
 export function CompareCTA({
   locale,
   t,
   mode = "both",
   prefillId,
+  showAfterSelector,
 }: {
   locale: Locale;
   t: Dictionary;
   mode?: "both" | "to-compare4" | "to-compare";
   /** Speaker id to pre-select as the first slot on the targets. */
   prefillId?: string;
+  /**
+   * Optional CSS selector for an in-page element (typically the hero
+   * `<NavCTAs>` block) whose visibility should suppress this floater
+   * on mobile. While the selector matches an element that's still
+   * intersecting the viewport, the floater stays hidden under sm —
+   * so the user doesn't see two identical TrueScale/TrueSpecs button
+   * rows stacked on top of each other. Desktop ignores the gate; the
+   * floater sits in the bottom-right where it doesn't compete with
+   * the in-page buttons.
+   */
+  showAfterSelector?: string;
 }) {
   // True when the page footer is intersecting the viewport. Drives a
   // CSS opacity fade so the floating pills don't visually collide with
   // the footer's utility row. SSR renders with the floater visible
   // (footerVisible = false) — hydration kicks in the observer after.
   const [footerVisible, setFooterVisible] = useState(false);
+
+  // True when the `showAfterSelector` element is intersecting the
+  // viewport (i.e. user hasn't scrolled past it yet). Initialise to
+  // `true` when a selector is provided — pessimistic default so the
+  // first paint on mobile hides the floater until the observer
+  // confirms one way or the other. With no selector, gate is disabled.
+  const [showAfterElementVisible, setShowAfterElementVisible] = useState(
+    Boolean(showAfterSelector)
+  );
 
   useEffect(() => {
     const footer = document.querySelector("footer");
@@ -66,6 +93,23 @@ export function CompareCTA({
     observer.observe(footer);
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (!showAfterSelector || typeof IntersectionObserver === "undefined") {
+      return;
+    }
+    const el = document.querySelector(showAfterSelector);
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry) setShowAfterElementVisible(entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [showAfterSelector]);
 
   const pillBg =
     "bg-amber-600 hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-400";
@@ -105,18 +149,31 @@ export function CompareCTA({
     );
   }
 
+  // Visibility resolution — three layered states:
+  //   1. Footer in view → hidden on all viewports (handoff to footer's
+  //      utility row).
+  //   2. Otherwise, if `showAfterSelector` is provided and that element is
+  //      still on screen → hidden on mobile only (the in-page buttons are
+  //      already serving the same purpose); desktop keeps the floater
+  //      because it sits in the bottom-right corner, out of the way.
+  //   3. Default → visible on all viewports.
+  // Pointer-events follow opacity so a faded-out floater can't intercept
+  // clicks meant for content underneath.
+  const hiddenEverywhere = footerVisible;
+  const hiddenOnMobileOnly = !hiddenEverywhere && showAfterElementVisible;
+  const opacityCls = hiddenEverywhere
+    ? "opacity-0 pointer-events-none"
+    : hiddenOnMobileOnly
+      ? "opacity-0 pointer-events-none sm:opacity-100 sm:pointer-events-auto"
+      : "opacity-100 pointer-events-auto";
+
   return (
     <div
       aria-label={t.nav.compareCta}
       // Hide from accessibility tree while faded out so screen readers
       // don't announce a button the user can't see — the same row of
-      // links lives inside the footer anyway.
-      aria-hidden={footerVisible ? true : undefined}
-      style={{
-        opacity: footerVisible ? 0 : 1,
-        pointerEvents: footerVisible ? "none" : "auto",
-        transition: "opacity 200ms ease-out",
-      }}
+      // links lives inside the footer / in the in-page hero block.
+      aria-hidden={hiddenEverywhere ? true : undefined}
       className={[
         // Positioning: full-width bar on phones, floating on >= sm.
         "fixed z-30 left-0 right-0 bottom-0 px-4 pb-3 pt-2",
@@ -127,6 +184,9 @@ export function CompareCTA({
         // over arbitrary content; transparent on desktop.
         "bg-gradient-to-t from-stone-50/90 to-stone-50/0 dark:from-stone-950/90 dark:to-stone-950/0",
         "sm:from-transparent sm:to-transparent sm:dark:from-transparent sm:dark:to-transparent",
+        // Visibility — see resolution block above.
+        "transition-opacity duration-200 ease-out",
+        opacityCls,
       ].join(" ")}
     >
       <div className="mx-auto flex items-center justify-center gap-2 sm:justify-end sm:gap-3">

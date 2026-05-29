@@ -12,7 +12,6 @@ import {
 import { pageMetadata } from "@/lib/metadata";
 import { SiteHeader } from "@/components/SiteHeader";
 import { BrandStrip } from "@/components/BrandStrip";
-import { CompareCTA } from "@/components/CompareCTA";
 import { SponsorBanner } from "@/components/SponsorBanner";
 import { BRAND_LOGOS, type BrandLogo } from "@/lib/brands";
 
@@ -133,8 +132,6 @@ export default async function BrandsPage({ params }: Props) {
       </main>
 
       <BrandStrip brands={liveBrands} locale={locale} t={t} />
-
-      <CompareCTA locale={locale} t={t} />
     </div>
   );
 }
