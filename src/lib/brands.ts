@@ -209,6 +209,17 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     stripHeightClass: "h-[40px]",
     heroHeightClass: "h-[52px] sm:h-[68px]",
   },
+  ELAC: {
+    // ELAC wordmark (477×214, aspect ≈ 2.23) — black on transparent,
+    // inherits the default dark-mode invert. Compact-wordmark tier
+    // alongside Klipsch / Polk.
+    src: "/brands/elac.png",
+    width: 477,
+    height: 214,
+    heightClass: "h-7",
+    stripHeightClass: "h-[40px]",
+    heroHeightClass: "h-[52px] sm:h-[68px]",
+  },
   // Note: Monitor Audio's logo is a single-colour wordmark, so it implicitly
   // gets `darkInvert: true` (the default behaviour).
 
@@ -235,7 +246,7 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     Devialet: ["devialet.png", 2633, 1550],
     "Definitive Technology": ["definitive-technology.png", 3805, 1247],
     "DeVore Fidelity": ["devore.png", 650, 366],
-    ELAC: ["elac.png", 500, 222],
+    Edifier: ["edifier.png", 288, 68],
     Elipson: ["elipson.png", 762, 257],
     Emotiva: ["emotiva.png", 911, 129],
     Estelon: ["estelon.png", 269, 215],
@@ -267,6 +278,7 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     "Meridian Audio": ["meridian.png", 388, 209],
     Mission: ["mission.png", 330, 330],
     MoFi: ["mofi.png", 600, 350],
+    Morel: ["morel.png", 1111, 286],
     OAudio: ["oaudio.png", 1465, 393],
     Perlisten: ["perlisten.png", 2231, 386],
     Piega: ["piega.png", 822, 172],
@@ -279,6 +291,7 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     "Q Acoustics": ["q-acoustics.png", 300, 300],
     Quad: ["quad.png", 800, 800],
     Qualio: ["qualio.png", 222, 222],
+    QLN: ["qln.png", 433, 240],
     "Radiant Acoustics": ["radiant-acoustics.png", 302, 378],
     Raidho: ["raidho-acoustics.png", 900, 500],
     Reezoldini: ["reezoldini.png", 309, 47],
@@ -301,6 +314,7 @@ export const BRAND_LOGOS: Record<string, BrandLogo> = {
     Triangle: ["triangle.png", 380, 176],
     Vestlyd: ["vestlyd.png", 1024, 576],
     "Vivid Audio": ["vivid-audio.png", 1854, 946],
+    Voxativ: ["voxativ.png", 608, 161],
     "Wilson Audio": ["wilson-audio.png", 1194, 1196],
     "Wilson Benesch": ["wilson-benesch.png", 801, 118],
     Yamaha: ["yamaha.png", 1800, 469],
@@ -359,7 +373,8 @@ export interface BrandInfo {
     | "polk"
     | "canton"
     | "paradigm"
-    | "jbl";
+    | "jbl"
+    | "elac";
   /** Translation key under `home.brandCountries.*` */
   countryKey: "uk" | "denmark" | "netherlands" | "uruguay" | "france" | "italy" | "us" | "germany" | "canada";
   /** Year the brand was founded — shown as a small meta line. */
@@ -464,6 +479,14 @@ export const BRAND_INFO: Record<string, BrandInfo> = {
     countryKey: "us",
     foundedYear: 1946,
     websiteUrl: "https://www.jbl.com",
+  },
+  ELAC: {
+    countryCode: "DE",
+    countryFlag: "🇩🇪",
+    descriptionKey: "elac",
+    countryKey: "germany",
+    foundedYear: 1926,
+    websiteUrl: "https://elac.com",
   },
   Polk: {
     countryCode: "US",
@@ -715,6 +738,22 @@ export const BRAND_THEMES: Record<string, BrandTheme> = {
       "bg-orange-600 hover:bg-orange-700 dark:bg-orange-500 dark:hover:bg-orange-400",
     accentBorder: "border-orange-600 dark:border-orange-300",
     glowColor: "rgba(234, 88, 12, 0.10)", // orange-600, subtle
+  },
+  // ELAC: corporate navy-blue identity from the JET ribbon tweeter logo
+  // and packaging — `slate-700` reads as that deep blue-grey without
+  // colliding with Polk's `slate-700` (slightly different usage tone)
+  // or the cool blues of more clinical brands.
+  ELAC: {
+    pageBg: "bg-stone-50 dark:bg-stone-950",
+    accentEyebrow: "text-slate-700 dark:text-slate-300",
+    accentTitle: "text-slate-700 dark:text-slate-300",
+    accentHover:
+      "group-hover:text-slate-700 dark:group-hover:text-slate-300",
+    accentArrow: "text-slate-700 dark:text-slate-300",
+    ctaBg:
+      "bg-slate-700 hover:bg-slate-800 dark:bg-slate-600 dark:hover:bg-slate-500",
+    accentBorder: "border-slate-700 dark:border-slate-300",
+    glowColor: "rgba(51, 65, 85, 0.10)", // slate-700, subtle
   },
   // Sonus Faber: solid-walnut, brass and leather — the Heritage line's
   // warm Italian craftsmanship. `amber-700` sits between Rizzi's

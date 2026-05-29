@@ -1,0 +1,56 @@
+{
+  "id": "elac-ub52",
+  "brand": "ELAC",
+  "series": "UniFi",
+  "generation": "2.0",
+  "model": "UniFi UB52",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 346,
+    "widthMm": 185,
+    "depthMm": 275,
+    "weightKg": 8.5
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "soft dome",
+      "notes": "Concentric — mounted in centre of the 102 mm midrange cone"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 102,
+      "quantity": 1,
+      "material": "aluminium cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "aluminium cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 46,
+    "max": 35000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 85,
+  "impedanceOhm": 6,
+  "powerHandlingW": {
+    "max": 140
+  },
+  "images": {
+    "hero": "/speakers/elac-ub52-hero.webp",
+    "front": "/speakers/elac-ub52-front.png"
+  },
+  "sourceUrl": "https://elac.com/ub52",
+  "description": {
+    "en": "Three-way bookshelf in ELAC's UniFi 2.0 line built around a concentric driver — a 25 mm soft-dome tweeter sits in the centre of a 102 mm aluminium midrange cone, paired with a separate 133 mm aluminium woofer in a front-ported cabinet. Reaches 46 Hz at -6 dB with 85 dB sensitivity on 6 Ω.",
+    "es": "Bookshelf de tres vías de la línea UniFi 2.0 de ELAC construido alrededor de un driver concéntrico — un tweeter de domo blando de 25 mm en el centro de un cono midrange de aluminio de 102 mm, junto con un woofer de aluminio de 133 mm aparte en una caja con puerto frontal. Llega a 46 Hz a -6 dB con 85 dB de sensibilidad sobre 6 Ω."
+  }
+}

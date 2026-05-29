@@ -1,0 +1,53 @@
+{
+  "id": "elac-db53",
+  "brand": "ELAC",
+  "series": "Debut",
+  "generation": "3.0",
+  "model": "Debut DB53",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 311,
+    "widthMm": 175,
+    "depthMm": 267,
+    "weightKg": 6.05
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "aluminium dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "aramid-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 48,
+    "max": 38000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 86.5,
+  "impedanceOhm": 6,
+  "powerHandlingW": {
+    "max": 120
+  },
+  "recommendedAmpW": {
+    "min": 20,
+    "max": 120
+  },
+  "images": {
+    "hero": "/speakers/elac-db53-hero.webp",
+    "front": "/speakers/elac-db53-front.png"
+  },
+  "sourceUrl": "https://elac.com/db53",
+  "description": {
+    "en": "Compact two-way bookshelf in ELAC's Debut 3.0 line, designed by Andrew Jones around a 25 mm aluminium-dome tweeter and a 133 mm aramid-fibre woofer in a front-ported cabinet with dual flared ports. Reaches 48 Hz at -6 dB with 86.5 dB sensitivity, asking for a 20-120 W amplifier on 6 Ω.",
+    "es": "Bookshelf compacto de dos vías de la línea Debut 3.0 de ELAC, diseñada por Andrew Jones alrededor de un tweeter de domo de aluminio de 25 mm y un woofer de fibra Aramid de 133 mm en caja con puerto frontal de doble flare. Llega a 48 Hz a -6 dB con 86.5 dB de sensibilidad, pidiendo amplificación de 20-120 W sobre 6 Ω."
+  }
+}

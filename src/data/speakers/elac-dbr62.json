@@ -1,0 +1,48 @@
+{
+  "id": "elac-dbr62",
+  "brand": "ELAC",
+  "series": "Debut Reference",
+  "model": "Debut Reference DBR62",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 359,
+    "widthMm": 215,
+    "depthMm": 275,
+    "weightKg": 8.2
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "soft dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "aramid-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 44,
+    "max": 35000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 86,
+  "impedanceOhm": 6,
+  "powerHandlingW": {
+    "max": 120
+  },
+  "images": {
+    "hero": "/speakers/elac-dbr62-hero.webp",
+    "front": "/speakers/elac-dbr62-front.png"
+  },
+  "sourceUrl": "https://elac.com/dbr62",
+  "description": {
+    "en": "Step-up two-way bookshelf in ELAC's Debut Reference line — a 25 mm soft-dome tweeter and an oversized 165 mm aramid-fibre woofer in a larger front-ported cabinet with dual flared ports. Reaches 44 Hz at -6 dB, 86 dB sensitivity on 6 Ω, max 120 W.",
+    "es": "Bookshelf de dos vías escalón intermedio de la línea Debut Reference de ELAC — un tweeter de domo blando de 25 mm y un woofer de fibra Aramid sobredimensionado de 165 mm en caja más grande con puerto frontal de doble flare. Llega a 44 Hz a -6 dB, 86 dB de sensibilidad sobre 6 Ω, máximo 120 W."
+  }
+}

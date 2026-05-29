@@ -1,0 +1,53 @@
+{
+  "id": "elac-db63",
+  "brand": "ELAC",
+  "series": "Debut",
+  "generation": "3.0",
+  "model": "Debut DB63",
+  "type": "bookshelf",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 339,
+    "widthMm": 198,
+    "depthMm": 298,
+    "weightKg": 7.85
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "aluminium dome"
+    },
+    {
+      "role": "mid-bass",
+      "sizeMm": 165,
+      "quantity": 1,
+      "material": "aramid-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 42,
+    "max": 38000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 87,
+  "impedanceOhm": 6,
+  "powerHandlingW": {
+    "max": 120
+  },
+  "recommendedAmpW": {
+    "min": 20,
+    "max": 140
+  },
+  "images": {
+    "hero": "/speakers/elac-db63-hero.webp",
+    "front": "/speakers/elac-db63-front.png"
+  },
+  "sourceUrl": "https://elac.com/db63",
+  "description": {
+    "en": "Mid-size two-way bookshelf in ELAC's Debut 3.0 line — same 25 mm aluminium-dome tweeter as the DB53, paired with a 165 mm aramid-fibre woofer in a larger front-ported cabinet. Extends down to 42 Hz at -6 dB and lifts sensitivity to 87 dB while keeping a 20-140 W amp window on 6 Ω.",
+    "es": "Bookshelf mediano de dos vías de la línea Debut 3.0 de ELAC — mismo tweeter de domo de aluminio de 25 mm que el DB53, ahora apoyado en un woofer de fibra Aramid de 165 mm en caja con puerto frontal más grande. Llega a 42 Hz a -6 dB y sube la sensibilidad a 87 dB manteniendo una ventana de amplificación de 20-140 W sobre 6 Ω."
+  }
+}

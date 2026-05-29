@@ -1,0 +1,59 @@
+{
+  "id": "elac-df53",
+  "brand": "ELAC",
+  "series": "Debut",
+  "generation": "3.0",
+  "model": "Debut DF53",
+  "type": "floorstander",
+  "powerType": "passive",
+  "dimensions": {
+    "heightMm": 1030,
+    "widthMm": 222,
+    "depthMm": 246,
+    "weightKg": 15.7
+  },
+  "drivers": [
+    {
+      "role": "tweeter",
+      "sizeMm": 25,
+      "quantity": 1,
+      "material": "aluminium dome"
+    },
+    {
+      "role": "midrange",
+      "sizeMm": 133,
+      "quantity": 1,
+      "material": "aramid-fibre cone"
+    },
+    {
+      "role": "woofer",
+      "sizeMm": 133,
+      "quantity": 2,
+      "material": "aramid-fibre cone"
+    }
+  ],
+  "enclosure": "bass-reflex-front",
+  "frequencyResponseHz": {
+    "min": 38,
+    "max": 38000
+  },
+  "frequencyResponseToleranceDb": 6,
+  "sensitivityDb": 87.5,
+  "impedanceOhm": 6,
+  "powerHandlingW": {
+    "max": 140
+  },
+  "recommendedAmpW": {
+    "min": 30,
+    "max": 150
+  },
+  "images": {
+    "hero": "/speakers/elac-df53-hero.webp",
+    "front": "/speakers/elac-df53-front.png"
+  },
+  "sourceUrl": "https://elac.com/df53",
+  "description": {
+    "en": "Slim three-way floorstander in ELAC's Debut 3.0 line — a 25 mm aluminium-dome tweeter atop a 133 mm aramid-fibre midrange and a pair of 133 mm aramid-fibre woofers, all in a front-ported cabinet with outrigger plinth. Reaches 38 Hz at -6 dB, 87.5 dB sensitivity, 30-150 W on 6 Ω.",
+    "es": "Floorstander delgado de tres vías de la línea Debut 3.0 de ELAC — un tweeter de domo de aluminio de 25 mm sobre un midrange de fibra Aramid de 133 mm y un par de woofers de fibra Aramid de 133 mm, todo en una caja con puerto frontal y plinto outrigger. Llega a 38 Hz a -6 dB, 87.5 dB de sensibilidad, 30-150 W sobre 6 Ω."
+  }
+}
