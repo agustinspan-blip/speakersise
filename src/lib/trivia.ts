@@ -158,4 +158,19 @@ export const TRIVIA: TriviaItem[] = [
     en: "The black, orange and blue Quadrex foam grilles on the L-Classic line aren't a retro design flourish — they're the exact three colours JBL has offered for the L100 family since 1970.",
     es: "Las grillas de espuma Quadrex en negro, naranja y azul de la línea L-Classic no son un guiño retro — son los mismos tres colores que JBL ofrece para la familia L100 desde 1970.",
   },
+  {
+    id: "elac-sonar-pivot",
+    en: "ELAC was founded in Kiel in 1926 to build submarine sonar. They only pivoted to home audio after WWII left them unable to make military gear — the Kiel factory still hand-assembles every Concentro today.",
+    es: "ELAC se fundó en Kiel en 1926 para fabricar sonar de submarino. Recién pivoteó al audio hogareño después de la 2da Guerra, cuando ya no podían hacer equipo militar — la planta de Kiel todavía arma a mano cada Concentro.",
+  },
+  {
+    id: "elac-jet-amt",
+    en: "ELAC's JET tweeter is a folded ribbon — Oskar Heil patented the design as the Air Motion Transformer in 1972. ELAC has shipped six generations since the '90s; the Concentro M807 carries the latest JET 6c.",
+    es: "El tweeter JET de ELAC es un ribbon plegado — Oskar Heil patentó el diseño en 1972 como Air Motion Transformer. ELAC ya lleva seis generaciones desde los '90; el Concentro M807 monta el último JET 6c.",
+  },
+  {
+    id: "elac-andrew-jones",
+    en: "ELAC's Debut and UniFi lines were designed by Andrew Jones — the same engineer who built Pioneer's $20K+ TAD reference speakers. The 2015 Debut B6 launched at $279/pair using the same crossover ethos.",
+    es: "Las líneas Debut y UniFi de ELAC las diseñó Andrew Jones — el mismo ingeniero que había hecho las TAD referencia de Pioneer de más de USD 20.000. El Debut B6 de 2015 salió a USD 279 el par con la misma filosofía de crossover.",
+  },
 ];
