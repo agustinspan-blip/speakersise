@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import { useRouter } from "next/navigation";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import type { SpeakerType } from "@/lib/types";
@@ -15,6 +16,15 @@ import type { SpeakerType } from "@/lib/types";
  * proportionally), then samples `count` distinct speakers from that
  * pool. If a type has fewer than `count` entries the roll re-picks
  * the other type; if neither has enough the button silently no-ops.
+ *
+ * Lock-current-picks behaviour: the button is rendered inside the
+ * Compare form, so it can read the hidden `<input name="a">…` fields
+ * that `<SpeakerPicker>` keeps in sync with each slot. Any filled slot
+ * is preserved across the roll — only empty slots get a random fill,
+ * the type bucket is forced to match the locked picks, and locked ids
+ * are excluded from the sample so the user never sees their own pick
+ * roll back at them. With no slot filled the button falls back to its
+ * original "fresh random pair" behaviour.
  *
  * Implementation note: lives as a client component because the random
  * pick has to happen on the user's click, not at SSR time. Receives the
@@ -41,43 +51,102 @@ export function ShuffleButton({
   className?: string;
 }) {
   const router = useRouter();
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  /** Look up which `SpeakerType` bucket an id belongs to, or `undefined`
+   *  if the id isn't in any bucket (stale URL, mistyped slug). */
+  const typeOf = (id: string): SpeakerType | undefined => {
+    for (const tp of Object.keys(idsByType) as SpeakerType[]) {
+      if (idsByType[tp].includes(id)) return tp;
+    }
+    return undefined;
+  };
+
+  /** Fisher-Yates in place on a copy so the original bucket array is
+   *  never mutated (other shuffles in the same session keep their full
+   *  pool). Returns the same array for chaining. */
+  const fyShuffle = (xs: string[]): string[] => {
+    const a = [...xs];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  };
 
   const onShuffle = () => {
-    // 1. Decide which type to sample from. Build a weighted list where
-    //    each type appears N times (N = number of speakers of that
-    //    type) so big buckets are picked more often, matching the
-    //    catalog's actual distribution.
-    const eligibleTypes = (Object.keys(idsByType) as SpeakerType[]).filter(
-      (k) => idsByType[k].length >= count
+    // Slot keys for this roll — "a", "b", … truncated to `count` so
+    // /compare uses [a,b] and /compare4 uses up to [a,b,c,d].
+    const slots = Array.from({ length: count }, (_, i) =>
+      String.fromCharCode("a".charCodeAt(0) + i)
     );
-    if (eligibleTypes.length === 0) return; // nothing to shuffle
 
-    const weighted = eligibleTypes.flatMap((tp) =>
-      Array<SpeakerType>(idsByType[tp].length).fill(tp)
-    );
-    const pickedType = weighted[Math.floor(Math.random() * weighted.length)];
+    // Read the form's current hidden inputs to capture what the user
+    // has selected in the pickers but not yet submitted. Slot is empty
+    // when the input is missing (e.g. Shuffle rendered outside a form)
+    // or its value is blank.
+    const form = buttonRef.current?.closest("form") ?? null;
+    const currentIds: string[] = slots.map((k) => {
+      const input = form?.querySelector<HTMLInputElement>(
+        `input[name="${k}"]`
+      );
+      return input?.value ?? "";
+    });
+    const lockedIds = currentIds.filter((id) => id && typeOf(id));
 
-    // 2. Sample `count` distinct ids from the picked bucket. Fisher-
-    //    Yates shuffle on a copy, then slice — O(N) without needing
-    //    a Set membership probe loop.
-    const pool = [...idsByType[pickedType]];
-    for (let i = pool.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [pool[i], pool[j]] = [pool[j], pool[i]];
+    // ── Path A: nothing locked → original "fresh random pair" roll.
+    if (lockedIds.length === 0) {
+      const eligibleTypes = (Object.keys(idsByType) as SpeakerType[]).filter(
+        (k) => idsByType[k].length >= count
+      );
+      if (eligibleTypes.length === 0) return;
+      const weighted = eligibleTypes.flatMap((tp) =>
+        Array<SpeakerType>(idsByType[tp].length).fill(tp)
+      );
+      const pickedType =
+        weighted[Math.floor(Math.random() * weighted.length)];
+      const sample = fyShuffle(idsByType[pickedType]).slice(0, count);
+      const params = new URLSearchParams();
+      sample.forEach((id, i) => params.set(slots[i], id));
+      router.push(`/${locale}/${target}?${params.toString()}`);
+      return;
     }
-    const sample = pool.slice(0, count);
 
-    // 3. Build the URL using the same `a=…&b=…&c=…&d=…` contract as the
-    //    hand-pick form so the result is shareable / bookmarkable.
+    // ── Path B: at least one slot is filled.
+    // Lock the type to the first locked pick — if the user has mixed
+    // types across slots (only possible by hand-editing the URL), we
+    // honour the first one and let the other locked id ride along even
+    // if it breaks type coherence. The user chose that explicitly; the
+    // shuffle's job is to fill the rest, not to police their setup.
+    const lockType = typeOf(lockedIds[0])!;
+    const pool = idsByType[lockType].filter((id) => !lockedIds.includes(id));
+    const needed = count - lockedIds.length;
+
+    if (needed <= 0) {
+      // Every slot is already filled. Nothing to shuffle — silently
+      // no-op rather than navigate to the exact same URL.
+      return;
+    }
+    if (pool.length < needed) {
+      // Not enough same-type alternatives to fill remaining slots.
+      // Could happen on a tiny catalog or an exotic type. Silent no-op.
+      return;
+    }
+
+    const sample = fyShuffle(pool).slice(0, needed);
     const params = new URLSearchParams();
-    sample.forEach((id, i) => {
-      params.set(String.fromCharCode("a".charCodeAt(0) + i), id);
+    currentIds.forEach((id, i) => {
+      // Preserve locked positions verbatim; replace empty positions
+      // with the next sampled id (consuming `sample` in order).
+      const v = id && typeOf(id) ? id : sample.shift()!;
+      params.set(slots[i], v);
     });
     router.push(`/${locale}/${target}?${params.toString()}`);
   };
 
   return (
     <button
+      ref={buttonRef}
       type="button"
       onClick={onShuffle}
       title={t.compare.shuffleTitle}

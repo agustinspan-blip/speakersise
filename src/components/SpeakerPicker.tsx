@@ -64,6 +64,24 @@ export function SpeakerPicker({
   const [type, setType] = useState<string>(initial?.type ?? "");
   const [speakerId, setSpeakerId] = useState<string>(selected ?? "");
   const [speakerOpen, setSpeakerOpen] = useState(false);
+
+  // Keep the three local fields (brand / type / speakerId) in lockstep
+  // with the `selected` prop. The component is mounted once per form
+  // slot and reconciled across navigations — so when the parent server
+  // page renders a new `?a=…` (e.g. after Shuffle navigates), the prop
+  // changes but a stale `useState` initialiser would keep the old
+  // values visible. This effect resets all three fields to match the
+  // new prop, including clearing them when the URL slot becomes empty.
+  useEffect(() => {
+    const current = selected
+      ? options.find((s) => s.id === selected)
+      : undefined;
+    setBrand(current?.brand ?? "");
+    setType(current?.type ?? "");
+    setSpeakerId(selected ?? "");
+    // `options` is server-supplied and stable across the session;
+    // depending on `selected` is enough to react to URL-driven swaps.
+  }, [selected, options]);
   const [activeIndex, setActiveIndex] = useState<number>(-1);
   const speakerListRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
